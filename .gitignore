@@ -9,6 +9,9 @@
 *.so
 *.dylib
 
+# Project binary
+db.trakt.extended-anitrakt
+
 # Test binary, built with `go test -c`
 *.test
 
