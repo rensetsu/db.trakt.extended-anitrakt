@@ -53,6 +53,12 @@ type Override struct {
 	} `json:"trakt"`
 }
 
+// NotFoundEntry structure for items not found on Trakt
+type NotFoundEntry struct {
+	MalID int    `json:"mal_id"`
+	Title string `json:"title"`
+}
+
 // Trakt API structures
 type TraktExternals struct {
 	TVDB   *int    `json:"tvdb,omitempty"`
@@ -234,11 +240,11 @@ func processShows(config Config) {
 	
 	// Load not exist list
 	notExistFile := "not_exist_" + filepath.Base(outputFile)
-	var notExist []int
+	var notExist []NotFoundEntry
 	loadJSONOptional(notExistFile, &notExist)
 	notExistMap := make(map[int]bool)
-	for _, id := range notExist {
-		notExistMap[id] = true
+	for _, entry := range notExist {
+		notExistMap[entry.MalID] = true
 	}
 
 	// Load overrides
@@ -256,7 +262,7 @@ func processShows(config Config) {
 	}
 
 	var results []OutputShow
-	var newNotExist []int
+	var newNotExist []NotFoundEntry
 
 	// Copy existing results
 	for _, show := range existingOutput {
@@ -287,9 +293,9 @@ func processShows(config Config) {
 			continue
 		}
 
-		if notExistMap[show.TraktID] {
+		if notExistMap[show.MalID] {
 			if config.Verbose {
-				fmt.Printf("Skipping non-existent show: %s (Trakt ID: %d)\n", show.Title, show.TraktID)
+				fmt.Printf("Skipping non-existent show: %s (MAL ID: %d)\n", show.Title, show.MalID)
 			}
 			continue
 		}
@@ -323,7 +329,10 @@ func processShows(config Config) {
 				if config.Verbose {
 					fmt.Printf("Show not found on Trakt: %d\n", traktID)
 				}
-				newNotExist = append(newNotExist, traktID)
+				newNotExist = append(newNotExist, NotFoundEntry{
+					MalID: show.MalID,
+					Title: malTitle,
+				})
 				continue
 			}
 			log.Printf("Error fetching show %d: %v", traktID, err)
@@ -429,11 +438,11 @@ func processMovies(config Config) {
 
 	// Load not exist list
 	notExistFile := "not_exist_" + filepath.Base(outputFile)
-	var notExist []int
+	var notExist []NotFoundEntry
 	loadJSONOptional(notExistFile, &notExist)
 	notExistMap := make(map[int]bool)
-	for _, id := range notExist {
-		notExistMap[id] = true
+	for _, entry := range notExist {
+		notExistMap[entry.MalID] = true
 	}
 
 	// Load overrides
@@ -451,7 +460,7 @@ func processMovies(config Config) {
 	}
 
 	var results []OutputMovie
-	var newNotExist []int
+	var newNotExist []NotFoundEntry
 
 	// Copy existing results
 	for _, movie := range existingOutput {
@@ -482,9 +491,9 @@ func processMovies(config Config) {
 			continue
 		}
 
-		if notExistMap[movie.TraktID] {
+		if notExistMap[movie.MalID] {
 			if config.Verbose {
-				fmt.Printf("Skipping non-existent movie: %s (Trakt ID: %d)\n", movie.Title, movie.TraktID)
+				fmt.Printf("Skipping non-existent movie: %s (MAL ID: %d)\n", movie.Title, movie.MalID)
 			}
 			continue
 		}
@@ -511,7 +520,10 @@ func processMovies(config Config) {
 				if config.Verbose {
 					fmt.Printf("Movie not found on Trakt: %d\n", traktID)
 				}
-				newNotExist = append(newNotExist, traktID)
+				newNotExist = append(newNotExist, NotFoundEntry{
+					MalID: movie.MalID,
+					Title: malTitle,
+				})
 				continue
 			}
 			log.Printf("Error fetching movie %d: %v", traktID, err)
