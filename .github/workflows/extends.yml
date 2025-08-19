@@ -61,7 +61,7 @@ jobs:
     - name: Process Trakt data
       run: |
         # Construct arguments for the Go application
-        ARGS="--api-key ${TRAKT_API_KEY} --verbose"
+        ARGS="--api-key ${TRAKT_API_KEY} --verbose --no-progress"
         if [[ "${{ github.event.inputs.force_update }}" == "true" ]]; then
           ARGS+=" --force"
         fi
