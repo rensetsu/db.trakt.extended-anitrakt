@@ -208,25 +208,24 @@ TRAKT_API_KEY=your_api_key_here
 7. **Save Results**: Outputs enriched data and updates not found lists
 
 ## Split Cour Detection Logic
-The application includes a mechanism to identify "split cour" anime, which are series that air in separate, non-consecutive broadcast seasons but are considered a single season on platforms like MyAnimeList (MAL). This situation often arises due to differing season grouping methodologies between MAL and other databases like The Movie Database (TMDB), which Trakt.tv often relies on for season data.
 
-###The is_split_cour Flag
+The `is_split_cour` flag helps resolve discrepancies between how MyAnimeList (MAL) and Trakt.tv handle anime seasons that have a broadcast break.
 
-To handle this discrepancy, the output includes the `is_split_cour` boolean flag:
+* `is_split_cour: false`: The season was found on Trakt.tv.
+* `is_split_cour: true`: The season was not found on Trakt.tv, likely because it is considered a "split cour." `season` will be nulled.
 
-* `is_split_cour: false`: This indicates that the season number from the input file was successfully found on Trakt.tv. The season object in the output will be populated with the relevant Trakt.tv season data.
-* `is_split_cour: true`: This value, along with a null `season` object, signifies that the specified season number does not exist on Trakt.tv for that particular show.
+This occurs because MAL may list a series with a mid-season break as two separate seasons, while TMDB/Trakt will list it as a single, continuous season if the episode numbering doesn't reset.
 
-### Why Discrepancies Occur
+When you encounter `is_split_cour: true`, it means the episodes for that "season" are likely included in the previous season's data on Trakt.tv. You should treat the show as a single, continuous season to maintain data consistency.
 
-The primary reason for this difference is how seasons are defined:
+### A Note on Episode Counts
 
-* MyAnimeList (MAL) often categorizes a series into a new season if there is a break of one or more broadcast seasons (a "cour") before the next batch of episodes airs. For example, a 24-episode series that airs 12 episodes in the spring and the remaining 12 in the fall might be listed on MAL as two separate seasons.
-* TMDB/Trakt.tv typically group episodes into a single season if the episode numbering is continuous. Using the same example, if the fall episodes are numbered 13-24, TMDB and Trakt will likely list this as a single 24-episode season.
+This mechanism only detects split cours, not discrepancies in episode counts. For example, some series may have a different number of episodes on MAL versus TMDB due to how minisodes are grouped and aired.
 
-### Practical Implications
+* Uchitama?! Have you seen my Tama?: [11 episodes](https://myanimelist.net/anime/39942) on MAL, [28](https://www.themoviedb.org/tv/96660/season/1) on TMDB.
+* The Disastrous Life of Saiki K. S1: [120 (minisodes)](https://myanimelist.net/anime/33255) on MAL, [24](https://www.themoviedb.org/tv/67676/season/1) on TMDB.
 
-When you encounter an entry with `is_split_cour: true`, it serves as an indicator that you may need to adjust your logic on your application to correctly handle the season data. For these entries, it is likely that the episodes from the "second cour" are included within the first season's data on Trakt.tv. You should treat the show as a single, continuous season with an episode offset, even if MAL lists it as multiple seasons, to avoid data inconsistencies.
+TMDB often splits a single broadcast episode into multiple "minisodes" if the original airdate contained multiple indexed segments. In contrast, MAL's episode count is generally lists episodes based on their initial broadcast date, meaning a single aired episode containing multiple "minisodes" is often counted as one episode.
 
 ## Error Handling
 
