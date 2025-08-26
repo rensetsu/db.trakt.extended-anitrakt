@@ -1,41 +1,15 @@
 # Extended Trakt Database for db.trakt.anitrakt
 
-An extended metadata of [db.trakt.anitrakt](https://github.com/rensetsu/db.trakt.extended-anitrakt) by iterating and calling Trakt.tv for extended metadata.
+An extended metadata of [db.trakt.anitrakt](https://github.com/rensetsu/db.trakt.extended-anitrakt)
+by iterating and calling Trakt.tv for extended metadata with some nice
+enhancements implemented.
 
 ## Overview
 
-The application takes JSON files containing anime titles with MAL IDs and Trakt IDs, then fetches additional metadata from Trakt.tv to create extended database files. This is particularly useful for applications that need both MAL and Trakt data for anime shows and movies.
-
-## Input File Schemas
-
-### TV Shows Input (`tv.json`)
-
-```typescript
-interface InputShow {
-  title: string;        // Anime title from MAL
-  mal_id: number;       // MyAnimeList ID
-  trakt_id: number;     // Trakt.tv ID
-  guessed_slug: string; // Trakt slug (URL identifier)
-  season: number;       // Season number for the anime
-  type: string;         // Content type ("shows")
-}
-
-type InputShowList = InputShow[];
-```
-
-### Movies Input (`movies.json`)
-
-```typescript
-interface InputMovie {
-  title: string;        // Anime movie title from MAL
-  mal_id: number;       // MyAnimeList ID
-  trakt_id: number;     // Trakt.tv ID
-  guessed_slug: string; // Trakt slug (URL identifier)
-  type: string;         // Content type ("movies")
-}
-
-type InputMovieList = InputMovie[];
-```
+The application takes JSON files containing anime titles with MAL IDs and Trakt
+IDs, then fetches additional metadata from Trakt.tv to create extended database
+files. This is particularly useful for applications that need both MAL and
+Trakt data for anime shows and movies.
 
 ## Output File Schemas
 
@@ -80,18 +54,23 @@ type OutputShowList = OutputShow[];
 ```typescript
 interface OutputMovie {
   myanimelist: {
-    title: string;         // MAL title
-    id: number;            // MAL ID
+    title: string;           // MAL title
+    id: number;              // MAL ID
   };
   trakt: {
-    title: string;         // Trakt title
-    id: number;            // Trakt ID
-    slug: string;          // Trakt slug
-    type: string;          // "movies"
-    release_year: number;  // Year of release
+    title: string;           // Trakt title
+    id: number;              // Trakt ID
+    slug: string;            // Trakt slug
+    type: string;            // "movies"
+    release_year: number;    // Year of release
     externals: {
-      tmdb: number | null; // TMDB ID
-      imdb: string | null; // IMDB ID
+      tmdb: number | null;   // TMDB ID
+      imdb: string | null;   // IMDB ID
+      letterboxd: {
+        slug: string | null; // Slug ID, used for hyperlink
+        lid: string | null;  // Letterboxd's ID, used for interacting with documented API 
+        uid: number | null;  // Internal int ID.
+      }
     };
   };
 }
@@ -128,32 +107,17 @@ type NotFoundList = NotFoundEntry[];
 ]
 ```
 
-## Override Files Schema
+## Overriding
 
-Override files allow manual correction of mappings when the automated process fails:
-
-### Override Structure (`override_tv.json`, `override_movies.json`)
-
-```typescript
-interface Override {
-  myanimelist: {
-    title: string;      // Correct MAL title
-    id: number;         // MAL ID
-  };
-  trakt: {
-    title: string;      // Correct Trakt title
-    id: number;         // Correct Trakt ID
-    type: string;       // "shows" or "movies"
-    season?: {          // For TV shows only
-      number: number;   // Correct season number
-    };
-  };
-}
-
-type OverrideList = Override[];
-```
+To override or adding missing relationship, please do it in main repo.
 
 ## Usage
+
+### Building
+
+1. Make sure Go is installed
+2. `go mod tidy`
+3. `go build`
 
 ### Command Line Options
 
@@ -209,23 +173,38 @@ TRAKT_API_KEY=your_api_key_here
 
 ## Split Cour Detection Logic
 
-The `is_split_cour` flag helps resolve discrepancies between how MyAnimeList (MAL) and Trakt.tv handle anime seasons that have a broadcast break.
+The `is_split_cour` flag helps resolve discrepancies between how MyAnimeList
+(MAL) and Trakt.tv handle anime seasons that have a broadcast break.
 
 * `is_split_cour: false`: The season was found on Trakt.tv.
-* `is_split_cour: true`: The season was not found on Trakt.tv, likely because it is considered a "split cour." `season` will be nulled.
+* `is_split_cour: true`: The season was not found on Trakt.tv, likely because
+  it is considered a "split cour." `season` will be nulled.
 
-This occurs because MAL may list a series with a mid-season break as two separate seasons, while TMDB/Trakt will list it as a single, continuous season if the episode numbering doesn't reset.
+This occurs because MAL may list a series with a mid-season break as two
+separate seasons, while TMDB/Trakt will list it as a single, continuous season
+if the episode numbering doesn't reset.
 
-When you encounter `is_split_cour: true`, it means the episodes for that "season" are likely included in the previous season's data on Trakt.tv. You should treat the show as a single, continuous season to maintain data consistency.
+When you encounter `is_split_cour: true`, it means the episodes for that
+"season" are likely included in the previous season's data on Trakt.tv. You
+should treat the show as a single, continuous season to maintain data
+consistency.
 
 ### A Note on Episode Counts
 
-This mechanism only detects split cours, not discrepancies in episode counts. For example, some series may have a different number of episodes on MAL versus TMDB due to how minisodes are grouped and aired.
+This mechanism only detects split cours, not discrepancies in episode counts.
+For example, some series may have a different number of episodes on MAL versus
+TMDB due to how minisodes are grouped and aired.
 
-* Uchitama?! Have you seen my Tama?: [11 episodes](https://myanimelist.net/anime/39942) on MAL, [28](https://www.themoviedb.org/tv/96660/season/1) on TMDB.
-* The Disastrous Life of Saiki K. S1: [120 (minisodes)](https://myanimelist.net/anime/33255) on MAL, [24](https://www.themoviedb.org/tv/67676/season/1) on TMDB.
+* Uchitama?! Have you seen my Tama?: [11 episodes](https://myanimelist.net/anime/39942)
+  on MAL, [28](https://www.themoviedb.org/tv/96660/season/1) on TMDB.
+* The Disastrous Life of Saiki K. S1: [120 (minisodes)](https://myanimelist.net/anime/33255)
+  on MAL, [24](https://www.themoviedb.org/tv/67676/season/1) on TMDB.
 
-TMDB often splits a single broadcast episode into multiple "minisodes" if the original airdate contained multiple indexed segments. In contrast, MAL's episode count is generally lists episodes based on their initial broadcast date, meaning a single aired episode containing multiple "minisodes" is often counted as one episode.
+TMDB often splits a single broadcast episode into multiple "minisodes" if the
+original airdate contained multiple indexed segments. In contrast, MAL's
+episode count is generally lists episodes based on their initial broadcast
+date, meaning a single aired episode containing multiple "minisodes" is often
+counted as one episode.
 
 ## Error Handling
 
@@ -236,9 +215,10 @@ TMDB often splits a single broadcast episode into multiple "minisodes" if the or
 ## Caching
 
 The application uses temporary file caching to avoid redundant API calls:
-- Show data cached in `/tmp/trakt_data/shows/`
-- Movie data cached in `/tmp/trakt_data/movies/`
-- Season data cached in `/tmp/trakt_data/seasons/`
+- Show: `/tmp/trakt_data/shows/`
+- Movie: `/tmp/trakt_data/movies/`
+- Season: `/tmp/trakt_data/seasons/`
+- Letterboxd API: `/tmp/trakt_data/letterboxd/`
 
 Cache is automatically cleaned up when the application exits successfully.
 
@@ -247,7 +227,6 @@ Cache is automatically cleaned up when the application exits successfully.
 - Input: `tv.json`, `movies.json`
 - Output: `tv_ex.json`, `movies_ex.json` (or custom name via `-output`)
 - Not Found: `not_exist_tv_ex.json`, `not_exist_movies_ex.json`
-- Overrides: `override_tv.json`, `override_movies.json`
 
 ## Build Requirements
 

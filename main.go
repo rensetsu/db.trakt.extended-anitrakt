@@ -37,26 +37,24 @@ type InputMovie struct {
 	Type        string `json:"type"`
 }
 
-// Override structure
-type Override struct {
-	MyAnimeList struct {
-		Title string `json:"title"`
-		ID    int `json:"id"`
-	} `json:"myanimelist"`
-	Trakt struct {
-		Title  string `json:"title"`
-		ID     int    `json:"id"`
-		Type   string `json:"type"`
-		Season *struct {
-			Number int `json:"number"`
-		} `json:"season,omitempty"`
-	} `json:"trakt"`
-}
-
 // NotFoundEntry structure for items not found on Trakt
 type NotFoundEntry struct {
 	MalID int    `json:"mal_id"`
 	Title string `json:"title"`
+}
+
+// Letterboxd API structure for JSON response
+type LetterboxdResponse struct {
+	ID   int    `json:"id"`
+	LID  string `json:"lid"`
+	Slug string `json:"slug"`
+}
+
+// Letterboxd structure for our output
+type Letterboxd struct {
+	Slug *string `json:"slug"`
+	UID  *int    `json:"uid"`
+	LID  *string `json:"lid"`
 }
 
 // Trakt API structures
@@ -70,11 +68,11 @@ type TraktExternals struct {
 type TraktShow struct {
 	Title string `json:"title"`
 	IDs   struct {
-		Trakt int    `json:"trakt"`
-		Slug  string `json:"slug"`
-		TVDB  *int   `json:"tvdb,omitempty"`
+		Trakt int     `json:"trakt"`
+		Slug  string  `json:"slug"`
+		TVDB  *int    `json:"tvdb,omitempty"`
 		IMDB  *string `json:"imdb,omitempty"`
-		TMDB  *int   `json:"tmdb,omitempty"`
+		TMDB  *int    `json:"tmdb,omitempty"`
 	} `json:"ids"`
 	Year int `json:"year"`
 }
@@ -108,14 +106,15 @@ type TraktExternalsShow struct {
 }
 
 type TraktExternalsSeason struct {
-	TVDB   *int    `json:"tvdb"`
-	TMDB   *int    `json:"tmdb"`
-	TVRage *int    `json:"tvrage"`
+	TVDB   *int `json:"tvdb"`
+	TMDB   *int `json:"tmdb"`
+	TVRage *int `json:"tvrage"`
 }
 
 type TraktExternalsMovie struct {
-	TMDB   *int    `json:"tmdb"`
-	IMDB   *string `json:"imdb"`
+	TMDB       *int        `json:"tmdb"`
+	IMDB       *string     `json:"imdb"`
+	Letterboxd *Letterboxd `json:"letterboxd,omitempty"`
 }
 
 // Output structures
@@ -125,11 +124,11 @@ type OutputShow struct {
 		ID    int    `json:"id"`
 	} `json:"myanimelist"`
 	Trakt struct {
-		Title    string  `json:"title"`
-		ID       int     `json:"id"`
-		Slug     string  `json:"slug"`
-		Type     string  `json:"type"`
-		Season   *struct {
+		Title  string `json:"title"`
+		ID     int    `json:"id"`
+		Slug   string `json:"slug"`
+		Type   string `json:"type"`
+		Season *struct {
 			ID        int                   `json:"id"`
 			Number    int                   `json:"number"`
 			Externals *TraktExternalsSeason `json:"externals"`
@@ -143,31 +142,32 @@ type OutputShow struct {
 type OutputMovie struct {
 	MyAnimeList struct {
 		Title string `json:"title"`
-		ID int `json:"id"`
+		ID    int    `json:"id"`
 	} `json:"myanimelist"`
 	Trakt struct {
 		Title string `json:"title"`
-		ID   int    `json:"id"`
-		Slug string `json:"slug"`
-		Type string `json:"type"`
+		ID    int    `json:"id"`
+		Slug  string `json:"slug"`
+		Type  string `json:"type"`
 	} `json:"trakt"`
 	ReleaseYear int                  `json:"release_year"`
 	Externals   *TraktExternalsMovie `json:"externals"`
 }
 
 type Config struct {
-	APIKey      string
-	TvFile      string
-	MovieFile   string
-	OutputFile  string
-	Verbose     bool
-	NoProgress  bool
-	TempDir     string
+	APIKey     string
+	TvFile     string
+	MovieFile  string
+	OutputFile string
+	Verbose    bool
+	NoProgress bool
+	TempDir    string
+	Force      bool
 }
 
 func main() {
 	config := parseFlags()
-	
+
 	if err := godotenv.Load(); err != nil && config.Verbose {
 		fmt.Println("No .env file found, using environment variables")
 	}
@@ -185,6 +185,7 @@ func main() {
 	os.MkdirAll(filepath.Join(config.TempDir, "shows"), 0755)
 	os.MkdirAll(filepath.Join(config.TempDir, "movies"), 0755)
 	os.MkdirAll(filepath.Join(config.TempDir, "seasons"), 0755)
+	os.MkdirAll(filepath.Join(config.TempDir, "letterboxd"), 0755)
 
 	// Create progress marker
 	progressFile := filepath.Join(os.TempDir(), ".progress")
@@ -211,6 +212,7 @@ func parseFlags() Config {
 	flag.StringVar(&config.OutputFile, "output", "", "Output file path")
 	flag.BoolVar(&config.Verbose, "verbose", false, "Verbose output")
 	flag.BoolVar(&config.NoProgress, "no-progress", false, "Disable progress bar")
+	flag.BoolVar(&config.Force, "force", false, "Force update all entries, ignoring cache")
 	flag.Parse()
 	return config
 }
@@ -229,7 +231,6 @@ func processShows(config Config) {
 	var shows []InputShow
 	loadJSON(config.TvFile, &shows)
 
-	// Load existing output to skip processed items
 	outputFile := config.OutputFile
 	if outputFile == "" {
 		outputFile = strings.TrimSuffix(config.TvFile, ".json") + "_ex.json"
@@ -237,190 +238,44 @@ func processShows(config Config) {
 
 	var existingOutput []OutputShow
 	loadJSONOptional(outputFile, &existingOutput)
-	
-	// Load not exist list
-	notExistFile := "not_exist_" + filepath.Base(outputFile)
-	var notExist []NotFoundEntry
-	loadJSONOptional(notExistFile, &notExist)
-	notExistMap := make(map[int]bool)
-	for _, entry := range notExist {
-		notExistMap[entry.MalID] = true
+
+	notExistMap := loadNotFound(outputFile)
+
+	resultsMap := make(map[int]OutputShow)
+	if !config.Force {
+		for _, show := range existingOutput {
+			resultsMap[show.MyAnimeList.ID] = show
+		}
 	}
 
-	// Load overrides
-	overrideFile := "override_" + filepath.Base(config.TvFile)
-	var overrides []Override
-	loadJSONOptional(overrideFile, &overrides)
-	overrideMap := make(map[int]Override)
-	for _, override := range overrides {
-		overrideMap[override.Trakt.ID] = override
-	}
-
-	existingMap := make(map[int]OutputShow)
-	for _, show := range existingOutput {
-		existingMap[show.MyAnimeList.ID] = show
-	}
-
-	var results []OutputShow
 	var newNotExist []NotFoundEntry
-
-	// Copy existing results
-	for _, show := range existingOutput {
-		results = append(results, show)
-	}
-
-	var bar *progressbar.ProgressBar
-	if !config.NoProgress {
-		bar = progressbar.NewOptions(len(shows),
-			progressbar.OptionSetDescription("Processing shows"),
-			progressbar.OptionShowCount(),
-			progressbar.OptionSetPredictTime(true),
-			progressbar.OptionClearOnFinish(),
-		)
-	}
-
+	bar := setupProgressBar(len(shows), "Processing shows", config.NoProgress)
 	client := &http.Client{Timeout: 30 * time.Second}
 
 	for _, show := range shows {
-		if !config.NoProgress {
-			bar.Add(1)
-		}
+		bar.Add(1)
 
-		if _, exists := existingMap[show.MalID]; exists {
-			if config.Verbose {
-				fmt.Printf("Skipping already processed show: %s (MAL ID: %d)\n", show.Title, show.MalID)
-			}
+		if shouldSkipShow(show, resultsMap, notExistMap, config) {
 			continue
 		}
 
-		if notExistMap[show.MalID] {
-			if config.Verbose {
-				fmt.Printf("Skipping non-existent show: %s (MAL ID: %d)\n", show.Title, show.MalID)
-			}
-			continue
-		}
-
-		var traktID int
-		var seasonNum int
-		var malTitle, traktTitle string
-
-		if override, hasOverride := overrideMap[show.TraktID]; hasOverride {
-			traktID = override.Trakt.ID
-			malTitle = override.MyAnimeList.Title
-			traktTitle = override.Trakt.Title
-			if override.Trakt.Season != nil {
-				seasonNum = override.Trakt.Season.Number
-			} else {
-				seasonNum = show.Season
-			}
-		} else {
-			traktID = show.TraktID
-			seasonNum = show.Season
-			malTitle = show.Title
-		}
-
-		if config.Verbose {
-			fmt.Printf("\nProcessing show: %s (MAL ID: %d, Trakt ID: %d)", malTitle, show.MalID, traktID)
-		}
-
-		traktShow, err := fetchTraktShow(client, config, traktID)
+		outputShow, err := getShowData(client, config, show)
 		if err != nil {
 			if strings.Contains(err.Error(), "404") {
-				if config.Verbose {
-					fmt.Printf("Show not found on Trakt: %d\n", traktID)
-				}
-				newNotExist = append(newNotExist, NotFoundEntry{
-					MalID: show.MalID,
-					Title: malTitle,
-				})
-				continue
+				newNotExist = append(newNotExist, NotFoundEntry{MalID: show.MalID, Title: show.Title})
+			} else {
+				log.Printf("Error processing show %d: %v", show.MalID, err)
 			}
-			log.Printf("Error fetching show %d: %v", traktID, err)
 			continue
 		}
-
-		if traktTitle == "" {
-			traktTitle = traktShow.Title
-		}
-
-		outputShow := OutputShow{
-			MyAnimeList: struct {
-				Title string `json:"title"`
-				ID    int `json:"id"`
-			}{
-				Title: malTitle,
-				ID: show.MalID,
-			},
-			Trakt: struct {
-				Title    string  `json:"title"`
-				ID       int     `json:"id"`
-				Slug     string  `json:"slug"`
-				Type     string  `json:"type"`
-				Season   *struct {
-					ID        int             `json:"id"`
-					Number    int             `json:"number"`
-					Externals *TraktExternalsSeason `json:"externals"`
-				} `json:"season"`
-				IsSplitCour bool `json:"is_split_cour"`
-			}{
-				Title: traktTitle,
-				ID:    traktShow.IDs.Trakt,
-				Slug:  traktShow.IDs.Slug,
-				Type:  "shows",
-			},
-			ReleaseYear: traktShow.Year,
-			Externals: &TraktExternalsShow{
-				TVDB:   traktShow.IDs.TVDB,
-				TMDB:   traktShow.IDs.TMDB,
-				IMDB:   traktShow.IDs.IMDB,
-				TVRage: nil,
-			},
-		}
-
-		// Fetch season info
-		season, err := fetchTraktSeason(client, config, traktID, seasonNum)
-		if err != nil {
-			if config.Verbose {
-				fmt.Printf("Season %d not found for show %d, marking as split cour\n", seasonNum, traktID)
-			}
-			outputShow.Trakt.IsSplitCour = true
-			outputShow.Trakt.Season = nil
-		} else {
-			outputShow.Trakt.IsSplitCour = false
-			outputShow.Trakt.Season = &struct {
-				ID        int             `json:"id"`
-				Number    int             `json:"number"`
-				Externals *TraktExternalsSeason `json:"externals"`
-			}{
-				ID:     season.IDs.Trakt,
-				Number: season.Number,
-				Externals: &TraktExternalsSeason{
-					TVDB:   season.IDs.TVDB,
-					TMDB:   season.IDs.TMDB,
-					TVRage: season.IDs.TVRage,
-				},
-			}
-		}
-
-		results = append(results, outputShow)
+		resultsMap[show.MalID] = *outputShow
 	}
 
-	// Sort by MAL ID
-	sort.Slice(results, func(i, j int) bool {
-		return results[i].MyAnimeList.ID < results[j].MyAnimeList.ID
-	})
-
-	// Save results
-	saveJSON(outputFile, results)
-
-	// Save not exist list
-	if len(newNotExist) > 0 {
-		allNotExist := append(notExist, newNotExist...)
-		saveJSON(notExistFile, allNotExist)
-	}
+	saveResults(outputFile, resultsMap)
+	saveNotFound(outputFile, newNotExist, notExistMap)
 
 	if config.Verbose {
-		fmt.Printf("Processed %d shows, saved to %s\n", len(results), outputFile)
+		fmt.Printf("\nProcessed %d shows, saved to %s\n", len(resultsMap), outputFile)
 	}
 }
 
@@ -436,7 +291,62 @@ func processMovies(config Config) {
 	var existingOutput []OutputMovie
 	loadJSONOptional(outputFile, &existingOutput)
 
-	// Load not exist list
+	notExistMap := loadNotFound(outputFile)
+
+	resultsMap := make(map[int]OutputMovie)
+	if !config.Force {
+		for _, movie := range existingOutput {
+			resultsMap[movie.MyAnimeList.ID] = movie
+		}
+	}
+
+	var newNotExist []NotFoundEntry
+	bar := setupProgressBar(len(movies), "Processing movies", config.NoProgress)
+	client := &http.Client{Timeout: 30 * time.Second}
+
+	for _, movie := range movies {
+		bar.Add(1)
+
+		if shouldSkipMovie(movie, resultsMap, notExistMap, config) {
+			continue
+		}
+
+		outputMovie, err := getMovieData(client, config, movie, resultsMap)
+		if err != nil {
+			if strings.Contains(err.Error(), "404") {
+				newNotExist = append(newNotExist, NotFoundEntry{MalID: movie.MalID, Title: movie.Title})
+			} else {
+				log.Printf("Error processing movie %d: %v", movie.MalID, err)
+			}
+			continue
+		}
+
+		updateLetterboxdInfo(client, config, outputMovie)
+		resultsMap[movie.MalID] = *outputMovie
+	}
+
+	saveMovieResults(outputFile, resultsMap)
+	saveNotFound(outputFile, newNotExist, notExistMap)
+
+	if config.Verbose {
+		fmt.Printf("\nProcessed %d movies, saved to %s\n", len(resultsMap), outputFile)
+	}
+}
+
+// Helper functions for processing
+func setupProgressBar(total int, description string, noProgress bool) *progressbar.ProgressBar {
+	if noProgress {
+		return progressbar.New(0) // Dummy progress bar
+	}
+	return progressbar.NewOptions(total,
+		progressbar.OptionSetDescription(description),
+		progressbar.OptionShowCount(),
+		progressbar.OptionSetPredictTime(true),
+		progressbar.OptionClearOnFinish(),
+	)
+}
+
+func loadNotFound(outputFile string) map[int]bool {
 	notExistFile := "not_exist_" + filepath.Base(outputFile)
 	var notExist []NotFoundEntry
 	loadJSONOptional(notExistFile, &notExist)
@@ -444,166 +354,319 @@ func processMovies(config Config) {
 	for _, entry := range notExist {
 		notExistMap[entry.MalID] = true
 	}
+	return notExistMap
+}
 
-	// Load overrides
-	overrideFile := "override_" + filepath.Base(config.MovieFile)
-	var overrides []Override
-	loadJSONOptional(overrideFile, &overrides)
-	overrideMap := make(map[int]Override)
-	for _, override := range overrides {
-		overrideMap[override.Trakt.ID] = override
-	}
-
-	existingMap := make(map[int]OutputMovie)
-	for _, movie := range existingOutput {
-		existingMap[movie.MyAnimeList.ID] = movie
-	}
-
-	var results []OutputMovie
-	var newNotExist []NotFoundEntry
-
-	// Copy existing results
-	for _, movie := range existingOutput {
-		results = append(results, movie)
-	}
-
-	var bar *progressbar.ProgressBar
-	if !config.NoProgress {
-		bar = progressbar.NewOptions(len(movies),
-			progressbar.OptionSetDescription("Processing movies"),
-			progressbar.OptionShowCount(),
-			progressbar.OptionSetPredictTime(true),
-			progressbar.OptionClearOnFinish(),
-		)
-	}
-
-	client := &http.Client{Timeout: 30 * time.Second}
-
-	for _, movie := range movies {
-		if !config.NoProgress {
-			bar.Add(1)
-		}
-
-		if _, exists := existingMap[movie.MalID]; exists {
-			if config.Verbose {
-				fmt.Printf("Skipping already processed movie: %s (MAL ID: %d)\n", movie.Title, movie.MalID)
-			}
-			continue
-		}
-
-		if notExistMap[movie.MalID] {
-			if config.Verbose {
-				fmt.Printf("Skipping non-existent movie: %s (MAL ID: %d)\n", movie.Title, movie.MalID)
-			}
-			continue
-		}
-
-		var traktID int
-		var malTitle, traktTitle string
-
-		if override, hasOverride := overrideMap[movie.TraktID]; hasOverride {
-			traktID = override.Trakt.ID
-			malTitle = override.MyAnimeList.Title
-			traktTitle = override.Trakt.Title
-		} else {
-			traktID = movie.TraktID
-			malTitle = movie.Title
-		}
-
+func shouldSkipShow(show InputShow, resultsMap map[int]OutputShow, notExistMap map[int]bool, config Config) bool {
+	if _, exists := resultsMap[show.MalID]; exists && !config.Force {
 		if config.Verbose {
-			fmt.Printf("\nProcessing movie: %s (MAL ID: %d, Trakt ID: %d)", malTitle, movie.MalID, traktID)
+			fmt.Printf("\nSkipping already processed show: %s (MAL ID: %d)", show.Title, show.MalID)
 		}
-
-		traktMovie, err := fetchTraktMovie(client, config, traktID)
-		if err != nil {
-			if strings.Contains(err.Error(), "404") {
-				if config.Verbose {
-					fmt.Printf("Movie not found on Trakt: %d\n", traktID)
-				}
-				newNotExist = append(newNotExist, NotFoundEntry{
-					MalID: movie.MalID,
-					Title: malTitle,
-				})
-				continue
-			}
-			log.Printf("Error fetching movie %d: %v", traktID, err)
-			continue
+		return true
+	}
+	if notExistMap[show.MalID] {
+		if config.Verbose {
+			fmt.Printf("\nSkipping non-existent show: %s (MAL ID: %d)", show.Title, show.MalID)
 		}
+		return true
+	}
+	return false
+}
 
-		if traktTitle == "" {
-			traktTitle = traktMovie.Title
+func shouldSkipMovie(movie InputMovie, resultsMap map[int]OutputMovie, notExistMap map[int]bool, config Config) bool {
+	if notExistMap[movie.MalID] {
+		if config.Verbose {
+			fmt.Printf("\nSkipping non-existent movie: %s (MAL ID: %d)", movie.Title, movie.MalID)
 		}
+		return true
+	}
+	return false
+}
 
-		outputMovie := OutputMovie{
-			MyAnimeList: struct {
-				Title string `json:"title"`
-				ID    int `json:"id"`
-			}{
-				Title: malTitle,
-				ID: movie.MalID,
-			},
-			Trakt: struct {
-				Title string `json:"title"`
-				ID   int    `json:"id"`
-				Slug string `json:"slug"`
-				Type string `json:"type"`
-			}{
-				Title: traktTitle,
-				ID:    traktMovie.IDs.Trakt,
-				Slug:  traktMovie.IDs.Slug,
-				Type:  "movies",
-			},
-			ReleaseYear: traktMovie.Year,
-			Externals: &TraktExternalsMovie{
-				TMDB: traktMovie.IDs.TMDB,
-				IMDB: traktMovie.IDs.IMDB,
-			},
-		}
+func getShowData(client *http.Client, config Config, show InputShow) (*OutputShow, error) {
+	traktID := show.TraktID
+	seasonNum := show.Season
+	malTitle := show.Title
 
-		results = append(results, outputMovie)
+	if config.Verbose {
+		fmt.Printf("\nProcessing show: %s (MAL ID: %d, Trakt ID: %d)", malTitle, show.MalID, traktID)
 	}
 
-	// Sort by MAL ID
+	traktShow, err := fetchTraktShow(client, config, traktID)
+	if err != nil {
+		return nil, err
+	}
+
+	outputShow := &OutputShow{
+		MyAnimeList: struct {
+			Title string `json:"title"`
+			ID    int    `json:"id"`
+		}{Title: malTitle, ID: show.MalID},
+		Trakt: struct {
+			Title  string `json:"title"`
+			ID     int    `json:"id"`
+			Slug   string `json:"slug"`
+			Type   string `json:"type"`
+			Season *struct {
+				ID        int                   `json:"id"`
+				Number    int                   `json:"number"`
+				Externals *TraktExternalsSeason `json:"externals"`
+			} `json:"season"`
+			IsSplitCour bool `json:"is_split_cour"`
+		}{Title: traktShow.Title, ID: traktShow.IDs.Trakt, Slug: traktShow.IDs.Slug, Type: "shows"},
+		ReleaseYear: traktShow.Year,
+		Externals:   &TraktExternalsShow{TVDB: traktShow.IDs.TVDB, TMDB: traktShow.IDs.TMDB, IMDB: traktShow.IDs.IMDB},
+	}
+
+	updateSeasonInfo(client, config, outputShow, traktID, seasonNum)
+	return outputShow, nil
+}
+
+func getMovieData(client *http.Client, config Config, movie InputMovie, resultsMap map[int]OutputMovie) (*OutputMovie, error) {
+	if outputMovie, exists := resultsMap[movie.MalID]; exists && !config.Force {
+		if config.Verbose {
+			fmt.Printf("\nUsing existing data for %s (MAL ID: %d)", movie.Title, movie.MalID)
+		}
+		return &outputMovie, nil
+	}
+
+	traktID := movie.TraktID
+	malTitle := movie.Title
+
+	if config.Verbose {
+		fmt.Printf("\nProcessing new/forced movie: %s (MAL ID: %d, Trakt ID: %d)", malTitle, movie.MalID, traktID)
+	}
+
+	traktMovie, err := fetchTraktMovie(client, config, traktID)
+	if err != nil {
+		return nil, err
+	}
+
+	return &OutputMovie{
+		MyAnimeList: struct {
+			Title string `json:"title"`
+			ID    int    `json:"id"`
+		}{Title: malTitle, ID: movie.MalID},
+		Trakt: struct {
+			Title string `json:"title"`
+			ID    int    `json:"id"`
+			Slug  string `json:"slug"`
+			Type  string `json:"type"`
+		}{Title: traktMovie.Title, ID: traktMovie.IDs.Trakt, Slug: traktMovie.IDs.Slug, Type: "movies"},
+		ReleaseYear: traktMovie.Year,
+		Externals: &TraktExternalsMovie{
+			TMDB: traktMovie.IDs.TMDB,
+			IMDB: traktMovie.IDs.IMDB,
+		},
+	}, nil
+}
+
+func updateSeasonInfo(client *http.Client, config Config, outputShow *OutputShow, traktID, seasonNum int) {
+	season, err := fetchTraktSeason(client, config, traktID, seasonNum)
+	if err != nil {
+		if config.Verbose {
+			fmt.Printf("... season %d not found, marking as split cour", seasonNum)
+		}
+		outputShow.Trakt.IsSplitCour = true
+		outputShow.Trakt.Season = nil
+		return
+	}
+
+	outputShow.Trakt.IsSplitCour = false
+	outputShow.Trakt.Season = &struct {
+		ID        int                   `json:"id"`
+		Number    int                   `json:"number"`
+		Externals *TraktExternalsSeason `json:"externals"`
+	}{
+		ID:     season.IDs.Trakt,
+		Number: season.Number,
+		Externals: &TraktExternalsSeason{
+			TVDB:   season.IDs.TVDB,
+			TMDB:   season.IDs.TMDB,
+			TVRage: season.IDs.TVRage,
+		},
+	}
+}
+
+func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *OutputMovie) {
+	if outputMovie.Externals != nil && (outputMovie.Externals.Letterboxd == nil || outputMovie.Externals.Letterboxd.Slug == nil) {
+		if config.Verbose {
+			fmt.Printf("\n    - checking for Letterboxd info...")
+		}
+
+		if tmdbID := outputMovie.Externals.TMDB; tmdbID != nil {
+			letterboxdInfo, err := fetchLetterboxdInfo(client, config, *tmdbID)
+			if err != nil {
+				if config.Verbose {
+					fmt.Printf("\n    - Could not fetch Letterboxd info for TMDB ID %d: %v", *tmdbID, err)
+				}
+			} else {
+				outputMovie.Externals.Letterboxd = letterboxdInfo
+				if config.Verbose {
+					fmt.Printf("\n    - success!")
+				}
+			}
+		} else if config.Verbose {
+			fmt.Printf("\n    - no TMDB ID available.")
+		}
+	} else if config.Verbose {
+		fmt.Printf("\n    - Letterboxd info already present.")
+	}
+}
+
+func saveResults(outputFile string, resultsMap map[int]OutputShow) {
+	var results []OutputShow
+	for _, show := range resultsMap {
+		results = append(results, show)
+	}
 	sort.Slice(results, func(i, j int) bool {
 		return results[i].MyAnimeList.ID < results[j].MyAnimeList.ID
 	})
-
-	// Save results
 	saveJSON(outputFile, results)
+}
 
-	// Save not exist list
+func saveMovieResults(outputFile string, resultsMap map[int]OutputMovie) {
+	var results []OutputMovie
+	for _, movie := range resultsMap {
+		results = append(results, movie)
+	}
+	sort.Slice(results, func(i, j int) bool {
+		return results[i].MyAnimeList.ID < results[j].MyAnimeList.ID
+	})
+	saveJSON(outputFile, results)
+}
+
+func saveNotFound(outputFile string, newNotExist []NotFoundEntry, notExistMap map[int]bool) {
 	if len(newNotExist) > 0 {
-		allNotExist := append(notExist, newNotExist...)
-		saveJSON(notExistFile, allNotExist)
+		notExistFile := "not_exist_" + filepath.Base(outputFile)
+		var existingNotExist []NotFoundEntry
+		loadJSONOptional(notExistFile, &existingNotExist)
+		for _, entry := range newNotExist {
+			if !notExistMap[entry.MalID] {
+				existingNotExist = append(existingNotExist, entry)
+			}
+		}
+		saveJSON(notExistFile, existingNotExist)
+	}
+}
+
+func fetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Letterboxd, error) {
+	cacheFile := filepath.Join(config.TempDir, "letterboxd", fmt.Sprintf("%d.json", tmdbID))
+	if data, err := os.ReadFile(cacheFile); err == nil && !config.Force {
+		var lb Letterboxd
+		if json.Unmarshal(data, &lb) == nil {
+			if config.Verbose {
+				fmt.Printf("\n    - using cached Letterboxd data")
+			}
+			return &lb, nil
+		}
 	}
 
-	if config.Verbose {
-		fmt.Printf("Processed %d movies, saved to %s\n", len(results), outputFile)
+	// Step 1: Get Slug from redirect
+	var slug string
+	redirectURL := fmt.Sprintf("https://letterboxd.com/tmdb/%d/", tmdbID)
+
+	noRedirectClient := &http.Client{
+		CheckRedirect: func(req *http.Request, via []*http.Request) error {
+			return http.ErrUseLastResponse
+		},
+		Timeout: 15 * time.Second,
 	}
+
+	req, err := http.NewRequest("GET", redirectURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+
+	resp, err := noRedirectClient.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode >= 300 && resp.StatusCode < 400 {
+		location, err := resp.Location()
+		if err != nil {
+			return nil, err
+		}
+		pathParts := strings.Split(strings.Trim(location.Path, "/"), "/")
+		if len(pathParts) >= 2 && pathParts[0] == "film" {
+			slug = pathParts[1]
+		} else {
+			return nil, fmt.Errorf("\n    - could not parse slug from redirect location: %s", location.Path)
+		}
+	} else {
+		return nil, fmt.Errorf("\n    - expected redirect, but got status %d", resp.StatusCode)
+	}
+
+	if slug == "" {
+		return nil, fmt.Errorf("failed to extract slug")
+	}
+
+	// Step 2: Get JSON data using the slug
+	time.Sleep(500 * time.Millisecond)
+	jsonURL := fmt.Sprintf("https://letterboxd.com/film/%s/json/", slug)
+	req, err = http.NewRequest("GET", jsonURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+
+	resp, err = client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		return nil, fmt.Errorf("\n    - failed to fetch letterboxd json, status: %d", resp.StatusCode)
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	var lbResponse LetterboxdResponse
+	if err := json.Unmarshal(body, &lbResponse); err != nil {
+		return nil, err
+	}
+
+	slugPtr := slug
+	uidPtr := lbResponse.ID
+	lidPtr := lbResponse.LID
+
+	letterboxdInfo := &Letterboxd{
+		Slug: &slugPtr,
+		UID:  &uidPtr,
+		LID:  &lidPtr,
+	}
+
+	saveJSON(cacheFile, letterboxdInfo)
+	time.Sleep(500 * time.Millisecond)
+
+	return letterboxdInfo, nil
 }
 
 func fetchTraktShow(client *http.Client, config Config, showID int) (*TraktShow, error) {
 	cacheFile := filepath.Join(config.TempDir, "shows", fmt.Sprintf("%d.json", showID))
-	
-	// Check cache first
-	if data, err := os.ReadFile(cacheFile); err == nil {
+	if data, err := os.ReadFile(cacheFile); err == nil && !config.Force {
 		var show TraktShow
 		if json.Unmarshal(data, &show) == nil {
 			if config.Verbose {
-				fmt.Printf("Using cached data for show %d\n", showID)
+				fmt.Printf("\n    - using cached Trakt show data")
 			}
 			return &show, nil
 		}
 	}
 
 	if config.Verbose {
-		fmt.Printf("Fetching show %d from Trakt API\n", showID)
+		fmt.Printf("\n    - fetching show %d from Trakt API", showID)
 	}
-
-	// Rate limit: wait 0.5 seconds between requests
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/shows/%d", showID)
+	url := fmt.Sprintf("https://api.trakt.tv/shows/%d?extended=full", showID)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
@@ -620,11 +683,10 @@ func fetchTraktShow(client *http.Client, config Config, showID int) (*TraktShow,
 	defer resp.Body.Close()
 
 	if resp.StatusCode == 404 {
-		return nil, fmt.Errorf("show not found: 404")
+		return nil, fmt.Errorf("\n    - show not found: 404")
 	}
-
 	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("API error: %d", resp.StatusCode)
+		return nil, fmt.Errorf("\n    - API error: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
@@ -637,34 +699,28 @@ func fetchTraktShow(client *http.Client, config Config, showID int) (*TraktShow,
 		return nil, err
 	}
 
-	// Cache the result
 	os.WriteFile(cacheFile, body, 0644)
-
 	return &show, nil
 }
 
 func fetchTraktMovie(client *http.Client, config Config, movieID int) (*TraktMovie, error) {
 	cacheFile := filepath.Join(config.TempDir, "movies", fmt.Sprintf("%d.json", movieID))
-	
-	// Check cache first
-	if data, err := os.ReadFile(cacheFile); err == nil {
+	if data, err := os.ReadFile(cacheFile); err == nil && !config.Force {
 		var movie TraktMovie
 		if json.Unmarshal(data, &movie) == nil {
 			if config.Verbose {
-				fmt.Printf("Using cached data for movie %d\n", movieID)
+				fmt.Printf("\n    - using cached Trakt movie data")
 			}
 			return &movie, nil
 		}
 	}
 
 	if config.Verbose {
-		fmt.Printf("Fetching movie %d from Trakt API\n", movieID)
+		fmt.Printf("\n    - fetching movie %d from Trakt API", movieID)
 	}
-
-	// Rate limit: wait 0.5 seconds between requests
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/movies/%d", movieID)
+	url := fmt.Sprintf("https://api.trakt.tv/movies/%d?extended=full", movieID)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
@@ -681,11 +737,10 @@ func fetchTraktMovie(client *http.Client, config Config, movieID int) (*TraktMov
 	defer resp.Body.Close()
 
 	if resp.StatusCode == 404 {
-		return nil, fmt.Errorf("movie not found: 404")
+		return nil, fmt.Errorf("\n    - movie not found: 404")
 	}
-
 	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("API error: %d", resp.StatusCode)
+		return nil, fmt.Errorf("\n    - API error: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
@@ -698,23 +753,19 @@ func fetchTraktMovie(client *http.Client, config Config, movieID int) (*TraktMov
 		return nil, err
 	}
 
-	// Cache the result
 	os.WriteFile(cacheFile, body, 0644)
-
 	return &movie, nil
 }
 
 func fetchTraktSeason(client *http.Client, config Config, showID, seasonNum int) (*TraktSeason, error) {
 	cacheFile := filepath.Join(config.TempDir, "seasons", fmt.Sprintf("%d.json", showID))
-	
-	// Check cache first
-	if data, err := os.ReadFile(cacheFile); err == nil {
+	if data, err := os.ReadFile(cacheFile); err == nil && !config.Force {
 		var seasons []TraktSeason
 		if json.Unmarshal(data, &seasons) == nil {
 			for _, season := range seasons {
 				if season.Number == seasonNum {
 					if config.Verbose {
-						fmt.Printf("Using cached data for show %d season %d\n", showID, seasonNum)
+						fmt.Printf("\n        - using cached Trakt season data")
 					}
 					return &season, nil
 				}
@@ -723,13 +774,11 @@ func fetchTraktSeason(client *http.Client, config Config, showID, seasonNum int)
 	}
 
 	if config.Verbose {
-		fmt.Printf("Fetching seasons for show %d from Trakt API\n", showID)
+		fmt.Printf("\n        - fetching seasons for show %d from Trakt API", showID)
 	}
-
-	// Rate limit: wait 0.5 seconds between requests
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/shows/%d/seasons", showID)
+	url := fmt.Sprintf("https://api.trakt.tv/shows/%d/seasons?extended=full", showID)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
@@ -746,11 +795,10 @@ func fetchTraktSeason(client *http.Client, config Config, showID, seasonNum int)
 	defer resp.Body.Close()
 
 	if resp.StatusCode == 404 {
-		return nil, fmt.Errorf("seasons not found: 404")
+		return nil, fmt.Errorf("\n        - seasons not found: 404")
 	}
-
 	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("API error: %d", resp.StatusCode)
+		return nil, fmt.Errorf("\n        - API error: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
@@ -763,46 +811,64 @@ func fetchTraktSeason(client *http.Client, config Config, showID, seasonNum int)
 		return nil, err
 	}
 
-	// Cache the result
 	os.WriteFile(cacheFile, body, 0644)
 
-	// Find the requested season
 	for _, season := range seasons {
 		if season.Number == seasonNum {
 			return &season, nil
 		}
 	}
 
-	return nil, fmt.Errorf("season %d not found", seasonNum)
+	return nil, fmt.Errorf("\n        - season %d not found", seasonNum)
 }
 
 func loadJSON(filename string, v interface{}) {
-	data, err := os.ReadFile(filename)
+	file, err := os.Open(filename)
+	if err != nil {
+		log.Fatalf("Failed to open file %s: %v", filename, err)
+	}
+	defer file.Close()
+
+	bytes, err := io.ReadAll(file)
 	if err != nil {
 		log.Fatalf("Failed to read file %s: %v", filename, err)
 	}
 
-	if err := json.Unmarshal(data, v); err != nil {
-		log.Fatalf("Failed to parse JSON from %s: %v", filename, err)
+	if err := json.Unmarshal(bytes, v); err != nil {
+		log.Fatalf("Failed to unmarshal JSON from %s: %v", filename, err)
 	}
 }
 
 func loadJSONOptional(filename string, v interface{}) {
-	data, err := os.ReadFile(filename)
-	if err != nil {
-		return // File doesn't exist, that's okay
+	if _, err := os.Stat(filename); os.IsNotExist(err) {
+		return
 	}
 
-	json.Unmarshal(data, v) // Ignore errors for optional files
+	file, err := os.Open(filename)
+	if err != nil {
+		log.Printf("Warning: Failed to open optional file %s: %v", filename, err)
+		return
+	}
+	defer file.Close()
+
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		log.Printf("Warning: Failed to read optional file %s: %v", filename, err)
+		return
+	}
+
+	if err := json.Unmarshal(bytes, v); err != nil {
+		log.Printf("Warning: Failed to unmarshal JSON from optional file %s: %v", filename, err)
+	}
 }
 
 func saveJSON(filename string, v interface{}) {
-	data, err := json.Marshal(v)
+	bytes, err := json.MarshalIndent(v, "", "  ")
 	if err != nil {
-		log.Fatalf("Failed to marshal JSON: %v", err)
+		log.Fatalf("Failed to marshal data for %s: %v", filename, err)
 	}
 
-	if err := os.WriteFile(filename, data, 0644); err != nil {
-		log.Fatalf("Failed to write file %s: %v", filename, err)
+	if err := os.WriteFile(filename, bytes, 0644); err != nil {
+		log.Fatalf("Failed to write to file %s: %v", filename, err)
 	}
 }
