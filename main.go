@@ -114,7 +114,7 @@ type TraktExternalsSeason struct {
 type TraktExternalsMovie struct {
 	TMDB       *int        `json:"tmdb"`
 	IMDB       *string     `json:"imdb"`
-	Letterboxd *Letterboxd `json:"letterboxd,omitempty"`
+	Letterboxd *Letterboxd `json:"letterboxd"`
 }
 
 // Output structures
