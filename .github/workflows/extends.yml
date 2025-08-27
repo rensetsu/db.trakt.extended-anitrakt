@@ -61,7 +61,11 @@ jobs:
       run: |
         # Construct arguments for the Go application
         ARGS="--api-key ${TRAKT_API_KEY} --verbose --no-progress"
-        if [[ "${{ github.event.inputs.force_update }}" == "true" ]]; then
+        DAY_OF_MONTH=$(date +%d)
+
+        # Force update on the first and third Friday of the month, or if manually triggered
+        if [[ ${{ github.event.inputs.force_update }} == true ]] || \
+           [[ "${{ github.event_name }}" == "schedule" && ( ( $DAY_OF_MONTH -ge 1 && $DAY_OF_MONTH -le 7 ) || ( $DAY_OF_MONTH -ge 15 && $DAY_OF_MONTH -le 21 ) ) ]]; then
           ARGS+=" --force"
         fi
 
@@ -117,7 +121,7 @@ jobs:
         git push
 
         # Create detailed release notes using a HEREDOC for readability
-        RELEASE_NOTES=$(cat << 'EOF'
+        RELEASE_NOTES=$(cat << EOF
         # Trakt Extended Data - $(cat last_updated.txt)
 
         ## 📊 Statistics
@@ -129,8 +133,8 @@ jobs:
         - `tv_ex.json` - Extended TV shows data
         - `movies_ex.json` - Extended movies data
         - `last_updated.txt` - Timestamp of this update
-        $([ -f "not_exist_tv_ex.json" ] && echo "- \`not_exist_tv_ex.json\` - TV shows not found on Trakt")
-        $([ -f "not_exist_movies_ex.json" ] && echo "- \`not_exist_movies_ex.json\` - Movies not found on Trakt")
+        $([ -f "not_exist_tv_ex.json" ] && echo "- `not_exist_tv_ex.json` - TV shows not found on Trakt")
+        $([ -f "not_exist_movies_ex.json" ] && echo "- `not_exist_movies_ex.json` - Movies not found on Trakt")
         EOF
         )
 
