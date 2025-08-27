@@ -2797,6 +2797,23 @@
   },
   {
     "myanimelist": {
+      "title": "On Your Mark",
+      "id": 1047
+    },
+    "trakt": {
+      "title": "On Your Mark",
+      "id": 1225238,
+      "slug": "on-your-mark-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 1494030,
+      "imdb": "tt0114038"
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Cello Hiki no Gauche (1982)",
       "id": 1049
     },
@@ -4310,6 +4327,28 @@
   },
   {
     "myanimelist": {
+      "title": "Memories",
+      "id": 1462
+    },
+    "trakt": {
+      "title": "Memories",
+      "id": 838805,
+      "slug": "memories-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 42994,
+      "imdb": "tt0113799",
+      "letterboxd": {
+        "slug": "memories",
+        "uid": 22128,
+        "lid": "Vz2"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Baoh Raihousha",
       "id": 1468
     },
@@ -5757,6 +5796,28 @@
         "slug": "ichi-the-killer-episode-zero",
         "uid": 73967,
         "lid": "36qa"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Choujin Densetsu Urotsukidouji Movie",
+      "id": 2359
+    },
+    "trakt": {
+      "title": "Urotsukidōji: Legend of the Overfiend",
+      "id": 826372,
+      "slug": "urotsukidoji-legend-of-the-overfiend-1989-03-18",
+      "type": "movies"
+    },
+    "release_year": 1989,
+    "externals": {
+      "tmdb": 48624,
+      "imdb": "tt0108461",
+      "letterboxd": {
+        "slug": "urotsukidoji-legend-of-the-overfiend",
+        "uid": 16921,
+        "lid": "I1c"
       }
     }
   },
@@ -9162,6 +9223,28 @@
   },
   {
     "myanimelist": {
+      "title": "Ginga Tetsudou 999: Kimi wa Senshi no You ni Ikirareru ka?",
+      "id": 6733
+    },
+    "trakt": {
+      "title": "Galaxy Express 999: Can You Live Like a Warrior!!",
+      "id": 531542,
+      "slug": "galaxy-express-999-can-you-live-like-a-warrior-1979",
+      "type": "movies"
+    },
+    "release_year": 1979,
+    "externals": {
+      "tmdb": 687383,
+      "imdb": "tt0185339",
+      "letterboxd": {
+        "slug": "galaxy-express-999-can-you-live-like-a-warrior",
+        "uid": 611500,
+        "lid": "pEN2"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Ginga Tetsudou 999: Eien no Tabibito Emeraldas",
       "id": 6734
     },
@@ -9543,7 +9626,12 @@
     "release_year": 2010,
     "externals": {
       "tmdb": 36865,
-      "imdb": "tt1572781"
+      "imdb": "tt1572781",
+      "letterboxd": {
+        "slug": "the-disappearance-of-haruhi-suzumiya",
+        "uid": 27537,
+        "lid": "19Ds"
+      }
     }
   },
   {
@@ -13459,6 +13547,28 @@
   },
   {
     "myanimelist": {
+      "title": "Kagaku na Yatsura",
+      "id": 15391
+    },
+    "trakt": {
+      "title": "Those Science Freaks",
+      "id": 836177,
+      "slug": "those-science-freaks-2013-02-20",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 403039,
+      "imdb": "tt8819706",
+      "letterboxd": {
+        "slug": "those-science-freaks",
+        "uid": 337634,
+        "lid": "eal6"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Saint☆Oniisan (Movie)",
       "id": 15771
     },
@@ -14395,7 +14505,12 @@
     "release_year": 2013,
     "externals": {
       "tmdb": 1012404,
-      "imdb": "tt3241196"
+      "imdb": "tt3241196",
+      "letterboxd": {
+        "slug": "sword-art-online-extra-edition",
+        "uid": 912213,
+        "lid": "Ch58"
+      }
     }
   },
   {
@@ -17235,7 +17350,12 @@
     "release_year": 2017,
     "externals": {
       "tmdb": 413594,
-      "imdb": "tt5544384"
+      "imdb": "tt5544384",
+      "letterboxd": {
+        "slug": "sword-art-online-the-movie-ordinal-scale",
+        "uid": 347644,
+        "lid": "eAnC"
+      }
     }
   },
   {
@@ -19870,6 +19990,28 @@
         "slug": "case-closed-zero-the-enforcer",
         "uid": 423502,
         "lid": "hLIM"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "FLCL Alternative",
+      "id": 35842
+    },
+    "trakt": {
+      "title": "FLCL Alternative",
+      "id": 579097,
+      "slug": "flcl-alternative-2018",
+      "type": "movies"
+    },
+    "release_year": 2018,
+    "externals": {
+      "tmdb": 737931,
+      "imdb": "tt7112162",
+      "letterboxd": {
+        "slug": "flcl-alternative",
+        "uid": 660038,
+        "lid": "rH3K"
       }
     }
   },
