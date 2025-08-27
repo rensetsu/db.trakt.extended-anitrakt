@@ -666,7 +666,7 @@ func fetchTraktShow(client *http.Client, config Config, showID int) (*TraktShow,
 	}
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/shows/%d?extended=full", showID)
+	url := fmt.Sprintf("https://api.trakt.tv/shows/%d", showID)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
@@ -720,7 +720,7 @@ func fetchTraktMovie(client *http.Client, config Config, movieID int) (*TraktMov
 	}
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/movies/%d?extended=full", movieID)
+	url := fmt.Sprintf("https://api.trakt.tv/movies/%d", movieID)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
@@ -778,7 +778,7 @@ func fetchTraktSeason(client *http.Client, config Config, showID, seasonNum int)
 	}
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/shows/%d/seasons?extended=full", showID)
+	url := fmt.Sprintf("https://api.trakt.tv/shows/%d/seasons", showID)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
