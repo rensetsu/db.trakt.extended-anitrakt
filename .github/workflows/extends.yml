@@ -63,9 +63,9 @@ jobs:
         ARGS="--api-key ${TRAKT_API_KEY} --verbose --no-progress"
         DAY_OF_MONTH=$(date +%d)
 
-        # Force update on the first and third Friday of the month, or if manually triggered
-        if [[ ${{ github.event.inputs.force_update }} == true ]] || \
-           [[ "${{ github.event_name }}" == "schedule" && ( ( $DAY_OF_MONTH -ge 1 && $DAY_OF_MONTH -le 7 ) || ( $DAY_OF_MONTH -ge 15 && $DAY_OF_MONTH -le 21 ) ) ]]; then
+        # Force update on the first Friday of the month, or if manually triggered
+        if [[ "${{ github.event.inputs.force_update }}" == "true" ]] || \
+          [[ "${{ github.event_name }}" == "schedule" && $DAY_OF_MONTH -ge 1 && $DAY_OF_MONTH -le 7 ]]; then
           ARGS+=" --force"
         fi
 
