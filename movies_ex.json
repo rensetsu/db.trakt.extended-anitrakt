@@ -6251,19 +6251,19 @@
       "id": 2611
     },
     "trakt": {
-      "title": "Panda! Go Panda!",
-      "id": 12913,
-      "slug": "panda-go-panda-1972",
+      "title": "Panda! Go Panda!: Rainy Day Circus",
+      "id": 85396,
+      "slug": "panda-go-panda-rainy-day-circus-1973",
       "type": "movies"
     },
-    "release_year": 1972,
+    "release_year": 1973,
     "externals": {
-      "tmdb": 21036,
-      "imdb": "tt0069058",
+      "tmdb": 123867,
+      "imdb": "tt0070505",
       "letterboxd": {
-        "slug": "panda-go-panda",
-        "uid": 38637,
-        "lid": "1CvM"
+        "slug": "panda-go-panda-rainy-day-circus",
+        "uid": 97233,
+        "lid": "44WK"
       }
     }
   },
@@ -7395,19 +7395,19 @@
       "id": 3446
     },
     "trakt": {
-      "title": "Resident Evil: Damnation",
-      "id": 90277,
-      "slug": "resident-evil-damnation-2012",
+      "title": "Resident Evil: Degeneration",
+      "id": 8079,
+      "slug": "resident-evil-degeneration-2008",
       "type": "movies"
     },
-    "release_year": 2012,
+    "release_year": 2008,
     "externals": {
-      "tmdb": 133121,
-      "imdb": "tt1753496",
+      "tmdb": 13648,
+      "imdb": "tt1174954",
       "letterboxd": {
-        "slug": "resident-evil-damnation",
-        "uid": 102903,
-        "lid": "4jHg"
+        "slug": "resident-evil-degeneration",
+        "uid": 43714,
+        "lid": "1PIE"
       }
     }
   },
@@ -15154,7 +15154,11 @@
     "externals": {
       "tmdb": 267963,
       "imdb": "tt3222236",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "space-battleship-yamato-2199-odyssey-of-the",
+        "uid": 191156,
+        "lid": "81hC"
+      }
     }
   },
   {
@@ -26517,19 +26521,19 @@
       "id": 51716
     },
     "trakt": {
-      "title": "Pretty Guardian Sailor Moon Cosmos the Movie Part 1",
-      "id": 778707,
-      "slug": "pretty-guardian-sailor-moon-cosmos-the-movie-part-1-2023",
+      "title": "Pretty Guardian Sailor Moon Cosmos the Movie Part 2",
+      "id": 778727,
+      "slug": "pretty-guardian-sailor-moon-cosmos-the-movie-part-2-2023",
       "type": "movies"
     },
     "release_year": 2023,
     "externals": {
-      "tmdb": 968868,
-      "imdb": "tt19861160",
+      "tmdb": 968870,
+      "imdb": "tt28284638",
       "letterboxd": {
-        "slug": "pretty-guardian-sailor-moon-cosmos-the-movie-part-1",
-        "uid": 872129,
-        "lid": "AANY"
+        "slug": "pretty-guardian-sailor-moon-cosmos-the-movie-part-2",
+        "uid": 872128,
+        "lid": "AANO"
       }
     }
   },
@@ -26539,19 +26543,19 @@
       "id": 51805
     },
     "trakt": {
-      "title": "Legend of the Galactic Heroes: Die Neue These - Intrigue 1",
-      "id": 828517,
-      "slug": "legend-of-the-galactic-heroes-die-neue-these-intrigue-1-2022",
+      "title": "Legend of the Galactic Heroes: Die Neue These - Intrigue 3",
+      "id": 828516,
+      "slug": "legend-of-the-galactic-heroes-die-neue-these-intrigue-3-2022",
       "type": "movies"
     },
     "release_year": 2022,
     "externals": {
-      "tmdb": 1030419,
-      "imdb": "tt32909363",
+      "tmdb": 1030422,
+      "imdb": "tt32909366",
       "letterboxd": {
-        "slug": "legend-of-the-galactic-heroes-die-neue-these-intrigue-1",
-        "uid": 929030,
-        "lid": "CYPy"
+        "slug": "legend-of-the-galactic-heroes-die-neue-these-intrigue-3",
+        "uid": 929027,
+        "lid": "CYP4"
       }
     }
   },
@@ -27375,19 +27379,19 @@
       "id": 55357
     },
     "trakt": {
-      "title": "BOCCHI THE ROCK! Recap Part 1",
-      "id": 909154,
-      "slug": "bocchi-the-rock-recap-part-1-2024",
+      "title": "BOCCHI THE ROCK! Recap Part 2",
+      "id": 972543,
+      "slug": "bocchi-the-rock-recap-part-2-2024",
       "type": "movies"
     },
     "release_year": 2024,
     "externals": {
-      "tmdb": 1129610,
-      "imdb": "tt32561659",
+      "tmdb": 1201387,
+      "imdb": "tt32576588",
       "letterboxd": {
-        "slug": "bocchi-the-rock-recap-part-1",
-        "uid": 1018023,
-        "lid": "GIlg"
+        "slug": "bocchi-the-rock-recap-part-2",
+        "uid": 1086430,
+        "lid": "JAiE"
       }
     }
   },
@@ -27399,13 +27403,13 @@
     "trakt": {
       "title": "Me \u0026 Roboco: The Movie",
       "id": 970307,
-      "slug": "me-roboco-the-movie-2025-04-18",
+      "slug": "me-roboco-the-movie-2025",
       "type": "movies"
     },
     "release_year": 2025,
     "externals": {
       "tmdb": 1148706,
-      "imdb": null,
+      "imdb": "tt35652378",
       "letterboxd": {
         "slug": "me-roboco-the-movie",
         "uid": 1034800,
@@ -27845,7 +27849,7 @@
     "release_year": 2025,
     "externals": {
       "tmdb": 1448628,
-      "imdb": null,
+      "imdb": "tt35652414",
       "letterboxd": {
         "slug": "uta-noprince-sama-movie-taboo-night-kisses",
         "uid": 1325907,
@@ -27881,19 +27885,19 @@
       "id": 57754
     },
     "trakt": {
-      "title": "BanG Dream! It's MyGO!!!!! Movie",
-      "id": 996161,
-      "slug": "bang-dream-it-s-mygo-movie-2024",
+      "title": "BanG Dream! It's MyGO!!!!! Movie 2",
+      "id": 997382,
+      "slug": "bang-dream-it-s-mygo-movie-2-2024",
       "type": "movies"
     },
     "release_year": 2024,
     "externals": {
-      "tmdb": 1231799,
+      "tmdb": 1233186,
       "imdb": null,
       "letterboxd": {
-        "slug": "bang-dream-its-mygo-movie",
-        "uid": 1115235,
-        "lid": "KNeC"
+        "slug": "bang-dream-its-mygo-movie-2",
+        "uid": 1116818,
+        "lid": "KRlW"
       }
     }
   },
@@ -28211,7 +28215,7 @@
       "id": 58919
     },
     "trakt": {
-      "title": "100 Meters",
+      "title": "100 METERS",
       "id": 1055305,
       "slug": "100-meters-2025",
       "type": "movies"
@@ -28431,9 +28435,9 @@
       "id": 59957
     },
     "trakt": {
-      "title": "Senpai wa Otokonoko Movie: Ame Nochi Hare",
+      "title": "Senpai Is an Otokonoko Movie: Sunshine After the Rain",
       "id": 1111898,
-      "slug": "senpai-wa-otokonoko-movie-ame-nochi-hare-2025",
+      "slug": "senpai-is-an-otokonoko-movie-sunshine-after-the-rain-2025",
       "type": "movies"
     },
     "release_year": 2025,
@@ -28441,7 +28445,7 @@
       "tmdb": 1362429,
       "imdb": "tt33507588",
       "letterboxd": {
-        "slug": "senpai-wa-otokonoko-movie-ame-nochi-hare",
+        "slug": "senpai-is-an-otokonoko-movie-sunshine-after",
         "uid": 1250969,
         "lid": "Qulc"
       }
@@ -28563,9 +28567,9 @@
       "id": 60862
     },
     "trakt": {
-      "title": "Crayon Shin-chan: Super Gorgeous! Glow Kasukabe Dancer",
+      "title": "Crayon Shin-chan: The Spicy Kasukabe Dancers in India",
       "id": 1148957,
-      "slug": "crayon-shin-chan-super-gorgeous-glow-kasukabe-dancer-2025",
+      "slug": "crayon-shin-chan-the-spicy-kasukabe-dancers-in-india-2025",
       "type": "movies"
     },
     "release_year": 2025,
@@ -28573,7 +28577,7 @@
       "tmdb": 1404404,
       "imdb": "tt35009463",
       "letterboxd": {
-        "slug": "crayon-shin-chan-super-gorgeous-glow-kasukabe",
+        "slug": "crayon-shin-chan-the-spicy-kasukabe-dancers",
         "uid": 1287562,
         "lid": "S1xi"
       }
@@ -28659,7 +28663,7 @@
     "release_year": 2025,
     "externals": {
       "tmdb": 1329578,
-      "imdb": null,
+      "imdb": "tt35995292",
       "letterboxd": {
         "slug": "tabekko-doubutsu-the-movie",
         "uid": 1209659,

@@ -1,1 +1,174 @@
-[{"mal_id":36840,"title":"25-sai no Joshikousei"},{"mal_id":6166,"title":"Asobi ni Iku yo!"},{"mal_id":45961,"title":"Assault Lily: Fruits"},{"mal_id":37036,"title":"Binan Koukou Chikyuu Bouei-bu Happy Kiss!"},{"mal_id":11103,"title":"Busou Shinki Moon Angel"},{"mal_id":45618,"title":"Dinosaur Biyori"},{"mal_id":42414,"title":"Eternity: Shinya no Nurekoi Channel ♡"},{"mal_id":53127,"title":"Fate/strange Fake: Whispers of Dawn"},{"mal_id":49514,"title":"Gensou Sangokushi: Tengen Reishinki"},{"mal_id":40192,"title":"Gundam Build Divers Re:Rise"},{"mal_id":40942,"title":"Gundam Build Divers Re:Rise 2nd Season"},{"mal_id":54856,"title":"Horimiya: Piece"},{"mal_id":44044,"title":"Jimihen!!: Jimiko wo Kaechau Jun Isei Kouyuu!!"},{"mal_id":4232,"title":"Kidou Senshi Gundam MS IGLOO 2: Juuryoku Sensen"},{"mal_id":94,"title":"Kidou Senshi Gundam SEED Destiny"},{"mal_id":41103,"title":"Koi to Yobu ni wa Kimochi Warui"},{"mal_id":50709,"title":"Lycoris Recoil"},{"mal_id":57152,"title":"Mahoutsukai no Yakusoku"},{"mal_id":54792,"title":"Mask Danshi wa Koishitakunai noni"},{"mal_id":1462,"title":"Memories"},{"mal_id":41470,"title":"Micchiri Wanko! Animation"},{"mal_id":56055,"title":"Monsters: Ippyaku Sanjou Hiryuu Jigoku"},{"mal_id":39893,"title":"Muteking the Dancing Hero"},{"mal_id":28819,"title":"Okusama ga Seitokaichou!"},{"mal_id":32603,"title":"Okusama ga Seitokaichou!+!"},{"mal_id":36198,"title":"Omiai Aite wa Oshiego, Tsuyoki na, Mondaiji."},{"mal_id":42714,"title":"Otona nya Koi no Shikata ga Wakaranee!"},{"mal_id":49223,"title":"Ouji no Honmei wa Akuyaku Reijou"},{"mal_id":49223,"title":"Ouji no Honmei wa Akuyaku Reijou"},{"mal_id":38797,"title":"Papa datte, Shitai"},{"mal_id":39506,"title":"Phantasy Star Online 2: Episode Oracle"},{"mal_id":34539,"title":"Saint Seiya: Saintia Shou"},{"mal_id":50060,"title":"Shadowverse Flame"},{"mal_id":38212,"title":"Shuudengo, Capsule Hotel de, Joushi ni Binetsu Tsutawaru Yoru."},{"mal_id":35629,"title":"Skirt no Naka wa Kedamono deshita."},{"mal_id":34823,"title":"Souryo to Majiwaru Shikiyoku no Yoru ni..."},{"mal_id":42307,"title":"Subarashiki Kono Sekai The Animation"},{"mal_id":44191,"title":"Tropical-Rouge! Precure"},{"mal_id":42568,"title":"Yaku nara Mug Cup mo"},{"mal_id":48491,"title":"Yama no Susume: Next Summit"},{"mal_id":46701,"title":"Yubisaki kara Honki no Netsujou 2: Koibito wa Shouboushi"},{"mal_id":39963,"title":"Yubisaki kara Honki no Netsujou: Osananajimi wa Shouboushi"}]
+[
+  {
+    "mal_id": 36840,
+    "title": "25-sai no Joshikousei"
+  },
+  {
+    "mal_id": 6166,
+    "title": "Asobi ni Iku yo!"
+  },
+  {
+    "mal_id": 45961,
+    "title": "Assault Lily: Fruits"
+  },
+  {
+    "mal_id": 37036,
+    "title": "Binan Koukou Chikyuu Bouei-bu Happy Kiss!"
+  },
+  {
+    "mal_id": 11103,
+    "title": "Busou Shinki Moon Angel"
+  },
+  {
+    "mal_id": 45618,
+    "title": "Dinosaur Biyori"
+  },
+  {
+    "mal_id": 42414,
+    "title": "Eternity: Shinya no Nurekoi Channel ♡"
+  },
+  {
+    "mal_id": 53127,
+    "title": "Fate/strange Fake: Whispers of Dawn"
+  },
+  {
+    "mal_id": 49514,
+    "title": "Gensou Sangokushi: Tengen Reishinki"
+  },
+  {
+    "mal_id": 40192,
+    "title": "Gundam Build Divers Re:Rise"
+  },
+  {
+    "mal_id": 40942,
+    "title": "Gundam Build Divers Re:Rise 2nd Season"
+  },
+  {
+    "mal_id": 54856,
+    "title": "Horimiya: Piece"
+  },
+  {
+    "mal_id": 44044,
+    "title": "Jimihen!!: Jimiko wo Kaechau Jun Isei Kouyuu!!"
+  },
+  {
+    "mal_id": 4232,
+    "title": "Kidou Senshi Gundam MS IGLOO 2: Juuryoku Sensen"
+  },
+  {
+    "mal_id": 94,
+    "title": "Kidou Senshi Gundam SEED Destiny"
+  },
+  {
+    "mal_id": 41103,
+    "title": "Koi to Yobu ni wa Kimochi Warui"
+  },
+  {
+    "mal_id": 50709,
+    "title": "Lycoris Recoil"
+  },
+  {
+    "mal_id": 57152,
+    "title": "Mahoutsukai no Yakusoku"
+  },
+  {
+    "mal_id": 54792,
+    "title": "Mask Danshi wa Koishitakunai noni"
+  },
+  {
+    "mal_id": 1462,
+    "title": "Memories"
+  },
+  {
+    "mal_id": 41470,
+    "title": "Micchiri Wanko! Animation"
+  },
+  {
+    "mal_id": 56055,
+    "title": "Monsters: Ippyaku Sanjou Hiryuu Jigoku"
+  },
+  {
+    "mal_id": 39893,
+    "title": "Muteking the Dancing Hero"
+  },
+  {
+    "mal_id": 28819,
+    "title": "Okusama ga Seitokaichou!"
+  },
+  {
+    "mal_id": 32603,
+    "title": "Okusama ga Seitokaichou!+!"
+  },
+  {
+    "mal_id": 36198,
+    "title": "Omiai Aite wa Oshiego, Tsuyoki na, Mondaiji."
+  },
+  {
+    "mal_id": 42714,
+    "title": "Otona nya Koi no Shikata ga Wakaranee!"
+  },
+  {
+    "mal_id": 49223,
+    "title": "Ouji no Honmei wa Akuyaku Reijou"
+  },
+  {
+    "mal_id": 49223,
+    "title": "Ouji no Honmei wa Akuyaku Reijou"
+  },
+  {
+    "mal_id": 38797,
+    "title": "Papa datte, Shitai"
+  },
+  {
+    "mal_id": 39506,
+    "title": "Phantasy Star Online 2: Episode Oracle"
+  },
+  {
+    "mal_id": 34539,
+    "title": "Saint Seiya: Saintia Shou"
+  },
+  {
+    "mal_id": 50060,
+    "title": "Shadowverse Flame"
+  },
+  {
+    "mal_id": 38212,
+    "title": "Shuudengo, Capsule Hotel de, Joushi ni Binetsu Tsutawaru Yoru."
+  },
+  {
+    "mal_id": 35629,
+    "title": "Skirt no Naka wa Kedamono deshita."
+  },
+  {
+    "mal_id": 34823,
+    "title": "Souryo to Majiwaru Shikiyoku no Yoru ni..."
+  },
+  {
+    "mal_id": 42307,
+    "title": "Subarashiki Kono Sekai The Animation"
+  },
+  {
+    "mal_id": 44191,
+    "title": "Tropical-Rouge! Precure"
+  },
+  {
+    "mal_id": 42568,
+    "title": "Yaku nara Mug Cup mo"
+  },
+  {
+    "mal_id": 48491,
+    "title": "Yama no Susume: Next Summit"
+  },
+  {
+    "mal_id": 46701,
+    "title": "Yubisaki kara Honki no Netsujou 2: Koibito wa Shouboushi"
+  },
+  {
+    "mal_id": 39963,
+    "title": "Yubisaki kara Honki no Netsujou: Osananajimi wa Shouboushi"
+  },
+  {
+    "mal_id": 8876,
+    "title": "Koe de Oshigoto! The Animation"
+  }
+]

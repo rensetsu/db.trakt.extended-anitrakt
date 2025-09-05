@@ -1,35 +1,6 @@
 [
   {
     "myanimelist": {
-      "title": "Nijiyon Animation",
-      "id": 0
-    },
-    "trakt": {
-      "title": "Nijiyon Animation",
-      "id": 198874,
-      "slug": "nijiyon-animation",
-      "type": "shows",
-      "season": {
-        "id": 358906,
-        "number": 2,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 371431,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2023,
-    "externals": {
-      "tvdb": 425478,
-      "tmdb": 210511,
-      "imdb": "tt22171506",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Cowboy Bebop",
       "id": 1
     },
@@ -14117,9 +14088,9 @@
       "id": 1860
     },
     "trakt": {
-      "title": "Tokyo Majin Gakuen Kenpucho",
+      "title": "Tokyo Majin",
       "id": 34577,
-      "slug": "tokyo-majin-gakuen-kenpucho",
+      "slug": "tokyo-majin",
       "type": "shows",
       "season": {
         "id": 46313,
@@ -14705,7 +14676,7 @@
         "id": 41451,
         "number": 1,
         "externals": {
-          "tvdb": 0,
+          "tvdb": 28111,
           "tmdb": 40723,
           "tvrage": null
         }
@@ -16313,9 +16284,9 @@
       "id": 2683
     },
     "trakt": {
-      "title": "Tokyo Majin Gakuen Kenpucho",
+      "title": "Tokyo Majin",
       "id": 34577,
-      "slug": "tokyo-majin-gakuen-kenpucho",
+      "slug": "tokyo-majin",
       "type": "shows",
       "season": null,
       "is_split_cour": true
@@ -19504,35 +19475,6 @@
   },
   {
     "myanimelist": {
-      "title": "Kidou Senshi Gundam MS IGLOO 2: Juuryoku Sensen",
-      "id": 4232
-    },
-    "trakt": {
-      "title": "Mobile Suit Gundam MS IGLOO",
-      "id": 61455,
-      "slug": "mobile-suit-gundam-ms-igloo",
-      "type": "shows",
-      "season": {
-        "id": 63417,
-        "number": 3,
-        "externals": {
-          "tvdb": 113581,
-          "tmdb": 53664,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2004,
-    "externals": {
-      "tvdb": 81104,
-      "tmdb": 44919,
-      "imdb": "tt2328145",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Koihime†Musou",
       "id": 4262
     },
@@ -22201,35 +22143,6 @@
       "tvdb": 84553,
       "tmdb": 28502,
       "imdb": "tt1356884",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Asobi ni Iku yo!",
-      "id": 6166
-    },
-    "trakt": {
-      "title": "Cat Planet Cuties",
-      "id": 37648,
-      "slug": "cat-planet-cuties",
-      "type": "shows",
-      "season": {
-        "id": 49994,
-        "number": 1,
-        "externals": {
-          "tvdb": 272211,
-          "tmdb": 49118,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2010,
-    "externals": {
-      "tvdb": 173301,
-      "tmdb": 37806,
-      "imdb": "tt1694025",
       "tvrage": null
     }
   },
@@ -24948,35 +24861,6 @@
       "tvdb": 195231,
       "tmdb": 68005,
       "imdb": "tt1743681",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Koe de Oshigoto! The Animation",
-      "id": 8876
-    },
-    "trakt": {
-      "title": "Working with Voice!",
-      "id": 38445,
-      "slug": "working-with-voice",
-      "type": "shows",
-      "season": {
-        "id": 51050,
-        "number": 1,
-        "externals": {
-          "tvdb": 357341,
-          "tmdb": 50169,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2010,
-    "externals": {
-      "tvdb": 206081,
-      "tmdb": 38605,
-      "imdb": "tt5444308",
       "tvrage": null
     }
   },
@@ -32183,9 +32067,9 @@
       "id": 15045
     },
     "trakt": {
-      "title": "Lychee Light Club",
+      "title": "Lychee DE Light Club",
       "id": 67790,
-      "slug": "lychee-light-club",
+      "slug": "lychee-de-light-club",
       "type": "shows",
       "season": {
         "id": 72474,
@@ -68767,26 +68651,18 @@
       "id": 38799
     },
     "trakt": {
-      "title": "Ghost in the Shell: SAC_2045",
-      "id": 154401,
-      "slug": "ghost-in-the-shell-sac_2045",
+      "title": "Ghost in the Shell: Stand Alone Complex",
+      "id": 1090,
+      "slug": "ghost-in-the-shell-stand-alone-complex",
       "type": "shows",
-      "season": {
-        "id": 213806,
-        "number": 1,
-        "externals": {
-          "tvdb": 1837422,
-          "tmdb": 125851,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
-    "release_year": 2020,
+    "release_year": 2002,
     "externals": {
-      "tvdb": null,
-      "tmdb": 90293,
-      "imdb": "tt9466298",
+      "tvdb": 73749,
+      "tmdb": 1095,
+      "imdb": "tt0346314",
       "tvrage": null
     }
   },
@@ -70218,35 +70094,6 @@
   },
   {
     "myanimelist": {
-      "title": "Phantasy Star Online 2: Episode Oracle",
-      "id": 39506
-    },
-    "trakt": {
-      "title": "Phantasy Star Online 2: Episode Oracle",
-      "id": 154035,
-      "slug": "phantasy-star-online-2-episode-oracle",
-      "type": "shows",
-      "season": {
-        "id": 201510,
-        "number": 1,
-        "externals": {
-          "tvdb": 829930,
-          "tmdb": 132705,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2019,
-    "externals": {
-      "tvdb": 370895,
-      "tmdb": 93830,
-      "imdb": "tt10814346",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Vampire in the Garden",
       "id": 39518
     },
@@ -71473,35 +71320,6 @@
       "tvdb": 371829,
       "tmdb": 95579,
       "imdb": "tt10380814",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Muteking the Dancing Hero",
-      "id": 39893
-    },
-    "trakt": {
-      "title": "Muteking the Dancing Hero",
-      "id": 182662,
-      "slug": "muteking-the-dancing-hero",
-      "type": "shows",
-      "season": {
-        "id": 261414,
-        "number": 1,
-        "externals": {
-          "tvdb": 1950992,
-          "tmdb": 188160,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2021,
-    "externals": {
-      "tvdb": 408919,
-      "tmdb": 121947,
-      "imdb": "tt14338604",
       "tvrage": null
     }
   },
@@ -73396,7 +73214,7 @@
         "id": 277838,
         "number": 2,
         "externals": {
-          "tvdb": null,
+          "tvdb": 1815979,
           "tmdb": 213264,
           "tvrage": null
         }
@@ -75532,35 +75350,6 @@
   },
   {
     "myanimelist": {
-      "title": "Koi to Yobu ni wa Kimochi Warui",
-      "id": 41103
-    },
-    "trakt": {
-      "title": "Koikimo",
-      "id": 174723,
-      "slug": "koikimo",
-      "type": "shows",
-      "season": {
-        "id": 247188,
-        "number": 1,
-        "externals": {
-          "tvdb": 1906182,
-          "tmdb": 141532,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2021,
-    "externals": {
-      "tvdb": 397860,
-      "tmdb": 98309,
-      "imdb": "tt13618148",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Log Horizon: Entaku Houkai",
       "id": 41109
     },
@@ -77612,35 +77401,6 @@
   },
   {
     "myanimelist": {
-      "title": "Subarashiki Kono Sekai The Animation",
-      "id": 42307
-    },
-    "trakt": {
-      "title": "The World Ends with You: The Animation",
-      "id": 170144,
-      "slug": "the-world-ends-with-you-the-animation",
-      "type": "shows",
-      "season": {
-        "id": 235558,
-        "number": 1,
-        "externals": {
-          "tvdb": 1883985,
-          "tmdb": 154581,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2021,
-    "externals": {
-      "tvdb": 392668,
-      "tmdb": 105249,
-      "imdb": "tt12643520",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Cyberpunk: Edgerunners",
       "id": 42310
     },
@@ -77740,7 +77500,7 @@
         "id": 255422,
         "number": 1,
         "externals": {
-          "tvdb": 401874,
+          "tvdb": 1922760,
           "tmdb": 155184,
           "tvrage": null
         }
@@ -78005,35 +77765,6 @@
       "tvdb": 386570,
       "tmdb": 106480,
       "imdb": "tt12779780",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Yaku nara Mug Cup mo",
-      "id": 42568
-    },
-    "trakt": {
-      "title": "Let's Make a Mug Too",
-      "id": 176384,
-      "slug": "let-s-make-a-mug-too",
-      "type": "shows",
-      "season": {
-        "id": 249193,
-        "number": 1,
-        "externals": {
-          "tvdb": 1907151,
-          "tmdb": 157561,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2021,
-    "externals": {
-      "tvdb": 398106,
-      "tmdb": 106611,
-      "imdb": "tt12798548",
       "tvrage": null
     }
   },
@@ -80882,7 +80613,7 @@
         "id": 263364,
         "number": 1,
         "externals": {
-          "tvdb": 402636,
+          "tvdb": 1925875,
           "tmdb": 178790,
           "tvrage": null
         }
@@ -83162,7 +82893,7 @@
       "id": 48997
     },
     "trakt": {
-      "title": "Life With an Ordinary Guy Who Reincarnated Into a Total Fantasy Knockout",
+      "title": "Life with an Ordinary Guy Who Reincarnated into a Total Fantasy Knockout",
       "id": 190121,
       "slug": "life-with-an-ordinary-guy-who-reincarnated-into-a-total-fantasy-knockout",
       "type": "shows",
@@ -83228,7 +82959,7 @@
         "id": 278459,
         "number": 1,
         "externals": {
-          "tvdb": 1946682,
+          "tvdb": 1946683,
           "tmdb": 197006,
           "tvrage": null
         }
@@ -83957,35 +83688,6 @@
       "tvdb": 407575,
       "tmdb": 130112,
       "imdb": "tt15202838",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Gensou Sangokushi: Tengen Reishinki",
-      "id": 49514
-    },
-    "trakt": {
-      "title": "Fantasia Sango – Realm of Legends",
-      "id": 186610,
-      "slug": "fantasia-sango-realm-of-legends",
-      "type": "shows",
-      "season": {
-        "id": 269162,
-        "number": 1,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 204183,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2022,
-    "externals": {
-      "tvdb": 407694,
-      "tmdb": 130206,
-      "imdb": "tt15176722",
       "tvrage": null
     }
   },
@@ -87034,7 +86736,7 @@
         "id": 415450,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2134824,
           "tmdb": 418736,
           "tvrage": null
         }
@@ -87075,35 +86777,6 @@
       "tvdb": 414207,
       "tmdb": 154526,
       "imdb": "tt28299608",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Lycoris Recoil",
-      "id": 50709
-    },
-    "trakt": {
-      "title": "Lycoris Recoil",
-      "id": 192151,
-      "slug": "lycoris-recoil",
-      "type": "shows",
-      "season": {
-        "id": 282987,
-        "number": 1,
-        "externals": {
-          "tvdb": 1974221,
-          "tmdb": 237827,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2022,
-    "externals": {
-      "tvdb": 414057,
-      "tmdb": 154494,
-      "imdb": "tt16755706",
       "tvrage": null
     }
   },
@@ -88924,7 +88597,7 @@
         "id": 304761,
         "number": 2,
         "externals": {
-          "tvdb": null,
+          "tvdb": 1992947,
           "tmdb": 310810,
           "tvrage": null
         }
@@ -90582,26 +90255,26 @@
       "id": 52347
     },
     "trakt": {
-      "title": "Shangri-La",
-      "id": 61917,
-      "slug": "shangri-la",
+      "title": "Shangri-La Frontier",
+      "id": 196794,
+      "slug": "shangri-la-frontier",
       "type": "shows",
       "season": {
-        "id": 63992,
+        "id": 299012,
         "number": 1,
         "externals": {
-          "tvdb": 48251,
-          "tmdb": 37718,
+          "tvdb": 2007795,
+          "tmdb": 299096,
           "tvrage": null
         }
       },
       "is_split_cour": false
     },
-    "release_year": 2009,
+    "release_year": 2023,
     "externals": {
-      "tvdb": 87871,
-      "tmdb": 27008,
-      "imdb": "tt2051683",
+      "tvdb": 421855,
+      "tmdb": 205050,
+      "imdb": "tt28776190",
       "tvrage": null
     }
   },
@@ -92419,7 +92092,7 @@
         "id": 305474,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2018530,
           "tmdb": 312127,
           "tvrage": null
         }
@@ -94425,7 +94098,7 @@
         "id": 317730,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2045016,
           "tmdb": 327298,
           "tvrage": null
         }
@@ -95623,35 +95296,6 @@
       "tvdb": 432845,
       "tmdb": 239761,
       "imdb": "tt32307386",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Horimiya: Piece",
-      "id": 54856
-    },
-    "trakt": {
-      "title": "Horimiya: The Missing Pieces",
-      "id": 206654,
-      "slug": "horimiya-the-missing-pieces",
-      "type": "shows",
-      "season": {
-        "id": 326825,
-        "number": 1,
-        "externals": {
-          "tvdb": 2073946,
-          "tmdb": 345196,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2023,
-    "externals": {
-      "tvdb": 436124,
-      "tmdb": 228663,
-      "imdb": "tt28261206",
       "tvrage": null
     }
   },
@@ -99043,35 +98687,6 @@
   },
   {
     "myanimelist": {
-      "title": "Mahoutsukai no Yakusoku",
-      "id": 57152
-    },
-    "trakt": {
-      "title": "Promise of Wizard",
-      "id": 247713,
-      "slug": "promise-of-wizard",
-      "type": "shows",
-      "season": {
-        "id": 401284,
-        "number": 1,
-        "externals": {
-          "tvdb": 2127425,
-          "tmdb": 401069,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2025,
-    "externals": {
-      "tvdb": 449966,
-      "tmdb": 258578,
-      "imdb": "tt34621467",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Sand Land: The Series",
       "id": 57160
     },
@@ -99644,16 +99259,8 @@
       "id": 204789,
       "slug": "hyakusho-kizoku-the-farmer-s-days",
       "type": "shows",
-      "season": {
-        "id": 350619,
-        "number": 2,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 370309,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2023,
     "externals": {
@@ -101831,16 +101438,8 @@
       "id": 202847,
       "slug": "pokemon-concierge",
       "type": "shows",
-      "season": {
-        "id": 436369,
-        "number": 2,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 433705,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2023,
     "externals": {
