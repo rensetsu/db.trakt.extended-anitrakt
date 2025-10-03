@@ -5478,7 +5478,7 @@
         "id": 63122,
         "number": 1,
         "externals": {
-          "tvdb": 15908,
+          "tvdb": 78962,
           "tmdb": 32562,
           "tvrage": null
         }
@@ -14369,35 +14369,6 @@
       "tvdb": 84609,
       "tmdb": 34821,
       "imdb": "tt0447579",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Kimagure Robot",
-      "id": 1955
-    },
-    "trakt": {
-      "title": "Kimagure Robot",
-      "id": 43961,
-      "slug": "kimagure-robot",
-      "type": "shows",
-      "season": {
-        "id": 101548,
-        "number": 1,
-        "externals": {
-          "tvdb": 464940,
-          "tmdb": null,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2004,
-    "externals": {
-      "tvdb": 248353,
-      "tmdb": 44205,
-      "imdb": "tt5009870",
       "tvrage": null
     }
   },
@@ -49409,7 +49380,7 @@
       },
       "is_split_cour": false
     },
-    "release_year": 2016,
+    "release_year": 2015,
     "externals": {
       "tvdb": 309823,
       "tmdb": 66751,
@@ -52932,7 +52903,7 @@
     "externals": {
       "tvdb": 320001,
       "tmdb": 69300,
-      "imdb": null,
+      "imdb": "tt10823610",
       "tvrage": null
     }
   },
@@ -63249,7 +63220,7 @@
     "trakt": {
       "title": "Z/X: Code Reunion",
       "id": 151944,
-      "slug": "z-x-code-reunion-2019",
+      "slug": "z-x-code-reunion",
       "type": "shows",
       "season": {
         "id": 197776,
@@ -71868,7 +71839,7 @@
   },
   {
     "myanimelist": {
-      "title": "Koi to Producer: EVOL×LOVE",
+      "title": "Koi to Producer: EVOLxLOVE",
       "id": 40075
     },
     "trakt": {
@@ -73301,7 +73272,7 @@
         "id": 244114,
         "number": 1,
         "externals": {
-          "tvdb": 0,
+          "tvdb": 1907064,
           "tmdb": 150416,
           "tvrage": null
         }
@@ -81475,7 +81446,7 @@
         "id": 293128,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 1963604,
           "tmdb": 185279,
           "tvrage": null
         }
@@ -82147,7 +82118,7 @@
         "id": 458059,
         "number": 6,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2090193,
           "tmdb": 451151,
           "tvrage": null
         }
@@ -86686,7 +86657,7 @@
         "id": 329744,
         "number": 2,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2058829,
           "tmdb": 347758,
           "tvrage": null
         }
@@ -87229,7 +87200,7 @@
         "id": 286364,
         "number": 1,
         "externals": {
-          "tvdb": 415280,
+          "tvdb": 1980241,
           "tmdb": 241644,
           "tvrage": null
         }
@@ -87859,7 +87830,7 @@
         "id": 290053,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 1989537,
           "tmdb": 282801,
           "tvrage": null
         }
@@ -93223,7 +93194,7 @@
         "id": 325024,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2034749,
           "tmdb": 319930,
           "tvrage": null
         }
@@ -96301,9 +96272,9 @@
       "id": 55689
     },
     "trakt": {
-      "title": "Utagoe Ha Mille-Feuille",
+      "title": "Harmony of Mille-Feuille",
       "id": 251066,
-      "slug": "utagoe-ha-mille-feuille",
+      "slug": "harmony-of-mille-feuille",
       "type": "shows",
       "season": {
         "id": 406875,
@@ -98051,7 +98022,7 @@
         "id": 418474,
         "number": 2,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2084660,
           "tmdb": 421223,
           "tvrage": null
         }
@@ -98346,7 +98317,7 @@
         "id": 448197,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2088727,
           "tmdb": 442705,
           "tvrage": null
         }
@@ -102522,7 +102493,7 @@
         "id": 431057,
         "number": 2,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2138528,
           "tmdb": 431068,
           "tvrage": null
         }
@@ -102580,7 +102551,7 @@
         "id": 448934,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2139088,
           "tmdb": 443289,
           "tvrage": null
         }
@@ -103837,7 +103808,7 @@
         "id": 452676,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2156290,
           "tmdb": 446374,
           "tvrage": null
         }
@@ -104214,7 +104185,7 @@
         "id": 453314,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2160624,
           "tmdb": 446922,
           "tvrage": null
         }
@@ -104235,7 +104206,7 @@
       "id": 60534
     },
     "trakt": {
-      "title": "Koupen Chan",
+      "title": "Koupen-chan",
       "id": 278309,
       "slug": "koupen-chan",
       "type": "shows",
@@ -104575,7 +104546,7 @@
         "id": 446574,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2170700,
           "tmdb": 441427,
           "tvrage": null
         }

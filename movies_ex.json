@@ -3325,24 +3325,6 @@
   },
   {
     "myanimelist": {
-      "title": "Macross II: Lovers Again",
-      "id": 1262
-    },
-    "trakt": {
-      "title": "Macross II: Lovers Again",
-      "id": 883585,
-      "slug": "macross-ii-lovers-again-1992",
-      "type": "movies"
-    },
-    "release_year": 1992,
-    "externals": {
-      "tmdb": 1098523,
-      "imdb": "tt0113726",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Bio Hunter",
       "id": 1269
     },
@@ -5943,19 +5925,19 @@
       "id": 2397
     },
     "trakt": {
-      "title": "Digimon: The Movie",
-      "id": 12563,
-      "slug": "digimon-the-movie-2000",
+      "title": "Our War Game",
+      "id": 55721,
+      "slug": "our-war-game-2000",
       "type": "movies"
     },
     "release_year": 2000,
     "externals": {
-      "tmdb": 20455,
-      "imdb": "tt0259974",
+      "tmdb": 75571,
+      "imdb": "tt0313441",
       "letterboxd": {
-        "slug": "digimon-the-movie",
-        "uid": 38997,
-        "lid": "1DrQ"
+        "slug": "our-war-game",
+        "uid": 60446,
+        "lid": "2xfm"
       }
     }
   },
@@ -9253,28 +9235,6 @@
   },
   {
     "myanimelist": {
-      "title": "Ginga Tetsudou 999: Eien no Tabibito Emeraldas",
-      "id": 6734
-    },
-    "trakt": {
-      "title": "Galaxy Express 999: Eternal Traveler Emeraldas",
-      "id": 538669,
-      "slug": "galaxy-express-999-eternal-traveler-emeraldas-1980",
-      "type": "movies"
-    },
-    "release_year": 1980,
-    "externals": {
-      "tmdb": 694639,
-      "imdb": "tt0185336",
-      "letterboxd": {
-        "slug": "galaxy-express-999-eternal-traveler-emeraldas",
-        "uid": 618385,
-        "lid": "pWHw"
-      }
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Ginga Tetsudou 999: Kimi wa Haha no You ni Aiseru ka!!",
       "id": 6735
     },
@@ -11251,28 +11211,6 @@
   },
   {
     "myanimelist": {
-      "title": "Bannou Yasai Ninninman",
-      "id": 10501
-    },
-    "trakt": {
-      "title": "Super Veggie Torracman",
-      "id": 158784,
-      "slug": "super-veggie-torracman-2011",
-      "type": "movies"
-    },
-    "release_year": 2011,
-    "externals": {
-      "tmdb": 259485,
-      "imdb": "tt1866923",
-      "letterboxd": {
-        "slug": "super-veggie-torracman",
-        "uid": 183050,
-        "lid": "7Gcc"
-      }
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Tansu Warashi.",
       "id": 10502
     },
@@ -12985,28 +12923,6 @@
   },
   {
     "myanimelist": {
-      "title": "Mashiro-iro Symphony: Airi ga Anata no Kanojo ni!?",
-      "id": 14049
-    },
-    "trakt": {
-      "title": "Mashiro-iro Symphony: Airi ga Anata no Kanojo ni!?",
-      "id": 430835,
-      "slug": "mashiro-iro-symphony-airi-ga-anata-no-kanojo-ni-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 582406,
-      "imdb": null,
-      "letterboxd": {
-        "slug": "mashiro-iro-symphony-airi-ga-anata-no-kanojo-ni",
-        "uid": 510515,
-        "lid": "lq58"
-      }
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Hanasaku Iroha Movie: Home Sweet Home",
       "id": 14175
     },
@@ -13033,7 +12949,7 @@
       "id": 14267
     },
     "trakt": {
-      "title": "PERSONA4 the Animation -The Factor of Hope-",
+      "title": "Persona4 the ANIMATION -The Factor of Hope-",
       "id": 362907,
       "slug": "persona4-the-animation-the-factor-of-hope-2012",
       "type": "movies"
@@ -13539,9 +13455,9 @@
       "id": 15335
     },
     "trakt": {
-      "title": "Gintama: The Movie 2: The Final Chapter: Be Forever Yorozuya",
+      "title": "Gintama The Movie: The Final Chapter - Be Forever Yorozuya",
       "id": 149651,
-      "slug": "gintama-the-movie-2-the-final-chapter-be-forever-yorozuya-2013",
+      "slug": "gintama-the-movie-the-final-chapter-be-forever-yorozuya-2013",
       "type": "movies"
     },
     "release_year": 2013,
@@ -13549,7 +13465,7 @@
       "tmdb": 245917,
       "imdb": "tt2374144",
       "letterboxd": {
-        "slug": "gintama-the-movie-2-the-final-chapter-be",
+        "slug": "gintama-the-movie-the-final-chapter-be-forever",
         "uid": 172087,
         "lid": "7dFY"
       }
@@ -13891,9 +13807,9 @@
       "id": 16700
     },
     "trakt": {
-      "title": "Higurashi: When They Cry - Kaku: Outbreak",
+      "title": "Higurashi: When They Cry - Outbreak",
       "id": 216524,
-      "slug": "higurashi-when-they-cry-kaku-outbreak-2013",
+      "slug": "higurashi-when-they-cry-outbreak-2013",
       "type": "movies"
     },
     "release_year": 2013,
@@ -13901,7 +13817,7 @@
       "tmdb": 300442,
       "imdb": "tt6070340",
       "letterboxd": {
-        "slug": "higurashi-when-they-cry-kaku-outbreak",
+        "slug": "higurashi-when-they-cry-outbreak",
         "uid": 227572,
         "lid": "9y1a"
       }
@@ -15647,7 +15563,7 @@
   },
   {
     "myanimelist": {
-      "title": "Crayon Shin-chan Movie 23: Ora no Hikkoshi Monogatari - Saboten Daisuugeki",
+      "title": "Crayon Shin-chan Movie 23: Ora no Hikkoshi Monogatari - Saboten Daishuugeki",
       "id": 27653
     },
     "trakt": {
@@ -16135,9 +16051,9 @@
       "id": 29755
     },
     "trakt": {
-      "title": "Haikyuu!! The Movie: The End and the Beginning",
+      "title": "Haikyu!! the Movie: The End and the Beginning",
       "id": 221721,
-      "slug": "haikyuu-the-movie-the-end-and-the-beginning-2015",
+      "slug": "haikyu-the-movie-the-end-and-the-beginning-2015",
       "type": "movies"
     },
     "release_year": 2015,
@@ -16145,7 +16061,7 @@
       "tmdb": 347183,
       "imdb": "tt5443130",
       "letterboxd": {
-        "slug": "haikyuu-the-movie-the-end-and-the-beginning",
+        "slug": "haikyu-the-movie-the-end-and-the-beginning",
         "uid": 277614,
         "lid": "bEcs"
       }
@@ -16170,28 +16086,6 @@
         "slug": "sinbad-the-flying-princess-and-the-secret-island",
         "uid": 275396,
         "lid": "byqI"
-      }
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Calm",
-      "id": 29772
-    },
-    "trakt": {
-      "title": "Calm",
-      "id": 223489,
-      "slug": "calm-2007",
-      "type": "movies"
-    },
-    "release_year": 2007,
-    "externals": {
-      "tmdb": 363113,
-      "imdb": null,
-      "letterboxd": {
-        "slug": "calm-2007",
-        "uid": 296351,
-        "lid": "cqWy"
       }
     }
   },
@@ -16342,11 +16236,7 @@
     "externals": {
       "tmdb": 435157,
       "imdb": null,
-      "letterboxd": {
-        "slug": "count-down",
-        "uid": 368190,
-        "lid": "frPu"
-      }
+      "letterboxd": null
     }
   },
   {
@@ -16412,28 +16302,6 @@
         "slug": "the-art-of-1064-understanding-vastness",
         "uid": 318322,
         "lid": "dm6g"
-      }
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Big Order",
-      "id": 30137
-    },
-    "trakt": {
-      "title": "Big Order",
-      "id": 225299,
-      "slug": "big-order-2015",
-      "type": "movies"
-    },
-    "release_year": 2015,
-    "externals": {
-      "tmdb": 358813,
-      "imdb": null,
-      "letterboxd": {
-        "slug": "big-order",
-        "uid": 290335,
-        "lid": "cbie"
       }
     }
   },
@@ -16509,9 +16377,9 @@
       "id": 30364
     },
     "trakt": {
-      "title": "Haikyuu!! Movie 2: Winners and Losers",
+      "title": "Haikyu!! the Movie: The Winner and the Loser",
       "id": 221722,
-      "slug": "haikyuu-movie-2-winners-and-losers-2015",
+      "slug": "haikyu-the-movie-the-winner-and-the-loser-2015",
       "type": "movies"
     },
     "release_year": 2015,
@@ -16519,7 +16387,7 @@
       "tmdb": 347186,
       "imdb": "tt5445056",
       "letterboxd": {
-        "slug": "haikyuu-movie-2-winners-and-losers",
+        "slug": "haikyu-the-movie-the-winner-and-the-loser",
         "uid": 277616,
         "lid": "bEcM"
       }
@@ -19221,28 +19089,6 @@
   },
   {
     "myanimelist": {
-      "title": "Mary to Majo no Hana",
-      "id": 34541
-    },
-    "trakt": {
-      "title": "Mary and The Witch's Flower",
-      "id": 276346,
-      "slug": "mary-and-the-witch-s-flower-2017",
-      "type": "movies"
-    },
-    "release_year": 2017,
-    "externals": {
-      "tmdb": 430447,
-      "imdb": "tt6336356",
-      "letterboxd": {
-        "slug": "mary-and-the-witchs-flower",
-        "uid": 363605,
-        "lid": "ffTY"
-      }
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Koutetsujou no Kabaneri Movie 3: Unato Kessen",
       "id": 34544
     },
@@ -19511,9 +19357,9 @@
       "id": 35110
     },
     "trakt": {
-      "title": "Haikyuu!! Movie 3: Talent and Sense",
+      "title": "Haikyu!! The Movie: Talent and Sense",
       "id": 308777,
-      "slug": "haikyuu-movie-3-talent-and-sense-2017",
+      "slug": "haikyu-the-movie-talent-and-sense-2017",
       "type": "movies"
     },
     "release_year": 2017,
@@ -19521,7 +19367,7 @@
       "tmdb": 461762,
       "imdb": "tt7328554",
       "letterboxd": {
-        "slug": "haikyuu-movie-3-talent-and-sense",
+        "slug": "haikyu-the-movie-talent-and-sense",
         "uid": 393556,
         "lid": "gvOM"
       }
@@ -19533,9 +19379,9 @@
       "id": 35111
     },
     "trakt": {
-      "title": "Haikyuu!! Movie 4: Battle of Concepts",
+      "title": "Haikyu!! The Movie: Battle of Concepts",
       "id": 308778,
-      "slug": "haikyuu-movie-4-battle-of-concepts-2017",
+      "slug": "haikyu-the-movie-battle-of-concepts-2017",
       "type": "movies"
     },
     "release_year": 2017,
@@ -19543,7 +19389,7 @@
       "tmdb": 461763,
       "imdb": "tt7328556",
       "letterboxd": {
-        "slug": "haikyuu-movie-4-battle-of-concepts",
+        "slug": "haikyu-the-movie-battle-of-concepts",
         "uid": 393555,
         "lid": "gvOC"
       }
@@ -20897,7 +20743,7 @@
       "id": 37303
     },
     "trakt": {
-      "title": "K: Seven Stories Movie 2 - Side:Blue - Like Sirius",
+      "title": "K: Seven Stories Movie 2 - Side: Blue - Like Sirius",
       "id": 399813,
       "slug": "k-seven-stories-movie-2-side-blue-like-sirius-2018",
       "type": "movies"
@@ -22429,24 +22275,6 @@
         "uid": 563198,
         "lid": "nD8o"
       }
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Ryouma! The Prince of Tennis Shinsei Movie: Tennis no Oujisama",
-      "id": 38882
-    },
-    "trakt": {
-      "title": "Ryouma! The Prince of Tennis Shinsei Movie: Tennis no Ouji-sama",
-      "id": 673348,
-      "slug": "ryouma-the-prince-of-tennis-shinsei-movie-tennis-no-ouji-sama-2021",
-      "type": "movies"
-    },
-    "release_year": 2021,
-    "externals": {
-      "tmdb": 843260,
-      "imdb": null,
-      "letterboxd": null
     }
   },
   {
@@ -24378,28 +24206,6 @@
         "slug": "earwig-and-the-witch",
         "uid": 607371,
         "lid": "pu34"
-      }
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Grisaia: Phantom Trigger The Animation - Stargazer",
-      "id": 42392
-    },
-    "trakt": {
-      "title": "Grisaia: Phantom Trigger the Animation - Stargazer",
-      "id": 842916,
-      "slug": "grisaia-phantom-trigger-the-animation-stargazer-2020",
-      "type": "movies"
-    },
-    "release_year": 2020,
-    "externals": {
-      "tmdb": 779019,
-      "imdb": null,
-      "letterboxd": {
-        "slug": "grisaia-phantom-trigger-the-animation-stargazer",
-        "uid": 698018,
-        "lid": "thRy"
       }
     }
   },
@@ -26711,28 +26517,6 @@
   },
   {
     "myanimelist": {
-      "title": "Doraemon Movie 42: Nobita to Sora no Utopia",
-      "id": 52318
-    },
-    "trakt": {
-      "title": "Doraemon the Movie: Nobita's Sky Utopia",
-      "id": 829024,
-      "slug": "doraemon-the-movie-nobita-s-sky-utopia-2023",
-      "type": "movies"
-    },
-    "release_year": 2023,
-    "externals": {
-      "tmdb": 1030587,
-      "imdb": "tt21223380",
-      "letterboxd": {
-        "slug": "doraemon-the-movie-nobitas-sky-utopia",
-        "uid": 929114,
-        "lid": "CZ36"
-      }
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Onna no Sono no Hoshi",
       "id": 52601
     },
@@ -27229,33 +27013,11 @@
     "release_year": 2025,
     "externals": {
       "tmdb": 1106916,
-      "imdb": null,
+      "imdb": "tt35652362",
       "letterboxd": {
         "slug": "mirage-queens-elegant-vacations",
         "uid": 998253,
         "lid": "FSUy"
-      }
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Make a Girl",
-      "id": 54740
-    },
-    "trakt": {
-      "title": "Make a Girl",
-      "id": 951093,
-      "slug": "make-a-girl-2025",
-      "type": "movies"
-    },
-    "release_year": 2025,
-    "externals": {
-      "tmdb": 1179505,
-      "imdb": "tt33503342",
-      "letterboxd": {
-        "slug": "make-a-girl",
-        "uid": 1066022,
-        "lid": "IJd2"
       }
     }
   },
@@ -27828,28 +27590,6 @@
         "slug": "kuramerukagari",
         "uid": 1135147,
         "lid": "LD2e"
-      }
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Crayon Shin-chan Movie 32: Ora-tachi no Kyouryuu Nikki",
-      "id": 57499
-    },
-    "trakt": {
-      "title": "Crayon Shin-chan the Movie: Our Dinosaur Diary",
-      "id": 985885,
-      "slug": "crayon-shin-chan-the-movie-our-dinosaur-diary-2024",
-      "type": "movies"
-    },
-    "release_year": 2024,
-    "externals": {
-      "tmdb": 1221404,
-      "imdb": "tt30400536",
-      "letterboxd": {
-        "slug": "crayon-shin-chan-the-movie-our-dinosaur-diary",
-        "uid": 1105091,
-        "lid": "KmQu"
       }
     }
   },
@@ -28563,7 +28303,7 @@
       "id": 59897
     },
     "trakt": {
-      "title": "Miss Kobayashi's Dragon Maid: A Lonely Dragon Wants to Be Loved",
+      "title": "Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved",
       "id": 1109810,
       "slug": "miss-kobayashi-s-dragon-maid-a-lonely-dragon-wants-to-be-loved-2025",
       "type": "movies"
@@ -28783,9 +28523,9 @@
       "id": 60862
     },
     "trakt": {
-      "title": "Crayon Shin-chan: The Spicy Kasukabe Dancers in India",
+      "title": "Crayon Shin-chan the Movie: Super Hot! The Spicy Kasukabe Dancers",
       "id": 1148957,
-      "slug": "crayon-shin-chan-the-spicy-kasukabe-dancers-in-india-2025",
+      "slug": "crayon-shin-chan-the-movie-super-hot-the-spicy-kasukabe-dancers-2025",
       "type": "movies"
     },
     "release_year": 2025,
@@ -28793,7 +28533,7 @@
       "tmdb": 1404404,
       "imdb": "tt35009463",
       "letterboxd": {
-        "slug": "crayon-shin-chan-the-spicy-kasukabe-dancers",
+        "slug": "crayon-shin-chan-the-movie-super-hot-the",
         "uid": 1287562,
         "lid": "S1xi"
       }
@@ -28835,7 +28575,7 @@
     "release_year": 2025,
     "externals": {
       "tmdb": 1504916,
-      "imdb": null,
+      "imdb": "tt36270843",
       "letterboxd": {
         "slug": "king-of-prism-your-endless-call-minna-kirameki",
         "uid": 1381210,
