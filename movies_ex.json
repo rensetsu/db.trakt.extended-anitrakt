@@ -19089,6 +19089,28 @@
   },
   {
     "myanimelist": {
+      "title": "Mary to Majo no Hana",
+      "id": 34541
+    },
+    "trakt": {
+      "title": "Mary and The Witch's Flower",
+      "id": 276346,
+      "slug": "mary-and-the-witch-s-flower-2017",
+      "type": "movies"
+    },
+    "release_year": 2017,
+    "externals": {
+      "tmdb": 430447,
+      "imdb": "tt6336356",
+      "letterboxd": {
+        "slug": "mary-and-the-witchs-flower",
+        "uid": 363605,
+        "lid": "ffTY"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Koutetsujou no Kabaneri Movie 3: Unato Kessen",
       "id": 34544
     },
@@ -28734,6 +28756,50 @@
         "slug": "shinsei-galverse",
         "uid": 1376988,
         "lid": "VMaQ"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Toritsukare Otoko",
+      "id": 61736
+    },
+    "trakt": {
+      "title": "The Obsessed",
+      "id": 1217272,
+      "slug": "the-obsessed-2025",
+      "type": "movies"
+    },
+    "release_year": 2025,
+    "externals": {
+      "tmdb": 1484833,
+      "imdb": "tt37061307",
+      "letterboxd": {
+        "slug": "the-obsessed-2025",
+        "uid": 1361687,
+        "lid": "V8mW"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Kono Hon wo Nusumu Mono wa",
+      "id": 61770
+    },
+    "trakt": {
+      "title": "Whoever Steals This Book",
+      "id": 1223788,
+      "slug": "whoever-steals-this-book-2025",
+      "type": "movies"
+    },
+    "release_year": 2025,
+    "externals": {
+      "tmdb": 1492347,
+      "imdb": null,
+      "letterboxd": {
+        "slug": "whoever-steals-this-book",
+        "uid": 1369097,
+        "lid": "VrE6"
       }
     }
   },
