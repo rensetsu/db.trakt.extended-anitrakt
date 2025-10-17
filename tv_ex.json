@@ -90918,6 +90918,35 @@
   },
   {
     "myanimelist": {
+      "title": "One Punch Man 3",
+      "id": 52807
+    },
+    "trakt": {
+      "title": "One-Punch Man",
+      "id": 97548,
+      "slug": "one-punch-man",
+      "type": "shows",
+      "season": {
+        "id": 301419,
+        "number": 3,
+        "externals": {
+          "tvdb": 2014878,
+          "tmdb": 305144,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2015,
+    "externals": {
+      "tvdb": 293088,
+      "tmdb": 63926,
+      "imdb": "tt4508902",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Majo to Yajuu",
       "id": 52816
     },
@@ -94516,6 +94545,35 @@
       "tvdb": 434965,
       "tmdb": 221725,
       "imdb": "tt27531662",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fumetsu no Anata e Season 3",
+      "id": 54703
+    },
+    "trakt": {
+      "title": "To Your Eternity",
+      "id": 159569,
+      "slug": "to-your-eternity",
+      "type": "shows",
+      "season": {
+        "id": 318719,
+        "number": 3,
+        "externals": {
+          "tvdb": 2052786,
+          "tmdb": 332313,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 375271,
+      "tmdb": 97525,
+      "imdb": "tt12063450",
       "tvrage": null
     }
   },
@@ -98392,6 +98450,35 @@
   },
   {
     "myanimelist": {
+      "title": "Ao no Orchestra Season 2",
+      "id": 56877
+    },
+    "trakt": {
+      "title": "Blue Orchestra",
+      "id": 200272,
+      "slug": "blue-orchestra",
+      "type": "shows",
+      "season": {
+        "id": 431059,
+        "number": 2,
+        "externals": {
+          "tvdb": 2088042,
+          "tmdb": 431071,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 418904,
+      "tmdb": 197368,
+      "imdb": "tt26450255",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Dragon Ball Daima",
       "id": 56894
     },
@@ -101343,6 +101430,35 @@
   },
   {
     "myanimelist": {
+      "title": "Kakuriyo no Yadomeshi Ni",
+      "id": 58772
+    },
+    "trakt": {
+      "title": "Kakuriyo -Bed \u0026 Breakfast for Spirits-",
+      "id": 126424,
+      "slug": "kakuriyo-bed-breakfast-for-spirits",
+      "type": "shows",
+      "season": {
+        "id": 431034,
+        "number": 2,
+        "externals": {
+          "tvdb": 2194891,
+          "tmdb": 431043,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 339922,
+      "tmdb": 78483,
+      "imdb": "tt8228732",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Tougen Anki",
       "id": 58811
     },
@@ -101881,6 +101997,27 @@
       "tvdb": 271591,
       "tmdb": 56559,
       "imdb": "tt3111906",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Spy x Family Season 3",
+      "id": 59027
+    },
+    "trakt": {
+      "title": "SPY x FAMILY",
+      "id": 190742,
+      "slug": "spy-x-family",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2022,
+    "externals": {
+      "tvdb": 405920,
+      "tmdb": 120089,
+      "imdb": "tt13706018",
       "tvrage": null
     }
   },
@@ -103949,6 +104086,35 @@
   },
   {
     "myanimelist": {
+      "title": "Boku no Hero Academia: Final Season",
+      "id": 60098
+    },
+    "trakt": {
+      "title": "My Hero Academia",
+      "id": 104311,
+      "slug": "my-hero-academia",
+      "type": "shows",
+      "season": {
+        "id": 420486,
+        "number": 8,
+        "externals": {
+          "tvdb": 2207149,
+          "tmdb": 423035,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2016,
+    "externals": {
+      "tvdb": 305074,
+      "tmdb": 65930,
+      "imdb": "tt5626028",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Muchuu sa, Kimi ni.",
       "id": 60130
     },
@@ -104458,6 +104624,35 @@
       "tvdb": 456902,
       "tmdb": 277665,
       "imdb": "tt34702901",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Star Wars: Visions Volume 3",
+      "id": 60336
+    },
+    "trakt": {
+      "title": "Star Wars: Visions",
+      "id": 170569,
+      "slug": "star-wars-visions",
+      "type": "shows",
+      "season": {
+        "id": 430368,
+        "number": 3,
+        "externals": {
+          "tvdb": 2182958,
+          "tmdb": 432255,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 393190,
+      "tmdb": 114478,
+      "imdb": "tt13622982",
       "tvrage": null
     }
   },
@@ -105346,6 +105541,35 @@
   },
   {
     "myanimelist": {
+      "title": "Kagaku x Bouken Survival! 2nd Season",
+      "id": 60983
+    },
+    "trakt": {
+      "title": "Surviving Science!",
+      "id": 249449,
+      "slug": "surviving-science",
+      "type": "shows",
+      "season": {
+        "id": 475512,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 465866,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2024,
+    "externals": {
+      "tvdb": 446208,
+      "tmdb": 259789,
+      "imdb": "tt34623148",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Hitozuma no Kuchibiru wa Kan Chuuhai no Aji ga Shite",
       "id": 61023
     },
@@ -105573,6 +105797,27 @@
       "tvdb": 461372,
       "tmdb": 286236,
       "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shuumatsu no Walküre III",
+      "id": 61200
+    },
+    "trakt": {
+      "title": "Record of Ragnarok",
+      "id": 171086,
+      "slug": "record-of-ragnarok",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 393810,
+      "tmdb": 114868,
+      "imdb": "tt13676344",
       "tvrage": null
     }
   },
@@ -105881,6 +106126,35 @@
   },
   {
     "myanimelist": {
+      "title": "Kingdom 6th Season",
+      "id": 61517
+    },
+    "trakt": {
+      "title": "Kingdom",
+      "id": 66737,
+      "slug": "kingdom-2012",
+      "type": "shows",
+      "season": {
+        "id": 480168,
+        "number": 6,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 469868,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2012,
+    "externals": {
+      "tvdb": 259635,
+      "tmdb": 46437,
+      "imdb": "tt2404499",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Gakkou de wa Oshiete Kurenai Taisetsu na Koto",
       "id": 61731
     },
@@ -106013,6 +106287,27 @@
       "tvdb": 465214,
       "tmdb": 294867,
       "imdb": "tt37532634",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Uma Musume: Cinderella Gray Part 2",
+      "id": 61930
+    },
+    "trakt": {
+      "title": "Umamusume: Cinderella Gray",
+      "id": 253261,
+      "slug": "umamusume-cinderella-gray",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 453673,
+      "tmdb": 262700,
+      "imdb": "tt35437675",
       "tvrage": null
     }
   },
