@@ -569,7 +569,7 @@
       "id": 405
     },
     "trakt": {
-      "title": "Blood The Last Vampire",
+      "title": "Blood: The Last Vampire",
       "id": 761,
       "slug": "blood-the-last-vampire-2000",
       "type": "movies"
@@ -1407,10 +1407,10 @@
     "trakt": {
       "title": "Vampire Hunter D: Bloodlust",
       "id": 9786,
-      "slug": "vampire-hunter-d-bloodlust-2000",
+      "slug": "vampire-hunter-d-bloodlust-2001",
       "type": "movies"
     },
-    "release_year": 2000,
+    "release_year": 2001,
     "externals": {
       "tmdb": 15999,
       "imdb": "tt0216651",
@@ -1845,9 +1845,9 @@
       "id": 779
     },
     "trakt": {
-      "title": "Case Closed: The Time Bombed Skyscraper",
+      "title": "Detective Conan: The Time Bombed Skyscraper",
       "id": 13117,
-      "slug": "case-closed-the-time-bombed-skyscraper-1997",
+      "slug": "detective-conan-the-time-bombed-skyscraper-1997",
       "type": "movies"
     },
     "release_year": 1997,
@@ -1855,7 +1855,7 @@
       "tmdb": 21422,
       "imdb": "tt0131479",
       "letterboxd": {
-        "slug": "case-closed-the-time-bombed-skyscraper",
+        "slug": "detective-conan-the-time-bombed-skyscraper",
         "uid": 38420,
         "lid": "1BWM"
       }
@@ -3747,7 +3747,7 @@
       "id": 1400
     },
     "trakt": {
-      "title": "Macross 7: The Galaxy Is Calling Me",
+      "title": "Macross 7: The Galaxy Is Calling Me!",
       "id": 31412,
       "slug": "macross-7-the-galaxy-is-calling-me-1995",
       "type": "movies"
@@ -4255,10 +4255,10 @@
     "trakt": {
       "title": "Lupin the Third: Voyage to Danger",
       "id": 56246,
-      "slug": "lupin-the-third-voyage-to-danger-2001",
+      "slug": "lupin-the-third-voyage-to-danger-1993",
       "type": "movies"
     },
-    "release_year": 2001,
+    "release_year": 1993,
     "externals": {
       "tmdb": 76190,
       "imdb": "tt0186506",
@@ -7813,7 +7813,7 @@
       "id": 4107
     },
     "trakt": {
-      "title": "Gurren Lagann the Movie: Childhood's End",
+      "title": "Gurren Lagann The Movie: Childhood's End",
       "id": 12883,
       "slug": "gurren-lagann-the-movie-childhood-s-end-2008",
       "type": "movies"
@@ -12663,9 +12663,9 @@
       "id": 13391
     },
     "trakt": {
-      "title": "Rakuen Tsuiho: Expelled from Paradise",
+      "title": "Expelled from Paradise",
       "id": 193094,
-      "slug": "rakuen-tsuiho-expelled-from-paradise-2014",
+      "slug": "expelled-from-paradise-2014",
       "type": "movies"
     },
     "release_year": 2014,
@@ -12673,7 +12673,7 @@
       "tmdb": 304023,
       "imdb": "tt2859246",
       "letterboxd": {
-        "slug": "rakuen-tsuiho-expelled-from-paradise",
+        "slug": "expelled-from-paradise",
         "uid": 231029,
         "lid": "9H0K"
       }
@@ -14705,11 +14705,11 @@
   },
   {
     "myanimelist": {
-      "title": "Psycho-Pass Movie",
+      "title": "Psycho-Pass Movie 1",
       "id": 21339
     },
     "trakt": {
-      "title": "Psycho-Pass: The Movie",
+      "title": "PSYCHO-PASS: The Movie",
       "id": 194995,
       "slug": "psycho-pass-the-movie-2015",
       "type": "movies"
@@ -14731,9 +14731,9 @@
       "id": 21419
     },
     "trakt": {
-      "title": "Case Closed: The Sniper from Another Dimension",
+      "title": "Detective Conan: The Sniper from Another Dimension",
       "id": 157232,
-      "slug": "case-closed-the-sniper-from-another-dimension-2014",
+      "slug": "detective-conan-the-sniper-from-another-dimension-2014",
       "type": "movies"
     },
     "release_year": 2014,
@@ -14741,7 +14741,7 @@
       "tmdb": 257512,
       "imdb": "tt3455204",
       "letterboxd": {
-        "slug": "case-closed-the-sniper-from-another-dimension",
+        "slug": "detective-conan-the-sniper-from-another-dimension",
         "uid": 181304,
         "lid": "7BEA"
       }
@@ -15105,9 +15105,9 @@
       "id": 23293
     },
     "trakt": {
-      "title": "Lupin the IIIrd: Jigen's Gravestone",
+      "title": "Lupin the Third: Jigen's Gravestone",
       "id": 159629,
-      "slug": "lupin-the-iiird-jigen-s-gravestone-2014",
+      "slug": "lupin-the-third-jigen-s-gravestone-2014",
       "type": "movies"
     },
     "release_year": 2014,
@@ -15115,7 +15115,7 @@
       "tmdb": 260516,
       "imdb": "tt3830998",
       "letterboxd": {
-        "slug": "lupin-the-iiird-jigens-gravestone",
+        "slug": "lupin-the-third-jigens-gravestone",
         "uid": 184063,
         "lid": "7IPA"
       }
@@ -15655,9 +15655,9 @@
       "id": 28479
     },
     "trakt": {
-      "title": "Case Closed: Sunflowers of Inferno",
+      "title": "Detective Conan: Sunflowers of Inferno",
       "id": 197737,
-      "slug": "case-closed-sunflowers-of-inferno-2015",
+      "slug": "detective-conan-sunflowers-of-inferno-2015",
       "type": "movies"
     },
     "release_year": 2015,
@@ -18565,9 +18565,9 @@
       "id": 34021
     },
     "trakt": {
-      "title": "Lupin the IIIrd: Goemon's Blood Spray",
+      "title": "Lupin the 3rd: Goemon's Blood Spray",
       "id": 260453,
-      "slug": "lupin-the-iiird-goemon-s-blood-spray-2017",
+      "slug": "lupin-the-3rd-goemon-s-blood-spray-2017",
       "type": "movies"
     },
     "release_year": 2017,
@@ -18575,7 +18575,7 @@
       "tmdb": 456611,
       "imdb": "tt6047974",
       "letterboxd": {
-        "slug": "lupin-the-iiird-goemons-blood-spray",
+        "slug": "lupin-the-3rd-goemons-blood-spray",
         "uid": 388577,
         "lid": "giRI"
       }
@@ -18917,7 +18917,7 @@
       "id": 34437
     },
     "trakt": {
-      "title": "Code Geass: Lelouch of the Re;Surrection",
+      "title": "Code Geass: Lelouch of the Re;surrection",
       "id": 404784,
       "slug": "code-geass-lelouch-of-the-re-surrection-2019",
       "type": "movies"
@@ -21311,7 +21311,7 @@
   },
   {
     "myanimelist": {
-      "title": "Princess Principal: Crown Handler Movie 1",
+      "title": "Princess Principal: Crown Handler 1",
       "id": 37807
     },
     "trakt": {
@@ -23771,7 +23771,7 @@
   },
   {
     "myanimelist": {
-      "title": "Princess Principal: Crown Handler Movie 2",
+      "title": "Princess Principal: Crown Handler 2",
       "id": 41140
     },
     "trakt": {
@@ -23793,7 +23793,7 @@
   },
   {
     "myanimelist": {
-      "title": "Princess Principal: Crown Handler Movie 3",
+      "title": "Princess Principal: Crown Handler 3",
       "id": 41141
     },
     "trakt": {
@@ -25069,7 +25069,7 @@
   },
   {
     "myanimelist": {
-      "title": "Peleliu: Guernica of Paradise",
+      "title": "Peleliu: Rakuen no Guernica",
       "id": 48701
     },
     "trakt": {
@@ -25245,7 +25245,7 @@
   },
   {
     "myanimelist": {
-      "title": "Given: On The Other Hand",
+      "title": "Given: Uragawa no Sonzai",
       "id": 49053
     },
     "trakt": {
@@ -25759,7 +25759,7 @@
     "release_year": 2022,
     "externals": {
       "tmdb": 803675,
-      "imdb": null,
+      "imdb": "tt27881465",
       "letterboxd": {
         "slug": "pointy-headed-gonta-the-story-of-the-two-named-dog-in-the-fukushima-disaster",
         "uid": 721062,
@@ -25813,7 +25813,7 @@
   },
   {
     "myanimelist": {
-      "title": "Zombie Land Saga: Yumeginga Paradise",
+      "title": "Zombieland Saga Movie: Yumeginga Paradise",
       "id": 50159
     },
     "trakt": {
@@ -26323,9 +26323,9 @@
       "id": 51404
     },
     "trakt": {
-      "title": "The Klutzy Witch: Fūka and the Dark Witch",
+      "title": "The Klutzy Witch: Fuuka and the Dark Witch",
       "id": 707414,
-      "slug": "the-klutzy-witch-fuka-and-the-dark-witch-2023",
+      "slug": "the-klutzy-witch-fuuka-and-the-dark-witch-2023",
       "type": "movies"
     },
     "release_year": 2023,
@@ -26473,7 +26473,7 @@
   },
   {
     "myanimelist": {
-      "title": "Mononoke Movie: Karakasa",
+      "title": "Mononoke Movie 1: Karakasa",
       "id": 52107
     },
     "trakt": {
@@ -26583,7 +26583,7 @@
   },
   {
     "myanimelist": {
-      "title": "Psycho-Pass Movie: Providence",
+      "title": "Psycho-Pass Movie 2: Providence",
       "id": 52747
     },
     "trakt": {
@@ -26737,7 +26737,7 @@
   },
   {
     "myanimelist": {
-      "title": "Love Live! Nijigasaki High School Idol Club: Next Sky",
+      "title": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Next Sky",
       "id": 53671
     },
     "trakt": {
@@ -27507,7 +27507,7 @@
   },
   {
     "myanimelist": {
-      "title": "Princess Principal: Crown Handler Movie 4",
+      "title": "Princess Principal: Crown Handler 4",
       "id": 57093
     },
     "trakt": {
@@ -27709,7 +27709,7 @@
       "id": 57647
     },
     "trakt": {
-      "title": "Umamusume: Pretty Derby – Beginning of a New Era",
+      "title": "Umamusume: Pretty Derby - Beginning of a New Era",
       "id": 987309,
       "slug": "umamusume-pretty-derby-beginning-of-a-new-era-2024",
       "type": "movies"
@@ -28057,7 +28057,7 @@
   },
   {
     "myanimelist": {
-      "title": "The Last Blossom",
+      "title": "Housenka",
       "id": 58915
     },
     "trakt": {
@@ -28167,7 +28167,7 @@
   },
   {
     "myanimelist": {
-      "title": "Mononoke the Movie: Chapter II - The Ashes of Rage",
+      "title": "Mononoke Movie 2: Hinezumi",
       "id": 59408
     },
     "trakt": {
@@ -28299,21 +28299,21 @@
   },
   {
     "myanimelist": {
-      "title": "Girls Band Cry Compilation Movie: Seishun Kyōsōkyoku",
+      "title": "Girls Band Cry Movie",
       "id": 59817
     },
     "trakt": {
-      "title": "Girls Band Cry Compilation Movie: Seishun Kyōsōkyoku",
+      "title": "Girls Band Cry The Movie Part 1: Youth Rhapsody",
       "id": 1170700,
-      "slug": "girls-band-cry-compilation-movie-seishun-kyosokyoku-2025",
+      "slug": "girls-band-cry-the-movie-part-1-youth-rhapsody-2025",
       "type": "movies"
     },
     "release_year": 2025,
     "externals": {
       "tmdb": 1431083,
-      "imdb": null,
+      "imdb": "tt38590089",
       "letterboxd": {
-        "slug": "girls-band-cry-compilation-movie-seishun",
+        "slug": "girls-band-cry-the-movie-part-1-youth-rhapsody",
         "uid": 1309804,
         "lid": "SXoI"
       }
@@ -28387,7 +28387,7 @@
   },
   {
     "myanimelist": {
-      "title": "Love Live! Nijigasaki High School Idol Club Final Chapter Part 2",
+      "title": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen Part 2",
       "id": 60159
     },
     "trakt": {
@@ -28431,7 +28431,7 @@
   },
   {
     "myanimelist": {
-      "title": "Scarlet",
+      "title": "Hateshinaki Scarlet",
       "id": 60610
     },
     "trakt": {
@@ -28475,7 +28475,7 @@
   },
   {
     "myanimelist": {
-      "title": "You and Idol Precure♪ the Movie For You! Our Kirakilala Concert!",
+      "title": "Kimi to Idol Precure♪ Movie: Omatase! Kimi ni Todokeru Kirakki Live!",
       "id": 60773
     },
     "trakt": {
@@ -28651,7 +28651,7 @@
   },
   {
     "myanimelist": {
-      "title": "Mononoke the Movie: Chapter III - The Curse of the Serpent",
+      "title": "Mononoke Movie 3: Hebigami",
       "id": 61202
     },
     "trakt": {
@@ -28673,7 +28673,7 @@
   },
   {
     "myanimelist": {
-      "title": "Sumikko Gurashi: The Sky Kingdom and Two Children",
+      "title": "Sumikko Gurashi Movie 4: Sora no Oukoku to Futari no Ko",
       "id": 61278
     },
     "trakt": {
@@ -28707,7 +28707,7 @@
     "release_year": 2025,
     "externals": {
       "tmdb": 1418309,
-      "imdb": null,
+      "imdb": "tt37437800",
       "letterboxd": {
         "slug": "tooi-san-wa-seishun-shitai-baka-to-smartphone",
         "uid": 1299114,
@@ -28717,7 +28717,7 @@
   },
   {
     "myanimelist": {
-      "title": "Aikatsu! × PriPara THE MOVIE -A Miraculous Encounter!-",
+      "title": "Aikatsu! x PriPara the Movie: Deai no Kiseki!",
       "id": 61558
     },
     "trakt": {
@@ -28795,7 +28795,7 @@
     "release_year": 2025,
     "externals": {
       "tmdb": 1492347,
-      "imdb": null,
+      "imdb": "tt38703423",
       "letterboxd": {
         "slug": "whoever-steals-this-book",
         "uid": 1369097,
@@ -28805,7 +28805,7 @@
   },
   {
     "myanimelist": {
-      "title": "Golden Kamuy: The Lightning Bandit and O-Gin the Viper / Shimaenaga",
+      "title": "Golden Kamuy: Inazuma Goutou to Mamushi no Ogin/Shimaenaga",
       "id": 61834
     },
     "trakt": {
