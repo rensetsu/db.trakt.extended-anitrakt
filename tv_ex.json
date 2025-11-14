@@ -4451,6 +4451,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hellsing",
+      "id": 270
+    },
+    "trakt": {
+      "title": "Hellsing",
+      "id": 16759,
+      "slug": "hellsing",
+      "type": "shows",
+      "season": {
+        "id": 28651,
+        "number": 1,
+        "externals": {
+          "tvdb": 71278,
+          "tmdb": 27962,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2001,
+    "externals": {
+      "tvdb": 71278,
+      "tmdb": 16830,
+      "imdb": "tt0325547",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Gad Guard",
       "id": 271
     },
@@ -8361,6 +8390,35 @@
       "tvdb": 73315,
       "tmdb": 37419,
       "imdb": "tt0367443",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hellsing Ultimate",
+      "id": 777
+    },
+    "trakt": {
+      "title": "Hellsing Ultimate",
+      "id": 61080,
+      "slug": "hellsing-ultimate",
+      "type": "shows",
+      "season": {
+        "id": 62823,
+        "number": 1,
+        "externals": {
+          "tvdb": 504259,
+          "tmdb": 63932,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2006,
+    "externals": {
+      "tvdb": 263688,
+      "tmdb": 61752,
+      "imdb": "tt0495212",
       "tvrage": null
     }
   },
@@ -12787,6 +12845,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hataraki Man",
+      "id": 1592
+    },
+    "trakt": {
+      "title": "Hataraki Man",
+      "id": 73058,
+      "slug": "hataraki-man",
+      "type": "shows",
+      "season": {
+        "id": 79102,
+        "number": 1,
+        "externals": {
+          "tvdb": 0,
+          "tmdb": 173226,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2006,
+    "externals": {
+      "tvdb": 79990,
+      "tmdb": 115109,
+      "imdb": "tt0928092",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Jigoku Shoujo Futakomori",
       "id": 1594
     },
@@ -14606,6 +14693,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hayate no Gotoku!",
+      "id": 2026
+    },
+    "trakt": {
+      "title": "Hayate the Combat Butler",
+      "id": 56000,
+      "slug": "hayate-the-combat-butler-2007",
+      "type": "shows",
+      "season": {
+        "id": 59762,
+        "number": 1,
+        "externals": {
+          "tvdb": 28518,
+          "tmdb": 58165,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2007,
+    "externals": {
+      "tvdb": 80554,
+      "tmdb": 56355,
+      "imdb": "tt0983962",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "El Cazador de la Bruja",
       "id": 2030
     },
@@ -16330,6 +16446,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hello! Sandybell",
+      "id": 2799
+    },
+    "trakt": {
+      "title": "Hello! Sandybell",
+      "id": 9674,
+      "slug": "hello-sandybell",
+      "type": "shows",
+      "season": {
+        "id": 20053,
+        "number": 1,
+        "externals": {
+          "tvdb": 159401,
+          "tmdb": 19534,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 1981,
+    "externals": {
+      "tvdb": 129541,
+      "tmdb": 9723,
+      "imdb": "tt0294099",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Candy Candy",
       "id": 2800
     },
@@ -17456,6 +17601,35 @@
       "tvdb": 79839,
       "tmdb": 53787,
       "imdb": "tt0977907",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hatenkou Yuugi",
+      "id": 3298
+    },
+    "trakt": {
+      "title": "Hatenkou Yugi",
+      "id": 64029,
+      "slug": "hatenkou-yugi",
+      "type": "shows",
+      "season": {
+        "id": 67216,
+        "number": 1,
+        "externals": {
+          "tvdb": 42121,
+          "tmdb": 102696,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2008,
+    "externals": {
+      "tvdb": 85611,
+      "tmdb": 45265,
+      "imdb": "tt1160834",
       "tvrage": null
     }
   },
@@ -20440,6 +20614,35 @@
       "tvdb": 85438,
       "tmdb": 95710,
       "imdb": "tt1386581",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hatsukoi Limited.",
+      "id": 5150
+    },
+    "trakt": {
+      "title": "Hatsukoi Limited.",
+      "id": 62545,
+      "slug": "hatsukoi-limited",
+      "type": "shows",
+      "season": {
+        "id": 65058,
+        "number": 1,
+        "externals": {
+          "tvdb": 52031,
+          "tmdb": 45508,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2009,
+    "externals": {
+      "tvdb": 89311,
+      "tmdb": 34744,
+      "imdb": "tt1418477",
       "tvrage": null
     }
   },
@@ -31288,6 +31491,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hayate no Gotoku! Can't Take My Eyes Off You",
+      "id": 14653
+    },
+    "trakt": {
+      "title": "Hayate the Combat Butler",
+      "id": 56000,
+      "slug": "hayate-the-combat-butler-2007",
+      "type": "shows",
+      "season": {
+        "id": 59764,
+        "number": 3,
+        "externals": {
+          "tvdb": 499979,
+          "tmdb": 58164,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2007,
+    "externals": {
+      "tvdb": 80554,
+      "tmdb": 56355,
+      "imdb": "tt0983962",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Yurumates 3D Plus",
       "id": 14693
     },
@@ -32585,6 +32817,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hataraku Maou-sama!",
+      "id": 15809
+    },
+    "trakt": {
+      "title": "The Devil Is a Part-Timer!",
+      "id": 45743,
+      "slug": "the-devil-is-a-part-timer",
+      "type": "shows",
+      "season": {
+        "id": 62518,
+        "number": 1,
+        "externals": {
+          "tvdb": 514063,
+          "tmdb": 63495,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2013,
+    "externals": {
+      "tvdb": 267441,
+      "tmdb": 45997,
+      "imdb": "tt2622982",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Ginga Kikoutai Majestic Prince",
       "id": 15863
     },
@@ -33695,6 +33956,35 @@
       "tvdb": 267246,
       "tmdb": 58237,
       "imdb": "tt2909912",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hayate no Gotoku! Cuties",
+      "id": 16982
+    },
+    "trakt": {
+      "title": "Hayate the Combat Butler",
+      "id": 56000,
+      "slug": "hayate-the-combat-butler-2007",
+      "type": "shows",
+      "season": {
+        "id": 59765,
+        "number": 4,
+        "externals": {
+          "tvdb": 514046,
+          "tmdb": 58163,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2007,
+    "externals": {
+      "tvdb": 80554,
+      "tmdb": 56355,
+      "imdb": "tt0983962",
       "tvrage": null
     }
   },
@@ -39618,6 +39908,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hello!! Kiniro Mosaic",
+      "id": 23269
+    },
+    "trakt": {
+      "title": "Kinmoza!",
+      "id": 70751,
+      "slug": "kinmoza",
+      "type": "shows",
+      "season": {
+        "id": 76572,
+        "number": 2,
+        "externals": {
+          "tvdb": 592139,
+          "tmdb": 102064,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2013,
+    "externals": {
+      "tvdb": 269872,
+      "tmdb": 78589,
+      "imdb": "tt2904582",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Shigatsu wa Kimi no Uso",
       "id": 23273
     },
@@ -42481,6 +42800,35 @@
       "tvdb": 71863,
       "tmdb": 31572,
       "imdb": "tt0159175",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hibike! Euphonium",
+      "id": 27989
+    },
+    "trakt": {
+      "title": "Sound! Euphonium",
+      "id": 94106,
+      "slug": "sound-euphonium",
+      "type": "shows",
+      "season": {
+        "id": 104611,
+        "number": 1,
+        "externals": {
+          "tvdb": 607828,
+          "tmdb": 66354,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2015,
+    "externals": {
+      "tvdb": 289884,
+      "tmdb": 62564,
+      "imdb": "tt4384306",
       "tvrage": null
     }
   },
@@ -45908,6 +46256,35 @@
       "tvdb": 294001,
       "tmdb": 63085,
       "imdb": "tt4801510",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hatsukoi Monster",
+      "id": 31109
+    },
+    "trakt": {
+      "title": "First Love Monster",
+      "id": 106702,
+      "slug": "first-love-monster",
+      "type": "shows",
+      "season": {
+        "id": 127363,
+        "number": 1,
+        "externals": {
+          "tvdb": 667644,
+          "tmdb": 78158,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2016,
+    "externals": {
+      "tvdb": 309498,
+      "tmdb": 66949,
+      "imdb": "tt5926310",
       "tvrage": null
     }
   },
@@ -52453,6 +52830,35 @@
   },
   {
     "myanimelist": {
+      "title": "Heybot!",
+      "id": 33434
+    },
+    "trakt": {
+      "title": "HEYBOT!",
+      "id": 111194,
+      "slug": "heybot",
+      "type": "shows",
+      "season": {
+        "id": 132116,
+        "number": 1,
+        "externals": {
+          "tvdb": 680520,
+          "tmdb": 80280,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2016,
+    "externals": {
+      "tvdb": 316838,
+      "tmdb": 67902,
+      "imdb": "tt14478826",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Huyao Xiao Hongniang: Yue Hong",
       "id": 33446
     },
@@ -57781,6 +58187,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hatena☆Illusion",
+      "id": 35252
+    },
+    "trakt": {
+      "title": "Hatena Illusion",
+      "id": 155141,
+      "slug": "hatena-illusion",
+      "type": "shows",
+      "season": {
+        "id": 206283,
+        "number": 1,
+        "externals": {
+          "tvdb": 1806769,
+          "tmdb": 135660,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2020,
+    "externals": {
+      "tvdb": 372129,
+      "tmdb": 95346,
+      "imdb": "tt11455814",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Time Bokan: Gyakushuu no San Akunin",
       "id": 35254
     },
@@ -59276,6 +59711,35 @@
       "tvdb": 341425,
       "tmdb": 78457,
       "imdb": "tt8254880",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Harukana Receive",
+      "id": 35983
+    },
+    "trakt": {
+      "title": "Harukana Receive",
+      "id": 130153,
+      "slug": "harukana-receive",
+      "type": "shows",
+      "season": {
+        "id": 163657,
+        "number": 1,
+        "externals": {
+          "tvdb": 763583,
+          "tmdb": 105793,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 346948,
+      "tmdb": 80546,
+      "imdb": "tt8530992",
       "tvrage": null
     }
   },
@@ -61232,6 +61696,35 @@
       "tvdb": 339922,
       "tmdb": 78483,
       "imdb": "tt8228732",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hataraku Oniisan!",
+      "id": 36784
+    },
+    "trakt": {
+      "title": "Working Buddies!",
+      "id": 126696,
+      "slug": "working-buddies",
+      "type": "shows",
+      "season": {
+        "id": 156747,
+        "number": 1,
+        "externals": {
+          "tvdb": 745316,
+          "tmdb": 97530,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 340518,
+      "tmdb": 76174,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -66522,6 +67015,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hashiri Tsuzukete Yokatta tte.",
+      "id": 38254
+    },
+    "trakt": {
+      "title": "I'm Glad I Could Keep Running",
+      "id": 136721,
+      "slug": "i-m-glad-i-could-keep-running",
+      "type": "shows",
+      "season": {
+        "id": 172600,
+        "number": 1,
+        "externals": {
+          "tvdb": 780005,
+          "tmdb": 110554,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 353246,
+      "tmdb": 82974,
+      "imdb": "tt9642578",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Magia Record: Mahou Shoujo Madoka☆Magica Gaiden",
       "id": 38256
     },
@@ -68734,6 +69256,35 @@
       "tvdb": 360502,
       "tmdb": 88045,
       "imdb": "tt10362632",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hataage! Kemono Michi",
+      "id": 39030
+    },
+    "trakt": {
+      "title": "Kemono Michi: Rise Up",
+      "id": 152074,
+      "slug": "kemono-michi-rise-up",
+      "type": "shows",
+      "season": {
+        "id": 197993,
+        "number": 1,
+        "externals": {
+          "tvdb": 824059,
+          "tmdb": 128444,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2019,
+    "externals": {
+      "tvdb": 368905,
+      "tmdb": 91584,
+      "imdb": "tt9635464",
       "tvrage": null
     }
   },
@@ -77245,6 +77796,35 @@
   },
   {
     "myanimelist": {
+      "title": "Heion Sedai no Idaten-tachi",
+      "id": 42625
+    },
+    "trakt": {
+      "title": "The Idaten Deities Know Only Peace",
+      "id": 179819,
+      "slug": "the-idaten-deities-know-only-peace",
+      "type": "shows",
+      "season": {
+        "id": 255966,
+        "number": 1,
+        "externals": {
+          "tvdb": 1922720,
+          "tmdb": 158200,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 401856,
+      "tmdb": 107001,
+      "imdb": "tt13409388",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Peach Boy Riverside",
       "id": 42627
     },
@@ -78181,6 +78761,35 @@
       "tvdb": 390832,
       "tmdb": 111819,
       "imdb": "tt13311344",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hetalia World★Stars",
+      "id": 43591
+    },
+    "trakt": {
+      "title": "Hetalia: World Stars",
+      "id": 176915,
+      "slug": "hetalia-world-stars",
+      "type": "shows",
+      "season": {
+        "id": 251121,
+        "number": 1,
+        "externals": {
+          "tvdb": 1915001,
+          "tmdb": 187005,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 400245,
+      "tmdb": 121301,
+      "imdb": "tt13344434",
       "tvrage": null
     }
   },
@@ -80659,6 +81268,35 @@
       "tvdb": 400584,
       "tmdb": 120013,
       "imdb": "tt14201334",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hataraku Maou-sama!!",
+      "id": 48413
+    },
+    "trakt": {
+      "title": "The Devil Is a Part-Timer!",
+      "id": 45743,
+      "slug": "the-devil-is-a-part-timer",
+      "type": "shows",
+      "season": {
+        "id": 247044,
+        "number": 2,
+        "externals": {
+          "tvdb": 1906928,
+          "tmdb": 184638,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2013,
+    "externals": {
+      "tvdb": 267441,
+      "tmdb": 45997,
+      "imdb": "tt2622982",
       "tvrage": null
     }
   },
@@ -83548,6 +84186,35 @@
       "tvdb": 409490,
       "tmdb": 132636,
       "imdb": "tt15356258",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Heike Monogatari",
+      "id": 49738
+    },
+    "trakt": {
+      "title": "The Heike Story",
+      "id": 187150,
+      "slug": "the-heike-story",
+      "type": "shows",
+      "season": {
+        "id": 270410,
+        "number": 1,
+        "externals": {
+          "tvdb": 1953699,
+          "tmdb": 208969,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2022,
+    "externals": {
+      "tvdb": 409529,
+      "tmdb": 132664,
+      "imdb": "tt15353550",
       "tvrage": null
     }
   },
@@ -86803,6 +87470,35 @@
       "tvdb": 348545,
       "tmdb": 85937,
       "imdb": "tt9335498",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Helck",
+      "id": 51020
+    },
+    "trakt": {
+      "title": "Helck",
+      "id": 200967,
+      "slug": "helck",
+      "type": "shows",
+      "season": {
+        "id": 311345,
+        "number": 1,
+        "externals": {
+          "tvdb": 1984371,
+          "tmdb": 243789,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 416359,
+      "tmdb": 157571,
+      "imdb": "tt26688817",
       "tvrage": null
     }
   },
@@ -104468,6 +105164,35 @@
       "tvdb": 443345,
       "tmdb": 241811,
       "imdb": "tt33498499",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hibi wa Sugiredo Meshi Umashi",
+      "id": 60658
+    },
+    "trakt": {
+      "title": "Food for the Soul",
+      "id": 271977,
+      "slug": "food-for-the-soul",
+      "type": "shows",
+      "season": {
+        "id": 439421,
+        "number": 1,
+        "externals": {
+          "tvdb": 2163045,
+          "tmdb": 436074,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 458369,
+      "tmdb": 281042,
+      "imdb": "tt36269978",
       "tvrage": null
     }
   },
