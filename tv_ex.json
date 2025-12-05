@@ -1078,9 +1078,9 @@
       "id": 75
     },
     "trakt": {
-      "title": "Fafner in the Azure: Dead Aggressor",
+      "title": "Fafner",
       "id": 42610,
-      "slug": "fafner-in-the-azure-dead-aggressor",
+      "slug": "fafner",
       "type": "shows",
       "season": {
         "id": 93841,
@@ -15103,9 +15103,9 @@
       "id": 2151
     },
     "trakt": {
-      "title": "Nils Holgerson",
+      "title": "The Wonderful Adventures of Nils",
       "id": 19430,
-      "slug": "nils-holgerson",
+      "slug": "the-wonderful-adventures-of-nils",
       "type": "shows",
       "season": {
         "id": 30585,
@@ -22598,7 +22598,7 @@
     "externals": {
       "tvdb": 119141,
       "tmdb": 45999,
-      "imdb": null,
+      "imdb": "tt6608398",
       "tvrage": null
     }
   },
@@ -23149,7 +23149,7 @@
     "externals": {
       "tvdb": 202751,
       "tmdb": null,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -25411,7 +25411,7 @@
     "externals": {
       "tvdb": 119141,
       "tmdb": 45999,
-      "imdb": null,
+      "imdb": "tt6608398",
       "tvrage": null
     }
   },
@@ -26832,7 +26832,7 @@
     "externals": {
       "tvdb": 248980,
       "tmdb": 57127,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -27839,7 +27839,7 @@
     "externals": {
       "tvdb": 256182,
       "tmdb": 79033,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -29919,7 +29919,7 @@
     "externals": {
       "tvdb": 258010,
       "tmdb": 201394,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -30093,7 +30093,7 @@
     "externals": {
       "tvdb": 269157,
       "tmdb": 108874,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -30615,7 +30615,7 @@
     "externals": {
       "tvdb": 266404,
       "tmdb": 53093,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -30702,7 +30702,7 @@
     "externals": {
       "tvdb": 77524,
       "tmdb": 132756,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -32028,7 +32028,7 @@
     "externals": {
       "tvdb": 262110,
       "tmdb": 79030,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -34023,9 +34023,9 @@
       "id": 17080
     },
     "trakt": {
-      "title": "Fafner in the Azure: Dead Aggressor",
+      "title": "Fafner",
       "id": 42610,
-      "slug": "fafner-in-the-azure-dead-aggressor",
+      "slug": "fafner",
       "type": "shows",
       "season": null,
       "is_split_cour": true
@@ -34432,7 +34432,7 @@
     "externals": {
       "tvdb": 262110,
       "tmdb": 79030,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -35091,7 +35091,7 @@
     "externals": {
       "tvdb": 283243,
       "tmdb": 77239,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -37693,7 +37693,7 @@
     "externals": {
       "tvdb": 276346,
       "tmdb": 132168,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -39027,7 +39027,7 @@
     "externals": {
       "tvdb": 279224,
       "tmdb": 73492,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -44365,7 +44365,7 @@
     "externals": {
       "tvdb": 294336,
       "tmdb": 122518,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -44694,7 +44694,7 @@
       "id": 30187
     },
     "trakt": {
-      "title": "Beautiful Bones: Sakurako’s Investigation",
+      "title": "Beautiful Bones: Sakurako's Investigation",
       "id": 101246,
       "slug": "beautiful-bones-sakurako-s-investigation",
       "type": "shows",
@@ -45382,9 +45382,9 @@
       "id": 30549
     },
     "trakt": {
-      "title": "Fafner in the Azure: Dead Aggressor",
+      "title": "Fafner",
       "id": 42610,
-      "slug": "fafner-in-the-azure-dead-aggressor",
+      "slug": "fafner",
       "type": "shows",
       "season": null,
       "is_split_cour": true
@@ -45799,7 +45799,7 @@
     "externals": {
       "tvdb": 297313,
       "tmdb": 200948,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -49384,7 +49384,7 @@
     "externals": {
       "tvdb": 309823,
       "tmdb": 66751,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -49500,7 +49500,7 @@
     "externals": {
       "tvdb": 305123,
       "tmdb": 113064,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -49848,7 +49848,7 @@
     "externals": {
       "tvdb": 309148,
       "tmdb": 128862,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -50283,7 +50283,7 @@
     "externals": {
       "tvdb": 313675,
       "tmdb": 67019,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -52737,7 +52737,7 @@
     "externals": {
       "tvdb": 317830,
       "tmdb": 68088,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -53802,7 +53802,7 @@
     "externals": {
       "tvdb": 317829,
       "tmdb": 69140,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -55194,7 +55194,7 @@
     "externals": {
       "tvdb": 330087,
       "tmdb": 72524,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -55890,7 +55890,7 @@
     "externals": {
       "tvdb": 305123,
       "tmdb": 113064,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -58347,7 +58347,7 @@
     "externals": {
       "tvdb": 283243,
       "tmdb": 77239,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -58579,7 +58579,7 @@
     "externals": {
       "tvdb": 329831,
       "tmdb": 80870,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -60551,7 +60551,7 @@
     "externals": {
       "tvdb": 335315,
       "tmdb": 90579,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -62570,7 +62570,7 @@
     "externals": {
       "tvdb": 345377,
       "tmdb": 80559,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -62657,7 +62657,7 @@
     "externals": {
       "tvdb": 353605,
       "tmdb": 83610,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -62729,8 +62729,16 @@
       "id": 130155,
       "slug": "cells-at-work",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 163455,
+        "number": 1,
+        "externals": {
+          "tvdb": 762979,
+          "tmdb": 106027,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2018,
     "externals": {
@@ -64075,7 +64083,7 @@
     "externals": {
       "tvdb": 345144,
       "tmdb": 78499,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -66951,7 +66959,7 @@
     "externals": {
       "tvdb": 352327,
       "tmdb": 89576,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -67531,7 +67539,7 @@
     "externals": {
       "tvdb": 356310,
       "tmdb": 84662,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -68892,7 +68900,7 @@
   },
   {
     "myanimelist": {
-      "title": "Haikyuu!!: To the Top",
+      "title": "Haikyuu!! To the Top",
       "id": 38883
     },
     "trakt": {
@@ -70587,8 +70595,16 @@
       "id": 130155,
       "slug": "cells-at-work",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 191640,
+        "number": 2,
+        "externals": {
+          "tvdb": 812961,
+          "tmdb": 164171,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2018,
     "externals": {
@@ -71643,7 +71659,7 @@
     "externals": {
       "tvdb": 366359,
       "tmdb": 90848,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -75183,7 +75199,7 @@
     "externals": {
       "tvdb": 379920,
       "tmdb": 97941,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -75299,7 +75315,7 @@
     "externals": {
       "tvdb": 379912,
       "tmdb": 233646,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -75444,7 +75460,7 @@
     "externals": {
       "tvdb": 380103,
       "tmdb": 99042,
-      "imdb": null,
+      "imdb": "",
       "tvrage": null
     }
   },
@@ -76734,8 +76750,16 @@
       "id": 160640,
       "slug": "cells-at-work-code-black",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 216091,
+        "number": 1,
+        "externals": {
+          "tvdb": 1835072,
+          "tmdb": 147835,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2021,
     "externals": {
@@ -77837,7 +77861,7 @@
         "id": 255038,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 1867424,
           "tmdb": 158219,
           "tvrage": null
         }
@@ -95576,7 +95600,7 @@
         "id": 319948,
         "number": 1,
         "externals": {
-          "tvdb": 2055804,
+          "tvdb": 2055805,
           "tmdb": 334922,
           "tvrage": null
         }
@@ -101671,7 +101695,7 @@
       "id": 58908
     },
     "trakt": {
-      "title": "Muzik Tiger In the Forest",
+      "title": "Muzik Tiger in the Forest",
       "id": 280925,
       "slug": "muzik-tiger-in-the-forest",
       "type": "shows",
@@ -105355,7 +105379,7 @@
         "id": 459205,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2166547,
           "tmdb": 452206,
           "tvrage": null
         }
@@ -105944,7 +105968,7 @@
   },
   {
     "myanimelist": {
-      "title": "Mikata ga Yowasugite Hojo Mahou ni Tesshiteita Kyuutei Mahoushi, Tsuihou sarete Saikyou wo Mezashimasu",
+      "title": "Mikata ga Yowasugite Hojo Mahou ni Tesshiteita Kyuutei Mahoushi, Tsuihou sarete Saikyou wo Mezasu",
       "id": 61276
     },
     "trakt": {
@@ -106471,8 +106495,16 @@
       "id": 297499,
       "slug": "forget-that-night-your-majesty",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 484812,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 473119,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2025,
     "externals": {

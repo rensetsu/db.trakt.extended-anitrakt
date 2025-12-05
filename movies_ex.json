@@ -4077,9 +4077,9 @@
       "id": 1430
     },
     "trakt": {
-      "title": "Lupin the Third: The Castle of Cagliostro",
+      "title": "The Castle of Cagliostro",
       "id": 9327,
-      "slug": "lupin-the-third-the-castle-of-cagliostro-1979",
+      "slug": "the-castle-of-cagliostro-1979",
       "type": "movies"
     },
     "release_year": 1979,
@@ -4087,7 +4087,7 @@
       "tmdb": 15371,
       "imdb": "tt0079833",
       "letterboxd": {
-        "slug": "lupin-the-third-the-castle-of-cagliostro",
+        "slug": "the-castle-of-cagliostro",
         "uid": 42427,
         "lid": "1Mn4"
       }
@@ -7703,24 +7703,6 @@
   },
   {
     "myanimelist": {
-      "title": "Initial D Battle Stage 2",
-      "id": 3931
-    },
-    "trakt": {
-      "title": "Initial D Battle Stage 2",
-      "id": 11865,
-      "slug": "initial-d-battle-stage-2-2007",
-      "type": "movies"
-    },
-    "release_year": 2007,
-    "externals": {
-      "tmdb": 19263,
-      "imdb": "tt11294636",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Jarinko Chie",
       "id": 3946
     },
@@ -8961,7 +8943,7 @@
     "release_year": 2003,
     "externals": {
       "tmdb": 131294,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "life-no-color",
         "uid": 101843,
@@ -9379,7 +9361,7 @@
     "release_year": 2010,
     "externals": {
       "tmdb": 97570,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": null
     }
   },
@@ -9903,7 +9885,7 @@
     "release_year": 2010,
     "externals": {
       "tmdb": 35267,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "shoka",
         "uid": 28647,
@@ -10343,7 +10325,7 @@
     "release_year": 2009,
     "externals": {
       "tmdb": 226793,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "nekketsu-uchuujin",
         "uid": 159664,
@@ -10607,7 +10589,7 @@
     "release_year": 2010,
     "externals": {
       "tmdb": 358689,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "lesbian-citizen-naoko-san",
         "uid": 290212,
@@ -11633,7 +11615,7 @@
       "id": 11001
     },
     "trakt": {
-      "title": "Library War: The Wings Of Revolution",
+      "title": "Library War: The Wings of Revolution",
       "id": 107561,
       "slug": "library-war-the-wings-of-revolution-2012",
       "type": "movies"
@@ -12759,7 +12741,7 @@
     "release_year": 2005,
     "externals": {
       "tmdb": 442248,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "beginning-of-fashion",
         "uid": 374884,
@@ -12957,7 +12939,7 @@
     "release_year": 2012,
     "externals": {
       "tmdb": 402075,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "persona4-the-animation-the-factor-of-hope",
         "uid": 336737,
@@ -13397,7 +13379,7 @@
     "release_year": 2012,
     "externals": {
       "tmdb": 222766,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "hack-versus-the-thanatos-report",
         "uid": 157462,
@@ -13455,9 +13437,9 @@
       "id": 15335
     },
     "trakt": {
-      "title": "Gintama The Movie: The Final Chapter - Be Forever Yorozuya",
+      "title": "Gintama: The Final Chapter - Be Forever Yorozuya",
       "id": 149651,
-      "slug": "gintama-the-movie-the-final-chapter-be-forever-yorozuya-2013",
+      "slug": "gintama-the-final-chapter-be-forever-yorozuya-2013",
       "type": "movies"
     },
     "release_year": 2013,
@@ -13465,7 +13447,7 @@
       "tmdb": 245917,
       "imdb": "tt2374144",
       "letterboxd": {
-        "slug": "gintama-the-movie-the-final-chapter-be-forever",
+        "slug": "gintama-the-final-chapter-be-forever-yorozuya",
         "uid": 172087,
         "lid": "7dFY"
       }
@@ -14013,7 +13995,7 @@
     "release_year": 2013,
     "externals": {
       "tmdb": 441482,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "ark-ix",
         "uid": 374176,
@@ -14475,7 +14457,7 @@
     "release_year": 2012,
     "externals": {
       "tmdb": 266226,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "himeyuri",
         "uid": 189490,
@@ -14893,7 +14875,7 @@
     "release_year": 2013,
     "externals": {
       "tmdb": 383314,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "picotopia",
         "uid": 318306,
@@ -15237,9 +15219,9 @@
       "id": 24655
     },
     "trakt": {
-      "title": "Date A Live: Mayuri Judgment",
+      "title": "Date A Live: Mayuri Judgement",
       "id": 211938,
-      "slug": "date-a-live-mayuri-judgment-2015",
+      "slug": "date-a-live-mayuri-judgement-2015",
       "type": "movies"
     },
     "release_year": 2015,
@@ -15247,7 +15229,7 @@
       "tmdb": 331061,
       "imdb": "tt5331768",
       "letterboxd": {
-        "slug": "date-a-live-mayuri-judgment",
+        "slug": "date-a-live-mayuri-judgement",
         "uid": 258859,
         "lid": "aRps"
       }
@@ -15619,7 +15601,7 @@
     "release_year": 2014,
     "externals": {
       "tmdb": 365334,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "flowers-will-bloom-in-tohoku",
         "uid": 301272,
@@ -16103,7 +16085,7 @@
     "release_year": 1968,
     "externals": {
       "tmdb": 383047,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "crazy-world",
         "uid": 318016,
@@ -16235,7 +16217,7 @@
     "release_year": 2011,
     "externals": {
       "tmdb": 435157,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": null
     }
   },
@@ -16253,7 +16235,7 @@
     "release_year": 2013,
     "externals": {
       "tmdb": 434326,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "001",
         "uid": 367353,
@@ -16275,7 +16257,7 @@
     "release_year": 2013,
     "externals": {
       "tmdb": 442240,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "adventures-in-beauty-wonderland",
         "uid": 374875,
@@ -16297,7 +16279,7 @@
     "release_year": 2012,
     "externals": {
       "tmdb": 383330,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "the-art-of-1064-understanding-vastness",
         "uid": 318322,
@@ -16341,7 +16323,7 @@
     "release_year": 2015,
     "externals": {
       "tmdb": 351508,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "dokuro-the-ghost",
         "uid": 281742,
@@ -17023,7 +17005,7 @@
     "release_year": 2006,
     "externals": {
       "tmdb": 384268,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": null
     }
   },
@@ -17107,7 +17089,7 @@
     "release_year": 2010,
     "externals": {
       "tmdb": 442279,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "circle-2010-2",
         "uid": 374903,
@@ -17931,9 +17913,9 @@
       "id": 33218
     },
     "trakt": {
-      "title": "Your Voice -KIMIKOE-",
+      "title": "I Want to Deliver Your Voice",
       "id": 308134,
-      "slug": "your-voice-kimikoe-2017",
+      "slug": "i-want-to-deliver-your-voice-2017",
       "type": "movies"
     },
     "release_year": 2017,
@@ -17941,7 +17923,7 @@
       "tmdb": 461078,
       "imdb": "tt7283052",
       "letterboxd": {
-        "slug": "your-voice-kimikoe",
+        "slug": "i-want-to-deliver-your-voice",
         "uid": 392882,
         "lid": "gu44"
       }
@@ -18419,7 +18401,7 @@
     "release_year": 2016,
     "externals": {
       "tmdb": 415282,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "chain-chronicle-the-light-of-haecceitas-movie-1",
         "uid": 349241,
@@ -18441,7 +18423,7 @@
     "release_year": 2017,
     "externals": {
       "tmdb": 428294,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "chain-chronicle-the-light-of-haecceitas-movie-2",
         "uid": 361638,
@@ -18463,7 +18445,7 @@
     "release_year": 2017,
     "externals": {
       "tmdb": 428297,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "chain-chronicle-the-light-of-haecceitas-movie-3",
         "uid": 361640,
@@ -18661,7 +18643,7 @@
     "release_year": 2017,
     "externals": {
       "tmdb": 428286,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "landreaall",
         "uid": 361632,
@@ -20959,7 +20941,7 @@
   },
   {
     "myanimelist": {
-      "title": "Psycho-Pass: Sinners of the System Case.1 - Tsumi to Bachi",
+      "title": "Psycho-Pass: Sinners of the System Case.1 - Tsumi to Batsu",
       "id": 37440
     },
     "trakt": {
@@ -22533,7 +22515,7 @@
     "release_year": 2012,
     "externals": {
       "tmdb": 386571,
-      "imdb": null,
+      "imdb": "",
       "letterboxd": {
         "slug": "channeler",
         "uid": 321342,
@@ -28245,7 +28227,7 @@
     "release_year": 2024,
     "externals": {
       "tmdb": 1363564,
-      "imdb": null,
+      "imdb": "tt36206675",
       "letterboxd": {
         "slug": "gintama-on-theater-2d-kintama-arc",
         "uid": 1251703,
