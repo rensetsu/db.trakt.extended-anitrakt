@@ -3087,7 +3087,7 @@
         "id": 87326,
         "number": 1,
         "externals": {
-          "tvdb": 70861,
+          "tvdb": 1208,
           "tmdb": 42590,
           "tvrage": null
         }
@@ -5664,6 +5664,64 @@
       "tvdb": 71742,
       "tmdb": 34152,
       "imdb": "tt0324700",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "All Purpose Cultural Cat Girl Nuku Nuku",
+      "id": 373
+    },
+    "trakt": {
+      "title": "All Purpose Cultural Cat Girl Nuku Nuku",
+      "id": 195182,
+      "slug": "all-purpose-cultural-cat-girl-nuku-nuku-1992",
+      "type": "shows",
+      "season": {
+        "id": 293670,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 94985,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 1992,
+    "externals": {
+      "tvdb": 79587,
+      "tmdb": 74957,
+      "imdb": "tt0103766",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bannou Bunka Neko-Musume (1998)",
+      "id": 375
+    },
+    "trakt": {
+      "title": "All Purpose Cultural Cat Girl Nuku Nuku (TV)",
+      "id": 62156,
+      "slug": "all-purpose-cultural-cat-girl-nuku-nuku-tv",
+      "type": "shows",
+      "season": {
+        "id": 329714,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 40430,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 1998,
+    "externals": {
+      "tvdb": 351514,
+      "tmdb": 29152,
+      "imdb": "tt0414813",
       "tvrage": null
     }
   },
@@ -14204,26 +14262,26 @@
       "id": 1916
     },
     "trakt": {
-      "title": "Mobile Suit Gundam MS IGLOO",
-      "id": 61455,
-      "slug": "mobile-suit-gundam-ms-igloo",
+      "title": "Mobile Suit Gundam MS IGLOO: Apocalypse 0079",
+      "id": 274494,
+      "slug": "mobile-suit-gundam-ms-igloo-apocalypse-0079",
       "type": "shows",
       "season": {
-        "id": 63407,
-        "number": 2,
+        "id": 443901,
+        "number": 1,
         "externals": {
-          "tvdb": 113571,
-          "tmdb": 53663,
+          "tvdb": null,
+          "tmdb": 439399,
           "tvrage": null
         }
       },
       "is_split_cour": false
     },
-    "release_year": 2004,
+    "release_year": 2006,
     "externals": {
-      "tvdb": 81104,
-      "tmdb": 44919,
-      "imdb": "tt2328145",
+      "tvdb": null,
+      "tmdb": 282823,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -18568,7 +18626,7 @@
     },
     "release_year": 2008,
     "externals": {
-      "tvdb": 84632,
+      "tvdb": 82084,
       "tmdb": 74943,
       "imdb": "tt1216165",
       "tvrage": null
@@ -38283,9 +38341,9 @@
       "id": 21809
     },
     "trakt": {
-      "title": "Daimidaler the Sound Robot",
+      "title": "Daimidaler: Prince vs Penguin Empire",
       "id": 60374,
-      "slug": "daimidaler-the-sound-robot",
+      "slug": "daimidaler-prince-vs-penguin-empire",
       "type": "shows",
       "season": {
         "id": 61534,
@@ -42473,7 +42531,7 @@
   },
   {
     "myanimelist": {
-      "title": "Binan Koukou Chikyuu Bouei-bu LOVE!",
+      "title": "Binan Koukou Chikyuu Bouei-bu Love!",
       "id": 27727
     },
     "trakt": {
@@ -46941,7 +46999,7 @@
   },
   {
     "myanimelist": {
-      "title": "Binan Koukou Chikyuu Bouei-bu LOVE! LOVE!",
+      "title": "Binan Koukou Chikyuu Bouei-bu Love! Love!",
       "id": 31417
     },
     "trakt": {
@@ -47260,7 +47318,7 @@
   },
   {
     "myanimelist": {
-      "title": "Huyao Xiao Hongniang",
+      "title": "Huyao Xiao Hongniang 1: Xia Sha Pian",
       "id": 31499
     },
     "trakt": {
@@ -52208,7 +52266,7 @@
   },
   {
     "myanimelist": {
-      "title": "Huyao Xiao Hongniang: Wangquan Fugui",
+      "title": "Huyao Xiao Hongniang 2: Wangquan Pian",
       "id": 33209
     },
     "trakt": {
@@ -52859,7 +52917,7 @@
   },
   {
     "myanimelist": {
-      "title": "Huyao Xiao Hongniang: Yue Hong",
+      "title": "Huyao Xiao Hongniang 3: Yue Hong Pian",
       "id": 33446
     },
     "trakt": {
@@ -61216,7 +61274,7 @@
   },
   {
     "myanimelist": {
-      "title": "Huyao Xiao Hongniang: Qian Yan",
+      "title": "Huyao Xiao Hongniang 4: Qian Yan Pian",
       "id": 36545
     },
     "trakt": {
@@ -61817,7 +61875,7 @@
   },
   {
     "myanimelist": {
-      "title": "Huyao Xiao Hongniang: Beishan Yaodi",
+      "title": "Huyao Xiao Hongniang 3: Yue Hong Pian Part 2",
       "id": 36823
     },
     "trakt": {
@@ -61838,7 +61896,7 @@
   },
   {
     "myanimelist": {
-      "title": "Huyao Xiao Hongniang: Nan Guo",
+      "title": "Huyao Xiao Hongniang 5: Nan Guo Pian",
       "id": 36824
     },
     "trakt": {
@@ -83635,6 +83693,35 @@
   },
   {
     "myanimelist": {
+      "title": "Beastars Final Season",
+      "id": 49469
+    },
+    "trakt": {
+      "title": "Beastars",
+      "id": 145309,
+      "slug": "beastars",
+      "type": "shows",
+      "season": {
+        "id": 374674,
+        "number": 3,
+        "externals": {
+          "tvdb": 2056081,
+          "tmdb": 385068,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2019,
+    "externals": {
+      "tvdb": 361013,
+      "tmdb": 90937,
+      "imdb": "tt11043632",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Mamahaha no Tsurego ga Motokano datta",
       "id": 49470
     },
@@ -86138,7 +86225,7 @@
         "id": 280828,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 1968986,
           "tmdb": 221042,
           "tvrage": null
         }
@@ -92809,7 +92896,7 @@
       "id": 53587
     },
     "trakt": {
-      "title": "The Marginal Service",
+      "title": "THE MARGINAL SERVICE",
       "id": 199718,
       "slug": "the-marginal-service",
       "type": "shows",
@@ -93406,7 +93493,7 @@
     },
     "release_year": 2023,
     "externals": {
-      "tvdb": 2056492,
+      "tvdb": 433862,
       "tmdb": 220150,
       "imdb": "tt26692417",
       "tvrage": null
@@ -95496,6 +95583,35 @@
   },
   {
     "myanimelist": {
+      "title": "Trigun Stargaze",
+      "id": 54863
+    },
+    "trakt": {
+      "title": "TRIGUN STAMPEDE",
+      "id": 196330,
+      "slug": "trigun-stampede",
+      "type": "shows",
+      "season": {
+        "id": 453733,
+        "number": 2,
+        "externals": {
+          "tvdb": 2150465,
+          "tmdb": 447366,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 421378,
+      "tmdb": 204266,
+      "imdb": "tt21216104",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Blue Lock vs. U-20 Japan",
       "id": 54865
     },
@@ -96193,7 +96309,7 @@
         "id": 452487,
         "number": 3,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2177153,
           "tmdb": 446240,
           "tvrage": null
         }
@@ -96629,6 +96745,35 @@
   },
   {
     "myanimelist": {
+      "title": "Golden Kamuy: Saishuushou",
+      "id": 55772
+    },
+    "trakt": {
+      "title": "Golden Kamuy",
+      "id": 125628,
+      "slug": "golden-kamuy",
+      "type": "shows",
+      "season": {
+        "id": 504123,
+        "number": 5,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 489191,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 338455,
+      "tmdb": 76757,
+      "imdb": "tt8225204",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Himesama \"Goumon\" no Jikan desu",
       "id": 55774
     },
@@ -96745,6 +96890,35 @@
       "tvdb": 82788,
       "tmdb": 69500,
       "imdb": "tt1352421",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Jigokuraku 2nd Season",
+      "id": 55825
+    },
+    "trakt": {
+      "title": "Hell's Paradise",
+      "id": 181120,
+      "slug": "hell-s-paradise",
+      "type": "shows",
+      "season": {
+        "id": 327720,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 347188,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 402474,
+      "tmdb": 117465,
+      "imdb": "tt13911284",
       "tvrage": null
     }
   },
@@ -97259,6 +97433,35 @@
       "tvdb": 437236,
       "tmdb": 230823,
       "imdb": "tt30691068",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+      "id": 56009
+    },
+    "trakt": {
+      "title": "Sentenced to Be a Hero",
+      "id": 232210,
+      "slug": "sentenced-to-be-a-hero",
+      "type": "shows",
+      "season": {
+        "id": 374787,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 384990,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 437266,
+      "tmdb": 249907,
+      "imdb": "tt32536168",
       "tvrage": null
     }
   },
@@ -99696,6 +99899,27 @@
   },
   {
     "myanimelist": {
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+      "id": 57658
+    },
+    "trakt": {
+      "title": "Jujutsu Kaisen",
+      "id": 158594,
+      "slug": "jujutsu-kaisen",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2020,
+    "externals": {
+      "tvdb": 377543,
+      "tmdb": 95479,
+      "imdb": "tt12343534",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Akuyaku Reijou Tensei Ojisan",
       "id": 57719
     },
@@ -100855,7 +101079,7 @@
     "externals": {
       "tvdb": 447354,
       "tmdb": 248707,
-      "imdb": null,
+      "imdb": "tt33614026",
       "tvrage": null
     }
   },
@@ -101122,6 +101346,35 @@
   },
   {
     "myanimelist": {
+      "title": "Mato Seihei no Slave 2",
+      "id": 58505
+    },
+    "trakt": {
+      "title": "Chained Soldier",
+      "id": 191312,
+      "slug": "chained-soldier",
+      "type": "shows",
+      "season": {
+        "id": 374617,
+        "number": 2,
+        "externals": {
+          "tvdb": 2119042,
+          "tmdb": 385004,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2024,
+    "externals": {
+      "tvdb": 412656,
+      "tmdb": 139060,
+      "imdb": "tt16156736",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Harimaware! Koinu 2nd Season",
       "id": 58506
     },
@@ -101209,6 +101462,35 @@
       "tvdb": 248035,
       "tmdb": 38464,
       "imdb": "tt1799631",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Himesama \"Goumon\" no Jikan desu 2nd Season",
+      "id": 58524
+    },
+    "trakt": {
+      "title": "'Tis Time for \"Torture,\" Princess",
+      "id": 206949,
+      "slug": "tis-time-for-torture-princess",
+      "type": "shows",
+      "season": {
+        "id": 375965,
+        "number": 2,
+        "externals": {
+          "tvdb": 2119739,
+          "tmdb": 385823,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2024,
+    "externals": {
+      "tvdb": 436603,
+      "tmdb": 229443,
+      "imdb": "tt30643998",
       "tvrage": null
     }
   },
@@ -101459,6 +101741,35 @@
   },
   {
     "myanimelist": {
+      "title": "Ikoku Nikki",
+      "id": 58788
+    },
+    "trakt": {
+      "title": "Journal With Witch",
+      "id": 238172,
+      "slug": "journal-with-witch",
+      "type": "shows",
+      "season": {
+        "id": 385791,
+        "number": 1,
+        "externals": {
+          "tvdb": 2126311,
+          "tmdb": 392123,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 449723,
+      "tmdb": 253476,
+      "imdb": "tt32336365",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Tougen Anki",
       "id": 58811
     },
@@ -101662,6 +101973,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hanazakari no Kimitachi e",
+      "id": 58861
+    },
+    "trakt": {
+      "title": "Hana-Kimi",
+      "id": 240014,
+      "slug": "hana-kimi-2026",
+      "type": "shows",
+      "season": {
+        "id": 388851,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 393852,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 450072,
+      "tmdb": 254492,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Dead Dead Demons Dededede Destruction (ONA)",
       "id": 58883
     },
@@ -101691,6 +102031,35 @@
   },
   {
     "myanimelist": {
+      "title": "Darwin Jihen",
+      "id": 58886
+    },
+    "trakt": {
+      "title": "THE DARWIN INCIDENT",
+      "id": 240859,
+      "slug": "the-darwin-incident",
+      "type": "shows",
+      "season": {
+        "id": 390363,
+        "number": 1,
+        "externals": {
+          "tvdb": 2128723,
+          "tmdb": 395022,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 450282,
+      "tmdb": 255064,
+      "imdb": "tt38980285",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Muzik Tiger In the Forest",
       "id": 58908
     },
@@ -101712,7 +102081,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 450708,
       "tmdb": 287704,
       "imdb": "tt36534630",
       "tvrage": null
@@ -102018,6 +102387,35 @@
       "tvdb": 405920,
       "tmdb": 120089,
       "imdb": "tt13706018",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tamon-kun Ima Docchi!?",
+      "id": 59047
+    },
+    "trakt": {
+      "title": "Tamon's B-Side",
+      "id": 262993,
+      "slug": "tamon-s-b-side",
+      "type": "shows",
+      "season": {
+        "id": 426637,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 427399,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 451101,
+      "tmdb": 276393,
+      "imdb": "tt37532722",
       "tvrage": null
     }
   },
@@ -103633,6 +104031,35 @@
   },
   {
     "myanimelist": {
+      "title": "Shibou Yuugi de Meshi wo Kuu.",
+      "id": 59711
+    },
+    "trakt": {
+      "title": "SHIBOYUGI: Playing Death Games to Put Food on the Table",
+      "id": 254387,
+      "slug": "shiboyugi-playing-death-games-to-put-food-on-the-table",
+      "type": "shows",
+      "season": {
+        "id": 412097,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 409210,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 453992,
+      "tmdb": 263330,
+      "imdb": "tt33309549",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "A-Rank Party wo Ridatsu shita Ore wa, Moto Oshiego-tachi to Meikyuu Shinbu wo Mezasu.",
       "id": 59730
     },
@@ -103849,6 +104276,35 @@
   },
   {
     "myanimelist": {
+      "title": "Dark Moon: Tsuki no Saidan",
+      "id": 59853
+    },
+    "trakt": {
+      "title": "DARK MOON: THE BLOOD ALTAR",
+      "id": 256237,
+      "slug": "dark-moon-the-blood-altar",
+      "type": "shows",
+      "season": {
+        "id": 415545,
+        "number": 1,
+        "externals": {
+          "tvdb": 2146712,
+          "tmdb": 418785,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 454526,
+      "tmdb": 271609,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Shinobanai! Crypto Ninja Sakuya: San no Maki",
       "id": 59865
     },
@@ -103978,6 +104434,35 @@
   },
   {
     "myanimelist": {
+      "title": "Sousou no Frieren 2nd Season",
+      "id": 59978
+    },
+    "trakt": {
+      "title": "Frieren: Beyond Journey's End",
+      "id": 198225,
+      "slug": "frieren-beyond-journey-s-end",
+      "type": "shows",
+      "season": {
+        "id": 418105,
+        "number": 2,
+        "externals": {
+          "tvdb": 2148708,
+          "tmdb": 420933,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 424536,
+      "tmdb": 209867,
+      "imdb": "tt22248376",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Grand Blue Season 2",
       "id": 59986
     },
@@ -104052,6 +104537,56 @@
       "tvdb": 455062,
       "tmdb": 275623,
       "imdb": "tt35437053",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "[Oshi no Ko] 3rd Season",
+      "id": 60058
+    },
+    "trakt": {
+      "title": "Oshi no Ko",
+      "id": 196091,
+      "slug": "oshi-no-ko",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 421069,
+      "tmdb": 203737,
+      "imdb": "tt21030032",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Odayaka Kizoku no Kyuuka no Susume.",
+      "id": 60071
+    },
+    "trakt": {
+      "title": "A Gentle Noble's Vacation Recommendation",
+      "id": 259614,
+      "slug": "a-gentle-noble-s-vacation-recommendation",
+      "type": "shows",
+      "season": {
+        "id": 420884,
+        "number": 1,
+        "externals": {
+          "tvdb": 2150160,
+          "tmdb": 423114,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 455309,
+      "tmdb": 274141,
+      "imdb": "tt36632066",
       "tvrage": null
     }
   },
@@ -104231,6 +104766,35 @@
   },
   {
     "myanimelist": {
+      "title": "Eris no Seihai",
+      "id": 60151
+    },
+    "trakt": {
+      "title": "The Holy Grail of Eris",
+      "id": 276052,
+      "slug": "the-holy-grail-of-eris",
+      "type": "shows",
+      "season": {
+        "id": 447099,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 441812,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 455709,
+      "tmdb": 283891,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Ore wa Seikan Kokka no Akutoku Ryoushu!",
       "id": 60154
     },
@@ -104347,6 +104911,64 @@
   },
   {
     "myanimelist": {
+      "title": "Kaya-chan wa Kowakunai",
+      "id": 60223
+    },
+    "trakt": {
+      "title": "Kaya-chan Isn't Scary",
+      "id": 262257,
+      "slug": "kaya-chan-isn-t-scary",
+      "type": "shows",
+      "season": {
+        "id": 425358,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 426490,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 456159,
+      "tmdb": 275902,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Isekai no Sata wa Shachiku Shidai",
+      "id": 60226
+    },
+    "trakt": {
+      "title": "Isekai Office Worker: The Other World's Books Depend on the Bean Counter",
+      "id": 276788,
+      "slug": "isekai-office-worker-the-other-world-s-books-depend-on-the-bean-counter",
+      "type": "shows",
+      "season": {
+        "id": 448275,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 442789,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 456099,
+      "tmdb": 284495,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Yano-kun no Futsuu no Hibi",
       "id": 60254
     },
@@ -104371,6 +104993,35 @@
       "tvdb": 453230,
       "tmdb": 276349,
       "imdb": "tt36132068",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Arne no Jikenbo",
+      "id": 60255
+    },
+    "trakt": {
+      "title": "The Case Book of Arne",
+      "id": 262500,
+      "slug": "the-case-book-of-arne",
+      "type": "shows",
+      "season": {
+        "id": 425984,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 426915,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 456392,
+      "tmdb": 276110,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -104658,6 +105309,35 @@
   },
   {
     "myanimelist": {
+      "title": "Seihantai na Kimi to Boku",
+      "id": 60371
+    },
+    "trakt": {
+      "title": "You and I Are Polar Opposites",
+      "id": 264998,
+      "slug": "you-and-i-are-polar-opposites",
+      "type": "shows",
+      "season": {
+        "id": 430050,
+        "number": 1,
+        "externals": {
+          "tvdb": 2157414,
+          "tmdb": 430263,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 457078,
+      "tmdb": 278043,
+      "imdb": "tt36034547",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Nazotoki wa Dinner no Ato de",
       "id": 60377
     },
@@ -104711,6 +105391,35 @@
       "tvdb": 457106,
       "tmdb": 278059,
       "imdb": "tt37431548",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+      "id": 60395
+    },
+    "trakt": {
+      "title": "The Invisible Man and His Soon-to-Be Wife",
+      "id": 265234,
+      "slug": "the-invisible-man-and-his-soon-to-be-wife",
+      "type": "shows",
+      "season": {
+        "id": 430632,
+        "number": 1,
+        "externals": {
+          "tvdb": 2157901,
+          "tmdb": 430710,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 457201,
+      "tmdb": 278271,
+      "imdb": "tt38647911",
       "tvrage": null
     }
   },
@@ -104890,6 +105599,35 @@
   },
   {
     "myanimelist": {
+      "title": "Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru",
+      "id": 60460
+    },
+    "trakt": {
+      "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing",
+      "id": 270717,
+      "slug": "hell-mode-the-hardcore-gamer-dominates-in-another-world-with-garbage-balancing",
+      "type": "shows",
+      "season": {
+        "id": 437073,
+        "number": 1,
+        "externals": {
+          "tvdb": 2159326,
+          "tmdb": 434278,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 457532,
+      "tmdb": 280049,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Takopii no Genzai",
       "id": 60489
     },
@@ -105001,6 +105739,35 @@
       "tvdb": 457765,
       "tmdb": 280366,
       "imdb": "tt36082234",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Champignon no Majo",
+      "id": 60509
+    },
+    "trakt": {
+      "title": "Champignon Witch",
+      "id": 276727,
+      "slug": "champignon-witch",
+      "type": "shows",
+      "season": {
+        "id": 448191,
+        "number": 1,
+        "externals": {
+          "tvdb": 2160326,
+          "tmdb": 442701,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 457766,
+      "tmdb": 284444,
+      "imdb": "tt37137805",
       "tvrage": null
     }
   },
@@ -105172,6 +105939,27 @@
   },
   {
     "myanimelist": {
+      "title": "MF Ghost 3rd Season",
+      "id": 60602
+    },
+    "trakt": {
+      "title": "MF GHOST",
+      "id": 198279,
+      "slug": "mf-ghost",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 414207,
+      "tmdb": 154526,
+      "imdb": "tt28299608",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Puniru wa Kawaii Slime 2nd Season",
       "id": 60603
     },
@@ -105246,6 +106034,35 @@
       "tvdb": 458406,
       "tmdb": 281044,
       "imdb": "tt36271866",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+      "id": 60692
+    },
+    "trakt": {
+      "title": "Noble Reincarnation",
+      "id": 272187,
+      "slug": "noble-reincarnation",
+      "type": "shows",
+      "season": {
+        "id": 439675,
+        "number": 1,
+        "externals": {
+          "tvdb": 2163795,
+          "tmdb": 436350,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 458508,
+      "tmdb": 281161,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -105391,6 +106208,35 @@
       "tvdb": 459058,
       "tmdb": 289217,
       "imdb": "tt37532849",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Majutsushi Kunon wa Mieteiru",
+      "id": 60810
+    },
+    "trakt": {
+      "title": "Kunon the Sorcerer Can See",
+      "id": 274653,
+      "slug": "kunon-the-sorcerer-can-see",
+      "type": "shows",
+      "season": {
+        "id": 444153,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 439615,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 459339,
+      "tmdb": 282946,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -105657,6 +106503,114 @@
   },
   {
     "myanimelist": {
+      "title": "Hikuidori: Ushuu Boro Tobi-gumi",
+      "id": 61084
+    },
+    "trakt": {
+      "title": "Oedo Fire Slayer -The Legend of Phoenix-",
+      "id": 277445,
+      "slug": "oedo-fire-slayer-the-legend-of-phoenix",
+      "type": "shows",
+      "season": {
+        "id": 449335,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 443606,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 460693,
+      "tmdb": 284969,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ganso! Bandori-chan",
+      "id": 61107
+    },
+    "trakt": {
+      "title": "GANSO! BanG Dream Chan",
+      "id": 300517,
+      "slug": "ganso-bang-dream-chan",
+      "type": "shows",
+      "season": {
+        "id": 490219,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 477353,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 469213,
+      "tmdb": 301747,
+      "imdb": "tt38128496",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Beastars Final Season Part 2",
+      "id": 61114
+    },
+    "trakt": {
+      "title": "Beastars",
+      "id": 145309,
+      "slug": "beastars",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2019,
+    "externals": {
+      "tvdb": 361013,
+      "tmdb": 90937,
+      "imdb": "tt11043632",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yuusha Party wo Oidasareta Kiyoubinbou",
+      "id": 61128
+    },
+    "trakt": {
+      "title": "Jack-of-All-Trades, Party of None",
+      "id": 277682,
+      "slug": "jack-of-all-trades-party-of-none",
+      "type": "shows",
+      "season": {
+        "id": 449769,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 443957,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 460903,
+      "tmdb": 285166,
+      "imdb": "tt38648925",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Sawaranaide Kotesashi-kun",
       "id": 61142
     },
@@ -105773,6 +106727,35 @@
   },
   {
     "myanimelist": {
+      "title": "Dead Account",
+      "id": 61196
+    },
+    "trakt": {
+      "title": "Dead Account",
+      "id": 279168,
+      "slug": "dead-account",
+      "type": "shows",
+      "season": {
+        "id": 452331,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 446132,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 461423,
+      "tmdb": 286291,
+      "imdb": "tt37533007",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Shuumatsu no Walküre III",
       "id": 61200
     },
@@ -105789,6 +106772,35 @@
       "tvdb": 393810,
       "tmdb": 114868,
       "imdb": "tt13676344",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tensei shitara Dragon no Tamago datta",
+      "id": 61207
+    },
+    "trakt": {
+      "title": "Reincarnated as a Dragon Hatchling",
+      "id": 277864,
+      "slug": "reincarnated-as-a-dragon-hatchling",
+      "type": "shows",
+      "season": {
+        "id": 450037,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 444239,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 461466,
+      "tmdb": 285291,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -105818,6 +106830,64 @@
       "tvdb": 461467,
       "tmdb": 286388,
       "imdb": "tt37532031",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Mayonaka Heart Tune",
+      "id": 61211
+    },
+    "trakt": {
+      "title": "Tune In to the Midnight Heart",
+      "id": 278651,
+      "slug": "tune-in-to-the-midnight-heart",
+      "type": "shows",
+      "season": {
+        "id": 451470,
+        "number": 1,
+        "externals": {
+          "tvdb": 2177210,
+          "tmdb": 445457,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 461472,
+      "tmdb": 285933,
+      "imdb": "tt38980445",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yuusha no Kuzu",
+      "id": 61217
+    },
+    "trakt": {
+      "title": "Scum of the Brave",
+      "id": 276703,
+      "slug": "scum-of-the-brave",
+      "type": "shows",
+      "season": {
+        "id": 448143,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 442681,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 461513,
+      "tmdb": 284432,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -106076,6 +107146,93 @@
   },
   {
     "myanimelist": {
+      "title": "Douse, Koishite Shimaunda. 2nd Season",
+      "id": 61325
+    },
+    "trakt": {
+      "title": "Anyway, I'm Falling in Love with You.",
+      "id": 247979,
+      "slug": "anyway-i-m-falling-in-love-with-you",
+      "type": "shows",
+      "season": {
+        "id": 481677,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 471202,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 446692,
+      "tmdb": 258680,
+      "imdb": "tt32832412",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ao no Miburo: Serizawa Ansatsu-hen",
+      "id": 61333
+    },
+    "trakt": {
+      "title": "Blue Miburo",
+      "id": 223576,
+      "slug": "blue-miburo",
+      "type": "shows",
+      "season": {
+        "id": 487643,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 475440,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2024,
+    "externals": {
+      "tvdb": 439531,
+      "tmdb": 234776,
+      "imdb": "tt30523856",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Medalist 2nd Season",
+      "id": 61335
+    },
+    "trakt": {
+      "title": "Medalist",
+      "id": 223571,
+      "slug": "medalist",
+      "type": "shows",
+      "season": {
+        "id": 455302,
+        "number": 2,
+        "externals": {
+          "tvdb": 2179728,
+          "tmdb": 448788,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 433953,
+      "tmdb": 237529,
+      "imdb": "tt33310730",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Jibaku Shounen Hanako-kun 2 Part 2",
       "id": 61339
     },
@@ -106092,6 +107249,56 @@
       "tvdb": 368364,
       "tmdb": 95269,
       "imdb": "tt10777610",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Osananajimi to wa Love Comedy ni Naranai",
+      "id": 61359
+    },
+    "trakt": {
+      "title": "You Can't Be in a Rom-Com with Your Childhood Friends!",
+      "id": 278403,
+      "slug": "you-can-t-be-in-a-rom-com-with-your-childhood-friends",
+      "type": "shows",
+      "season": {
+        "id": 450992,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 445066,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 462226,
+      "tmdb": 285743,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Steel Ball Run: JoJo no Kimyou na Bouken",
+      "id": 61469
+    },
+    "trakt": {
+      "title": "JoJo's Bizarre Adventure",
+      "id": 45537,
+      "slug": "jojo-s-bizarre-adventure",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2012,
+    "externals": {
+      "tvdb": 262954,
+      "tmdb": 45790,
+      "imdb": "tt2359704",
       "tvrage": null
     }
   },
@@ -106121,6 +107328,172 @@
       "tvdb": 259635,
       "tmdb": 46437,
       "imdb": "tt2404499",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei: Seisankei Majutsu de Na mo Naki Mura wo Saikyou no Jousai Toshi ni",
+      "id": 61549
+    },
+    "trakt": {
+      "title": "Easygoing Territory Defense by the Optimistic Lord",
+      "id": 282070,
+      "slug": "easygoing-territory-defense-by-the-optimistic-lord",
+      "type": "shows",
+      "season": {
+        "id": 457678,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 450714,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 462789,
+      "tmdb": 288589,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "\"Omae Gotoki ga Maou ni Kateru to Omouna\" to Yuusha Party wo Tsuihou sareta node, Outo de Kimama ni Kurashitai",
+      "id": 61587
+    },
+    "trakt": {
+      "title": "ROLL OVER AND DIE",
+      "id": 277939,
+      "slug": "roll-over-and-die",
+      "type": "shows",
+      "season": {
+        "id": 450218,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 444374,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 463013,
+      "tmdb": 285357,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Jigoku Sensei Nube (2025) Part 2",
+      "id": 61608
+    },
+    "trakt": {
+      "title": "Hell Teacher: Jigoku Sensei Nube",
+      "id": 249195,
+      "slug": "hell-teacher-jigoku-sensei-nube",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 452421,
+      "tmdb": 259544,
+      "imdb": "tt34754751",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+      "id": 61637
+    },
+    "trakt": {
+      "title": "An Adventurer's Daily Grind at Age 29",
+      "id": 284733,
+      "slug": "an-adventurer-s-daily-grind-at-age-29",
+      "type": "shows",
+      "season": {
+        "id": 462553,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 454905,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 463334,
+      "tmdb": 290667,
+      "imdb": "tt38647627",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Uruwashi no Yoi no Tsuki",
+      "id": 61663
+    },
+    "trakt": {
+      "title": "In the Clear Moonlit Dusk",
+      "id": 280832,
+      "slug": "in-the-clear-moonlit-dusk",
+      "type": "shows",
+      "season": {
+        "id": 455320,
+        "number": 1,
+        "externals": {
+          "tvdb": 2186090,
+          "tmdb": 448697,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 463481,
+      "tmdb": 287591,
+      "imdb": "tt37246098",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Android wa Keiken Ninzuu ni Hairimasu ka??",
+      "id": 61694
+    },
+    "trakt": {
+      "title": "Android wa Keiken Ninzū ni Hairimasu ka??",
+      "id": 285611,
+      "slug": "android-wa-keiken-ninzu-ni-hairimasu-ka",
+      "type": "shows",
+      "season": {
+        "id": 464004,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 456299,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 463638,
+      "tmdb": 291414,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -106205,6 +107578,35 @@
   },
   {
     "myanimelist": {
+      "title": "Kirei ni Shitemoraemasu ka.",
+      "id": 61782
+    },
+    "trakt": {
+      "title": "Wash It All Away",
+      "id": 287668,
+      "slug": "wash-it-all-away",
+      "type": "shows",
+      "season": {
+        "id": 467686,
+        "number": 1,
+        "externals": {
+          "tvdb": 2190304,
+          "tmdb": 459513,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 464460,
+      "tmdb": 293144,
+      "imdb": "tt37196939",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Yami Shibai 15",
       "id": 61793
     },
@@ -106229,6 +107631,93 @@
       "tvdb": 271591,
       "tmdb": 56559,
       "imdb": "tt3111906",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yoroi Shin Den Samurai Troopers",
+      "id": 61830
+    },
+    "trakt": {
+      "title": "Yoroi Shin Den Samurai Troopers",
+      "id": 288266,
+      "slug": "yoroi-shin-den-samurai-troopers",
+      "type": "shows",
+      "season": {
+        "id": 468720,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 460440,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 464693,
+      "tmdb": 293629,
+      "imdb": "tt37532599",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Maou no Musume wa Yasashisugiru!!",
+      "id": 61884
+    },
+    "trakt": {
+      "title": "The Demon King's Daughter Is Too Kind!!",
+      "id": 288920,
+      "slug": "the-demon-king-s-daughter-is-too-kind",
+      "type": "shows",
+      "season": {
+        "id": 470302,
+        "number": 1,
+        "externals": {
+          "tvdb": 2192443,
+          "tmdb": 461921,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 464963,
+      "tmdb": 294280,
+      "imdb": "tt38969275",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Goumon Baito-kun no Nichijou",
+      "id": 61886
+    },
+    "trakt": {
+      "title": "The Everyday Life of Part-Time Torture Workers",
+      "id": 307477,
+      "slug": "the-everyday-life-of-part-time-torture-workers",
+      "type": "shows",
+      "season": {
+        "id": 498361,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 483845,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 464977,
+      "tmdb": 305163,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -106284,6 +107773,93 @@
   },
   {
     "myanimelist": {
+      "title": "Vigilante: Boku no Hero Academia Illegals 2nd Season",
+      "id": 61942
+    },
+    "trakt": {
+      "title": "My Hero Academia: Vigilantes",
+      "id": 270690,
+      "slug": "my-hero-academia-vigilantes",
+      "type": "shows",
+      "season": {
+        "id": 472009,
+        "number": 2,
+        "externals": {
+          "tvdb": 2194159,
+          "tmdb": 463415,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 458058,
+      "tmdb": 280110,
+      "imdb": "tt35636246",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita.",
+      "id": 61983
+    },
+    "trakt": {
+      "title": "There Was a Cute Girl in the Hero's Party, so I Tried Confessing to Her",
+      "id": 290510,
+      "slug": "there-was-a-cute-girl-in-the-hero-s-party-so-i-tried-confessing-to-her",
+      "type": "shows",
+      "season": {
+        "id": 472891,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 463953,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 465505,
+      "tmdb": 295366,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai sareru",
+      "id": 62000
+    },
+    "trakt": {
+      "title": "The Villiainess Is Adored by the Crown Prince of the Neighboring Kingdom",
+      "id": 290675,
+      "slug": "the-villiainess-is-adored-by-the-crown-prince-of-the-neighboring-kingdom",
+      "type": "shows",
+      "season": {
+        "id": 473200,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 464293,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 465498,
+      "tmdb": 295483,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Koala Enikki",
       "id": 62005
     },
@@ -106334,7 +107910,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 465794,
       "tmdb": 300323,
       "imdb": null,
       "tvrage": null
@@ -106421,7 +107997,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 466889,
       "tmdb": 298889,
       "imdb": null,
       "tvrage": null
@@ -106511,6 +108087,209 @@
       "tvdb": 468580,
       "tmdb": 299743,
       "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+      "id": 62432
+    },
+    "trakt": {
+      "title": "A Misanthrope Teaches a Class for Demi-Humans",
+      "id": 304209,
+      "slug": "a-misanthrope-teaches-a-class-for-demi-humans",
+      "type": "shows",
+      "season": {
+        "id": 494811,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 480725,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 467839,
+      "tmdb": 303434,
+      "imdb": "tt38646016",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "2200-nen Neko no Kuni Nippon",
+      "id": 62496
+    },
+    "trakt": {
+      "title": "2200-nen Neko no Kuni Nippon",
+      "id": 299316,
+      "slug": "2200-nen-neko-no-kuni-nippon",
+      "type": "shows",
+      "season": {
+        "id": 488434,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 476109,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": null,
+      "tmdb": 301124,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "#Kanagawa ni Sunderu Elf",
+      "id": 62521
+    },
+    "trakt": {
+      "title": "Kanagawa Elves",
+      "id": 301309,
+      "slug": "kanagawa-elves-2025",
+      "type": "shows",
+      "season": {
+        "id": 491576,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 478307,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 467330,
+      "tmdb": 302233,
+      "imdb": "tt38581442",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "High School! Kimengumi (2026)",
+      "id": 62804
+    },
+    "trakt": {
+      "title": "High School! Kimengumi",
+      "id": 310817,
+      "slug": "high-school-kimengumi-2026",
+      "type": "shows",
+      "season": {
+        "id": 504238,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 489261,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 469342,
+      "tmdb": 308142,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Omae wa Mada Gunma wo Shiranai: Reiwa-ban",
+      "id": 62864
+    },
+    "trakt": {
+      "title": "You Don't Know Gunma Yet: Reiwa Edition",
+      "id": 305029,
+      "slug": "you-don-t-know-gunma-yet-reiwa-edition",
+      "type": "shows",
+      "season": {
+        "id": 496309,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 482055,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": null,
+      "tmdb": 304126,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Prism Rondo",
+      "id": 63019
+    },
+    "trakt": {
+      "title": "Love Through a Prism",
+      "id": 309275,
+      "slug": "love-through-a-prism",
+      "type": "shows",
+      "season": {
+        "id": 501445,
+        "number": 1,
+        "externals": {
+          "tvdb": 2218629,
+          "tmdb": 486705,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 470980,
+      "tmdb": 306762,
+      "imdb": "tt39050141",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yami Shibai 16",
+      "id": 63087
+    },
+    "trakt": {
+      "title": "Yamishibai: Japanese Ghost Stories",
+      "id": 71821,
+      "slug": "yamishibai-japanese-ghost-stories",
+      "type": "shows",
+      "season": {
+        "id": 504124,
+        "number": 16,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 489172,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2013,
+    "externals": {
+      "tvdb": 271591,
+      "tmdb": 56559,
+      "imdb": "tt3111906",
       "tvrage": null
     }
   },

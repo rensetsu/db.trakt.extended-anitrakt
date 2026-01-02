@@ -5507,7 +5507,7 @@
       "id": 2175
     },
     "trakt": {
-      "title": "Kino's Journey: Country of Illness —For You—",
+      "title": "Kino's Journey: Country of Illness -For You-",
       "id": 39424,
       "slug": "kino-s-journey-country-of-illness-for-you-2007",
       "type": "movies"
@@ -8997,6 +8997,28 @@
   },
   {
     "myanimelist": {
+      "title": "ef: A Tale of Melodies. - Prologue",
+      "id": 6401
+    },
+    "trakt": {
+      "title": "ef - a tale of melodies. ~prologue~",
+      "id": 415610,
+      "slug": "ef-a-tale-of-melodies-prologue-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 566046,
+      "imdb": null,
+      "letterboxd": {
+        "slug": "ef-a-tale-of-melodies-prologue",
+        "uid": 494503,
+        "lid": "kKqy"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "\"Bungaku Shoujo\" Movie",
       "id": 6408
     },
@@ -9987,7 +10009,7 @@
       "id": 8362
     },
     "trakt": {
-      "title": "Crayon Shin-chan: A Storm-invoking Jungle",
+      "title": "Crayon Shin-chan: A Storm-Invoking Jungle",
       "id": 81645,
       "slug": "crayon-shin-chan-a-storm-invoking-jungle-2000",
       "type": "movies"
@@ -13714,6 +13736,28 @@
         "slug": "clay-2012",
         "uid": 445423,
         "lid": "iGKq"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Busou Shinki: Install x Dream",
+      "id": 16614
+    },
+    "trakt": {
+      "title": "Busou Shinki Moon Angel",
+      "id": 310308,
+      "slug": "busou-shinki-moon-angel-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 396861,
+      "imdb": "tt2074341",
+      "letterboxd": {
+        "slug": "busou-shinki-moon-angel",
+        "uid": 331239,
+        "lid": "dTHE"
       }
     }
   },
@@ -22151,6 +22195,28 @@
   },
   {
     "myanimelist": {
+      "title": "Kidou Senshi Gundam: Senkou no Hathaway - Circe no Majo",
+      "id": 38716
+    },
+    "trakt": {
+      "title": "MOBILE SUIT GUNDAM HATHAWAY The Sorcery of Nymph Circe",
+      "id": 729401,
+      "slug": "mobile-suit-gundam-hathaway-the-sorcery-of-nymph-circe-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 910850,
+      "imdb": "tt32915652",
+      "letterboxd": {
+        "slug": "mobile-suit-gundam-hathaway-the-sorcery-of",
+        "uid": 815571,
+        "lid": "ydFI"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Lupin III: Goodbye Partner",
       "id": 38720
     },
@@ -22551,9 +22617,9 @@
       "id": 39435
     },
     "trakt": {
-      "title": "Butt Detective the Movie",
+      "title": "Butt Detective the Movie:  The Curry Incident",
       "id": 456621,
-      "slug": "butt-detective-the-movie-2019",
+      "slug": "butt-detective-the-movie-the-curry-incident-2019",
       "type": "movies"
     },
     "release_year": 2019,
@@ -22561,7 +22627,7 @@
       "tmdb": 612799,
       "imdb": "tt10579936",
       "letterboxd": {
-        "slug": "butt-detective-the-movie",
+        "slug": "butt-detective-the-movie-the-curry-incident",
         "uid": 539739,
         "lid": "mE6G"
       }
@@ -23647,9 +23713,9 @@
       "id": 40863
     },
     "trakt": {
-      "title": "Butt Detective: Mystery of the Ruins of Tentoumu",
+      "title": "Butt Detective the Movie: Mystery of the Ruins of Tentōmushi",
       "id": 661948,
-      "slug": "butt-detective-mystery-of-the-ruins-of-tentoumu-2020",
+      "slug": "butt-detective-the-movie-mystery-of-the-ruins-of-tentomushi-2020",
       "type": "movies"
     },
     "release_year": 2020,
@@ -23657,7 +23723,7 @@
       "tmdb": 829864,
       "imdb": null,
       "letterboxd": {
-        "slug": "butt-detective-mystery-of-the-ruins-of-tentoumu",
+        "slug": "butt-detective-the-movie-mystery-of-the-ruins",
         "uid": 745777,
         "lid": "vi6C"
       }
@@ -25121,9 +25187,9 @@
       "id": 48784
     },
     "trakt": {
-      "title": "Oshiri Tantei: Sufuure-tou no Himitsu",
+      "title": "Butt Detective the Movie: The Secret of Souffulé Island",
       "id": 673344,
-      "slug": "oshiri-tantei-sufuure-tou-no-himitsu-2021",
+      "slug": "butt-detective-the-movie-the-secret-of-souffule-island-2021",
       "type": "movies"
     },
     "release_year": 2021,
@@ -25131,7 +25197,7 @@
       "tmdb": 843247,
       "imdb": null,
       "letterboxd": {
-        "slug": "oshiri-tantei-sufuure-tou-no-himitsu",
+        "slug": "butt-detective-the-movie-the-secret-of-souffule",
         "uid": 758109,
         "lid": "vObE"
       }
@@ -26631,6 +26697,28 @@
   },
   {
     "myanimelist": {
+      "title": "Fate/strange Fake: Whispers of Dawn",
+      "id": 53127
+    },
+    "trakt": {
+      "title": "Fate/strange Fake -Whispers of Dawn-",
+      "id": 922717,
+      "slug": "fate-strange-fake-whispers-of-dawn-2023",
+      "type": "movies"
+    },
+    "release_year": 2023,
+    "externals": {
+      "tmdb": 1145612,
+      "imdb": "tt22264336",
+      "letterboxd": {
+        "slug": "fate-strange-fake-whispers-of-dawn",
+        "uid": 1032689,
+        "lid": "HkuK"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
       "id": 53129
     },
@@ -27049,6 +27137,28 @@
   },
   {
     "myanimelist": {
+      "title": "Mask Danshi wa Koishitakunai noni",
+      "id": 54792
+    },
+    "trakt": {
+      "title": "Mask Danshi wa Koishitakunai noni",
+      "id": 988407,
+      "slug": "mask-danshi-wa-koishitakunai-noni-2023",
+      "type": "movies"
+    },
+    "release_year": 2023,
+    "externals": {
+      "tmdb": 1223906,
+      "imdb": null,
+      "letterboxd": {
+        "slug": "mask-danshi-wa-koishitakunai-noni",
+        "uid": 1107550,
+        "lid": "Ktf6"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Bloody Escape: Jigoku no Tousou Geki",
       "id": 54793
     },
@@ -27308,6 +27418,28 @@
         "slug": "doraemon-the-movie-nobitas-earth-symphony",
         "uid": 1034590,
         "lid": "Hprm"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Monsters: Ippyaku Sanjou Hiryuu Jigoku",
+      "id": 56055
+    },
+    "trakt": {
+      "title": "Monsters 103 Mercies Dragon Damnation",
+      "id": 994908,
+      "slug": "monsters-103-mercies-dragon-damnation-2024",
+      "type": "movies"
+    },
+    "release_year": 2024,
+    "externals": {
+      "tmdb": 1230393,
+      "imdb": "tt30475122",
+      "letterboxd": {
+        "slug": "monsters-103-mercies-dragon-damnation",
+        "uid": 1113865,
+        "lid": "KJFE"
       }
     }
   },
@@ -27647,9 +27779,9 @@
       "id": 57590
     },
     "trakt": {
-      "title": "Eiga Oshiri Tantei Saraba Itoshiki Aibō (Oshiri) yo",
+      "title": "Butt Detective the Movie: Farewell, Oh My Beloved Butty",
       "id": 1011662,
-      "slug": "eiga-oshiri-tantei-saraba-itoshiki-aibo-oshiri-yo-2024",
+      "slug": "butt-detective-the-movie-farewell-oh-my-beloved-butty-2024",
       "type": "movies"
     },
     "release_year": 2024,
@@ -27657,7 +27789,7 @@
       "tmdb": 1248745,
       "imdb": null,
       "letterboxd": {
-        "slug": "eiga-oshiri-tantei-saraba-itoshiki-aibo-oshiri-yo",
+        "slug": "butt-detective-the-movie-farewell-oh-my-beloved",
         "uid": 1133149,
         "lid": "LxPY"
       }
@@ -28017,6 +28149,28 @@
   },
   {
     "myanimelist": {
+      "title": "Hanarokushou ga Akeru Hi ni",
+      "id": 58735
+    },
+    "trakt": {
+      "title": "A New Dawn",
+      "id": 1040257,
+      "slug": "a-new-dawn-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1279865,
+      "imdb": "tt32192760",
+      "letterboxd": {
+        "slug": "a-new-dawn-2026",
+        "uid": 1163696,
+        "lid": "MPiU"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Odekake Kozame Movie: Tokai no Otomodachi",
       "id": 58837
     },
@@ -28347,6 +28501,28 @@
   },
   {
     "myanimelist": {
+      "title": "Tensei shitara Slime Datta Ken Movie 2: Soukai no Namida-hen",
+      "id": 59971
+    },
+    "trakt": {
+      "title": "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea",
+      "id": 1113460,
+      "slug": "that-time-i-got-reincarnated-as-a-slime-the-movie-tears-of-the-azure-sea-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1363974,
+      "imdb": "tt38650409",
+      "letterboxd": {
+        "slug": "that-time-i-got-reincarnated-as-a-slime-the",
+        "uid": 1252084,
+        "lid": "Qxf2"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Doraemon Movie 44: Nobita no E Sekai Monogatari",
       "id": 59980
     },
@@ -28364,6 +28540,28 @@
         "slug": "doraemon-the-movie-nobitas-art-world-tales",
         "uid": 1259363,
         "lid": "QQb4"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Boku no Kokoro no Yabai Yatsu Movie",
+      "id": 59985
+    },
+    "trakt": {
+      "title": "The Dangers in My Heart: The Movie",
+      "id": 1113461,
+      "slug": "the-dangers-in-my-heart-the-movie-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1363979,
+      "imdb": null,
+      "letterboxd": {
+        "slug": "the-dangers-in-my-heart-the-movie",
+        "uid": 1251860,
+        "lid": "QwEU"
       }
     }
   },
@@ -28439,9 +28637,9 @@
       "id": 60613
     },
     "trakt": {
-      "title": "Eiga Oshiri Tantei: Star and Moon",
+      "title": "Butt Detective the Movie: Star and Moon",
       "id": 1150429,
-      "slug": "eiga-oshiri-tantei-star-and-moon-2025",
+      "slug": "butt-detective-the-movie-star-and-moon-2025",
       "type": "movies"
     },
     "release_year": 2025,
@@ -28449,7 +28647,7 @@
       "tmdb": 1406240,
       "imdb": null,
       "letterboxd": {
-        "slug": "eiga-oshiri-tantei-star-and-moon",
+        "slug": "butt-detective-the-movie-star-and-moon",
         "uid": 1289223,
         "lid": "S5Rc"
       }
@@ -28611,6 +28809,28 @@
   },
   {
     "myanimelist": {
+      "title": "All You Need Is Kill",
+      "id": 61192
+    },
+    "trakt": {
+      "title": "ALL YOU NEED IS KILL",
+      "id": 1171874,
+      "slug": "all-you-need-is-kill-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1432547,
+      "imdb": "tt36148135",
+      "letterboxd": {
+        "slug": "all-you-need-is-kill-2025",
+        "uid": 1311219,
+        "lid": "T14W"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Tabekko Doubutsu The Movie",
       "id": 61198
     },
@@ -28639,10 +28859,10 @@
     "trakt": {
       "title": "Mononoke the Movie: Chapter III - The Curse of the Serpent",
       "id": 1081354,
-      "slug": "mononoke-the-movie-chapter-iii-the-curse-of-the-serpent",
+      "slug": "mononoke-the-movie-chapter-iii-the-curse-of-the-serpent-2026",
       "type": "movies"
     },
-    "release_year": 0,
+    "release_year": 2026,
     "externals": {
       "tmdb": 1322562,
       "imdb": "tt36282134",
@@ -28694,6 +28914,28 @@
         "slug": "tooi-san-wa-seishun-shitai-baka-to-smartphone",
         "uid": 1299114,
         "lid": "SvAw"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Kusunoki no Bannin",
+      "id": 61418
+    },
+    "trakt": {
+      "title": "The Keeper of the Camphor Tree",
+      "id": 1196113,
+      "slug": "the-keeper-of-the-camphor-tree-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1461201,
+      "imdb": "tt36461929",
+      "letterboxd": {
+        "slug": "the-keeper-of-the-camphor-tree",
+        "uid": 1338197,
+        "lid": "U9ge"
       }
     }
   },
@@ -28809,6 +29051,50 @@
   },
   {
     "myanimelist": {
+      "title": "Meikyuu no Shiori",
+      "id": 61964
+    },
+    "trakt": {
+      "title": "Labyrinth",
+      "id": 1236619,
+      "slug": "labyrinth-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1507724,
+      "imdb": "tt38507195",
+      "letterboxd": {
+        "slug": "labyrinth-2025-1",
+        "uid": 1383853,
+        "lid": "W426"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Paris ni Saku Etoile",
+      "id": 62193
+    },
+    "trakt": {
+      "title": "Paris ni Saku Étoile",
+      "id": 1252258,
+      "slug": "paris-ni-saku-etoile-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1526874,
+      "imdb": "tt37874634",
+      "letterboxd": {
+        "slug": "paris-ni-saku-etoile",
+        "uid": 1401830,
+        "lid": "WONC"
+      }
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kinuginu no Hanayuki",
       "id": 62269
     },
@@ -28826,6 +29112,94 @@
         "slug": "kinuginu-no-hanayuki",
         "uid": 1410945,
         "lid": "XcvM"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gintama Movie 3: Yoshiwara Daienjou",
+      "id": 62277
+    },
+    "trakt": {
+      "title": "Shin-Gekijōban Gintama: Yoshiwara Daienjō",
+      "id": 1256133,
+      "slug": "shin-gekijoban-gintama-yoshiwara-daienjo-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1530941,
+      "imdb": "tt37931873",
+      "letterboxd": {
+        "slug": "shin-gekijoban-gintama-yoshiwara-daienjo",
+        "uid": 1406171,
+        "lid": "X05M"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ansatsu Kyoushitsu Movie: Minna no Jikan",
+      "id": 62421
+    },
+    "trakt": {
+      "title": "Assassination Classroom the Movie: Everyone's Time",
+      "id": 1266022,
+      "slug": "assassination-classroom-the-movie-everyone-s-time-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1542877,
+      "imdb": "tt38649153",
+      "letterboxd": {
+        "slug": "assassination-classroom-the-movie-everyones",
+        "uid": 1417305,
+        "lid": "Xt3A"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 45: Shin Nobita no Kaitei Kiganjou",
+      "id": 62508
+    },
+    "trakt": {
+      "title": "Doraemon the Movie: New Nobita and the Castle of the Undersea Devil",
+      "id": 1265643,
+      "slug": "doraemon-the-movie-new-nobita-and-the-castle-of-the-undersea-devil-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1542261,
+      "imdb": "tt38201958",
+      "letterboxd": {
+        "slug": "doraemon-the-movie-new-nobita-and-the-castle",
+        "uid": 1417019,
+        "lid": "Xsjs"
+      }
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Chou Kaguya-hime!",
+      "id": 62896
+    },
+    "trakt": {
+      "title": "Cosmic Princess Kaguya!",
+      "id": 1306958,
+      "slug": "cosmic-princess-kaguya-2026",
+      "type": "movies"
+    },
+    "release_year": 2026,
+    "externals": {
+      "tmdb": 1575337,
+      "imdb": "tt38872297",
+      "letterboxd": {
+        "slug": "cosmic-princess-kaguya",
+        "uid": 1447335,
+        "lid": "YJb8"
       }
     }
   }
