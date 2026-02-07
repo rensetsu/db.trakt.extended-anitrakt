@@ -35,7 +35,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
-        go-version: '1.21'
+        go-version: '1.24'
 
     - name: Cache Go modules
       uses: actions/cache@v4
@@ -90,7 +90,12 @@ jobs:
       id: check_changes
       run: |
         # Use git status to check for any modifications to the data files
-        if git status --porcelain json/output/tv_ex.json json/output/movies_ex.json json/not_found/not_exist_*.json | grep .; then
+        CHANGED_FILES="json/output/tv_ex.json json/output/movies_ex.json"
+        if git status --porcelain $CHANGED_FILES 2>/dev/null | grep . >/dev/null; then
+          # Also check for optional not_found files if they exist
+          if git status --porcelain json/not_found/not_exist_*.json 2>/dev/null | grep . >/dev/null; then
+            true
+          fi
           echo "Data changes detected."
           echo "data_changed=true" >> $GITHUB_OUTPUT
         else
@@ -99,8 +104,10 @@ jobs:
         fi
 
         # Gather stats for the commit message and release notes
-        echo "tv_count=$(jq length json/output/tv_ex.json)" >> $GITHUB_OUTPUT
-        echo "movies_count=$(jq length json/output/movies_ex.json)" >> $GITHUB_OUTPUT
+        tv_count=$(jq 'length' json/output/tv_ex.json 2>/dev/null || echo "0")
+        movies_count=$(jq 'length' json/output/movies_ex.json 2>/dev/null || echo "0")
+        echo "tv_count=$tv_count" >> $GITHUB_OUTPUT
+        echo "movies_count=$movies_count" >> $GITHUB_OUTPUT
 
     - name: Commit, Push, and Release
       if: steps.check_changes.outputs.data_changed == 'true'
@@ -112,10 +119,11 @@ jobs:
         git config --local user.name "GitHub Action"
 
         # Add all generated files. This is safe because the runner environment is clean.
-        git add json/output/tv_ex.json json/output/movies_ex.json last_updated.txt json/not_found/not_exist_*.json
+        git add json/output/tv_ex.json json/output/movies_ex.json last_updated.txt
+        git add json/not_found/not_exist_*.json 2>/dev/null || true
 
         # Create a detailed commit message using a HEREDOC
-        COMMIT_MSG=$(cat << EOF
+        COMMIT_MSG=$(cat << EOF | sed 's/^        //'
         feat: Update Trakt extended data
 
         - TV shows: ${{ steps.check_changes.outputs.tv_count }} entries
@@ -129,29 +137,29 @@ jobs:
         git push
 
         # Create detailed release notes using a HEREDOC for readability
-        RELEASE_NOTES=$(cat << 'EOF'
-# Trakt Extended Data Release
+        RELEASE_NOTES=$(cat << 'EOF' | sed 's/^        //'
+        # Trakt Extended Data Release
 
-## 📊 Statistics
+        ## 📊 Statistics
 
-| Media Type | Total Entries |
-|------------|---------------|
-| TV Shows   | TV_COUNT      |
-| Movies     | MOVIES_COUNT  |
+        | Media Type | Total Entries |
+        |------------|---------------|
+        | TV Shows   | TV_COUNT      |
+        | Movies     | MOVIES_COUNT  |
 
-**Last Updated**: TIMESTAMP
+        **Last Updated**: TIMESTAMP
 
-## 📁 Files
+        ## 📁 Files
 
-- `json/output/tv_ex.json` - Extended TV shows data
-- `json/output/movies_ex.json` - Extended movies data
-- `last_updated.txt` - Timestamp of this update
-OPTIONAL_NOT_FOUND
+        - `json/output/tv_ex.json` - Extended TV shows data
+        - `json/output/movies_ex.json` - Extended movies data
+        - `last_updated.txt` - Timestamp of this update
+        OPTIONAL_NOT_FOUND
 
----
+        ---
 
-*For detailed CRUD changes, see the workflow job summary.*
-EOF
+        *For detailed CRUD changes, see the workflow job summary.*
+        EOF
         )
 
         # Replace placeholders
@@ -204,7 +212,7 @@ EOF
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
-        go-version: '1.21'
+        go-version: '1.24'
     
     - name: Install jq for testing
       run: sudo apt-get update && sudo apt-get install -y jq
