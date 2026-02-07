@@ -210,7 +210,10 @@ func main() {
 	os.WriteFile(progressFile, []byte{}, 0644)
 
 	defer func() {
-		os.RemoveAll(config.TempDir)
+		// Clean up temp directories except letterboxd (persisted by GitHub Actions cache)
+		os.RemoveAll(filepath.Join(config.TempDir, "shows"))
+		os.RemoveAll(filepath.Join(config.TempDir, "movies"))
+		os.RemoveAll(filepath.Join(config.TempDir, "seasons"))
 		os.Remove(progressFile)
 	}()
 

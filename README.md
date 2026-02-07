@@ -80,7 +80,8 @@ type OutputMovieList = OutputMovie[];
 
 ## Not Found Files Schema
 
-When anime entries cannot be found on Trakt.tv, they are logged in separate files for easy identification:
+When anime entries cannot be found on Trakt.tv, they are logged in separate
+files for easy identification:
 
 ### Not Found Entries (`not_exist_tv_ex.json`, `not_exist_movies_ex.json`)
 
@@ -214,25 +215,34 @@ counted as one episode.
 
 ## Change Tracking
 
-The application automatically tracks and reports CRUD operations (Create, Update, Unrecognized) during processing:
+The application automatically tracks and reports CRUD operations (Create,
+Update, Unrecognized) during processing:
 
 - **Created**: New entries added to the database
 - **Updated**: Existing entries with modified Trakt metadata
 - **Not Found**: Entries that could not be found on Trakt.tv
 
-When running in GitHub Actions, detailed change summaries with reasons are automatically appended to the workflow job summary using the `GITHUB_STEP_SUMMARY` file. This includes:
+When running in GitHub Actions, detailed change summaries with reasons are
+automatically appended to the workflow job summary using the `GITHUB_STEP_SUMMARY`
+file. This includes:
+
 - Summary table showing before/after counts and diffs
 - Detailed change tables with entry titles and reasons for modifications
 
 ## Caching
 
 The application uses temporary file caching to avoid redundant API calls:
-- Show: `/tmp/trakt_data/shows/`
-- Movie: `/tmp/trakt_data/movies/`
-- Season: `/tmp/trakt_data/seasons/`
-- Letterboxd API: `/tmp/trakt_data/letterboxd/`
 
-Cache is automatically cleaned up when the application exits successfully.
+- **Letterboxd API** (`/tmp/trakt_data/letterboxd/`): Persisted across workflow
+  runs via GitHub Actions cache. Letterboxd data changes infrequently, so this
+  cache significantly speeds up movie processing.
+- **Show metadata** (`/tmp/trakt_data/shows/`): Ephemeral, cleared after each
+  run. Avoids redundant API calls within a single execution.
+- **Movie metadata** (`/tmp/trakt_data/movies/`): Ephemeral, cleared after each run.
+- **Season metadata** (`/tmp/trakt_data/seasons/`): Ephemeral, cleared after each run.
+
+When running locally, all caches are cleared on exit. In GitHub Actions, the
+Letterboxd cache is automatically restored and saved between workflow runs.
 
 ## File Structure
 

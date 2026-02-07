@@ -47,6 +47,14 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-go-
 
+    - name: Cache Letterboxd data
+      uses: actions/cache@v4
+      with:
+        path: /tmp/trakt_data/letterboxd
+        key: ${{ runner.os }}-letterboxd-cache
+        restore-keys: |
+          ${{ runner.os }}-letterboxd-
+
     - name: Install dependencies
       run: go mod tidy
 
