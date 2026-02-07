@@ -1,6 +1,6 @@
 # Extended Trakt Database for db.trakt.anitrakt
 
-An extended metadata of [db.trakt.anitrakt](https://github.com/rensetsu/db.trakt.extended-anitrakt)
+An extended metadata of [db.trakt.anitrakt](https://github.com/rensetsu/db.trakt.anitrakt)
 by iterating and calling Trakt.tv for extended metadata with some nice
 enhancements implemented.
 
