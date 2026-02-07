@@ -172,26 +172,26 @@ type ChangeDetail struct {
 }
 
 type ProcessingStats struct {
-	MediaType       string           `json:"media_type"`
-	TotalBefore     int              `json:"total_before"`
-	TotalAfter      int              `json:"total_after"`
-	Created         int              `json:"created"`
-	Updated         int              `json:"updated"`
-	Modified        int              `json:"modified"`
-	NotFound        int              `json:"not_found"`
-	CreatedDetails  []ChangeDetail   `json:"created_details"`
-	UpdatedDetails  []ChangeDetail   `json:"updated_details"`
-	ModifiedDetails []ChangeDetail   `json:"modified_details"`
-	NotFoundDetails []ChangeDetail   `json:"not_found_details"`
+	MediaType       string         `json:"media_type"`
+	TotalBefore     int            `json:"total_before"`
+	TotalAfter      int            `json:"total_after"`
+	Created         int            `json:"created"`
+	Updated         int            `json:"updated"`
+	Modified        int            `json:"modified"`
+	NotFound        int            `json:"not_found"`
+	CreatedDetails  []ChangeDetail `json:"created_details"`
+	UpdatedDetails  []ChangeDetail `json:"updated_details"`
+	ModifiedDetails []ChangeDetail `json:"modified_details"`
+	NotFoundDetails []ChangeDetail `json:"not_found_details"`
 }
 
 type Override struct {
-	MalID       int                   `json:"mal_id"`
-	Description string                `json:"description"`
-	TraktShow   *json.RawMessage      `json:"trakt,omitempty"`
-	TraktMovie  *json.RawMessage      `json:"trakt,omitempty"`
-	Externals   *json.RawMessage      `json:"externals,omitempty"`
-	Ignore      bool                  `json:"ignore,omitempty"`
+	MalID       int              `json:"mal_id"`
+	Description string           `json:"description"`
+	TraktShow   *json.RawMessage `json:"trakt,omitempty"`
+	TraktMovie  *json.RawMessage `json:"trakt,omitempty"`
+	Externals   *json.RawMessage `json:"externals,omitempty"`
+	Ignore      bool             `json:"ignore,omitempty"`
 }
 
 func main() {
@@ -260,10 +260,10 @@ func promptForAPIKey() string {
 }
 
 func loadOverrides(mediaType string) map[int]*Override {
-	overridesFile := filepath.Join("json/overrides", mediaType + "_overrides.json")
+	overridesFile := filepath.Join("json/overrides", mediaType+"_overrides.json")
 	var overrides []Override
 	loadJSONOptional(overridesFile, &overrides)
-	
+
 	overridesMap := make(map[int]*Override)
 	for i := range overrides {
 		overridesMap[overrides[i].MalID] = &overrides[i]
@@ -274,10 +274,10 @@ func loadOverrides(mediaType string) map[int]*Override {
 func applyShowOverride(show *OutputShow, override *Override) {
 	if override.TraktShow != nil {
 		var traktOverride struct {
-			Title  *string `json:"title"`
-			ID     *int    `json:"id"`
-			Slug   *string `json:"slug"`
-			Type   *string `json:"type"`
+			Title *string `json:"title"`
+			ID    *int    `json:"id"`
+			Slug  *string `json:"slug"`
+			Type  *string `json:"type"`
 		}
 		if err := json.Unmarshal(*override.TraktShow, &traktOverride); err == nil {
 			if traktOverride.Title != nil {
@@ -294,7 +294,7 @@ func applyShowOverride(show *OutputShow, override *Override) {
 			}
 		}
 	}
-	
+
 	if override.Externals != nil {
 		var extOverride TraktExternalsShow
 		if err := json.Unmarshal(*override.Externals, &extOverride); err == nil {
@@ -337,7 +337,7 @@ func applyMovieOverride(movie *OutputMovie, override *Override) {
 			}
 		}
 	}
-	
+
 	if override.Externals != nil {
 		var extOverride TraktExternalsMovie
 		if err := json.Unmarshal(*override.Externals, &extOverride); err == nil {
@@ -360,7 +360,7 @@ func processShows(config Config) {
 
 	outputFile := config.OutputFile
 	if outputFile == "" {
-		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.TvFile, ".json")) + "_ex.json")
+		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.TvFile, ".json"))+"_ex.json")
 	}
 
 	var existingOutput []OutputShow
@@ -482,7 +482,7 @@ func processMovies(config Config) {
 
 	outputFile := config.OutputFile
 	if outputFile == "" {
-		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.MovieFile, ".json")) + "_ex.json")
+		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.MovieFile, ".json"))+"_ex.json")
 	}
 
 	var existingOutput []OutputMovie
@@ -614,7 +614,7 @@ func setupProgressBar(total int, description string, noProgress bool) *progressb
 }
 
 func loadNotFound(outputFile string) map[int]bool {
-	notExistFile := filepath.Join("json/not_found", "not_exist_" + filepath.Base(outputFile))
+	notExistFile := filepath.Join("json/not_found", "not_exist_"+filepath.Base(outputFile))
 	var notExist []NotFoundEntry
 	loadJSONOptional(notExistFile, &notExist)
 	notExistMap := make(map[int]bool)
@@ -805,7 +805,7 @@ func saveMovieResults(outputFile string, resultsMap map[int]OutputMovie) {
 
 func saveNotFound(outputFile string, newNotExist []NotFoundEntry, notExistMap map[int]bool) {
 	if len(newNotExist) > 0 {
-		notExistFile := filepath.Join("json/not_found", "not_exist_" + filepath.Base(outputFile))
+		notExistFile := filepath.Join("json/not_found", "not_exist_"+filepath.Base(outputFile))
 		var existingNotExist []NotFoundEntry
 		loadJSONOptional(notExistFile, &existingNotExist)
 		for _, entry := range newNotExist {
@@ -819,7 +819,7 @@ func saveNotFound(outputFile string, newNotExist []NotFoundEntry, notExistMap ma
 
 func outputStats(mediaType string, stats ProcessingStats) {
 	summaryFile := os.Getenv("GITHUB_STEP_SUMMARY")
-	
+
 	title := strings.ToTitle(mediaType)
 	diff := stats.TotalAfter - stats.TotalBefore
 	diffStr := fmt.Sprintf("%+d", diff)
