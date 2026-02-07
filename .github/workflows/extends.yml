@@ -13,6 +13,7 @@ on:
   push:
     paths:
       - "main.go"
+      - ".github/workflows/extends.yml"
 
 jobs:
   extend-data:
@@ -26,208 +27,210 @@ jobs:
       TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      # fetch-depth: 0 is necessary to compare with the previous commit
-      with:
-        fetch-depth: 0
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        # fetch-depth: 0 is necessary to compare with the previous commit
+        with:
+          fetch-depth: 0
 
-    - name: Set up Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: '1.24'
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
 
-    - name: Cache Go modules
-      uses: actions/cache@v4
-      with:
-        path: |
-          ~/.cache/go-build
-          ~/go/pkg/mod
-        key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-        restore-keys: |
-          ${{ runner.os }}-go-
+      - name: Cache Go modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
 
-    - name: Cache Letterboxd data
-      uses: actions/cache@v4
-      with:
-        path: /tmp/trakt_data/letterboxd
-        key: ${{ runner.os }}-letterboxd-cache
-        restore-keys: |
-          ${{ runner.os }}-letterboxd-
+      - name: Cache Letterboxd data
+        uses: actions/cache@v4
+        with:
+          path: /tmp/trakt_data/letterboxd
+          key: ${{ runner.os }}-letterboxd-cache
+          restore-keys: |
+            ${{ runner.os }}-letterboxd-
 
-    - name: Install dependencies
-      run: go mod tidy
+      - name: Install dependencies
+        run: go mod tidy
 
-    - name: Download source data
-      run: |
-        curl -fsSL -o json/input/tv.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/tv.json
-        curl -fsSL -o json/input/movies.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/movies.json
-        echo "Downloaded TV data: $(wc -l < json/input/tv.json) lines"
-        echo "Downloaded Movies data: $(wc -l < json/input/movies.json) lines"
+      - name: Download source data
+        run: |
+          mkdir -p json/input/
+          curl -fsSL -o json/input/tv.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/tv.json
+          curl -fsSL -o json/input/movies.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/movies.json
+          echo "Downloaded TV data: $(wc -l < json/input/tv.json) lines"
+          echo "Downloaded Movies data: $(wc -l < json/input/movies.json) lines"
 
-    - name: Process Trakt data
-      run: |
-        # Construct arguments for the Go application
-        ARGS="-api-key ${TRAKT_API_KEY} -verbose -no-progress"
-        DAY_OF_MONTH=$(date +%d)
+      - name: Process Trakt data
+        run: |
+          # Construct arguments for the Go application
+          ARGS="-api-key ${TRAKT_API_KEY} -verbose -no-progress"
+          DAY_OF_MONTH=$(date +%d)
 
-        # Force update on the first Friday of the month, or if manually triggered
-        if [[ "${{ github.event.inputs.force_update }}" == "true" ]] || \
-          [[ "${{ github.event_name }}" == "schedule" && $DAY_OF_MONTH -ge 1 && $DAY_OF_MONTH -le 7 ]]; then
-          ARGS+=" -force"
-        fi
-
-        echo "Processing TV shows..."
-        go run main.go -tv json/input/tv.json -output json/output/tv_ex.json $ARGS
-        
-        echo "Processing movies..."
-        go run main.go -movies json/input/movies.json -output json/output/movies_ex.json $ARGS
-
-    - name: Generate update timestamp
-      run: echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
-
-    - name: Detect data changes and gather stats
-      id: check_changes
-      run: |
-        # Use git status to check for any modifications to the data files
-        CHANGED_FILES="json/output/tv_ex.json json/output/movies_ex.json"
-        if git status --porcelain $CHANGED_FILES 2>/dev/null | grep . >/dev/null; then
-          # Also check for optional not_found files if they exist
-          if git status --porcelain json/not_found/not_exist_*.json 2>/dev/null | grep . >/dev/null; then
-            true
+          # Force update on the first Friday of the month, or if manually triggered
+          if [[ "${{ github.event.inputs.force_update }}" == "true" ]] || \
+            [[ "${{ github.event_name }}" == "schedule" && $DAY_OF_MONTH -ge 1 && $DAY_OF_MONTH -le 7 ]]; then
+            ARGS+=" -force"
           fi
-          echo "Data changes detected."
-          echo "data_changed=true" >> $GITHUB_OUTPUT
-        else
-          echo "No data changes detected."
-          echo "data_changed=false" >> $GITHUB_OUTPUT
-        fi
 
-        # Gather stats for the commit message and release notes
-        tv_count=$(jq 'length' json/output/tv_ex.json 2>/dev/null || echo "0")
-        movies_count=$(jq 'length' json/output/movies_ex.json 2>/dev/null || echo "0")
-        echo "tv_count=$tv_count" >> $GITHUB_OUTPUT
-        echo "movies_count=$movies_count" >> $GITHUB_OUTPUT
+          echo "Processing TV shows..."
+          go run main.go -tv json/input/tv.json -output json/output/tv_ex.json $ARGS
 
-    - name: Commit, Push, and Release
-      if: steps.check_changes.outputs.data_changed == 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo "Committing changes and creating a new release..."
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+          echo "Processing movies..."
+          go run main.go -movies json/input/movies.json -output json/output/movies_ex.json $ARGS
 
-        # Add all generated files. This is safe because the runner environment is clean.
-        git add json/output/tv_ex.json json/output/movies_ex.json last_updated.txt
-        git add json/not_found/not_exist_*.json 2>/dev/null || true
+      - name: Generate update timestamp
+        run: echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
 
-        # Create a detailed commit message using a HEREDOC
-        COMMIT_MSG=$(cat << EOF | sed 's/^        //'
-        feat: Update Trakt extended data
+      - name: Detect data changes and gather stats
+        id: check_changes
+        run: |
+          # Use git status to check for any modifications to the data files
+          CHANGED_FILES="json/output/tv_ex.json json/output/movies_ex.json"
+          if git status --porcelain $CHANGED_FILES 2>/dev/null | grep . >/dev/null; then
+            # Also check for optional not_found files if they exist
+            if git status --porcelain json/not_found/not_exist_*.json 2>/dev/null | grep . >/dev/null; then
+              true
+            fi
+            echo "Data changes detected."
+            echo "data_changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "No data changes detected."
+            echo "data_changed=false" >> $GITHUB_OUTPUT
+          fi
 
-        - TV shows: ${{ steps.check_changes.outputs.tv_count }} entries
-        - Movies: ${{ steps.check_changes.outputs.movies_count }} entries
-        - Updated: $(cat last_updated.txt)
+          # Gather stats for the commit message and release notes
+          tv_count=$(jq 'length' json/output/tv_ex.json 2>/dev/null || echo "0")
+          movies_count=$(jq 'length' json/output/movies_ex.json 2>/dev/null || echo "0")
+          echo "tv_count=$tv_count" >> $GITHUB_OUTPUT
+          echo "movies_count=$movies_count" >> $GITHUB_OUTPUT
 
-        Auto-generated by GitHub Actions.
-        EOF
-        )
-        git commit -m "$COMMIT_MSG"
-        git push
+      - name: Commit, Push, and Release
+        if: steps.check_changes.outputs.data_changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Committing changes and creating a new release..."
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
-        # Create detailed release notes using a HEREDOC for readability
-        RELEASE_NOTES=$(cat << 'EOF' | sed 's/^        //'
-        # Trakt Extended Data Release
+          # Add all generated files. This is safe because the runner environment is clean.
+          git add json/output/tv_ex.json json/output/movies_ex.json last_updated.txt
+          git add json/not_found/not_exist_*.json 2>/dev/null || true
 
-        ## 📊 Statistics
+          # Create a detailed commit message using a HEREDOC
+          COMMIT_MSG=$(cat << EOF
+          feat: Update Trakt extended data
 
-        | Media Type | Total Entries |
-        |------------|---------------|
-        | TV Shows   | TV_COUNT      |
-        | Movies     | MOVIES_COUNT  |
+          - TV shows: ${{ steps.check_changes.outputs.tv_count }} entries
+          - Movies: ${{ steps.check_changes.outputs.movies_count }} entries
+          - Updated: $(cat last_updated.txt)
 
-        **Last Updated**: TIMESTAMP
-
-        ## 📁 Files
-
-        - `json/output/tv_ex.json` - Extended TV shows data
-        - `json/output/movies_ex.json` - Extended movies data
-        - `last_updated.txt` - Timestamp of this update
-        OPTIONAL_NOT_FOUND
-
-        ---
-
-        *For detailed CRUD changes, see the workflow job summary.*
-        EOF
-        )
-
-        # Replace placeholders
-        RELEASE_NOTES="${RELEASE_NOTES//TV_COUNT/${{ steps.check_changes.outputs.tv_count }}}"
-        RELEASE_NOTES="${RELEASE_NOTES//MOVIES_COUNT/${{ steps.check_changes.outputs.movies_count }}}"
-        RELEASE_NOTES="${RELEASE_NOTES//TIMESTAMP/$(cat last_updated.txt)}"
-
-        # Add optional not found files info
-        OPTIONAL_NOT_FOUND=""
-        [ -f "json/not_found/not_exist_tv_ex.json" ] && OPTIONAL_NOT_FOUND+="- \`json/not_found/not_exist_tv_ex.json\` - TV shows not found on Trakt"$'\n'
-        [ -f "json/not_found/not_exist_movies_ex.json" ] && OPTIONAL_NOT_FOUND+="- \`json/not_found/not_exist_movies_ex.json\` - Movies not found on Trakt"
-        RELEASE_NOTES="${RELEASE_NOTES//OPTIONAL_NOT_FOUND/$OPTIONAL_NOT_FOUND}"
-
-        # Create a list of asset files to upload
-        ASSET_FILES="json/output/tv_ex.json json/output/movies_ex.json last_updated.txt"
-        [ -f "json/not_found/not_exist_tv_ex.json" ] && ASSET_FILES+=" json/not_found/not_exist_tv_ex.json"
-        [ -f "json/not_found/not_exist_movies_ex.json" ] && ASSET_FILES+=" json/not_found/not_exist_movies_ex.json"
-
-        # Delete old release and create a new one to keep the 'latest' tag updated
-        gh release delete latest --yes || echo "No 'latest' release found to delete."
-        gh release create latest \
-          --title "Latest Trakt Extended Data" \
-          --notes "$RELEASE_NOTES" \
-          --latest \
-          $ASSET_FILES
-
-    - name: Update Timestamp Only
-      if: steps.check_changes.outputs.data_changed == 'false'
-      run: |
-        echo "Data is unchanged. Updating timestamp to record activity."
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add last_updated.txt
-        # Check if the timestamp file itself has changed before committing
-        if ! git diff --staged --quiet; then
-          git commit -m "chore: Update timestamp"
+          Auto-generated by GitHub Actions.
+          EOF
+          )
+          git commit -m "$COMMIT_MSG"
           git push
-        else
-          echo "Timestamp file is also unchanged. Nothing to commit."
-        fi
+
+          # Create detailed release notes using a HEREDOC for readability
+          RELEASE_NOTES=$(cat << 'EOF'
+          # Trakt Extended Data Release
+
+          ## 📊 Statistics
+
+          | Media Type | Total Entries |
+          |------------|---------------|
+          | TV Shows   | TV_COUNT      |
+          | Movies     | MOVIES_COUNT  |
+
+          **Last Updated**: TIMESTAMP
+
+          ## 📁 Files
+
+          - `json/output/tv_ex.json` - Extended TV shows data
+          - `json/output/movies_ex.json` - Extended movies data
+          - `last_updated.txt` - Timestamp of this update
+          OPTIONAL_NOT_FOUND
+
+          ---
+
+          *For detailed CRUD changes, see the workflow job summary.*
+          EOF
+          )
+
+          # Replace placeholders
+          RELEASE_NOTES="${RELEASE_NOTES//TV_COUNT/${{ steps.check_changes.outputs.tv_count }}}"
+          RELEASE_NOTES="${RELEASE_NOTES//MOVIES_COUNT/${{ steps.check_changes.outputs.movies_count }}}"
+          RELEASE_NOTES="${RELEASE_NOTES//TIMESTAMP/$(cat last_updated.txt)}"
+
+          # Add optional not found files info
+          OPTIONAL_NOT_FOUND=""
+          [ -f "json/not_found/not_exist_tv_ex.json" ] && OPTIONAL_NOT_FOUND+="- \`json/not_found/not_exist_tv_ex.json\` - TV shows not found on Trakt"$'\n'
+          [ -f "json/not_found/not_exist_movies_ex.json" ] && OPTIONAL_NOT_FOUND+="- \`json/not_found/not_exist_movies_ex.json\` - Movies not found on Trakt"
+          RELEASE_NOTES="${RELEASE_NOTES//OPTIONAL_NOT_FOUND/$OPTIONAL_NOT_FOUND}"
+
+          # Create a list of asset files to upload
+          ASSET_FILES="json/output/tv_ex.json json/output/movies_ex.json last_updated.txt"
+          [ -f "json/not_found/not_exist_tv_ex.json" ] && ASSET_FILES+=" json/not_found/not_exist_tv_ex.json"
+          [ -f "json/not_found/not_exist_movies_ex.json" ] && ASSET_FILES+=" json/not_found/not_exist_movies_ex.json"
+
+          # Delete old release and create a new one to keep the 'latest' tag updated
+          gh release delete latest --yes || echo "No 'latest' release found to delete."
+          gh release create latest \
+            --title "Latest Trakt Extended Data" \
+            --notes "$RELEASE_NOTES" \
+            --latest \
+            $ASSET_FILES
+
+      - name: Update Timestamp Only
+        if: steps.check_changes.outputs.data_changed == 'false'
+        run: |
+          echo "Data is unchanged. Updating timestamp to record activity."
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add last_updated.txt
+          # Check if the timestamp file itself has changed before committing
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: Update timestamp"
+            git push
+          else
+            echo "Timestamp file is also unchanged. Nothing to commit."
+          fi
 
   test-local:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch'
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    
-    - name: Set up Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: '1.24'
-    
-    - name: Install jq for testing
-      run: sudo apt-get update && sudo apt-get install -y jq
-    
-    - name: Test with sample data
-      run: |
-        # Create minimal test data
-        echo '[{"title":"Test Show","mal_id":1,"trakt_id":1390,"guessed_slug":"test","season":1,"type":"shows"}]' > json/input/test_tv.json
-        echo '[{"title":"Test Movie","mal_id":2,"trakt_id":1,"guessed_slug":"test","type":"movies"}]' > json/input/test_movies.json
-        
-        # Test the application (will fail due to dummy key, but tests structure)
-        echo "Testing TV processing..."
-        go run main.go -tv json/input/test_tv.json -verbose -no-progress -api-key "dummy_key" || echo "Expected failure with dummy API key"
-        
-        echo "Testing Movies processing..."
-        go run main.go -movies json/input/test_movies.json -verbose -no-progress -api-key "dummy_key" || echo "Expected failure with dummy API key"
-        
-        echo "Application structure test completed"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: Install jq for testing
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Test with sample data
+        run: |
+          mkdir -p json/input/
+          # Create minimal test data
+          echo '[{"title":"Test Show","mal_id":1,"trakt_id":1390,"guessed_slug":"test","season":1,"type":"shows"}]' > json/input/test_tv.json
+          echo '[{"title":"Test Movie","mal_id":2,"trakt_id":1,"guessed_slug":"test","type":"movies"}]' > json/input/test_movies.json
+
+          # Test the application (will fail due to dummy key, but tests structure)
+          echo "Testing TV processing..."
+          go run main.go -tv json/input/test_tv.json -verbose -no-progress -api-key "dummy_key" || echo "Expected failure with dummy API key"
+
+          echo "Testing Movies processing..."
+          go run main.go -movies json/input/test_movies.json -verbose -no-progress -api-key "dummy_key" || echo "Expected failure with dummy API key"
+
+          echo "Application structure test completed"
