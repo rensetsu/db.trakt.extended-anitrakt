@@ -1,0 +1,22 @@
+[
+  {
+    "mal_id": 12345,
+    "description": "Fixed incorrect Trakt ID for this movie",
+    "trakt": {
+      "id": 99999,
+      "slug": "corrected-movie-slug"
+    }
+  },
+  {
+    "mal_id": 54321,
+    "description": "Added correct TMDB ID",
+    "externals": {
+      "tmdb": 999999
+    }
+  },
+  {
+    "mal_id": 11111,
+    "description": "Skip processing - duplicate entry",
+    "ignore": true
+  }
+]

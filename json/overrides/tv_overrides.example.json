@@ -1,0 +1,22 @@
+[
+  {
+    "mal_id": 12345,
+    "description": "Fixed incorrect Trakt ID mapping for this show",
+    "trakt": {
+      "id": 99999,
+      "slug": "corrected-slug"
+    }
+  },
+  {
+    "mal_id": 54321,
+    "description": "Updated TVDB external ID",
+    "externals": {
+      "tvdb": 123456
+    }
+  },
+  {
+    "mal_id": 11111,
+    "description": "Entry removed - not available on Trakt",
+    "ignore": true
+  }
+]

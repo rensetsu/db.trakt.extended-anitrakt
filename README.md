@@ -108,9 +108,91 @@ type NotFoundList = NotFoundEntry[];
 ]
 ```
 
-## Overriding
+## Overrides - Simple & Minimal
 
-To override or adding missing relationship, please do it in main repo.
+Instead of manually specifying entire entries, the override system lets you
+patch only the fields you want to change. The application intelligently merges
+your overrides with existing data.
+
+### Override Files
+
+Create override files for entries that need manual correction:
+
+- `json/overrides/tv_overrides.json` - Overrides for TV shows
+- `json/overrides/movies_overrides.json` - Overrides for movies
+
+### Override Structure
+
+Each override entry requires:
+- **`mal_id`** (required): MAL ID of the entry to modify
+- **`description`** (required): Human-readable reason for the change
+- **Fields to override** (optional): Only specify fields you're changing
+  - For TV: `trakt` (title, id, slug), `externals` (tvdb, tmdb, imdb, tvrage)
+  - For Movies: `trakt` (title, id, slug), `externals` (tmdb, imdb, letterboxd)
+- **`ignore`** (optional): Set to `true` to skip processing this entry entirely
+
+### Use Cases
+
+**✅ Submit corrections to upstream repo** (`rensetsu/db.trakt.anitrakt`):
+
+- Fixing incorrect Trakt ID mappings in the input data
+- Correcting MAL titles
+- Actual bugs that affect multiple users
+
+**✅ Use local overrides in this repo** (extend-anitrakt):
+
+- Adding mappings to external databases (custom IDs, slugs)
+- Site-specific or application-specific tweaks
+- Local data that shouldn't be upstreamed
+
+### Example - TV Overrides
+
+```json
+[
+  {
+    "mal_id": 5114,
+    "description": "Custom Trakt mapping for this instance",
+    "trakt": {
+      "id": 3572,
+      "slug": "bleach"
+    }
+  },
+  {
+    "mal_id": 11061,
+    "description": "Local TVDB mapping override",
+    "externals": {
+      "tvdb": 395128
+    }
+  },
+  {
+    "mal_id": 51234,
+    "description": "Skip this entry - local filtering",
+    "ignore": true
+  }
+]
+```
+
+### Example - Movie Overrides
+
+```json
+[
+  {
+    "mal_id": 1234,
+    "description": "Custom TMDB mapping",
+    "externals": {
+      "tmdb": 12345
+    }
+  }
+]
+```
+
+### How It Works
+
+1. User specifies **only the fields they want to change**
+2. Script loads existing entry from output
+3. Script **deep merges** override with existing data (override wins)
+4. Changes are tracked and reported in stats as "Modified via Override"
+5. Description is automatically included in reports
 
 ## Usage
 

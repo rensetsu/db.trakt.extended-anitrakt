@@ -172,15 +172,26 @@ type ChangeDetail struct {
 }
 
 type ProcessingStats struct {
-	MediaType      string           `json:"media_type"`
-	TotalBefore    int              `json:"total_before"`
-	TotalAfter     int              `json:"total_after"`
-	Created        int              `json:"created"`
-	Updated        int              `json:"updated"`
-	NotFound       int              `json:"not_found"`
-	CreatedDetails []ChangeDetail   `json:"created_details"`
-	UpdatedDetails []ChangeDetail   `json:"updated_details"`
-	NotFoundDetails []ChangeDetail  `json:"not_found_details"`
+	MediaType       string           `json:"media_type"`
+	TotalBefore     int              `json:"total_before"`
+	TotalAfter      int              `json:"total_after"`
+	Created         int              `json:"created"`
+	Updated         int              `json:"updated"`
+	Modified        int              `json:"modified"`
+	NotFound        int              `json:"not_found"`
+	CreatedDetails  []ChangeDetail   `json:"created_details"`
+	UpdatedDetails  []ChangeDetail   `json:"updated_details"`
+	ModifiedDetails []ChangeDetail   `json:"modified_details"`
+	NotFoundDetails []ChangeDetail   `json:"not_found_details"`
+}
+
+type Override struct {
+	MalID       int                   `json:"mal_id"`
+	Description string                `json:"description"`
+	TraktShow   *json.RawMessage      `json:"trakt,omitempty"`
+	TraktMovie  *json.RawMessage      `json:"trakt,omitempty"`
+	Externals   *json.RawMessage      `json:"externals,omitempty"`
+	Ignore      bool                  `json:"ignore,omitempty"`
 }
 
 func main() {
@@ -248,6 +259,101 @@ func promptForAPIKey() string {
 	return string(bytePassword)
 }
 
+func loadOverrides(mediaType string) map[int]*Override {
+	overridesFile := filepath.Join("json/overrides", mediaType + "_overrides.json")
+	var overrides []Override
+	loadJSONOptional(overridesFile, &overrides)
+	
+	overridesMap := make(map[int]*Override)
+	for i := range overrides {
+		overridesMap[overrides[i].MalID] = &overrides[i]
+	}
+	return overridesMap
+}
+
+func applyShowOverride(show *OutputShow, override *Override) {
+	if override.TraktShow != nil {
+		var traktOverride struct {
+			Title  *string `json:"title"`
+			ID     *int    `json:"id"`
+			Slug   *string `json:"slug"`
+			Type   *string `json:"type"`
+		}
+		if err := json.Unmarshal(*override.TraktShow, &traktOverride); err == nil {
+			if traktOverride.Title != nil {
+				show.Trakt.Title = *traktOverride.Title
+			}
+			if traktOverride.ID != nil {
+				show.Trakt.ID = *traktOverride.ID
+			}
+			if traktOverride.Slug != nil {
+				show.Trakt.Slug = *traktOverride.Slug
+			}
+			if traktOverride.Type != nil {
+				show.Trakt.Type = *traktOverride.Type
+			}
+		}
+	}
+	
+	if override.Externals != nil {
+		var extOverride TraktExternalsShow
+		if err := json.Unmarshal(*override.Externals, &extOverride); err == nil {
+			if extOverride.TVDB != nil {
+				show.Externals.TVDB = extOverride.TVDB
+			}
+			if extOverride.TMDB != nil {
+				show.Externals.TMDB = extOverride.TMDB
+			}
+			if extOverride.IMDB != nil {
+				show.Externals.IMDB = extOverride.IMDB
+			}
+			if extOverride.TVRage != nil {
+				show.Externals.TVRage = extOverride.TVRage
+			}
+		}
+	}
+}
+
+func applyMovieOverride(movie *OutputMovie, override *Override) {
+	if override.TraktMovie != nil {
+		var traktOverride struct {
+			Title *string `json:"title"`
+			ID    *int    `json:"id"`
+			Slug  *string `json:"slug"`
+			Type  *string `json:"type"`
+		}
+		if err := json.Unmarshal(*override.TraktMovie, &traktOverride); err == nil {
+			if traktOverride.Title != nil {
+				movie.Trakt.Title = *traktOverride.Title
+			}
+			if traktOverride.ID != nil {
+				movie.Trakt.ID = *traktOverride.ID
+			}
+			if traktOverride.Slug != nil {
+				movie.Trakt.Slug = *traktOverride.Slug
+			}
+			if traktOverride.Type != nil {
+				movie.Trakt.Type = *traktOverride.Type
+			}
+		}
+	}
+	
+	if override.Externals != nil {
+		var extOverride TraktExternalsMovie
+		if err := json.Unmarshal(*override.Externals, &extOverride); err == nil {
+			if extOverride.TMDB != nil {
+				movie.Externals.TMDB = extOverride.TMDB
+			}
+			if extOverride.IMDB != nil {
+				movie.Externals.IMDB = extOverride.IMDB
+			}
+			if extOverride.Letterboxd != nil {
+				movie.Externals.Letterboxd = extOverride.Letterboxd
+			}
+		}
+	}
+}
+
 func processShows(config Config) {
 	var shows []InputShow
 	loadJSON(config.TvFile, &shows)
@@ -261,6 +367,7 @@ func processShows(config Config) {
 	loadJSONOptional(outputFile, &existingOutput)
 
 	notExistMap := loadNotFound(outputFile)
+	overridesMap := loadOverrides("tv")
 
 	resultsMap := make(map[int]OutputShow)
 	existingMap := make(map[int]OutputShow)
@@ -276,6 +383,7 @@ func processShows(config Config) {
 		TotalBefore:     len(existingOutput),
 		CreatedDetails:  []ChangeDetail{},
 		UpdatedDetails:  []ChangeDetail{},
+		ModifiedDetails: []ChangeDetail{},
 		NotFoundDetails: []ChangeDetail{},
 	}
 
@@ -285,6 +393,14 @@ func processShows(config Config) {
 
 	for _, show := range shows {
 		bar.Add(1)
+
+		// Check if entry should be ignored via override
+		if override, exists := overridesMap[show.MalID]; exists && override.Ignore {
+			if config.Verbose {
+				fmt.Printf("\nSkipping ignored show: %s (MAL ID: %d) - %s", show.Title, show.MalID, override.Description)
+			}
+			continue
+		}
 
 		if shouldSkipShow(show, resultsMap, notExistMap, config) {
 			continue
@@ -325,12 +441,30 @@ func processShows(config Config) {
 				Reason: "New entry added",
 			})
 		}
+
+		// Apply overrides if they exist
+		if override, exists := overridesMap[show.MalID]; exists && !override.Ignore {
+			oldShow := *outputShow
+			applyShowOverride(outputShow, override)
+			// Check if override actually changed anything
+			if oldShow.Trakt.ID != outputShow.Trakt.ID ||
+				oldShow.Trakt.Slug != outputShow.Trakt.Slug ||
+				oldShow.Externals != outputShow.Externals {
+				stats.ModifiedDetails = append(stats.ModifiedDetails, ChangeDetail{
+					MalID:  show.MalID,
+					Title:  show.Title,
+					Reason: override.Description,
+				})
+			}
+		}
+
 		resultsMap[show.MalID] = *outputShow
 	}
 
 	stats.TotalAfter = len(resultsMap)
 	stats.Created = len(stats.CreatedDetails)
 	stats.Updated = len(stats.UpdatedDetails)
+	stats.Modified = len(stats.ModifiedDetails)
 	stats.NotFound = len(stats.NotFoundDetails)
 
 	saveResults(outputFile, resultsMap)
@@ -355,6 +489,7 @@ func processMovies(config Config) {
 	loadJSONOptional(outputFile, &existingOutput)
 
 	notExistMap := loadNotFound(outputFile)
+	overridesMap := loadOverrides("movies")
 
 	resultsMap := make(map[int]OutputMovie)
 	existingMap := make(map[int]OutputMovie)
@@ -370,6 +505,7 @@ func processMovies(config Config) {
 		TotalBefore:     len(existingOutput),
 		CreatedDetails:  []ChangeDetail{},
 		UpdatedDetails:  []ChangeDetail{},
+		ModifiedDetails: []ChangeDetail{},
 		NotFoundDetails: []ChangeDetail{},
 	}
 
@@ -379,6 +515,14 @@ func processMovies(config Config) {
 
 	for _, movie := range movies {
 		bar.Add(1)
+
+		// Check if entry should be ignored via override
+		if override, exists := overridesMap[movie.MalID]; exists && override.Ignore {
+			if config.Verbose {
+				fmt.Printf("\nSkipping ignored movie: %s (MAL ID: %d) - %s", movie.Title, movie.MalID, override.Description)
+			}
+			continue
+		}
 
 		if shouldSkipMovie(movie, resultsMap, notExistMap, config) {
 			continue
@@ -421,12 +565,30 @@ func processMovies(config Config) {
 		}
 
 		updateLetterboxdInfo(client, config, outputMovie)
+
+		// Apply overrides if they exist
+		if override, exists := overridesMap[movie.MalID]; exists && !override.Ignore {
+			oldMovie := *outputMovie
+			applyMovieOverride(outputMovie, override)
+			// Check if override actually changed anything
+			if oldMovie.Trakt.ID != outputMovie.Trakt.ID ||
+				oldMovie.Trakt.Slug != outputMovie.Trakt.Slug ||
+				oldMovie.Externals != outputMovie.Externals {
+				stats.ModifiedDetails = append(stats.ModifiedDetails, ChangeDetail{
+					MalID:  movie.MalID,
+					Title:  movie.Title,
+					Reason: override.Description,
+				})
+			}
+		}
+
 		resultsMap[movie.MalID] = *outputMovie
 	}
 
 	stats.TotalAfter = len(resultsMap)
 	stats.Created = len(stats.CreatedDetails)
 	stats.Updated = len(stats.UpdatedDetails)
+	stats.Modified = len(stats.ModifiedDetails)
 	stats.NotFound = len(stats.NotFoundDetails)
 
 	saveMovieResults(outputFile, resultsMap)
@@ -670,6 +832,7 @@ func outputStats(mediaType string, stats ProcessingStats) {
 	output += fmt.Sprintf("| Total Entries | %d | %d | %s |\n", stats.TotalBefore, stats.TotalAfter, diffStr)
 	output += fmt.Sprintf("| Created | - | %d | +%d |\n", stats.Created, stats.Created)
 	output += fmt.Sprintf("| Updated | - | %d | +%d |\n", stats.Updated, stats.Updated)
+	output += fmt.Sprintf("| Modified (Overridden) | - | %d | +%d |\n", stats.Modified, stats.Modified)
 	output += fmt.Sprintf("| Not Found | - | %d | +%d |\n", stats.NotFound, stats.NotFound)
 
 	if len(stats.CreatedDetails) > 0 {
@@ -684,6 +847,14 @@ func outputStats(mediaType string, stats ProcessingStats) {
 		output += fmt.Sprintf("\n### 🔄 Updated (%d)\n\n", len(stats.UpdatedDetails))
 		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
 		for _, detail := range stats.UpdatedDetails {
+			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
+		}
+	}
+
+	if len(stats.ModifiedDetails) > 0 {
+		output += fmt.Sprintf("\n### 🔧 Modified via Override (%d)\n\n", len(stats.ModifiedDetails))
+		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
+		for _, detail := range stats.ModifiedDetails {
 			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
 		}
 	}
