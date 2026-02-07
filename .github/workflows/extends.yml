@@ -121,22 +121,41 @@ jobs:
         git push
 
         # Create detailed release notes using a HEREDOC for readability
-        RELEASE_NOTES=$(cat << EOF
-        # Trakt Extended Data - $(cat last_updated.txt)
+        RELEASE_NOTES=$(cat << 'EOF'
+# Trakt Extended Data Release
 
-        ## 📊 Statistics
-        - **TV Shows**: ${{ steps.check_changes.outputs.tv_count }} entries
-        - **Movies**: ${{ steps.check_changes.outputs.movies_count }} entries
-        - **Last Updated**: $(cat last_updated.txt)
+## 📊 Statistics
 
-        ## 📁 Files
-        - `json/output/tv_ex.json` - Extended TV shows data
-        - `json/output/movies_ex.json` - Extended movies data
-        - `last_updated.txt` - Timestamp of this update
-        $([ -f "json/not_found/not_exist_tv_ex.json" ] && echo "- \`json/not_found/not_exist_tv_ex.json\` - TV shows not found on Trakt")
-        $([ -f "json/not_found/not_exist_movies_ex.json" ] && echo "- \`json/not_found/not_exist_movies_ex.json\` - Movies not found on Trakt")
-        EOF
+| Media Type | Total Entries |
+|------------|---------------|
+| TV Shows   | TV_COUNT      |
+| Movies     | MOVIES_COUNT  |
+
+**Last Updated**: TIMESTAMP
+
+## 📁 Files
+
+- `json/output/tv_ex.json` - Extended TV shows data
+- `json/output/movies_ex.json` - Extended movies data
+- `last_updated.txt` - Timestamp of this update
+OPTIONAL_NOT_FOUND
+
+---
+
+*For detailed CRUD changes, see the workflow job summary.*
+EOF
         )
+
+        # Replace placeholders
+        RELEASE_NOTES="${RELEASE_NOTES//TV_COUNT/${{ steps.check_changes.outputs.tv_count }}}"
+        RELEASE_NOTES="${RELEASE_NOTES//MOVIES_COUNT/${{ steps.check_changes.outputs.movies_count }}}"
+        RELEASE_NOTES="${RELEASE_NOTES//TIMESTAMP/$(cat last_updated.txt)}"
+
+        # Add optional not found files info
+        OPTIONAL_NOT_FOUND=""
+        [ -f "json/not_found/not_exist_tv_ex.json" ] && OPTIONAL_NOT_FOUND+="- \`json/not_found/not_exist_tv_ex.json\` - TV shows not found on Trakt"$'\n'
+        [ -f "json/not_found/not_exist_movies_ex.json" ] && OPTIONAL_NOT_FOUND+="- \`json/not_found/not_exist_movies_ex.json\` - Movies not found on Trakt"
+        RELEASE_NOTES="${RELEASE_NOTES//OPTIONAL_NOT_FOUND/$OPTIONAL_NOT_FOUND}"
 
         # Create a list of asset files to upload
         ASSET_FILES="json/output/tv_ex.json json/output/movies_ex.json last_updated.txt"

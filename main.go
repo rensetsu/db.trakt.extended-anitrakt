@@ -165,6 +165,24 @@ type Config struct {
 	Force      bool
 }
 
+type ChangeDetail struct {
+	MalID  int    `json:"mal_id"`
+	Title  string `json:"title"`
+	Reason string `json:"reason"`
+}
+
+type ProcessingStats struct {
+	MediaType      string           `json:"media_type"`
+	TotalBefore    int              `json:"total_before"`
+	TotalAfter     int              `json:"total_after"`
+	Created        int              `json:"created"`
+	Updated        int              `json:"updated"`
+	NotFound       int              `json:"not_found"`
+	CreatedDetails []ChangeDetail   `json:"created_details"`
+	UpdatedDetails []ChangeDetail   `json:"updated_details"`
+	NotFoundDetails []ChangeDetail  `json:"not_found_details"`
+}
+
 func main() {
 	config := parseFlags()
 
@@ -242,10 +260,20 @@ func processShows(config Config) {
 	notExistMap := loadNotFound(outputFile)
 
 	resultsMap := make(map[int]OutputShow)
+	existingMap := make(map[int]OutputShow)
 	if !config.Force {
 		for _, show := range existingOutput {
 			resultsMap[show.MyAnimeList.ID] = show
+			existingMap[show.MyAnimeList.ID] = show
 		}
+	}
+
+	stats := ProcessingStats{
+		MediaType:       "tv",
+		TotalBefore:     len(existingOutput),
+		CreatedDetails:  []ChangeDetail{},
+		UpdatedDetails:  []ChangeDetail{},
+		NotFoundDetails: []ChangeDetail{},
 	}
 
 	var newNotExist []NotFoundEntry
@@ -263,16 +291,48 @@ func processShows(config Config) {
 		if err != nil {
 			if strings.Contains(err.Error(), "404") {
 				newNotExist = append(newNotExist, NotFoundEntry{MalID: show.MalID, Title: show.Title})
+				if !notExistMap[show.MalID] {
+					stats.NotFoundDetails = append(stats.NotFoundDetails, ChangeDetail{
+						MalID:  show.MalID,
+						Title:  show.Title,
+						Reason: "Not found on Trakt.tv",
+					})
+				}
 			} else {
 				log.Printf("Error processing show %d: %v", show.MalID, err)
 			}
 			continue
 		}
+
+		// Track if this is new or updated
+		if _, exists := existingMap[show.MalID]; exists {
+			// Check if data actually changed
+			if outputShow.Trakt.ID != resultsMap[show.MalID].Trakt.ID ||
+				outputShow.Trakt.Slug != resultsMap[show.MalID].Trakt.Slug {
+				stats.UpdatedDetails = append(stats.UpdatedDetails, ChangeDetail{
+					MalID:  show.MalID,
+					Title:  show.Title,
+					Reason: "Trakt metadata updated",
+				})
+			}
+		} else {
+			stats.CreatedDetails = append(stats.CreatedDetails, ChangeDetail{
+				MalID:  show.MalID,
+				Title:  show.Title,
+				Reason: "New entry added",
+			})
+		}
 		resultsMap[show.MalID] = *outputShow
 	}
 
+	stats.TotalAfter = len(resultsMap)
+	stats.Created = len(stats.CreatedDetails)
+	stats.Updated = len(stats.UpdatedDetails)
+	stats.NotFound = len(stats.NotFoundDetails)
+
 	saveResults(outputFile, resultsMap)
 	saveNotFound(outputFile, newNotExist, notExistMap)
+	outputStats("tv", stats)
 
 	if config.Verbose {
 		fmt.Printf("\nProcessed %d shows, saved to %s\n", len(resultsMap), outputFile)
@@ -294,10 +354,20 @@ func processMovies(config Config) {
 	notExistMap := loadNotFound(outputFile)
 
 	resultsMap := make(map[int]OutputMovie)
+	existingMap := make(map[int]OutputMovie)
 	if !config.Force {
 		for _, movie := range existingOutput {
 			resultsMap[movie.MyAnimeList.ID] = movie
+			existingMap[movie.MyAnimeList.ID] = movie
 		}
+	}
+
+	stats := ProcessingStats{
+		MediaType:       "movies",
+		TotalBefore:     len(existingOutput),
+		CreatedDetails:  []ChangeDetail{},
+		UpdatedDetails:  []ChangeDetail{},
+		NotFoundDetails: []ChangeDetail{},
 	}
 
 	var newNotExist []NotFoundEntry
@@ -315,18 +385,50 @@ func processMovies(config Config) {
 		if err != nil {
 			if strings.Contains(err.Error(), "404") {
 				newNotExist = append(newNotExist, NotFoundEntry{MalID: movie.MalID, Title: movie.Title})
+				if !notExistMap[movie.MalID] {
+					stats.NotFoundDetails = append(stats.NotFoundDetails, ChangeDetail{
+						MalID:  movie.MalID,
+						Title:  movie.Title,
+						Reason: "Not found on Trakt.tv",
+					})
+				}
 			} else {
 				log.Printf("Error processing movie %d: %v", movie.MalID, err)
 			}
 			continue
 		}
 
+		// Track if this is new or updated
+		if _, exists := existingMap[movie.MalID]; exists {
+			// Check if data actually changed
+			if outputMovie.Trakt.ID != resultsMap[movie.MalID].Trakt.ID ||
+				outputMovie.Trakt.Slug != resultsMap[movie.MalID].Trakt.Slug {
+				stats.UpdatedDetails = append(stats.UpdatedDetails, ChangeDetail{
+					MalID:  movie.MalID,
+					Title:  movie.Title,
+					Reason: "Trakt metadata updated",
+				})
+			}
+		} else {
+			stats.CreatedDetails = append(stats.CreatedDetails, ChangeDetail{
+				MalID:  movie.MalID,
+				Title:  movie.Title,
+				Reason: "New entry added",
+			})
+		}
+
 		updateLetterboxdInfo(client, config, outputMovie)
 		resultsMap[movie.MalID] = *outputMovie
 	}
 
+	stats.TotalAfter = len(resultsMap)
+	stats.Created = len(stats.CreatedDetails)
+	stats.Updated = len(stats.UpdatedDetails)
+	stats.NotFound = len(stats.NotFoundDetails)
+
 	saveMovieResults(outputFile, resultsMap)
 	saveNotFound(outputFile, newNotExist, notExistMap)
+	outputStats("movies", stats)
 
 	if config.Verbose {
 		fmt.Printf("\nProcessed %d movies, saved to %s\n", len(resultsMap), outputFile)
@@ -548,6 +650,59 @@ func saveNotFound(outputFile string, newNotExist []NotFoundEntry, notExistMap ma
 		}
 		saveJSON(notExistFile, existingNotExist)
 	}
+}
+
+func outputStats(mediaType string, stats ProcessingStats) {
+	summaryFile := os.Getenv("GITHUB_STEP_SUMMARY")
+	if summaryFile == "" {
+		return
+	}
+
+	title := strings.ToTitle(mediaType)
+	diff := stats.TotalAfter - stats.TotalBefore
+	diffStr := fmt.Sprintf("%+d", diff)
+	if diff >= 0 {
+		diffStr = "+" + fmt.Sprintf("%d", diff)
+	}
+
+	output := fmt.Sprintf("\n## %s - Summary\n\n", title)
+	output += "| Metric | Before | After | Diff |\n|--------|--------|-------|------|\n"
+	output += fmt.Sprintf("| Total Entries | %d | %d | %s |\n", stats.TotalBefore, stats.TotalAfter, diffStr)
+	output += fmt.Sprintf("| Created | - | %d | +%d |\n", stats.Created, stats.Created)
+	output += fmt.Sprintf("| Updated | - | %d | +%d |\n", stats.Updated, stats.Updated)
+	output += fmt.Sprintf("| Not Found | - | %d | +%d |\n", stats.NotFound, stats.NotFound)
+
+	if len(stats.CreatedDetails) > 0 {
+		output += fmt.Sprintf("\n### ✨ Created (%d)\n\n", len(stats.CreatedDetails))
+		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
+		for _, detail := range stats.CreatedDetails {
+			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
+		}
+	}
+
+	if len(stats.UpdatedDetails) > 0 {
+		output += fmt.Sprintf("\n### 🔄 Updated (%d)\n\n", len(stats.UpdatedDetails))
+		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
+		for _, detail := range stats.UpdatedDetails {
+			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
+		}
+	}
+
+	if len(stats.NotFoundDetails) > 0 {
+		output += fmt.Sprintf("\n### ❌ Not Found (%d)\n\n", len(stats.NotFoundDetails))
+		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
+		for _, detail := range stats.NotFoundDetails {
+			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
+		}
+	}
+
+	f, err := os.OpenFile(summaryFile, os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Printf("Warning: Could not write to GITHUB_STEP_SUMMARY: %v", err)
+		return
+	}
+	defer f.Close()
+	f.WriteString(output)
 }
 
 func fetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Letterboxd, error) {

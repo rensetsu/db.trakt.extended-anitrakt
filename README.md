@@ -212,6 +212,18 @@ counted as one episode.
 - **Network Errors**: Logged and processing continues
 - **Rate Limiting**: Built-in request delays to respect Trakt API limits
 
+## Change Tracking
+
+The application automatically tracks and reports CRUD operations (Create, Update, Unrecognized) during processing:
+
+- **Created**: New entries added to the database
+- **Updated**: Existing entries with modified Trakt metadata
+- **Not Found**: Entries that could not be found on Trakt.tv
+
+When running in GitHub Actions, detailed change summaries with reasons are automatically appended to the workflow job summary using the `GITHUB_STEP_SUMMARY` file. This includes:
+- Summary table showing before/after counts and diffs
+- Detailed change tables with entry titles and reasons for modifications
+
 ## Caching
 
 The application uses temporary file caching to avoid redundant API calls:
