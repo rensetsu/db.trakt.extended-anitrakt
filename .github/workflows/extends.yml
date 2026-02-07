@@ -52,28 +52,28 @@ jobs:
 
     - name: Download source data
       run: |
-        curl -fsSL -o tv.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/tv.json
-        curl -fsSL -o movies.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/movies.json
-        echo "Downloaded TV data: $(wc -l < tv.json) lines"
-        echo "Downloaded Movies data: $(wc -l < movies.json) lines"
+        curl -fsSL -o json/input/tv.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/tv.json
+        curl -fsSL -o json/input/movies.json https://raw.githubusercontent.com/rensetsu/db.trakt.anitrakt/main/db/movies.json
+        echo "Downloaded TV data: $(wc -l < json/input/tv.json) lines"
+        echo "Downloaded Movies data: $(wc -l < json/input/movies.json) lines"
 
     - name: Process Trakt data
       run: |
         # Construct arguments for the Go application
-        ARGS="--api-key ${TRAKT_API_KEY} --verbose --no-progress"
+        ARGS="-api-key ${TRAKT_API_KEY} -verbose -no-progress"
         DAY_OF_MONTH=$(date +%d)
 
         # Force update on the first Friday of the month, or if manually triggered
         if [[ "${{ github.event.inputs.force_update }}" == "true" ]] || \
           [[ "${{ github.event_name }}" == "schedule" && $DAY_OF_MONTH -ge 1 && $DAY_OF_MONTH -le 7 ]]; then
-          ARGS+=" --force"
+          ARGS+=" -force"
         fi
 
         echo "Processing TV shows..."
-        go run main.go --tv tv.json --output tv_ex.json $ARGS
+        go run main.go -tv json/input/tv.json -output json/output/tv_ex.json $ARGS
         
         echo "Processing movies..."
-        go run main.go --movies movies.json --output movies_ex.json $ARGS
+        go run main.go -movies json/input/movies.json -output json/output/movies_ex.json $ARGS
 
     - name: Generate update timestamp
       run: echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
@@ -82,7 +82,7 @@ jobs:
       id: check_changes
       run: |
         # Use git status to check for any modifications to the data files
-        if git status --porcelain tv_ex.json movies_ex.json not_exist_*.json | grep .; then
+        if git status --porcelain json/output/tv_ex.json json/output/movies_ex.json json/not_found/not_exist_*.json | grep .; then
           echo "Data changes detected."
           echo "data_changed=true" >> $GITHUB_OUTPUT
         else
@@ -91,8 +91,8 @@ jobs:
         fi
 
         # Gather stats for the commit message and release notes
-        echo "tv_count=$(jq length tv_ex.json)" >> $GITHUB_OUTPUT
-        echo "movies_count=$(jq length movies_ex.json)" >> $GITHUB_OUTPUT
+        echo "tv_count=$(jq length json/output/tv_ex.json)" >> $GITHUB_OUTPUT
+        echo "movies_count=$(jq length json/output/movies_ex.json)" >> $GITHUB_OUTPUT
 
     - name: Commit, Push, and Release
       if: steps.check_changes.outputs.data_changed == 'true'
@@ -104,7 +104,7 @@ jobs:
         git config --local user.name "GitHub Action"
 
         # Add all generated files. This is safe because the runner environment is clean.
-        git add tv_ex.json movies_ex.json last_updated.txt not_exist_*.json
+        git add json/output/tv_ex.json json/output/movies_ex.json last_updated.txt json/not_found/not_exist_*.json
 
         # Create a detailed commit message using a HEREDOC
         COMMIT_MSG=$(cat << EOF
@@ -130,18 +130,18 @@ jobs:
         - **Last Updated**: $(cat last_updated.txt)
 
         ## 📁 Files
-        - `tv_ex.json` - Extended TV shows data
-        - `movies_ex.json` - Extended movies data
+        - `json/output/tv_ex.json` - Extended TV shows data
+        - `json/output/movies_ex.json` - Extended movies data
         - `last_updated.txt` - Timestamp of this update
-        $([ -f "not_exist_tv_ex.json" ] && echo "- `not_exist_tv_ex.json` - TV shows not found on Trakt")
-        $([ -f "not_exist_movies_ex.json" ] && echo "- `not_exist_movies_ex.json` - Movies not found on Trakt")
+        $([ -f "json/not_found/not_exist_tv_ex.json" ] && echo "- \`json/not_found/not_exist_tv_ex.json\` - TV shows not found on Trakt")
+        $([ -f "json/not_found/not_exist_movies_ex.json" ] && echo "- \`json/not_found/not_exist_movies_ex.json\` - Movies not found on Trakt")
         EOF
         )
 
         # Create a list of asset files to upload
-        ASSET_FILES="tv_ex.json movies_ex.json last_updated.txt"
-        [ -f "not_exist_tv_ex.json" ] && ASSET_FILES+=" not_exist_tv_ex.json"
-        [ -f "not_exist_movies_ex.json" ] && ASSET_FILES+=" not_exist_movies_ex.json"
+        ASSET_FILES="json/output/tv_ex.json json/output/movies_ex.json last_updated.txt"
+        [ -f "json/not_found/not_exist_tv_ex.json" ] && ASSET_FILES+=" json/not_found/not_exist_tv_ex.json"
+        [ -f "json/not_found/not_exist_movies_ex.json" ] && ASSET_FILES+=" json/not_found/not_exist_movies_ex.json"
 
         # Delete old release and create a new one to keep the 'latest' tag updated
         gh release delete latest --yes || echo "No 'latest' release found to delete."
@@ -185,14 +185,14 @@ jobs:
     - name: Test with sample data
       run: |
         # Create minimal test data
-        echo '[{"title":"Test Show","mal_id":1,"trakt_id":1390,"guessed_slug":"test","season":1,"type":"shows"}]' > test_tv.json
-        echo '[{"title":"Test Movie","mal_id":2,"trakt_id":1,"guessed_slug":"test","type":"movies"}]' > test_movies.json
+        echo '[{"title":"Test Show","mal_id":1,"trakt_id":1390,"guessed_slug":"test","season":1,"type":"shows"}]' > json/input/test_tv.json
+        echo '[{"title":"Test Movie","mal_id":2,"trakt_id":1,"guessed_slug":"test","type":"movies"}]' > json/input/test_movies.json
         
         # Test the application (will fail due to dummy key, but tests structure)
         echo "Testing TV processing..."
-        go run main.go --tv test_tv.json --verbose --no-progress --api-key "dummy_key" || echo "Expected failure with dummy API key"
+        go run main.go -tv json/input/test_tv.json -verbose -no-progress -api-key "dummy_key" || echo "Expected failure with dummy API key"
         
         echo "Testing Movies processing..."
-        go run main.go --movies test_movies.json --verbose --no-progress --api-key "dummy_key" || echo "Expected failure with dummy API key"
+        go run main.go -movies json/input/test_movies.json -verbose -no-progress -api-key "dummy_key" || echo "Expected failure with dummy API key"
         
         echo "Application structure test completed"
