@@ -657,10 +657,7 @@ func saveNotFound(outputFile string, newNotExist []NotFoundEntry, notExistMap ma
 
 func outputStats(mediaType string, stats ProcessingStats) {
 	summaryFile := os.Getenv("GITHUB_STEP_SUMMARY")
-	if summaryFile == "" {
-		return
-	}
-
+	
 	title := strings.ToTitle(mediaType)
 	diff := stats.TotalAfter - stats.TotalBefore
 	diffStr := fmt.Sprintf("%+d", diff)
@@ -699,13 +696,19 @@ func outputStats(mediaType string, stats ProcessingStats) {
 		}
 	}
 
-	f, err := os.OpenFile(summaryFile, os.O_APPEND|os.O_WRONLY, 0644)
-	if err != nil {
-		log.Printf("Warning: Could not write to GITHUB_STEP_SUMMARY: %v", err)
-		return
+	if summaryFile != "" {
+		// Write to GitHub Actions step summary
+		f, err := os.OpenFile(summaryFile, os.O_APPEND|os.O_WRONLY, 0644)
+		if err != nil {
+			log.Printf("Warning: Could not write to GITHUB_STEP_SUMMARY: %v", err)
+			return
+		}
+		defer f.Close()
+		f.WriteString(output)
+	} else {
+		// Fallback: print to stdout for local testing
+		fmt.Println(output)
 	}
-	defer f.Close()
-	f.WriteString(output)
 }
 
 func fetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Letterboxd, error) {
