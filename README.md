@@ -123,19 +123,19 @@ To override or adding missing relationship, please do it in main repo.
 
 ```bash
 # Process TV shows
-./db.trakt.extended-anitrakt -tv tv.json -api-key YOUR_TRAKT_API_KEY
+./db.trakt.extended-anitrakt -tv json/input/tv.json -api-key YOUR_TRAKT_API_KEY
 
 # Process movies  
-./db.trakt.extended-anitrakt -movies movies.json -api-key YOUR_TRAKT_API_KEY
+./db.trakt.extended-anitrakt -movies json/input/movies.json -api-key YOUR_TRAKT_API_KEY
 
 # Process both with custom output
-./db.trakt.extended-anitrakt -tv tv.json -movies movies.json -output custom_output.json
+./db.trakt.extended-anitrakt -tv json/input/tv.json -movies json/input/movies.json -output json/output/custom_output.json
 
 # Verbose mode
-./db.trakt.extended-anitrakt -tv tv.json -verbose
+./db.trakt.extended-anitrakt -tv json/input/tv.json -verbose
 
 # Disable progress bar
-./db.trakt.extended-anitrakt -tv tv.json -no-progress
+./db.trakt.extended-anitrakt -tv json/input/tv.json -no-progress
 ```
 
 ### Flags
@@ -222,11 +222,24 @@ The application uses temporary file caching to avoid redundant API calls:
 
 Cache is automatically cleaned up when the application exits successfully.
 
-## File Naming Convention
+## File Structure
 
-- Input: `tv.json`, `movies.json`
-- Output: `tv_ex.json`, `movies_ex.json` (or custom name via `-output`)
-- Not Found: `not_exist_tv_ex.json`, `not_exist_movies_ex.json`
+```
+.
+├── main.go                                    # Application source code
+├── json/
+│   ├── input/
+│   │   ├── tv.json                           # Input TV shows list
+│   │   └── movies.json                       # Input movies list
+│   ├── output/
+│   │   ├── tv_ex.json                        # Extended TV shows data
+│   │   └── movies_ex.json                    # Extended movies data
+│   └── not_found/
+│       ├── not_exist_tv_ex.json              # TV shows not found on Trakt
+│       └── not_exist_movies_ex.json          # Movies not found on Trakt
+├── README.md                                  # Documentation
+└── last_updated.txt                          # Timestamp of last update
+```
 
 ## Build Requirements
 

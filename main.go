@@ -233,7 +233,7 @@ func processShows(config Config) {
 
 	outputFile := config.OutputFile
 	if outputFile == "" {
-		outputFile = strings.TrimSuffix(config.TvFile, ".json") + "_ex.json"
+		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.TvFile, ".json")) + "_ex.json")
 	}
 
 	var existingOutput []OutputShow
@@ -285,7 +285,7 @@ func processMovies(config Config) {
 
 	outputFile := config.OutputFile
 	if outputFile == "" {
-		outputFile = strings.TrimSuffix(config.MovieFile, ".json") + "_ex.json"
+		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.MovieFile, ".json")) + "_ex.json")
 	}
 
 	var existingOutput []OutputMovie
@@ -347,7 +347,7 @@ func setupProgressBar(total int, description string, noProgress bool) *progressb
 }
 
 func loadNotFound(outputFile string) map[int]bool {
-	notExistFile := "not_exist_" + filepath.Base(outputFile)
+	notExistFile := filepath.Join("json/not_found", "not_exist_" + filepath.Base(outputFile))
 	var notExist []NotFoundEntry
 	loadJSONOptional(notExistFile, &notExist)
 	notExistMap := make(map[int]bool)
@@ -538,7 +538,7 @@ func saveMovieResults(outputFile string, resultsMap map[int]OutputMovie) {
 
 func saveNotFound(outputFile string, newNotExist []NotFoundEntry, notExistMap map[int]bool) {
 	if len(newNotExist) > 0 {
-		notExistFile := "not_exist_" + filepath.Base(outputFile)
+		notExistFile := filepath.Join("json/not_found", "not_exist_" + filepath.Base(outputFile))
 		var existingNotExist []NotFoundEntry
 		loadJSONOptional(notExistFile, &existingNotExist)
 		for _, entry := range newNotExist {
