@@ -88,7 +88,7 @@ func DefaultRetryConfig() RetryConfig {
 	}
 }
 
-// RetryWithBackoff executes a function with exponential backoff retry on 429 errors
+// RetryWithBackoff executes a function with exponential backoff retry on 429 and 403 errors
 func RetryWithBackoff(config RetryConfig, fn func() (*http.Response, error)) (*http.Response, error) {
 	var lastErr error
 	backoff := config.InitialBackoff
@@ -97,18 +97,18 @@ func RetryWithBackoff(config RetryConfig, fn func() (*http.Response, error)) (*h
 		resp, err := fn()
 
 		// Success case
-		if err == nil && resp.StatusCode != 429 {
+		if err == nil && resp.StatusCode != 429 && resp.StatusCode != 403 {
 			return resp, err
 		}
 
 		// Non-retryable error
-		if err != nil && (resp == nil || resp.StatusCode != 429) {
+		if err != nil && (resp == nil || (resp.StatusCode != 429 && resp.StatusCode != 403)) {
 			return resp, err
 		}
 
-		// 429 error - should retry
-		if resp != nil && resp.StatusCode == 429 {
-			lastErr = fmt.Errorf("rate limited (429)")
+		// 429 or 403 error - should retry
+		if resp != nil && (resp.StatusCode == 429 || resp.StatusCode == 403) {
+			lastErr = fmt.Errorf("rate limited or blocked (%d)", resp.StatusCode)
 
 			// Check for Retry-After header
 			if retryAfter := resp.Header.Get("Retry-After"); retryAfter != "" {

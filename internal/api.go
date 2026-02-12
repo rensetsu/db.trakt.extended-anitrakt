@@ -236,8 +236,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 		if err != nil {
 			return nil, err
 		}
-		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
-
+		setLetterboxdHeaders(req)
 		return noRedirectClient.Do(req)
 	})
 
@@ -245,6 +244,14 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 		return nil, err
 	}
 	defer resp.Body.Close()
+
+	// Handle 403 gracefully
+	if resp.StatusCode == 403 {
+		if config.Verbose {
+			fmt.Printf("\n    - Letterboxd returned 403 (access denied), skipping")
+		}
+		return nil, nil
+	}
 
 	if resp.StatusCode >= 300 && resp.StatusCode < 400 {
 		location, err := resp.Location()
@@ -275,8 +282,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 		if err != nil {
 			return nil, err
 		}
-		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
-
+		setLetterboxdHeaders(req)
 		return client.Do(req)
 	})
 
@@ -284,6 +290,14 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 		return nil, err
 	}
 	defer resp.Body.Close()
+
+	// Handle 403 gracefully
+	if resp.StatusCode == 403 {
+		if config.Verbose {
+			fmt.Printf("\n    - Letterboxd returned 403 (access denied), skipping")
+		}
+		return nil, nil
+	}
 
 	if resp.StatusCode != 200 {
 		return nil, fmt.Errorf("\n    - failed to fetch letterboxd json, status: %d", resp.StatusCode)
@@ -313,4 +327,24 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 	time.Sleep(500 * time.Millisecond)
 
 	return letterboxdInfo, nil
+}
+
+// setLetterboxdHeaders sets comprehensive browser-like headers for Letterboxd requests
+func setLetterboxdHeaders(req *http.Request) {
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8")
+	req.Header.Set("Accept-Encoding", "gzip, deflate, br")
+	req.Header.Set("Accept-Language", "en-US,en;q=0.9")
+	req.Header.Set("Cache-Control", "max-age=0")
+	req.Header.Set("Connection", "keep-alive")
+	req.Header.Set("DNT", "1")
+	req.Header.Set("Referer", "https://letterboxd.com/")
+	req.Header.Set("Sec-Ch-Ua", `"Not A(Brand";v="99", "Google Chrome";v="120", "Chromium";v="120"`)
+	req.Header.Set("Sec-Ch-Ua-Mobile", "?0")
+	req.Header.Set("Sec-Ch-Ua-Platform", `"Windows"`)
+	req.Header.Set("Sec-Fetch-Dest", "document")
+	req.Header.Set("Sec-Fetch-Mode", "navigate")
+	req.Header.Set("Sec-Fetch-Site", "none")
+	req.Header.Set("Sec-Fetch-User", "?1")
+	req.Header.Set("Upgrade-Insecure-Requests", "1")
 }
