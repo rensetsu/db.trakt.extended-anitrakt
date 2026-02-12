@@ -141,14 +141,16 @@ type OutputMovie struct {
 
 // Config structure
 type Config struct {
-	APIKey     string
-	TvFile     string
-	MovieFile  string
-	OutputFile string
-	Verbose    bool
-	NoProgress bool
-	TempDir    string
-	Force      bool
+	APIKey                string
+	TvFile                string
+	MovieFile             string
+	OutputFile            string
+	Verbose               bool
+	NoProgress            bool
+	TempDir               string
+	Force                 bool
+	RateLimiter           *RateLimiter
+	LetterboxdRateLimiter *RateLimiter
 }
 
 // ChangeDetail structure for tracking changes

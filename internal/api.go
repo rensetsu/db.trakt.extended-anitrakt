@@ -27,19 +27,25 @@ func FetchTraktShow(client *http.Client, config Config, showID int) (*TraktShow,
 	if config.Verbose {
 		fmt.Printf("\n    - fetching show %d from Trakt API", showID)
 	}
+
+	config.RateLimiter.Wait()
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/shows/%d", showID)
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
+	retryConfig := DefaultRetryConfig()
+	resp, err := RetryWithBackoff(retryConfig, func() (*http.Response, error) {
+		url := fmt.Sprintf("https://api.trakt.tv/shows/%d", showID)
+		req, err := http.NewRequest("GET", url, nil)
+		if err != nil {
+			return nil, err
+		}
 
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("trakt-api-version", "2")
-	req.Header.Set("trakt-api-key", config.APIKey)
+		req.Header.Set("Content-Type", "application/json")
+		req.Header.Set("trakt-api-version", "2")
+		req.Header.Set("trakt-api-key", config.APIKey)
 
-	resp, err := client.Do(req)
+		return client.Do(req)
+	})
+
 	if err != nil {
 		return nil, err
 	}
@@ -82,19 +88,25 @@ func FetchTraktMovie(client *http.Client, config Config, movieID int) (*TraktMov
 	if config.Verbose {
 		fmt.Printf("\n    - fetching movie %d from Trakt API", movieID)
 	}
+
+	config.RateLimiter.Wait()
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/movies/%d", movieID)
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
+	retryConfig := DefaultRetryConfig()
+	resp, err := RetryWithBackoff(retryConfig, func() (*http.Response, error) {
+		url := fmt.Sprintf("https://api.trakt.tv/movies/%d", movieID)
+		req, err := http.NewRequest("GET", url, nil)
+		if err != nil {
+			return nil, err
+		}
 
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("trakt-api-version", "2")
-	req.Header.Set("trakt-api-key", config.APIKey)
+		req.Header.Set("Content-Type", "application/json")
+		req.Header.Set("trakt-api-version", "2")
+		req.Header.Set("trakt-api-key", config.APIKey)
 
-	resp, err := client.Do(req)
+		return client.Do(req)
+	})
+
 	if err != nil {
 		return nil, err
 	}
@@ -141,19 +153,25 @@ func FetchTraktSeason(client *http.Client, config Config, showID, seasonNum int)
 	if config.Verbose {
 		fmt.Printf("\n        - fetching seasons for show %d from Trakt API", showID)
 	}
+
+	config.RateLimiter.Wait()
 	time.Sleep(500 * time.Millisecond)
 
-	url := fmt.Sprintf("https://api.trakt.tv/shows/%d/seasons", showID)
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
+	retryConfig := DefaultRetryConfig()
+	resp, err := RetryWithBackoff(retryConfig, func() (*http.Response, error) {
+		url := fmt.Sprintf("https://api.trakt.tv/shows/%d/seasons", showID)
+		req, err := http.NewRequest("GET", url, nil)
+		if err != nil {
+			return nil, err
+		}
 
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("trakt-api-version", "2")
-	req.Header.Set("trakt-api-key", config.APIKey)
+		req.Header.Set("Content-Type", "application/json")
+		req.Header.Set("trakt-api-version", "2")
+		req.Header.Set("trakt-api-key", config.APIKey)
 
-	resp, err := client.Do(req)
+		return client.Do(req)
+	})
+
 	if err != nil {
 		return nil, err
 	}
@@ -211,13 +229,18 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 		Timeout: 15 * time.Second,
 	}
 
-	req, err := http.NewRequest("GET", redirectURL, nil)
-	if err != nil {
-		return nil, err
-	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+	config.LetterboxdRateLimiter.Wait()
+	retryConfig := DefaultRetryConfig()
+	resp, err := RetryWithBackoff(retryConfig, func() (*http.Response, error) {
+		req, err := http.NewRequest("GET", redirectURL, nil)
+		if err != nil {
+			return nil, err
+		}
+		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
-	resp, err := noRedirectClient.Do(req)
+		return noRedirectClient.Do(req)
+	})
+
 	if err != nil {
 		return nil, err
 	}
@@ -243,15 +266,20 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 	}
 
 	// Step 2: Get JSON data using the slug
+	config.LetterboxdRateLimiter.Wait()
 	time.Sleep(500 * time.Millisecond)
 	jsonURL := fmt.Sprintf("https://letterboxd.com/film/%s/json/", slug)
-	req, err = http.NewRequest("GET", jsonURL, nil)
-	if err != nil {
-		return nil, err
-	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
-	resp, err = client.Do(req)
+	resp, err = RetryWithBackoff(retryConfig, func() (*http.Response, error) {
+		req, err := http.NewRequest("GET", jsonURL, nil)
+		if err != nil {
+			return nil, err
+		}
+		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+
+		return client.Do(req)
+	})
+
 	if err != nil {
 		return nil, err
 	}

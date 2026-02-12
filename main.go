@@ -31,6 +31,10 @@ func main() {
 	os.MkdirAll(filepath.Join(config.TempDir, "seasons"), 0755)
 	os.MkdirAll(filepath.Join(config.TempDir, "letterboxd"), 0755)
 
+	// Initialize rate limiters
+	config.RateLimiter = internal.NewRateLimiter()
+	config.LetterboxdRateLimiter = internal.NewLetterboxdRateLimiter()
+
 	// Create progress marker
 	progressFile := filepath.Join(os.TempDir(), ".progress")
 	os.WriteFile(progressFile, []byte{}, 0644)
