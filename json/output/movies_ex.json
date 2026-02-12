@@ -1,6 +1,60 @@
 [
   {
     "myanimelist": {
+      "title": "Cowboy Bebop: Tengoku no Tobira",
+      "id": 5
+    },
+    "trakt": {
+      "title": "Cowboy Bebop: The Movie",
+      "id": 6398,
+      "slug": "cowboy-bebop-the-movie-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 11299,
+      "imdb": "tt0275277",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shinseiki Evangelion Movie: Shi to Shinsei",
+      "id": 31
+    },
+    "trakt": {
+      "title": "Neon Genesis Evangelion: Death and Rebirth",
+      "id": 13347,
+      "slug": "neon-genesis-evangelion-death-and-rebirth-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 21832,
+      "imdb": "tt0169880",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shinseiki Evangelion Movie: Air/Magokoro wo, Kimi ni",
+      "id": 32
+    },
+    "trakt": {
+      "title": "Neon Genesis Evangelion: The End of Evangelion",
+      "id": 11325,
+      "slug": "neon-genesis-evangelion-the-end-of-evangelion-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 18491,
+      "imdb": "tt0169858",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Koukaku Kidoutai",
       "id": 43
     },
@@ -32,6 +86,60 @@
     "externals": {
       "tmdb": 39977,
       "imdb": "tt0184872",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Akira",
+      "id": 47
+    },
+    "trakt": {
+      "title": "Akira",
+      "id": 115,
+      "slug": "akira-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 149,
+      "imdb": "tt0094625",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenshi Kinryouku",
+      "id": 51
+    },
+    "trakt": {
+      "title": "Angel Sanctuary",
+      "id": 30080,
+      "slug": "angel-sanctuary-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 44370,
+      "imdb": "tt0308974",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Appleseed (Movie)",
+      "id": 54
+    },
+    "trakt": {
+      "title": "Appleseed",
+      "id": 6709,
+      "slug": "appleseed-2004",
+      "type": "movies"
+    },
+    "release_year": 2004,
+    "externals": {
+      "tmdb": 11633,
+      "imdb": "tt0401233",
       "letterboxd": null
     }
   },
@@ -86,6 +194,24 @@
     "externals": {
       "tmdb": 16308,
       "imdb": "tt0159568",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "X/1999",
+      "id": 155
+    },
+    "trakt": {
+      "title": "X: The Movie",
+      "id": 30281,
+      "slug": "x-the-movie-1996",
+      "type": "movies"
+    },
+    "release_year": 1996,
+    "externals": {
+      "tmdb": 44587,
+      "imdb": "tt0118200",
       "letterboxd": null
     }
   },
@@ -163,6 +289,24 @@
   },
   {
     "myanimelist": {
+      "title": "Sen to Chihiro no Kamikakushi",
+      "id": 199
+    },
+    "trakt": {
+      "title": "Spirited Away",
+      "id": 97,
+      "slug": "spirited-away-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 129,
+      "imdb": "tt0245429",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "R.O.D: Read or Die",
       "id": 208
     },
@@ -176,6 +320,222 @@
     "externals": {
       "tmdb": 37789,
       "imdb": "tt0368197",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hoshi no Koe",
+      "id": 256
+    },
+    "trakt": {
+      "title": "Voices of a Distant Star",
+      "id": 24376,
+      "slug": "voices-of-a-distant-star-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 37910,
+      "imdb": "tt0370754",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hajime no Ippo: Mashiba vs. Kimura",
+      "id": 265
+    },
+    "trakt": {
+      "title": "Fighting Spirit - Mashiba vs. Kimura",
+      "id": 30880,
+      "slug": "fighting-spirit-mashiba-vs-kimura-2003",
+      "type": "movies"
+    },
+    "release_year": 2003,
+    "externals": {
+      "tmdb": 45288,
+      "imdb": "tt3354378",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Aa! Megami-sama! Movie",
+      "id": 304
+    },
+    "trakt": {
+      "title": "Ah! My Goddess: The Movie",
+      "id": 12978,
+      "slug": "ah-my-goddess-the-movie-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 21174,
+      "imdb": "tt0265018",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Final Fantasy VII: Advent Children",
+      "id": 317
+    },
+    "trakt": {
+      "title": "Final Fantasy VII: Advent Children",
+      "id": 522,
+      "slug": "final-fantasy-vii-advent-children-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 647,
+      "imdb": "tt0385700",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "A Kite",
+      "id": 320
+    },
+    "trakt": {
+      "title": "Kite",
+      "id": 11597,
+      "slug": "kite-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 18881,
+      "imdb": "tt0246734",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cardcaptor Sakura Movie 1",
+      "id": 371
+    },
+    "trakt": {
+      "title": "Cardcaptor Sakura: The Movie",
+      "id": 16472,
+      "slug": "cardcaptor-sakura-the-movie-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 26945,
+      "imdb": "tt0301082",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cardcaptor Sakura Movie 2: Fuuin Sareta Card",
+      "id": 372
+    },
+    "trakt": {
+      "title": "Cardcaptor Sakura: The Sealed Card",
+      "id": 20046,
+      "slug": "cardcaptor-sakura-the-sealed-card-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 31347,
+      "imdb": "tt0301083",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Escaflowne",
+      "id": 393
+    },
+    "trakt": {
+      "title": "Escaflowne: The Movie",
+      "id": 10391,
+      "slug": "escaflowne-the-movie-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 16990,
+      "imdb": "tt0270933",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Blood: The Last Vampire",
+      "id": 405
+    },
+    "trakt": {
+      "title": "Blood: The Last Vampire",
+      "id": 761,
+      "slug": "blood-the-last-vampire-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 919,
+      "imdb": "tt0275230",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Final Fantasy VII: Last Order",
+      "id": 408
+    },
+    "trakt": {
+      "title": "Final Fantasy VII: Last Order",
+      "id": 7783,
+      "slug": "final-fantasy-vii-last-order-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 13274,
+      "imdb": "tt0489134",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hametsu no Mars",
+      "id": 413
+    },
+    "trakt": {
+      "title": "Mars of Destruction",
+      "id": 101368,
+      "slug": "mars-of-destruction-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 155661,
+      "imdb": "tt2137684",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tonari no Yamada-kun",
+      "id": 415
+    },
+    "trakt": {
+      "title": "My Neighbors the Yamadas",
+      "id": 9946,
+      "slug": "my-neighbors-the-yamadas-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 16198,
+      "imdb": "tt0206013",
       "letterboxd": null
     }
   },
@@ -217,6 +577,60 @@
   },
   {
     "myanimelist": {
+      "title": "Spriggan",
+      "id": 420
+    },
+    "trakt": {
+      "title": "Spriggan",
+      "id": 10273,
+      "slug": "spriggan-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 16767,
+      "imdb": "tt0164917",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fullmetal Alchemist: The Conqueror of Shamballa",
+      "id": 430
+    },
+    "trakt": {
+      "title": "Fullmetal Alchemist the Movie: Conqueror of Shamballa",
+      "id": 8364,
+      "slug": "fullmetal-alchemist-the-movie-conqueror-of-shamballa-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 14003,
+      "imdb": "tt0485323",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Howl no Ugoku Shiro",
+      "id": 431
+    },
+    "trakt": {
+      "title": "Howl's Moving Castle",
+      "id": 2870,
+      "slug": "howl-s-moving-castle-2004",
+      "type": "movies"
+    },
+    "release_year": 2004,
+    "externals": {
+      "tmdb": 4935,
+      "imdb": "tt0347149",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kumo no Mukou, Yakusoku no Basho",
       "id": 433
     },
@@ -248,6 +662,24 @@
     "externals": {
       "tmdb": 10494,
       "imdb": "tt0156887",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shoujo Kakumei Utena: Adolescence Mokushiroku",
+      "id": 441
+    },
+    "trakt": {
+      "title": "Revolutionary Girl Utena: The Movie",
+      "id": 12139,
+      "slug": "revolutionary-girl-utena-the-movie-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 19738,
+      "imdb": "tt0243558",
       "letterboxd": null
     }
   },
@@ -541,6 +973,42 @@
   },
   {
     "myanimelist": {
+      "title": "Dragon Ball Movie 1: Shen Long no Densetsu",
+      "id": 502
+    },
+    "trakt": {
+      "title": "Dragon Ball: Curse of the Blood Rubies",
+      "id": 25395,
+      "slug": "dragon-ball-curse-of-the-blood-rubies-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 39144,
+      "imdb": "tt0142251",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Garou Densetsu: The Motion Picture",
+      "id": 504
+    },
+    "trakt": {
+      "title": "Fatal Fury: The Motion Picture",
+      "id": 17948,
+      "slug": "fatal-fury-the-motion-picture-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 28697,
+      "imdb": "tt0109872",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Majo no Takkyuubin",
       "id": 512
     },
@@ -554,6 +1022,24 @@
     "externals": {
       "tmdb": 16859,
       "imdb": "tt0097814",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenkuu no Shiro Laputa",
+      "id": 513
+    },
+    "trakt": {
+      "title": "Castle in the Sky",
+      "id": 5695,
+      "slug": "castle-in-the-sky-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 10515,
+      "imdb": "tt0092067",
       "letterboxd": null
     }
   },
@@ -577,6 +1063,24 @@
   },
   {
     "myanimelist": {
+      "title": "Tonari no Totoro",
+      "id": 523
+    },
+    "trakt": {
+      "title": "My Neighbor Totoro",
+      "id": 4169,
+      "slug": "my-neighbor-totoro-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 8392,
+      "imdb": "tt0096283",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pokemon Movie 01: Mewtwo no Gyakushuu",
       "id": 528
     },
@@ -590,6 +1094,114 @@
     "externals": {
       "tmdb": 10228,
       "imdb": "tt0190641",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bishoujo Senshi Sailor Moon R: The Movie",
+      "id": 531
+    },
+    "trakt": {
+      "title": "Sailor Moon R: The Movie - The Promise of the Rose",
+      "id": 23682,
+      "slug": "sailor-moon-r-the-movie-the-promise-of-the-rose-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 37100,
+      "imdb": "tt0106417",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Slayers: The Motion Picture",
+      "id": 536
+    },
+    "trakt": {
+      "title": "Slayers: The Motion Picture",
+      "id": 22377,
+      "slug": "slayers-the-motion-picture-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 35105,
+      "imdb": "tt0161981",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tekken",
+      "id": 537
+    },
+    "trakt": {
+      "title": "TEKKEN: The Motion Picture",
+      "id": 10904,
+      "slug": "tekken-the-motion-picture-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 17830,
+      "imdb": "tt0272880",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Vampire Hunter D (2000)",
+      "id": 543
+    },
+    "trakt": {
+      "title": "Vampire Hunter D: Bloodlust",
+      "id": 9786,
+      "slug": "vampire-hunter-d-bloodlust-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 15999,
+      "imdb": "tt0216651",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Venus Senki",
+      "id": 544
+    },
+    "trakt": {
+      "title": "Venus Wars",
+      "id": 20379,
+      "slug": "venus-wars-1989",
+      "type": "movies"
+    },
+    "release_year": 1989,
+    "externals": {
+      "tmdb": 31769,
+      "imdb": "tt0135037",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Steamboy",
+      "id": 565
+    },
+    "trakt": {
+      "title": "Steamboy",
+      "id": 4425,
+      "slug": "steamboy-2004",
+      "type": "movies"
+    },
+    "release_year": 2004,
+    "externals": {
+      "tmdb": 8953,
+      "imdb": "tt0348121",
       "letterboxd": null
     }
   },
@@ -626,6 +1238,24 @@
     "externals": {
       "tmdb": 81,
       "imdb": "tt0087544",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hotaru no Haka",
+      "id": 578
+    },
+    "trakt": {
+      "title": "Grave of the Fireflies",
+      "id": 7251,
+      "slug": "grave-of-the-fireflies-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 12477,
+      "imdb": "tt0095327",
       "letterboxd": null
     }
   },
@@ -703,6 +1333,24 @@
   },
   {
     "myanimelist": {
+      "title": "Sakura Taisen: Katsudou Shashin",
+      "id": 608
+    },
+    "trakt": {
+      "title": "Sakura Wars: The Movie",
+      "id": 17245,
+      "slug": "sakura-wars-the-movie-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 27867,
+      "imdb": "tt0237687",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Juubee Ninpuuchou",
       "id": 617
     },
@@ -716,6 +1364,42 @@
     "externals": {
       "tmdb": 14282,
       "imdb": "tt0107692",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Azumanga Daiou: Gekijou Tanpen",
+      "id": 659
+    },
+    "trakt": {
+      "title": "Azumanga Daioh: The Very Short Movie",
+      "id": 65904,
+      "slug": "azumanga-daioh-the-very-short-movie-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 87785,
+      "imdb": "tt0381895",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Air Movie",
+      "id": 713
+    },
+    "trakt": {
+      "title": "Air: The Motion Picture",
+      "id": 26809,
+      "slug": "air-the-motion-picture-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 40728,
+      "imdb": "tt0807703",
       "letterboxd": null
     }
   },
@@ -739,6 +1423,42 @@
   },
   {
     "myanimelist": {
+      "title": "Vampire Hunter D",
+      "id": 732
+    },
+    "trakt": {
+      "title": "Vampire Hunter D",
+      "id": 4750,
+      "slug": "vampire-hunter-d-1985",
+      "type": "movies"
+    },
+    "release_year": 1985,
+    "externals": {
+      "tmdb": 9463,
+      "imdb": "tt0090248",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Umi ga Kikoeru",
+      "id": 743
+    },
+    "trakt": {
+      "title": "Ocean Waves",
+      "id": 12925,
+      "slug": "ocean-waves-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 21057,
+      "imdb": "tt0108432",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "RahXephon: Tagen Hensoukyoku",
       "id": 758
     },
@@ -752,6 +1472,24 @@
     "externals": {
       "tmdb": 16860,
       "imdb": "tt1047518",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tokyo Godfathers",
+      "id": 759
+    },
+    "trakt": {
+      "title": "Tokyo Godfathers",
+      "id": 7877,
+      "slug": "tokyo-godfathers-2003",
+      "type": "movies"
+    },
+    "release_year": 2003,
+    "externals": {
+      "tmdb": 13398,
+      "imdb": "tt0388473",
       "letterboxd": null
     }
   },
@@ -847,6 +1585,78 @@
   },
   {
     "myanimelist": {
+      "title": "xxxHOLiC Movie: Manatsu no Yoru no Yume",
+      "id": 793
+    },
+    "trakt": {
+      "title": "xxxHOLiC The Movie: A Midsummer Night's Dream",
+      "id": 24928,
+      "slug": "xxxholic-the-movie-a-midsummer-night-s-dream-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 38567,
+      "imdb": "tt0466405",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tsubasa Chronicle: Tori Kago no Kuni no Himegimi",
+      "id": 807
+    },
+    "trakt": {
+      "title": "Tsubasa Chronicle The Movie: The Princess in the Birdcage Kingdom",
+      "id": 28083,
+      "slug": "tsubasa-chronicle-the-movie-the-princess-in-the-birdcage-kingdom-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 42180,
+      "imdb": "tt0466551",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Initial D Battle Stage",
+      "id": 821
+    },
+    "trakt": {
+      "title": "Initial D Battle Stage",
+      "id": 208701,
+      "slug": "initial-d-battle-stage-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 327796,
+      "imdb": "tt7941838",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Initial D Extra Stage",
+      "id": 822
+    },
+    "trakt": {
+      "title": "Initial D Extra Stage",
+      "id": 174778,
+      "slug": "initial-d-extra-stage-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 277090,
+      "imdb": "tt0400537",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Mind Game",
       "id": 875
     },
@@ -860,6 +1670,330 @@
     "externals": {
       "tmdb": 21712,
       "imdb": "tt0452039",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yuu☆Yuu☆Hakusho (Movie)",
+      "id": 882
+    },
+    "trakt": {
+      "title": "Yu Yu Hakusho: The Movie - The Golden Seal",
+      "id": 30871,
+      "slug": "yu-yu-hakusho-the-movie-the-golden-seal-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 45278,
+      "imdb": "tt1119171",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenshi no Tamago",
+      "id": 885
+    },
+    "trakt": {
+      "title": "Angel's Egg",
+      "id": 9726,
+      "slug": "angel-s-egg-1985",
+      "type": "movies"
+    },
+    "release_year": 1985,
+    "externals": {
+      "tmdb": 15916,
+      "imdb": "tt0208502",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Movie 2: Majinjou no Nemurihime",
+      "id": 891
+    },
+    "trakt": {
+      "title": "Dragon Ball: Sleeping Princess in Devil's Castle",
+      "id": 25396,
+      "slug": "dragon-ball-sleeping-princess-in-devil-s-castle-1987",
+      "type": "movies"
+    },
+    "release_year": 1987,
+    "externals": {
+      "tmdb": 39145,
+      "imdb": "tt0142249",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Movie 3: Makafushigi Daibouken",
+      "id": 892
+    },
+    "trakt": {
+      "title": "Dragon Ball: Mystical Adventure",
+      "id": 81450,
+      "slug": "dragon-ball-mystical-adventure-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 116776,
+      "imdb": "tt0142248",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Movie 4: Saikyou e no Michi",
+      "id": 893
+    },
+    "trakt": {
+      "title": "Dragon Ball: The Path to Power",
+      "id": 25397,
+      "slug": "dragon-ball-the-path-to-power-1996",
+      "type": "movies"
+    },
+    "release_year": 1996,
+    "externals": {
+      "tmdb": 39148,
+      "imdb": "tt0142250",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 01: Ora no Gohan wo Kaese!!",
+      "id": 894
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Dead Zone",
+      "id": 17877,
+      "slug": "dragon-ball-z-dead-zone-1989",
+      "type": "movies"
+    },
+    "release_year": 1989,
+    "externals": {
+      "tmdb": 28609,
+      "imdb": "tt0142235",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 02: Kono Yo de Ichiban Tsuyoi Yatsu",
+      "id": 895
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: The World's Strongest",
+      "id": 25358,
+      "slug": "dragon-ball-z-the-world-s-strongest-1990",
+      "type": "movies"
+    },
+    "release_year": 1990,
+    "externals": {
+      "tmdb": 39100,
+      "imdb": "tt0142240",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 03: Chikyuu Marugoto Choukessen",
+      "id": 896
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: The Tree of Might",
+      "id": 25359,
+      "slug": "dragon-ball-z-the-tree-of-might-1990",
+      "type": "movies"
+    },
+    "release_year": 1990,
+    "externals": {
+      "tmdb": 39101,
+      "imdb": "tt0142233",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 04: Super Saiyajin da Son Gokuu",
+      "id": 897
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Lord Slug",
+      "id": 25360,
+      "slug": "dragon-ball-z-lord-slug-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 39102,
+      "imdb": "tt0142244",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 05: Tobikkiri no Saikyou tai Saikyou",
+      "id": 898
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Cooler's Revenge",
+      "id": 14926,
+      "slug": "dragon-ball-z-cooler-s-revenge-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 24752,
+      "imdb": "tt1125254",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 06: Gekitotsu!! 100-oku Power no Senshi-tachi",
+      "id": 899
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: The Return of Cooler",
+      "id": 25361,
+      "slug": "dragon-ball-z-the-return-of-cooler-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 39103,
+      "imdb": "tt0142237",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 07: Kyokugen Battle!! Sandai Super Saiyajin",
+      "id": 900
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Super Android 13!",
+      "id": 25362,
+      "slug": "dragon-ball-z-super-android-13-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 39104,
+      "imdb": "tt0142241",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 08: Moetsukiro!! Nessen, Ressen, Chougekisen",
+      "id": 901
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Broly - The Legendary Super Saiyan",
+      "id": 21993,
+      "slug": "dragon-ball-z-broly-the-legendary-super-saiyan-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 34433,
+      "imdb": "tt0142242",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 09: Ginga Girigiri!! Bucchigiri no Sugoi Yatsu",
+      "id": 902
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Bojack Unbound",
+      "id": 25363,
+      "slug": "dragon-ball-z-bojack-unbound-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 39105,
+      "imdb": "tt0142238",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 10: Kiken na Futari! Super Senshi wa Nemurenai",
+      "id": 903
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Broly - Second Coming",
+      "id": 29969,
+      "slug": "dragon-ball-z-broly-second-coming-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 44251,
+      "imdb": "tt0142239",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 11: Super Senshi Gekiha!! Katsu no wa Ore da",
+      "id": 904
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Bio-Broly",
+      "id": 25364,
+      "slug": "dragon-ball-z-bio-broly-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 39106,
+      "imdb": "tt0142234",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 12: Fukkatsu no Fusion!! Gokuu to Vegeta",
+      "id": 905
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Fusion Reborn",
+      "id": 25365,
+      "slug": "dragon-ball-z-fusion-reborn-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 39107,
+      "imdb": "tt0142236",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 13: Ryuuken Bakuhatsu!! Gokuu ga Yaraneba Dare ga Yaru",
+      "id": 906
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Wrath of the Dragon",
+      "id": 25366,
+      "slug": "dragon-ball-z-wrath-of-the-dragon-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 39108,
+      "imdb": "tt0142243",
       "letterboxd": null
     }
   },
@@ -901,6 +2035,132 @@
   },
   {
     "myanimelist": {
+      "title": "Street Fighter Alpha: Generations",
+      "id": 950
+    },
+    "trakt": {
+      "title": "Street Fighter Alpha: Generations",
+      "id": 9972,
+      "slug": "street-fighter-alpha-generations-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 16228,
+      "imdb": "tt0495900",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dead Leaves",
+      "id": 974
+    },
+    "trakt": {
+      "title": "Dead Leaves",
+      "id": 9775,
+      "slug": "dead-leaves-2004",
+      "type": "movies"
+    },
+    "release_year": 2004,
+    "externals": {
+      "tmdb": 15981,
+      "imdb": "tt0439533",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Street Fighter Zero The Animation",
+      "id": 979
+    },
+    "trakt": {
+      "title": "Street Fighter Alpha: The Movie",
+      "id": 10657,
+      "slug": "street-fighter-alpha-the-movie-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 17433,
+      "imdb": "tt0185708",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Special 2: Zetsubou e no Hankou!! Nokosareta Chousenshi - Gohan to Trunks",
+      "id": 985
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: The History of Trunks",
+      "id": 25540,
+      "slug": "dragon-ball-z-the-history-of-trunks-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 39324,
+      "imdb": "tt0142247",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball GT: Gokuu Gaiden! Yuuki no Akashi wa Suushinchuu",
+      "id": 987
+    },
+    "trakt": {
+      "title": "Dragon Ball GT: A Hero's Legacy",
+      "id": 11065,
+      "slug": "dragon-ball-gt-a-hero-s-legacy-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 18095,
+      "imdb": "tt0142232",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sin in the Rain",
+      "id": 994
+    },
+    "trakt": {
+      "title": "Sin in the Rain",
+      "id": 317976,
+      "slug": "sin-in-the-rain-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 470693,
+      "imdb": null,
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bishoujo Senshi Sailor Moon S: Kaguya-hime no Koibito",
+      "id": 997
+    },
+    "trakt": {
+      "title": "Sailor Moon S the Movie: Hearts in Ice",
+      "id": 19408,
+      "slug": "sailor-moon-s-the-movie-hearts-in-ice-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 30575,
+      "imdb": "tt0109277",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kanojo to Kanojo no Neko",
       "id": 1004
     },
@@ -914,6 +2174,24 @@
     "externals": {
       "tmdb": 18143,
       "imdb": "tt0373960",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenchi Muyou! in Love",
+      "id": 1006
+    },
+    "trakt": {
+      "title": "Tenchi Muyo! In Love",
+      "id": 22281,
+      "slug": "tenchi-muyo-in-love-1996",
+      "type": "movies"
+    },
+    "release_year": 1996,
+    "externals": {
+      "tmdb": 34935,
+      "imdb": "tt0117876",
       "letterboxd": null
     }
   },
@@ -955,6 +2233,24 @@
   },
   {
     "myanimelist": {
+      "title": "Heisei Tanuki Gassen Ponpoko",
+      "id": 1030
+    },
+    "trakt": {
+      "title": "Pom Poko",
+      "id": 9277,
+      "slug": "pom-poko-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 15283,
+      "imdb": "tt0110008",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kumo no You ni Kaze no You ni",
       "id": 1032
     },
@@ -968,6 +2264,24 @@
     "externals": {
       "tmdb": 35589,
       "imdb": "tt0185429",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sennen Joyuu",
+      "id": 1033
+    },
+    "trakt": {
+      "title": "Millennium Actress",
+      "id": 21330,
+      "slug": "millennium-actress-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 33320,
+      "imdb": "tt0291350",
       "letterboxd": null
     }
   },
@@ -1004,6 +2318,24 @@
     "externals": {
       "tmdb": 1494030,
       "imdb": "tt0114038",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cello Hiki no Gauche (1982)",
+      "id": 1049
+    },
+    "trakt": {
+      "title": "Gauche the Cellist",
+      "id": 27062,
+      "slug": "gauche-the-cellist-1982",
+      "type": "movies"
+    },
+    "release_year": 1982,
+    "externals": {
+      "tmdb": 41017,
+      "imdb": "tt0083053",
       "letterboxd": null
     }
   },
@@ -1058,6 +2390,60 @@
     "externals": {
       "tmdb": 14572,
       "imdb": "tt0124770",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenchi Muyou! Manatsu no Eve",
+      "id": 1101
+    },
+    "trakt": {
+      "title": "Tenchi the Movie 2: The Daughter of Darkness",
+      "id": 21894,
+      "slug": "tenchi-the-movie-2-the-daughter-of-darkness-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 34194,
+      "imdb": "tt0152979",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Eikyuu Kazoku",
+      "id": 1106
+    },
+    "trakt": {
+      "title": "Eternal Family",
+      "id": 54186,
+      "slug": "eternal-family-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 73713,
+      "imdb": "tt0380887",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Youjuu Toshi",
+      "id": 1107
+    },
+    "trakt": {
+      "title": "Wicked City",
+      "id": 13134,
+      "slug": "wicked-city-1987",
+      "type": "movies"
+    },
+    "release_year": 1987,
+    "externals": {
+      "tmdb": 21453,
+      "imdb": "tt0098692",
       "letterboxd": null
     }
   },
@@ -1171,6 +2557,42 @@
   },
   {
     "myanimelist": {
+      "title": "Giniro no Kami no Agito",
+      "id": 1140
+    },
+    "trakt": {
+      "title": "Origin: Spirits of the Past",
+      "id": 9064,
+      "slug": "origin-spirits-of-the-past-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 14945,
+      "imdb": "tt0493247",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenchi Muyou! in Love 2: Harukanaru Omoi",
+      "id": 1144
+    },
+    "trakt": {
+      "title": "Tenchi Forever!",
+      "id": 8977,
+      "slug": "tenchi-forever-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 14829,
+      "imdb": "tt0205451",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Nasu: Andalusia no Natsu",
       "id": 1209
     },
@@ -1202,6 +2624,42 @@
     "externals": {
       "tmdb": 18837,
       "imdb": "tt2330912",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bishoujo Senshi Sailor Moon SuperS: Sailor 9 Senshi Shuuketsu! Black Dream Hole no Kiseki",
+      "id": 1240
+    },
+    "trakt": {
+      "title": "Sailor Moon SuperS: The Movie - Black Dream Hole",
+      "id": 17749,
+      "slug": "sailor-moon-supers-the-movie-black-dream-hole-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 28460,
+      "imdb": "tt0112513",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shihaisha no Tasogare",
+      "id": 1245
+    },
+    "trakt": {
+      "title": "Twilight of the Dark Master",
+      "id": 12333,
+      "slug": "twilight-of-the-dark-master-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 20089,
+      "imdb": "tt0279487",
       "letterboxd": null
     }
   },
@@ -1274,6 +2732,222 @@
     "externals": {
       "tmdb": 83088,
       "imdb": "tt0326101",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bio Hunter",
+      "id": 1269
+    },
+    "trakt": {
+      "title": "Bio Hunter",
+      "id": 40857,
+      "slug": "bio-hunter-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 57224,
+      "imdb": "tt0220333",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Black Magic M-66",
+      "id": 1270
+    },
+    "trakt": {
+      "title": "Black Magic M-66",
+      "id": 47835,
+      "slug": "black-magic-m-66-1987",
+      "type": "movies"
+    },
+    "release_year": 1987,
+    "externals": {
+      "tmdb": 66045,
+      "imdb": "tt0092664",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "WXIII Kidou Keisatsu Patlabor",
+      "id": 1290
+    },
+    "trakt": {
+      "title": "Patlabor WXIII The Movie",
+      "id": 10105,
+      "slug": "patlabor-wxiii-the-movie-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 16402,
+      "imdb": "tt0318819",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Tetsudou 999 (Movie)",
+      "id": 1301
+    },
+    "trakt": {
+      "title": "Galaxy Express 999: The Movie",
+      "id": 9242,
+      "slug": "galaxy-express-999-the-movie-1979",
+      "type": "movies"
+    },
+    "release_year": 1979,
+    "externals": {
+      "tmdb": 15227,
+      "imdb": "tt0080772",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sayonara Ginga Tetsudou 999: Andromeda Shuuchakueki",
+      "id": 1302
+    },
+    "trakt": {
+      "title": "Adieu Galaxy Express 999",
+      "id": 42736,
+      "slug": "adieu-galaxy-express-999-1981",
+      "type": "movies"
+    },
+    "release_year": 1981,
+    "externals": {
+      "tmdb": 59717,
+      "imdb": "tt0184881",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "The Animatrix",
+      "id": 1303
+    },
+    "trakt": {
+      "title": "The Animatrix",
+      "id": 39822,
+      "slug": "the-animatrix-2003",
+      "type": "movies"
+    },
+    "release_year": 2003,
+    "externals": {
+      "tmdb": 55931,
+      "imdb": "tt0328832",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yami no Shihoukan Judge",
+      "id": 1340
+    },
+    "trakt": {
+      "title": "Judge",
+      "id": 35810,
+      "slug": "judge-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 51096,
+      "imdb": "tt0264739",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Violence Jack: Harem Bomber-hen",
+      "id": 1341
+    },
+    "trakt": {
+      "title": "Violence Jack: Harem Bomber",
+      "id": 42524,
+      "slug": "violence-jack-harem-bomber-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 59332,
+      "imdb": "tt0265996",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Violence Jack: Jigoku Gai-hen",
+      "id": 1342
+    },
+    "trakt": {
+      "title": "Violence Jack: Evil Town",
+      "id": 70394,
+      "slug": "violence-jack-evil-town-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 96650,
+      "imdb": "tt0265997",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Violence Jack: Hell's Wind-hen",
+      "id": 1343
+    },
+    "trakt": {
+      "title": "Violence Jack: Hell's Wind",
+      "id": 70395,
+      "slug": "violence-jack-hell-s-wind-1990",
+      "type": "movies"
+    },
+    "release_year": 1990,
+    "externals": {
+      "tmdb": 96654,
+      "imdb": "tt0265998",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Final Fantasy: The Spirits Within",
+      "id": 1361
+    },
+    "trakt": {
+      "title": "Final Fantasy: The Spirits Within",
+      "id": 1462,
+      "slug": "final-fantasy-the-spirits-within-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 2114,
+      "imdb": "tt0173840",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Street Fighter II Movie",
+      "id": 1362
+    },
+    "trakt": {
+      "title": "Street Fighter II: The Animated Movie",
+      "id": 7379,
+      "slug": "street-fighter-ii-the-animated-movie-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 12613,
+      "imdb": "tt0114563",
       "letterboxd": null
     }
   },
@@ -1382,6 +3056,24 @@
     "externals": {
       "tmdb": 1173976,
       "imdb": "tt0471767",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Blue Gender: The Warrior",
+      "id": 1380
+    },
+    "trakt": {
+      "title": "Blue Gender: The Warrior",
+      "id": 23872,
+      "slug": "blue-gender-the-warrior-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 37326,
+      "imdb": "tt1345450",
       "letterboxd": null
     }
   },
@@ -1837,6 +3529,24 @@
   },
   {
     "myanimelist": {
+      "title": "Ginga Tetsudou no Yoru",
+      "id": 1441
+    },
+    "trakt": {
+      "title": "Night on the Galactic Railroad",
+      "id": 24095,
+      "slug": "night-on-the-galactic-railroad-1985",
+      "type": "movies"
+    },
+    "release_year": 1985,
+    "externals": {
+      "tmdb": 37585,
+      "imdb": "tt0089206",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Memories",
       "id": 1462
     },
@@ -1850,6 +3560,42 @@
     "externals": {
       "tmdb": 42994,
       "imdb": "tt0113799",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Baoh Raihousha",
+      "id": 1468
+    },
+    "trakt": {
+      "title": "Baoh: The Visitor",
+      "id": 45093,
+      "slug": "baoh-the-visitor-1989",
+      "type": "movies"
+    },
+    "release_year": 1989,
+    "externals": {
+      "tmdb": 62736,
+      "imdb": "tt0096891",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "City Hunter: Goodbye My Sweetheart",
+      "id": 1478
+    },
+    "trakt": {
+      "title": "City Hunter Special: Goodbye My Sweetheart",
+      "id": 13309,
+      "slug": "city-hunter-special-goodbye-my-sweetheart-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 21770,
+      "imdb": "tt0159361",
       "letterboxd": null
     }
   },
@@ -1963,6 +3709,96 @@
   },
   {
     "myanimelist": {
+      "title": "Azumanga Web Daiou",
+      "id": 1593
+    },
+    "trakt": {
+      "title": "Azumanga Web Daioh",
+      "id": 467640,
+      "slug": "azumanga-web-daioh-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 626218,
+      "imdb": "tt31885394",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bakuten Shoot Beyblade the Movie: Gekitou!! Takao vs. Daichi",
+      "id": 1670
+    },
+    "trakt": {
+      "title": "Beyblade the Movie: Fierce Battle",
+      "id": 106893,
+      "slug": "beyblade-the-movie-fierce-battle-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 166823,
+      "imdb": "tt0459080",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Brave Story",
+      "id": 1681
+    },
+    "trakt": {
+      "title": "Brave Story",
+      "id": 10748,
+      "slug": "brave-story-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 17566,
+      "imdb": "tt0778631",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bleach Movie 1: Memories of Nobody",
+      "id": 1686
+    },
+    "trakt": {
+      "title": "Bleach the Movie: Memories of Nobody",
+      "id": 9481,
+      "slug": "bleach-the-movie-memories-of-nobody-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 15575,
+      "imdb": "tt1105263",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Byousoku 5 Centimeter",
+      "id": 1689
+    },
+    "trakt": {
+      "title": "5 Centimeters per Second",
+      "id": 24579,
+      "slug": "5-centimeters-per-second-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 38142,
+      "imdb": "tt0983213",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pokemon: Mewtwo! Ware wa Koko ni Ari",
       "id": 1709
     },
@@ -1976,6 +3812,78 @@
     "externals": {
       "tmdb": 36897,
       "imdb": "tt0304564",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Clannad Movie",
+      "id": 1723
+    },
+    "trakt": {
+      "title": "Clannad: The Motion Picture",
+      "id": 10167,
+      "slug": "clannad-the-motion-picture-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 16516,
+      "imdb": "tt0997274",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Golgo 13",
+      "id": 1760
+    },
+    "trakt": {
+      "title": "Golgo 13: The Professional",
+      "id": 10966,
+      "slug": "golgo-13-the-professional-1983",
+      "type": "movies"
+    },
+    "release_year": 1983,
+    "externals": {
+      "tmdb": 17922,
+      "imdb": "tt0086148",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Golgo 13: Queen Bee",
+      "id": 1761
+    },
+    "trakt": {
+      "title": "Golgo 13: Queen Bee",
+      "id": 32846,
+      "slug": "golgo-13-queen-bee-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 47567,
+      "imdb": "tt0189559",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Slam Dunk (Movie)",
+      "id": 1764
+    },
+    "trakt": {
+      "title": "Slam Dunk: The Movie",
+      "id": 218921,
+      "slug": "slam-dunk-the-movie-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 338379,
+      "imdb": "tt4086026",
       "letterboxd": null
     }
   },
@@ -1999,6 +3907,204 @@
   },
   {
     "myanimelist": {
+      "title": "Dirty Pair no Ooshoubu: Nolandia no Nazo",
+      "id": 1794
+    },
+    "trakt": {
+      "title": "Dirty Pair: Affair on Nolandia",
+      "id": 49818,
+      "slug": "dirty-pair-affair-on-nolandia-1985",
+      "type": "movies"
+    },
+    "release_year": 1985,
+    "externals": {
+      "tmdb": 68364,
+      "imdb": "tt0434908",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dirty Pair: Bouryaku no 005-bin",
+      "id": 1795
+    },
+    "trakt": {
+      "title": "Dirty Pair: Flight 005 Conspiracy",
+      "id": 49821,
+      "slug": "dirty-pair-flight-005-conspiracy-1990",
+      "type": "movies"
+    },
+    "release_year": 1990,
+    "externals": {
+      "tmdb": 68367,
+      "imdb": "tt0099435",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dirty Pair: The Movie",
+      "id": 1796
+    },
+    "trakt": {
+      "title": "Dirty Pair: Project Eden",
+      "id": 49822,
+      "slug": "dirty-pair-project-eden-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 68368,
+      "imdb": "tt0385668",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Battle Fighters Garou Densetsu",
+      "id": 1799
+    },
+    "trakt": {
+      "title": "Fatal Fury: Legend of the Hungry Wolf",
+      "id": 52854,
+      "slug": "fatal-fury-legend-of-the-hungry-wolf-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 72015,
+      "imdb": "tt0221169",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dirty Pair: Lovely Angels yori Ai wo Komete",
+      "id": 1803
+    },
+    "trakt": {
+      "title": "Dirty Pair: From Lovely Angels with Love",
+      "id": 215814,
+      "slug": "dirty-pair-from-lovely-angels-with-love-1987",
+      "type": "movies"
+    },
+    "release_year": 1987,
+    "externals": {
+      "tmdb": 334921,
+      "imdb": "tt5179136",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shakugan no Shana Movie",
+      "id": 1815
+    },
+    "trakt": {
+      "title": "Shakugan no Shana: The Movie",
+      "id": 49733,
+      "slug": "shakugan-no-shana-the-movie-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 68263,
+      "imdb": "tt0994794",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hadashi no Gen",
+      "id": 1824
+    },
+    "trakt": {
+      "title": "Barefoot Gen",
+      "id": 8426,
+      "slug": "barefoot-gen-1983",
+      "type": "movies"
+    },
+    "release_year": 1983,
+    "externals": {
+      "tmdb": 14087,
+      "imdb": "tt0085218",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hadashi no Gen 2",
+      "id": 1825
+    },
+    "trakt": {
+      "title": "Barefoot Gen 2",
+      "id": 8427,
+      "slug": "barefoot-gen-2-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 14088,
+      "imdb": "tt0171357",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ged Senki",
+      "id": 1829
+    },
+    "trakt": {
+      "title": "Tales from Earthsea",
+      "id": 24398,
+      "slug": "tales-from-earthsea-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 37933,
+      "imdb": "tt0495596",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Grappler Baki",
+      "id": 1859
+    },
+    "trakt": {
+      "title": "Grappler Baki: The Ultimate Fighter",
+      "id": 49884,
+      "slug": "grappler-baki-the-ultimate-fighter-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 68449,
+      "imdb": "tt1467266",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Slam Dunk: Zenkoku Seiha Da! - Sakuragi Hanamichi",
+      "id": 1861
+    },
+    "trakt": {
+      "title": "Slam Dunk 2: National Tournement",
+      "id": 218923,
+      "slug": "slam-dunk-2-national-tournement-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 338380,
+      "imdb": "tt4086028",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Midnight Eye: Gokuu",
       "id": 1879
     },
@@ -2012,6 +4118,150 @@
     "externals": {
       "tmdb": 77674,
       "imdb": "tt0097445",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yu☆Gi☆Oh! Hikari no Pyramid",
+      "id": 1894
+    },
+    "trakt": {
+      "title": "Yu-Gi-Oh! The Movie",
+      "id": 6189,
+      "slug": "yu-gi-oh-the-movie-2004",
+      "type": "movies"
+    },
+    "release_year": 2004,
+    "externals": {
+      "tmdb": 11052,
+      "imdb": "tt0403703",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "11-nin Iru!",
+      "id": 1901
+    },
+    "trakt": {
+      "title": "They Were Eleven",
+      "id": 17542,
+      "slug": "they-were-eleven-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 28214,
+      "imdb": "tt0091309",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura Movie 1: Only You",
+      "id": 1920
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: Only You",
+      "id": 98747,
+      "slug": "urusei-yatsura-only-you-1983",
+      "type": "movies"
+    },
+    "release_year": 1983,
+    "externals": {
+      "tmdb": 150023,
+      "imdb": "tt0086520",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura 2: Beautiful Dreamer",
+      "id": 1921
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: Beautiful Dreamer",
+      "id": 29712,
+      "slug": "urusei-yatsura-beautiful-dreamer-1984",
+      "type": "movies"
+    },
+    "release_year": 1984,
+    "externals": {
+      "tmdb": 43967,
+      "imdb": "tt0088334",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura Movie 3: Remember My Love",
+      "id": 1922
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: Remember My Love",
+      "id": 98748,
+      "slug": "urusei-yatsura-remember-my-love-1985",
+      "type": "movies"
+    },
+    "release_year": 1985,
+    "externals": {
+      "tmdb": 150024,
+      "imdb": "tt0090244",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura Movie 4: Lum The Forever",
+      "id": 1923
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: Lum the Forever",
+      "id": 98750,
+      "slug": "urusei-yatsura-lum-the-forever-1986",
+      "type": "movies"
+    },
+    "release_year": 1986,
+    "externals": {
+      "tmdb": 150026,
+      "imdb": "tt0092141",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura Movie 5: Kanketsu-hen",
+      "id": 1924
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: The Final Chapter",
+      "id": 98751,
+      "slug": "urusei-yatsura-the-final-chapter-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 150027,
+      "imdb": "tt0096353",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura Movie 6: Itsudatte My Darling",
+      "id": 1925
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: Always My Darling",
+      "id": 98752,
+      "slug": "urusei-yatsura-always-my-darling-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 150028,
+      "imdb": "tt0103178",
       "letterboxd": null
     }
   },
@@ -2035,6 +4285,24 @@
   },
   {
     "myanimelist": {
+      "title": "Arashi no Yoru ni",
+      "id": 1961
+    },
+    "trakt": {
+      "title": "Stormy Night",
+      "id": 12249,
+      "slug": "stormy-night-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 19961,
+      "imdb": "tt0498465",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Roujin Z",
       "id": 2000
     },
@@ -2053,6 +4321,24 @@
   },
   {
     "myanimelist": {
+      "title": "Yu☆Gi☆Oh! (Movie)",
+      "id": 2006
+    },
+    "trakt": {
+      "title": "Yu☆Gi☆Oh!",
+      "id": 237885,
+      "slug": "yu-gi-oh-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 378240,
+      "imdb": "tt2488310",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Ningyo no Kizu",
       "id": 2017
     },
@@ -2066,6 +4352,42 @@
     "externals": {
       "tmdb": 70337,
       "imdb": "tt0107557",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Five Star Stories",
+      "id": 2042
+    },
+    "trakt": {
+      "title": "The Five Star Stories",
+      "id": 21971,
+      "slug": "the-five-star-stories-1989",
+      "type": "movies"
+    },
+    "release_year": 1989,
+    "externals": {
+      "tmdb": 34375,
+      "imdb": "tt0159443",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shin Kimagure Orange☆Road: Soshite, Ano Natsu no Hajimari",
+      "id": 2098
+    },
+    "trakt": {
+      "title": "New Kimagure Orange Road: Summer's Beginning",
+      "id": 89867,
+      "slug": "new-kimagure-orange-road-summer-s-beginning-1996",
+      "type": "movies"
+    },
+    "release_year": 1996,
+    "externals": {
+      "tmdb": 132318,
+      "imdb": "tt0160865",
       "letterboxd": null
     }
   },
@@ -2125,6 +4447,24 @@
   },
   {
     "myanimelist": {
+      "title": "Tekkon Kinkreet",
+      "id": 2154
+    },
+    "trakt": {
+      "title": "Tekkonkinkreet",
+      "id": 8161,
+      "slug": "tekkonkinkreet-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 13754,
+      "imdb": "tt0831888",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Meitantei Conan Movie 11: Konpeki no Jolly Roger",
       "id": 2171
     },
@@ -2138,6 +4478,42 @@
     "externals": {
       "tmdb": 39206,
       "imdb": "tt1146290",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 15: Arashi wo Yobu Utau Ketsu dake Bakudan!",
+      "id": 2172
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Invoke a Storm! The Singing Buttocks Bomb",
+      "id": 88130,
+      "slug": "crayon-shin-chan-invoke-a-storm-the-singing-buttocks-bomb-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 128884,
+      "imdb": "tt2643866",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hokuto no Ken: Raoh Gaiden Gekitou-hen",
+      "id": 2174
+    },
+    "trakt": {
+      "title": "Fist of the North Star: Legend of Raoh - Chapter of Fierce Fighting",
+      "id": 80038,
+      "slug": "fist-of-the-north-star-legend-of-raoh-chapter-of-fierce-fighting-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 114372,
+      "imdb": "tt1135522",
       "letterboxd": null
     }
   },
@@ -2161,6 +4537,42 @@
   },
   {
     "myanimelist": {
+      "title": "Highlander: The Search for Vengeance",
+      "id": 2178
+    },
+    "trakt": {
+      "title": "Highlander: The Search for Vengeance",
+      "id": 7740,
+      "slug": "highlander-the-search-for-vengeance-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 13194,
+      "imdb": "tt0465657",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Chirin no Suzu",
+      "id": 2199
+    },
+    "trakt": {
+      "title": "Ringing Bell",
+      "id": 57587,
+      "slug": "ringing-bell-1978",
+      "type": "movies"
+    },
+    "release_year": 1978,
+    "externals": {
+      "tmdb": 77859,
+      "imdb": "tt0306646",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pokemon Movie 09: Pokemon Ranger to Umi no Ouji Manaphy",
       "id": 2201
     },
@@ -2174,6 +4586,24 @@
     "externals": {
       "tmdb": 16808,
       "imdb": "tt1000095",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tooi Sekai",
+      "id": 2210
+    },
+    "trakt": {
+      "title": "Other Worlds",
+      "id": 54266,
+      "slug": "other-worlds-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 73799,
+      "imdb": "tt3651062",
       "letterboxd": null
     }
   },
@@ -2197,6 +4627,24 @@
   },
   {
     "myanimelist": {
+      "title": "Toki wo Kakeru Shoujo",
+      "id": 2236
+    },
+    "trakt": {
+      "title": "The Girl Who Leapt Through Time",
+      "id": 8410,
+      "slug": "the-girl-who-leapt-through-time-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 14069,
+      "imdb": "tt0808506",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Roots Search: Shokushin Buttai X",
       "id": 2250
     },
@@ -2210,6 +4658,24 @@
     "externals": {
       "tmdb": 166706,
       "imdb": "tt0160784",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shin Kidou Senki Gundam Wing: Endless Waltz Tokubetsu-hen",
+      "id": 2273
+    },
+    "trakt": {
+      "title": "Gundam Wing: The Endless Waltz",
+      "id": 13910,
+      "slug": "gundam-wing-the-endless-waltz-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 22914,
+      "imdb": "tt0260191",
       "letterboxd": null
     }
   },
@@ -2287,6 +4753,42 @@
   },
   {
     "myanimelist": {
+      "title": "Choujin Densetsu Urotsukidouji Movie",
+      "id": 2359
+    },
+    "trakt": {
+      "title": "Urotsukidōji: Legend of the Overfiend",
+      "id": 826372,
+      "slug": "urotsukidoji-legend-of-the-overfiend-1989-03-18",
+      "type": "movies"
+    },
+    "release_year": 1989,
+    "externals": {
+      "tmdb": 48624,
+      "imdb": "tt0108461",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Choujin Densetsu Urotsukidouji 2",
+      "id": 2360
+    },
+    "trakt": {
+      "title": "Urotsukidōji II: Legend of the Demon Womb",
+      "id": 33725,
+      "slug": "urotsukidoji-ii-legend-of-the-demon-womb-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 48626,
+      "imdb": "tt0108462",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "One Piece: Jango no Dance Carnival",
       "id": 2385
     },
@@ -2318,6 +4820,114 @@
     "externals": {
       "tmdb": 464198,
       "imdb": "tt0997083",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 26: Nobita no Kyouryuu 2006",
+      "id": 2392
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita's Dinosaur",
+      "id": 51918,
+      "slug": "doraemon-nobita-s-dinosaur-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 70841,
+      "imdb": "tt0802983",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 24: Nobita to Fushigi Kaze Tsukai",
+      "id": 2393
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Windmasters",
+      "id": 71408,
+      "slug": "doraemon-nobita-and-the-windmasters-2003",
+      "type": "movies"
+    },
+    "release_year": 2003,
+    "externals": {
+      "tmdb": 98613,
+      "imdb": "tt0473474",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Adventure: Bokura no War Game!",
+      "id": 2397
+    },
+    "trakt": {
+      "title": "Digimon: The Movie",
+      "id": 12563,
+      "slug": "digimon-the-movie-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 20455,
+      "imdb": "tt0259974",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Adventure 02: Diablomon no Gyakushuu",
+      "id": 2398
+    },
+    "trakt": {
+      "title": "Digimon Adventure 02: Revenge of Diaboromon",
+      "id": 22975,
+      "slug": "digimon-adventure-02-revenge-of-diaboromon-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 36201,
+      "imdb": "tt0804905",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Stranger: Mukou Hadan",
+      "id": 2418
+    },
+    "trakt": {
+      "title": "Sword of the Stranger",
+      "id": 8345,
+      "slug": "sword-of-the-stranger-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 13980,
+      "imdb": "tt1121794",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Unico",
+      "id": 2427
+    },
+    "trakt": {
+      "title": "The Fantastic Adventures of Unico",
+      "id": 24925,
+      "slug": "the-fantastic-adventures-of-unico-1981",
+      "type": "movies"
+    },
+    "release_year": 1981,
+    "externals": {
+      "tmdb": 38563,
+      "imdb": "tt0083258",
       "letterboxd": null
     }
   },
@@ -2413,6 +5023,42 @@
   },
   {
     "myanimelist": {
+      "title": "Slam Dunk: Shouhoku Saidai no Kiki! Moero Sakuragi Hanamichi",
+      "id": 2498
+    },
+    "trakt": {
+      "title": "Slam Dunk 3: Crisis of Shohoku School",
+      "id": 218924,
+      "slug": "slam-dunk-3-crisis-of-shohoku-school-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 338382,
+      "imdb": "tt4086034",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Slam Dunk: Hoero Basketman-damashii! Hanamichi to Rukawa no Atsuki Natsu",
+      "id": 2499
+    },
+    "trakt": {
+      "title": "Slam Dunk 4: Roar!! Basket Man Spirit",
+      "id": 218925,
+      "slug": "slam-dunk-4-roar-basket-man-spirit-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 338383,
+      "imdb": "tt4086038",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kara no Kyoukai Movie 1: Fukan Fuukei",
       "id": 2593
     },
@@ -2449,6 +5095,24 @@
   },
   {
     "myanimelist": {
+      "title": "Digimon Savers the Movie: Kyuukyoku Power! Burst Mode Hatsudou!!",
+      "id": 2606
+    },
+    "trakt": {
+      "title": "Digimon Savers: The Movie - Ultimate Power! Activate Burst Mode!!",
+      "id": 22971,
+      "slug": "digimon-savers-the-movie-ultimate-power-activate-burst-mode-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 36197,
+      "imdb": "tt4183328",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Panda Kopanda",
       "id": 2611
     },
@@ -2462,6 +5126,258 @@
     "externals": {
       "tmdb": 123867,
       "imdb": "tt0070505",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Flanders no Inu (Movie)",
+      "id": 2623
+    },
+    "trakt": {
+      "title": "The Dog of Flanders",
+      "id": 33756,
+      "slug": "the-dog-of-flanders-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 48661,
+      "imdb": "tt0304072",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 22: Nobita to Tsubasa no Yuusha-tachi",
+      "id": 2654
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Winged Braves",
+      "id": 104628,
+      "slug": "doraemon-nobita-and-the-winged-braves-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 162092,
+      "imdb": "tt0306741",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 23: Nobita to Robot Kingdom",
+      "id": 2655
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Robot Kingdom",
+      "id": 104629,
+      "slug": "doraemon-nobita-and-the-robot-kingdom-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 162095,
+      "imdb": "tt1147526",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 14: Nobita to Buriki no Labyrinth",
+      "id": 2659
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Tin Labyrinth",
+      "id": 104456,
+      "slug": "doraemon-nobita-and-the-tin-labyrinth-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 161822,
+      "imdb": "tt1147521",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 13: Nobita to Kumo no Oukoku",
+      "id": 2661
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Kingdom of Clouds",
+      "id": 90745,
+      "slug": "doraemon-nobita-and-the-kingdom-of-clouds-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 134162,
+      "imdb": "tt1147523",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 02: Nobita no Uchuu Kaitakushi",
+      "id": 2662
+    },
+    "trakt": {
+      "title": "Doraemon: The Record of Nobita, Spaceblazer",
+      "id": 104633,
+      "slug": "doraemon-the-record-of-nobita-spaceblazer-1981",
+      "type": "movies"
+    },
+    "release_year": 1981,
+    "externals": {
+      "tmdb": 162103,
+      "imdb": "tt1147515",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 04: Nobita no Kaitei Kiganjou",
+      "id": 2667
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Castle of the Undersea Devil",
+      "id": 97511,
+      "slug": "doraemon-nobita-and-the-castle-of-the-undersea-devil-1983",
+      "type": "movies"
+    },
+    "release_year": 1983,
+    "externals": {
+      "tmdb": 147576,
+      "imdb": "tt1147509",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 20: Nobita no Uchuu Hyouryuuki",
+      "id": 2668
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita Drifts in the Universe",
+      "id": 104621,
+      "slug": "doraemon-nobita-drifts-in-the-universe-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 162072,
+      "imdb": "tt1147514",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 12: Nobita no Dorabian Nights",
+      "id": 2670
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita's Dorabian Nights",
+      "id": 117919,
+      "slug": "doraemon-nobita-s-dorabian-nights-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 188403,
+      "imdb": "tt1147508",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 27: Nobita no Shin Makai Daibouken - 7-nin no Mahoutsukai",
+      "id": 2673
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita's New Great Adventure Into the Underworld - The Seven Magic Users",
+      "id": 37217,
+      "slug": "doraemon-nobita-s-new-great-adventure-into-the-underworld-the-seven-magic-users-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 52795,
+      "imdb": "tt1260351",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 17: Nobita to Ginga Express",
+      "id": 2675
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Galaxy Super-express",
+      "id": 75470,
+      "slug": "doraemon-nobita-and-the-galaxy-super-express-1996",
+      "type": "movies"
+    },
+    "release_year": 1996,
+    "externals": {
+      "tmdb": 106164,
+      "imdb": "tt1147522",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 18: Nobita no Nejimaki City Boukenki",
+      "id": 2678
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Spiral City",
+      "id": 105243,
+      "slug": "doraemon-nobita-and-the-spiral-city-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 163394,
+      "imdb": "tt1147510",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crusher Joe",
+      "id": 2722
+    },
+    "trakt": {
+      "title": "Crusher Joe",
+      "id": 56688,
+      "slug": "crusher-joe-1983",
+      "type": "movies"
+    },
+    "release_year": 1983,
+    "externals": {
+      "tmdb": 76729,
+      "imdb": "tt0158568",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Vexille: 2077 Nihon Sakoku",
+      "id": 2746
+    },
+    "trakt": {
+      "title": "Vexille",
+      "id": 7872,
+      "slug": "vexille-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 13391,
+      "imdb": "tt0970472",
       "letterboxd": null
     }
   },
@@ -2485,6 +5401,114 @@
   },
   {
     "myanimelist": {
+      "title": "Ushiro no Shoumen Daare",
+      "id": 2753
+    },
+    "trakt": {
+      "title": "Kayoko's Diary",
+      "id": 59869,
+      "slug": "kayoko-s-diary-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 80398,
+      "imdb": "tt1740055",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cleopatra",
+      "id": 2755
+    },
+    "trakt": {
+      "title": "Cleopatra: Queen of Sex",
+      "id": 63339,
+      "slug": "cleopatra-queen-of-sex-1970",
+      "type": "movies"
+    },
+    "release_year": 1970,
+    "externals": {
+      "tmdb": 84488,
+      "imdb": "tt0065588",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Evangelion Movie 1: Jo",
+      "id": 2759
+    },
+    "trakt": {
+      "title": "Evangelion: 1.0 You Are (Not) Alone",
+      "id": 9186,
+      "slug": "evangelion-1-0-you-are-not-alone-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 15137,
+      "imdb": "tt0923811",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Densetsu Kyojin Ideon: Sesshoku-hen",
+      "id": 2760
+    },
+    "trakt": {
+      "title": "Space Runaway Ideon: Contact",
+      "id": 49373,
+      "slug": "space-runaway-ideon-contact-1982",
+      "type": "movies"
+    },
+    "release_year": 1982,
+    "externals": {
+      "tmdb": 67841,
+      "imdb": "tt0400352",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Densetsu Kyojin Ideon: Hatsudou-hen",
+      "id": 2761
+    },
+    "trakt": {
+      "title": "Space Runaway Ideon: Be Invoked",
+      "id": 49383,
+      "slug": "space-runaway-ideon-be-invoked-1982",
+      "type": "movies"
+    },
+    "release_year": 1982,
+    "externals": {
+      "tmdb": 67851,
+      "imdb": "tt1015980",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "SF Shinseiki Lensman",
+      "id": 2770
+    },
+    "trakt": {
+      "title": "Lensman",
+      "id": 15427,
+      "slug": "lensman-1984",
+      "type": "movies"
+    },
+    "release_year": 1984,
+    "externals": {
+      "tmdb": 25525,
+      "imdb": "tt0088028",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Oira Sukeban",
       "id": 2790
     },
@@ -2498,6 +5522,24 @@
     "externals": {
       "tmdb": 324568,
       "imdb": "tt0422875",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Soratobu Yuureisen",
+      "id": 2811
+    },
+    "trakt": {
+      "title": "Flying Phantom Ship",
+      "id": 56684,
+      "slug": "flying-phantom-ship-1969",
+      "type": "movies"
+    },
+    "release_year": 1969,
+    "externals": {
+      "tmdb": 76722,
+      "imdb": "tt0065021",
       "letterboxd": null
     }
   },
@@ -2539,6 +5581,240 @@
   },
   {
     "myanimelist": {
+      "title": "Aachi wa Ssipak",
+      "id": 2884
+    },
+    "trakt": {
+      "title": "Aachi and Ssipak",
+      "id": 13709,
+      "slug": "aachi-and-ssipak-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 22520,
+      "imdb": "tt0972542",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bleach Movie 2: The DiamondDust Rebellion - Mou Hitotsu no Hyourinmaru",
+      "id": 2889
+    },
+    "trakt": {
+      "title": "Bleach the Movie: The DiamondDust Rebellion",
+      "id": 10461,
+      "slug": "bleach-the-movie-the-diamonddust-rebellion-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 17101,
+      "imdb": "tt1148261",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gake no Ue no Ponyo",
+      "id": 2890
+    },
+    "trakt": {
+      "title": "Ponyo",
+      "id": 7217,
+      "slug": "ponyo-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 12429,
+      "imdb": "tt0876563",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Iblard Jikan",
+      "id": 2891
+    },
+    "trakt": {
+      "title": "Iblard Time",
+      "id": 13178,
+      "slug": "iblard-time-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 21534,
+      "imdb": "tt1161426",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doubutsu no Mori",
+      "id": 2950
+    },
+    "trakt": {
+      "title": "Animal Crossing: The Movie",
+      "id": 12599,
+      "slug": "animal-crossing-the-movie-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 20523,
+      "imdb": "tt1190545",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Adventure Movie",
+      "id": 2961
+    },
+    "trakt": {
+      "title": "Digimon Adventure",
+      "id": 70970,
+      "slug": "digimon-adventure-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 97787,
+      "imdb": "tt2049430",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Adventure 02 Movies",
+      "id": 2962
+    },
+    "trakt": {
+      "title": "Hurricane Touchdown",
+      "id": 71247,
+      "slug": "hurricane-touchdown-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 98299,
+      "imdb": "tt1291055",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Appleseed Saga Ex Machina",
+      "id": 2969
+    },
+    "trakt": {
+      "title": "Appleseed: Ex Machina",
+      "id": 8346,
+      "slug": "appleseed-ex-machina-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 13981,
+      "imdb": "tt1043842",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Chika Gentou Gekiga: Shoujo Tsubaki",
+      "id": 2981
+    },
+    "trakt": {
+      "title": "Midori",
+      "id": 37445,
+      "slug": "midori-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 53064,
+      "imdb": "tt0930902",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Death Note: Rewrite",
+      "id": 2994
+    },
+    "trakt": {
+      "title": "Death Note Relight 2: L's Successors",
+      "id": 49982,
+      "slug": "death-note-relight-2-l-s-successors-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 68555,
+      "imdb": "tt3355698",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Eiyuu Densetsu: Waga Yuku wa Hoshi no Taikai",
+      "id": 3014
+    },
+    "trakt": {
+      "title": "Legend of the Galactic Heroes: My Conquest Is the Sea of Stars",
+      "id": 100892,
+      "slug": "legend-of-the-galactic-heroes-my-conquest-is-the-sea-of-stars-1988",
+      "type": "movies"
+    },
+    "release_year": 1988,
+    "externals": {
+      "tmdb": 154738,
+      "imdb": "tt0095512",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Eiyuu Densetsu Gaiden: Ougon no Tsubasa",
+      "id": 3015
+    },
+    "trakt": {
+      "title": "Legend of the Galactic Heroes: Golden Wings",
+      "id": 100776,
+      "slug": "legend-of-the-galactic-heroes-golden-wings-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 154501,
+      "imdb": "tt2661788",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Eiyuu Densetsu: Arata naru Tatakai no Overture",
+      "id": 3016
+    },
+    "trakt": {
+      "title": "Legend of the Galactic Heroes: Overture to a New War",
+      "id": 100884,
+      "slug": "legend-of-the-galactic-heroes-overture-to-a-new-war-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 154727,
+      "imdb": "tt0107382",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Lupin III: Kiri no Elusive",
       "id": 3019
     },
@@ -2552,6 +5828,150 @@
     "externals": {
       "tmdb": 80863,
       "imdb": "tt1068848",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hokuto no Ken: Yuria-den",
+      "id": 3027
+    },
+    "trakt": {
+      "title": "Fist of the North Star: The Legend of Yuria",
+      "id": 80036,
+      "slug": "fist-of-the-north-star-the-legend-of-yuria-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 114370,
+      "imdb": "tt0456982",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Frontier: Ornismon Fukkatsu!!",
+      "id": 3031
+    },
+    "trakt": {
+      "title": "Digimon Frontier: Revival of Ancient Digimon",
+      "id": 22972,
+      "slug": "digimon-frontier-revival-of-ancient-digimon-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 36198,
+      "imdb": "tt0810832",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Tamers: Boukensha-tachi no Tatakai",
+      "id": 3032
+    },
+    "trakt": {
+      "title": "Digimon Tamers: Battle of Adventurers",
+      "id": 22974,
+      "slug": "digimon-tamers-battle-of-adventurers-2001",
+      "type": "movies"
+    },
+    "release_year": 2001,
+    "externals": {
+      "tmdb": 36200,
+      "imdb": "tt0810831",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Tamers: Bousou Digimon Tokkyuu",
+      "id": 3033
+    },
+    "trakt": {
+      "title": "Digimon Tamers: Runaway Locomon",
+      "id": 22973,
+      "slug": "digimon-tamers-runaway-locomon-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 36199,
+      "imdb": "tt0810833",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Senya Ichiya Monogatari",
+      "id": 3038
+    },
+    "trakt": {
+      "title": "A Thousand and One Nights",
+      "id": 64128,
+      "slug": "a-thousand-and-one-nights-1969",
+      "type": "movies"
+    },
+    "release_year": 1969,
+    "externals": {
+      "tmdb": 85398,
+      "imdb": "tt0064961",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Anime Tenchou",
+      "id": 3080
+    },
+    "trakt": {
+      "title": "Animation Store Manager",
+      "id": 287722,
+      "slug": "animation-store-manager-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 442253,
+      "imdb": "tt4580654",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cencoroll",
+      "id": 3087
+    },
+    "trakt": {
+      "title": "Cencoroll",
+      "id": 24393,
+      "slug": "cencoroll-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 37928,
+      "imdb": "tt1492151",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "The Sky Crawlers",
+      "id": 3089
+    },
+    "trakt": {
+      "title": "The Sky Crawlers",
+      "id": 9704,
+      "slug": "the-sky-crawlers-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 15877,
+      "imdb": "tt1056437",
       "letterboxd": null
     }
   },
@@ -2593,6 +6013,24 @@
   },
   {
     "myanimelist": {
+      "title": ".hack//G.U. Trilogy",
+      "id": 3269
+    },
+    "trakt": {
+      "title": ".hack//G.U. Trilogy",
+      "id": 16199,
+      "slug": "hack-g-u-trilogy-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 26595,
+      "imdb": "tt1164545",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kite Liberator",
       "id": 3323
     },
@@ -2606,6 +6044,24 @@
     "externals": {
       "tmdb": 44885,
       "imdb": "tt1217043",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Biohazard: Degeneration",
+      "id": 3446
+    },
+    "trakt": {
+      "title": "Resident Evil: Damnation",
+      "id": 90277,
+      "slug": "resident-evil-damnation-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 133121,
+      "imdb": "tt1753496",
       "letterboxd": null
     }
   },
@@ -2629,6 +6085,60 @@
   },
   {
     "myanimelist": {
+      "title": "Genius Party",
+      "id": 3508
+    },
+    "trakt": {
+      "title": "Genius Party",
+      "id": 26263,
+      "slug": "genius-party-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 40123,
+      "imdb": "tt0962762",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Tetsudou 999: Eternal Fantasy",
+      "id": 3602
+    },
+    "trakt": {
+      "title": "Galaxy Express 999: Eternal Fantasy",
+      "id": 40782,
+      "slug": "galaxy-express-999-eternal-fantasy-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 57123,
+      "imdb": "tt0169951",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Battle Royal High School",
+      "id": 3625
+    },
+    "trakt": {
+      "title": "Battle Royale High School",
+      "id": 40371,
+      "slug": "battle-royale-high-school-1987",
+      "type": "movies"
+    },
+    "release_year": 1987,
+    "externals": {
+      "tmdb": 56609,
+      "imdb": "tt0158488",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Joker: Marginal City",
       "id": 3661
     },
@@ -2642,6 +6152,60 @@
     "externals": {
       "tmdb": 394520,
       "imdb": "tt6012110",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 01: Nobita no Kyouryuu",
+      "id": 3727
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita's Dinosaur",
+      "id": 46816,
+      "slug": "doraemon-nobita-s-dinosaur-1980",
+      "type": "movies"
+    },
+    "release_year": 1980,
+    "externals": {
+      "tmdb": 64789,
+      "imdb": "tt1147517",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 10: Arashi wo Yobu Appare! Sengoku Daikassen",
+      "id": 3744
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: A Storm-invoking Splendor! The Battle of the Warring States",
+      "id": 81642,
+      "slug": "crayon-shin-chan-a-storm-invoking-splendor-the-battle-of-the-warring-states-2002",
+      "type": "movies"
+    },
+    "release_year": 2002,
+    "externals": {
+      "tmdb": 117084,
+      "imdb": "tt2180443",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 02: Buriburi Oukoku no Hihou",
+      "id": 3745
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: The Hidden Treasure of the Buri Buri Kingdom",
+      "id": 77403,
+      "slug": "crayon-shin-chan-the-hidden-treasure-of-the-buri-buri-kingdom-1994",
+      "type": "movies"
+    },
+    "release_year": 1994,
+    "externals": {
+      "tmdb": 109526,
+      "imdb": "tt0477602",
       "letterboxd": null
     }
   },
@@ -2678,6 +6242,60 @@
     "externals": {
       "tmdb": 23153,
       "imdb": "tt1155652",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Evangelion Movie 2: Ha",
+      "id": 3784
+    },
+    "trakt": {
+      "title": "Evangelion: 2.0 You Can (Not) Advance",
+      "id": 13878,
+      "slug": "evangelion-2-0-you-can-not-advance-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 22843,
+      "imdb": "tt0860906",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Evangelion Movie 3: Q",
+      "id": 3785
+    },
+    "trakt": {
+      "title": "Evangelion: 3.0 You Can (Not) Redo",
+      "id": 55762,
+      "slug": "evangelion-3-0-you-can-not-redo-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 75629,
+      "imdb": "tt0860907",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Evangelion: 3.0+1.0",
+      "id": 3786
+    },
+    "trakt": {
+      "title": "Evangelion: 3.0+1.0 Thrice Upon a Time",
+      "id": 180847,
+      "slug": "evangelion-3-0-1-0-thrice-upon-a-time-2021",
+      "type": "movies"
+    },
+    "release_year": 2021,
+    "externals": {
+      "tmdb": 283566,
+      "imdb": "tt2458948",
       "letterboxd": null
     }
   },
@@ -2732,6 +6350,60 @@
     "externals": {
       "tmdb": 47292,
       "imdb": "tt1160525",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Chuumon no Ooi Ryouriten (1991)",
+      "id": 4095
+    },
+    "trakt": {
+      "title": "The Restaurant of Many Orders",
+      "id": 91954,
+      "slug": "the-restaurant-of-many-orders-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 136601,
+      "imdb": "tt0420551",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Trigun: Badlands Rumble",
+      "id": 4106
+    },
+    "trakt": {
+      "title": "Trigun: Badlands Rumble",
+      "id": 36433,
+      "slug": "trigun-badlands-rumble-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 51859,
+      "imdb": "tt1703049",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tengen Toppa Gurren Lagann Movie 1: Gurren-hen",
+      "id": 4107
+    },
+    "trakt": {
+      "title": "Gurren Lagann The Movie: Childhood's End",
+      "id": 12883,
+      "slug": "gurren-lagann-the-movie-childhood-s-end-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 20986,
+      "imdb": "tt1288461",
       "letterboxd": null
     }
   },
@@ -2809,6 +6481,24 @@
   },
   {
     "myanimelist": {
+      "title": "Hokuto no Ken: Toki-den",
+      "id": 4312
+    },
+    "trakt": {
+      "title": "Fist of the North Star: The Legend of Toki",
+      "id": 80037,
+      "slug": "fist-of-the-north-star-the-legend-of-toki-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 114371,
+      "imdb": "tt0456981",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Lupin III: Green vs. Red",
       "id": 4320
     },
@@ -2881,6 +6571,42 @@
   },
   {
     "myanimelist": {
+      "title": "Hakujaden",
+      "id": 4513
+    },
+    "trakt": {
+      "title": "The Tale of the White Serpent",
+      "id": 46807,
+      "slug": "the-tale-of-the-white-serpent-1958",
+      "type": "movies"
+    },
+    "release_year": 1958,
+    "externals": {
+      "tmdb": 64777,
+      "imdb": "tt0051694",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tengen Toppa Gurren Lagann Movie 2: Lagann-hen",
+      "id": 4565
+    },
+    "trakt": {
+      "title": "Gurren Lagann the Movie: The Lights in the Sky Are Stars",
+      "id": 14154,
+      "slug": "gurren-lagann-the-movie-the-lights-in-the-sky-are-stars-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 23452,
+      "imdb": "tt1422651",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Koukaku Kidoutai 2.0",
       "id": 4672
     },
@@ -2894,6 +6620,24 @@
     "externals": {
       "tmdb": 14092,
       "imdb": "tt1260502",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Heart no Kuni no Alice: Wonderful Wonder World",
+      "id": 4713
+    },
+    "trakt": {
+      "title": "Alice in the Country of Hearts: Wonderful Wonder World",
+      "id": 82382,
+      "slug": "alice-in-the-country-of-hearts-wonderful-wonder-world-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 118306,
+      "imdb": "tt1999166",
       "letterboxd": null
     }
   },
@@ -2935,6 +6679,24 @@
   },
   {
     "myanimelist": {
+      "title": "Bleach Movie 3: Fade to Black - Kimi no Na wo Yobu",
+      "id": 4835
+    },
+    "trakt": {
+      "title": "Bleach the Movie: Fade to Black",
+      "id": 10506,
+      "slug": "bleach-the-movie-fade-to-black-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 17165,
+      "imdb": "tt1339302",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Lupin III: Seven Days Rhapsody",
       "id": 4851
     },
@@ -2948,6 +6710,42 @@
     "externals": {
       "tmdb": 80860,
       "imdb": "tt0846080",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Afro Samurai: Resurrection",
+      "id": 4970
+    },
+    "trakt": {
+      "title": "Afro Samurai: Resurrection",
+      "id": 8891,
+      "slug": "afro-samurai-resurrection-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 14711,
+      "imdb": "tt1265998",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hells",
+      "id": 4983
+    },
+    "trakt": {
+      "title": "Hells",
+      "id": 88449,
+      "slug": "hells-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 129465,
+      "imdb": "tt1313120",
       "letterboxd": null
     }
   },
@@ -3025,6 +6823,60 @@
   },
   {
     "myanimelist": {
+      "title": "Doraemon Movie 28: Nobita to Midori no Kyojin Den",
+      "id": 5096
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Green Giant Legend",
+      "id": 92000,
+      "slug": "doraemon-nobita-and-the-green-giant-legend-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 136686,
+      "imdb": "tt1180304",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball: Ossu! Kaettekita Son Gokuu to Nakama-tachi!!",
+      "id": 5152
+    },
+    "trakt": {
+      "title": "Dragon Ball: Yo! Son Goku and His Friends Return!!",
+      "id": 24950,
+      "slug": "dragon-ball-yo-son-goku-and-his-friends-return-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 38594,
+      "imdb": "tt1317478",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "First Squad: The Moment of Truth",
+      "id": 5178
+    },
+    "trakt": {
+      "title": "First Squad: The Moment of Truth",
+      "id": 14186,
+      "slug": "first-squad-the-moment-of-truth-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 23527,
+      "imdb": "tt1343712",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kara no Kyoukai Movie 6: Boukyaku Rokuon",
       "id": 5204
     },
@@ -3079,6 +6931,24 @@
   },
   {
     "myanimelist": {
+      "title": "Initial D Extra Stage 2",
+      "id": 5228
+    },
+    "trakt": {
+      "title": "Initial D Extra Stage 2",
+      "id": 21977,
+      "slug": "initial-d-extra-stage-2-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 34384,
+      "imdb": "tt3382648",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "One Piece: Romance Dawn Story",
       "id": 5252
     },
@@ -3097,6 +6967,24 @@
   },
   {
     "myanimelist": {
+      "title": "Hokuto no Ken Zero: Kenshirou Den",
+      "id": 5291
+    },
+    "trakt": {
+      "title": "Fist of the North Star: The Legend of Kenshiro",
+      "id": 74928,
+      "slug": "fist-of-the-north-star-the-legend-of-kenshiro-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 105231,
+      "imdb": "tt0456978",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Macross F Movie 1: Itsuwari no Utahime",
       "id": 5310
     },
@@ -3110,6 +6998,42 @@
     "externals": {
       "tmdb": 48625,
       "imdb": "tt1548563",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tsumiki no Ie",
+      "id": 5365
+    },
+    "trakt": {
+      "title": "La Maison en Petits Cubes",
+      "id": 12732,
+      "slug": "la-maison-en-petits-cubes-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 20722,
+      "imdb": "tt1361566",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Street Fighter IV: Aratanaru Kizuna",
+      "id": 5369
+    },
+    "trakt": {
+      "title": "Street Fighter IV: The Ties That Bind",
+      "id": 9993,
+      "slug": "street-fighter-iv-the-ties-that-bind-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 16257,
+      "imdb": "tt1394259",
       "letterboxd": null
     }
   },
@@ -3151,6 +7075,132 @@
   },
   {
     "myanimelist": {
+      "title": "Biohazard 4D-Executer",
+      "id": 5624
+    },
+    "trakt": {
+      "title": "Resident Evil 4D Executer",
+      "id": 886584,
+      "slug": "resident-evil-4d-executer-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 1102104,
+      "imdb": "tt0460411",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Summer Wars",
+      "id": 5681
+    },
+    "trakt": {
+      "title": "Summer Wars",
+      "id": 18089,
+      "slug": "summer-wars-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 28874,
+      "imdb": "tt1474276",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tori no Uta (OVA)",
+      "id": 5819
+    },
+    "trakt": {
+      "title": "Bird Song",
+      "id": 44872,
+      "slug": "bird-song-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 62455,
+      "imdb": "tt2495264",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hashire! Shiroi Ookami",
+      "id": 5936
+    },
+    "trakt": {
+      "title": "White Wolf",
+      "id": 89904,
+      "slug": "white-wolf-1990",
+      "type": "movies"
+    },
+    "release_year": 1990,
+    "externals": {
+      "tmdb": 132376,
+      "imdb": "tt0204365",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hottarake no Shima: Haruka to Mahou no Kagami",
+      "id": 5998
+    },
+    "trakt": {
+      "title": "Oblivion Island: Haruka and the Magic Mirror",
+      "id": 25730,
+      "slug": "oblivion-island-haruka-and-the-magic-mirror-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 39544,
+      "imdb": "tt1468322",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Aquarion Movie: Ippatsu Gyakuten-hen",
+      "id": 6032
+    },
+    "trakt": {
+      "title": "Genesis of Aquarion: Wings of Genesis",
+      "id": 117313,
+      "slug": "genesis-of-aquarion-wings-of-genesis-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 187334,
+      "imdb": "tt5914216",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tales of Vesperia: The First Strike",
+      "id": 6046
+    },
+    "trakt": {
+      "title": "Tales of Vesperia: The First Strike",
+      "id": 25536,
+      "slug": "tales-of-vesperia-the-first-strike-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 39319,
+      "imdb": "tt1520392",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Lupin III vs. Meitantei Conan",
       "id": 6115
     },
@@ -3164,6 +7214,24 @@
     "externals": {
       "tmdb": 46033,
       "imdb": "tt1397219",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tailenders",
+      "id": 6162
+    },
+    "trakt": {
+      "title": "Tailenders",
+      "id": 43478,
+      "slug": "tailenders-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 60705,
+      "imdb": "tt16769860",
       "letterboxd": null
     }
   },
@@ -3187,6 +7255,24 @@
   },
   {
     "myanimelist": {
+      "title": "Crayon Shin-chan Movie 03: Unkokusai no Yabou",
+      "id": 6217
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Unkokusai's Ambition",
+      "id": 74267,
+      "slug": "crayon-shin-chan-unkokusai-s-ambition-1995",
+      "type": "movies"
+    },
+    "release_year": 1995,
+    "externals": {
+      "tmdb": 104154,
+      "imdb": "tt2098658",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Nijiiro Hotaru: Eien no Natsuyasumi",
       "id": 6219
     },
@@ -3200,6 +7286,24 @@
     "externals": {
       "tmdb": 186969,
       "imdb": "tt2450486",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cat Shit One",
+      "id": 6280
+    },
+    "trakt": {
+      "title": "Cat Shit One",
+      "id": 44797,
+      "slug": "cat-shit-one-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 62368,
+      "imdb": "tt2368669",
       "letterboxd": null
     }
   },
@@ -3259,6 +7363,78 @@
   },
   {
     "myanimelist": {
+      "title": "Higashi no Eden Movie I: The King of Eden",
+      "id": 6372
+    },
+    "trakt": {
+      "title": "Eden of the East Movie I: The King of Eden",
+      "id": 22524,
+      "slug": "eden-of-the-east-movie-i-the-king-of-eden-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 35435,
+      "imdb": "tt1460738",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "ef: A Tale of Melodies. - Prologue",
+      "id": 6401
+    },
+    "trakt": {
+      "title": "ef - a tale of melodies. ~prologue~",
+      "id": 415610,
+      "slug": "ef-a-tale-of-melodies-prologue-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 566046,
+      "imdb": null,
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "\"Bungaku Shoujo\" Movie",
+      "id": 6408
+    },
+    "trakt": {
+      "title": "Book Girl",
+      "id": 43457,
+      "slug": "book-girl-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 60669,
+      "imdb": "tt1546649",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 05: Ankoku Tamatama Daitsuiseki",
+      "id": 6460
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Pursuit of the Balls of Darkness",
+      "id": 66741,
+      "slug": "crayon-shin-chan-pursuit-of-the-balls-of-darkness-1997",
+      "type": "movies"
+    },
+    "release_year": 1997,
+    "externals": {
+      "tmdb": 89458,
+      "imdb": "tt0406672",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Meitantei Conan Movie 14: Tenkuu no Lost Ship",
       "id": 6467
     },
@@ -3272,6 +7448,24 @@
     "externals": {
       "tmdb": 97375,
       "imdb": "tt1636815",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ibara no Ou",
+      "id": 6610
+    },
+    "trakt": {
+      "title": "King of Thorn",
+      "id": 35230,
+      "slug": "king-of-thorn-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 50388,
+      "imdb": "tt1690483",
       "letterboxd": null
     }
   },
@@ -3295,6 +7489,42 @@
   },
   {
     "myanimelist": {
+      "title": "Higashi no Eden Movie II: Paradise Lost",
+      "id": 6637
+    },
+    "trakt": {
+      "title": "Eden of the East Movie II: Paradise Lost",
+      "id": 30400,
+      "slug": "eden-of-the-east-movie-ii-paradise-lost-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 44734,
+      "imdb": "tt1468321",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Tetsudou 999: Glass no Clair",
+      "id": 6653
+    },
+    "trakt": {
+      "title": "Galaxy Express 999: Claire of Glass",
+      "id": 58724,
+      "slug": "galaxy-express-999-claire-of-glass-1980",
+      "type": "movies"
+    },
+    "release_year": 1980,
+    "externals": {
+      "tmdb": 79109,
+      "imdb": "tt0185337",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Redline",
       "id": 6675
     },
@@ -3308,6 +7538,150 @@
     "externals": {
       "tmdb": 71883,
       "imdb": "tt1483797",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z: Atsumare! Gokuu World",
+      "id": 6714
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Gather Together! Goku's World",
+      "id": 193554,
+      "slug": "dragon-ball-z-gather-together-goku-s-world-1992",
+      "type": "movies"
+    },
+    "release_year": 1992,
+    "externals": {
+      "tmdb": 299963,
+      "imdb": "tt1517470",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Tetsudou 999: Kimi wa Senshi no You ni Ikirareru ka?",
+      "id": 6733
+    },
+    "trakt": {
+      "title": "Galaxy Express 999: Can You Live Like a Warrior!!",
+      "id": 531542,
+      "slug": "galaxy-express-999-can-you-live-like-a-warrior-1979",
+      "type": "movies"
+    },
+    "release_year": 1979,
+    "externals": {
+      "tmdb": 687383,
+      "imdb": "tt0185339",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ginga Tetsudou 999: Kimi wa Haha no You ni Aiseru ka!!",
+      "id": 6735
+    },
+    "trakt": {
+      "title": "Galaxy Express 999: Can You Love Like a Mother?!!",
+      "id": 543812,
+      "slug": "galaxy-express-999-can-you-love-like-a-mother-1980",
+      "type": "movies"
+    },
+    "release_year": 1980,
+    "externals": {
+      "tmdb": 699971,
+      "imdb": "tt0185338",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Break Blade Movie 1: Kakusei no Toki",
+      "id": 6772
+    },
+    "trakt": {
+      "title": "Broken Blade: The Time of Awakening",
+      "id": 39408,
+      "slug": "broken-blade-the-time-of-awakening-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 55426,
+      "imdb": "tt1663145",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Genius Party Beyond",
+      "id": 6795
+    },
+    "trakt": {
+      "title": "Genius Party Beyond",
+      "id": 57115,
+      "slug": "genius-party-beyond-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 77248,
+      "imdb": "tt1305678",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fate/stay night Movie: Unlimited Blade Works",
+      "id": 6922
+    },
+    "trakt": {
+      "title": "Fate/stay night: Unlimited Blade Works",
+      "id": 31739,
+      "slug": "fate-stay-night-unlimited-blade-works-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 46304,
+      "imdb": "tt1587156",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Higashi no Eden: Air Communication",
+      "id": 6927
+    },
+    "trakt": {
+      "title": "Eden of The East Compilation: Air Communication",
+      "id": 90451,
+      "slug": "eden-of-the-east-compilation-air-communication-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 133481,
+      "imdb": "tt7645878",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 29: Shin Nobita no Uchuu Kaitakushi",
+      "id": 6930
+    },
+    "trakt": {
+      "title": "Doraemon: The New Record of Nobita's Spaceblazer",
+      "id": 69994,
+      "slug": "doraemon-the-new-record-of-nobita-s-spaceblazer-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 95935,
+      "imdb": "tt1264885",
       "letterboxd": null
     }
   },
@@ -3349,6 +7723,78 @@
   },
   {
     "myanimelist": {
+      "title": "Doraemon Movie 30: Nobita no Ningyo Daikaisen",
+      "id": 6988
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita's Great Battle of the Mermaid King",
+      "id": 64773,
+      "slug": "doraemon-nobita-s-great-battle-of-the-mermaid-king-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 86184,
+      "imdb": "tt1613031",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tezuka Osamu no Buddha: Akai Sabaku yo! Utsukushiku",
+      "id": 7014
+    },
+    "trakt": {
+      "title": "Buddha: The Great Departure",
+      "id": 80967,
+      "slug": "buddha-the-great-departure-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 115969,
+      "imdb": "tt1686865",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 21: Nobita no Taiyou Ou Densetsu",
+      "id": 7045
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Legend of the Sun King",
+      "id": 20051,
+      "slug": "doraemon-nobita-and-the-legend-of-the-sun-king-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 31352,
+      "imdb": "tt1147513",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Black★Rock Shooter (OVA)",
+      "id": 7059
+    },
+    "trakt": {
+      "title": "Black★Rock Shooter",
+      "id": 41573,
+      "slug": "black-rock-shooter-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 58107,
+      "imdb": "tt1827378",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Mahou Sensei Negima! Movie: Anime Final",
       "id": 7135
     },
@@ -3362,6 +7808,24 @@
     "externals": {
       "tmdb": 102070,
       "imdb": "tt3818692",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Uchuu Senkan Yamato: Fukkatsu-hen",
+      "id": 7144
+    },
+    "trakt": {
+      "title": "Space Battleship Yamato Resurrection",
+      "id": 32838,
+      "slug": "space-battleship-yamato-resurrection-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 47556,
+      "imdb": "tt1442543",
       "letterboxd": null
     }
   },
@@ -3398,6 +7862,78 @@
     "externals": {
       "tmdb": 497537,
       "imdb": "tt8942902",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Suzumiya Haruhi no Shoushitsu",
+      "id": 7311
+    },
+    "trakt": {
+      "title": "The Disappearance of Haruhi Suzumiya",
+      "id": 23477,
+      "slug": "the-disappearance-of-haruhi-suzumiya-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 36865,
+      "imdb": "tt1572781",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hetalia Axis Powers Movie: Paint it, White",
+      "id": 7337
+    },
+    "trakt": {
+      "title": "Hetalia: Axis Powers: Paint It, White!",
+      "id": 83032,
+      "slug": "hetalia-axis-powers-paint-it-white-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 119441,
+      "imdb": "tt2653882",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Eve no Jikan (Movie)",
+      "id": 7465
+    },
+    "trakt": {
+      "title": "Time of EVE: The Movie",
+      "id": 142837,
+      "slug": "time-of-eve-the-movie-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 234284,
+      "imdb": "tt1715210",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gintama Movie 1: Shinyaku Benizakura-hen",
+      "id": 7472
+    },
+    "trakt": {
+      "title": "Gintama: The Movie",
+      "id": 52188,
+      "slug": "gintama-the-movie-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 71172,
+      "imdb": "tt1636780",
       "letterboxd": null
     }
   },
@@ -3493,6 +8029,60 @@
   },
   {
     "myanimelist": {
+      "title": "Uchuu Show e Youkoso",
+      "id": 8115
+    },
+    "trakt": {
+      "title": "Welcome to the Space Show",
+      "id": 44183,
+      "slug": "welcome-to-the-space-show-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 61591,
+      "imdb": "tt1679681",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Colorful (Movie)",
+      "id": 8142
+    },
+    "trakt": {
+      "title": "Colorful",
+      "id": 46374,
+      "slug": "colorful-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 64246,
+      "imdb": "tt1677561",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fumiko no Kokuhaku",
+      "id": 8187
+    },
+    "trakt": {
+      "title": "Fumiko's Confession",
+      "id": 54253,
+      "slug": "fumiko-s-confession-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 73786,
+      "imdb": "tt3970004",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Naruto: Shippuuden Movie 4 - The Lost Tower",
       "id": 8246
     },
@@ -3506,6 +8096,258 @@
     "externals": {
       "tmdb": 50723,
       "imdb": "tt1703048",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bleach Movie 4: Jigoku-hen",
+      "id": 8247
+    },
+    "trakt": {
+      "title": "Bleach the Movie: Hell Verse",
+      "id": 53833,
+      "slug": "bleach-the-movie-hell-verse-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 73245,
+      "imdb": "tt1785394",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shoka",
+      "id": 8337
+    },
+    "trakt": {
+      "title": "Shoka",
+      "id": 22476,
+      "slug": "shoka-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 35267,
+      "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 01: Action Kamen vs. Haigure Maou",
+      "id": 8358
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Action Mask vs. Leotard Devil",
+      "id": 88118,
+      "slug": "crayon-shin-chan-action-mask-vs-leotard-devil-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 128868,
+      "imdb": "tt0409848",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 04: Henderland no Daibouken",
+      "id": 8359
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Great Adventure In Henderland",
+      "id": 88120,
+      "slug": "crayon-shin-chan-great-adventure-in-henderland-1996",
+      "type": "movies"
+    },
+    "release_year": 1996,
+    "externals": {
+      "tmdb": 128871,
+      "imdb": "tt2643796",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 06: Dengeki! Buta no Hizume Daisakusen",
+      "id": 8360
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Dengeki! Buta no Hizume Daisakusen",
+      "id": 88123,
+      "slug": "crayon-shin-chan-dengeki-buta-no-hizume-daisakusen-1998",
+      "type": "movies"
+    },
+    "release_year": 1998,
+    "externals": {
+      "tmdb": 128875,
+      "imdb": "tt2643808",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 07: Bakuhatsu! Onsen Wakuwaku Daikessen",
+      "id": 8361
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Explosion! The Hot Spring's Feel Good Final Battle",
+      "id": 88125,
+      "slug": "crayon-shin-chan-explosion-the-hot-spring-s-feel-good-final-battle-1999",
+      "type": "movies"
+    },
+    "release_year": 1999,
+    "externals": {
+      "tmdb": 128878,
+      "imdb": "tt2643818",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 08: Arashi wo Yobu Jungle",
+      "id": 8362
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: A Storm-Invoking Jungle",
+      "id": 81645,
+      "slug": "crayon-shin-chan-a-storm-invoking-jungle-2000",
+      "type": "movies"
+    },
+    "release_year": 2000,
+    "externals": {
+      "tmdb": 117087,
+      "imdb": "tt2180441",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 11: Arashi wo Yobu Eikou no Yakiniku Road",
+      "id": 8363
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: The Glorious Storm-invoking Yakiniku Road",
+      "id": 73704,
+      "slug": "crayon-shin-chan-the-glorious-storm-invoking-yakiniku-road-2003",
+      "type": "movies"
+    },
+    "release_year": 2003,
+    "externals": {
+      "tmdb": 103124,
+      "imdb": "tt1149379",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 12: Arashi wo Yobu! Yuuhi no Kasukabe Boys",
+      "id": 8364
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Invoke a Storm! The Kasukabe Boys of the Evening Sun",
+      "id": 103748,
+      "slug": "crayon-shin-chan-invoke-a-storm-the-kasukabe-boys-of-the-evening-sun-2004",
+      "type": "movies"
+    },
+    "release_year": 2004,
+    "externals": {
+      "tmdb": 160446,
+      "imdb": "tt0769760",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 14: Densetsu wo Yobu Odore! Amigo!",
+      "id": 8366
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: The Legend Called Dance! Amigo!",
+      "id": 88129,
+      "slug": "crayon-shin-chan-the-legend-called-dance-amigo-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 128883,
+      "imdb": "tt1033485",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 16: Chou Arashi wo Yobu Kinpoko no Yuusha",
+      "id": 8367
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Invoke a Super Storm! The Hero of Kinpoko",
+      "id": 88117,
+      "slug": "crayon-shin-chan-invoke-a-super-storm-the-hero-of-kinpoko-2008",
+      "type": "movies"
+    },
+    "release_year": 2008,
+    "externals": {
+      "tmdb": 128867,
+      "imdb": "tt1220673",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 17: Otakebe! Kasukabe Yasei Oukoku",
+      "id": 8368
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Roar! Kasukabe Animal Kingdom",
+      "id": 88133,
+      "slug": "crayon-shin-chan-roar-kasukabe-animal-kingdom-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 128887,
+      "imdb": "tt1388333",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 18: Chou Jikuu! Arashi wo Yobu Ora no Hanayome",
+      "id": 8369
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Super-Dimension! The Storm Called My Bride",
+      "id": 81801,
+      "slug": "crayon-shin-chan-super-dimension-the-storm-called-my-bride-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 117352,
+      "imdb": "tt1623674",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Asura",
+      "id": 8475
+    },
+    "trakt": {
+      "title": "Asura",
+      "id": 114273,
+      "slug": "asura-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 181656,
+      "imdb": "tt2328505",
       "letterboxd": null
     }
   },
@@ -3529,6 +8371,60 @@
   },
   {
     "myanimelist": {
+      "title": "Digimon Savers 3D: Digital World Kiki Ippatsu!",
+      "id": 8491
+    },
+    "trakt": {
+      "title": "Digimon Savers 3D: The Digital World in Imminent Danger!",
+      "id": 98157,
+      "slug": "digimon-savers-3d-the-digital-world-in-imminent-danger-2006",
+      "type": "movies"
+    },
+    "release_year": 2006,
+    "externals": {
+      "tmdb": 1106304,
+      "imdb": "tt5328606",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Break Blade Movie 2: Ketsubetsu no Michi",
+      "id": 8514
+    },
+    "trakt": {
+      "title": "Broken Blade: The Path of Separation",
+      "id": 39410,
+      "slug": "broken-blade-the-path-of-separation-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 55430,
+      "imdb": "tt1679583",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dr. Slump Movie 11: Dr. Mashirito \u0026 Abale-chan",
+      "id": 8551
+    },
+    "trakt": {
+      "title": "Dr. Slump: Dr. Mashirito and Abale-chan",
+      "id": 96732,
+      "slug": "dr-slump-dr-mashirito-and-abale-chan-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 146097,
+      "imdb": "tt15168882",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "One Piece Film: Strong World Episode 0",
       "id": 8740
     },
@@ -3542,6 +8438,24 @@
     "externals": {
       "tmdb": 270413,
       "imdb": "tt7947592",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Code Geass: Boukoku no Akito 1 - Yokuryuu wa Maiorita",
+      "id": 8888
+    },
+    "trakt": {
+      "title": "Code Geass: Akito the Exiled 1: The Wyvern Arrives",
+      "id": 116330,
+      "slug": "code-geass-akito-the-exiled-1-the-wyvern-arrives-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 185526,
+      "imdb": "tt3354096",
       "letterboxd": null
     }
   },
@@ -3583,6 +8497,60 @@
   },
   {
     "myanimelist": {
+      "title": "Toaru Hikuushi e no Tsuioku",
+      "id": 9000
+    },
+    "trakt": {
+      "title": "The Princess and the Pilot",
+      "id": 68620,
+      "slug": "the-princess-and-the-pilot-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 93013,
+      "imdb": "tt2113091",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Inazuma Eleven: Saikyou Gundan Ogre Shuurai",
+      "id": 9032
+    },
+    "trakt": {
+      "title": "Inazuma Eleven the Movie: The Ultimate Force, Team Ogre, Attacks!",
+      "id": 82377,
+      "slug": "inazuma-eleven-the-movie-the-ultimate-force-team-ogre-attacks-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 118301,
+      "imdb": "tt1794796",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fullmetal Alchemist: The Sacred Star of Milos",
+      "id": 9135
+    },
+    "trakt": {
+      "title": "Fullmetal Alchemist: The Sacred Star of Milos",
+      "id": 59959,
+      "slug": "fullmetal-alchemist-the-sacred-star-of-milos-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 80518,
+      "imdb": "tt1776196",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Omae Umasou da na",
       "id": 9204
     },
@@ -3596,6 +8564,24 @@
     "externals": {
       "tmdb": 89825,
       "imdb": "tt1734113",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Break Blade Movie 3: Kyoujin no Ato",
+      "id": 9252
+    },
+    "trakt": {
+      "title": "Broken Blade: Scars from an Assassin's Blade",
+      "id": 39411,
+      "slug": "broken-blade-scars-from-an-assassin-s-blade-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 55431,
+      "imdb": "tt1726641",
       "letterboxd": null
     }
   },
@@ -3637,6 +8623,60 @@
   },
   {
     "myanimelist": {
+      "title": "Break Blade Movie 4: Sanka no Chi",
+      "id": 9465
+    },
+    "trakt": {
+      "title": "Broken Blade: The Land of Calamity",
+      "id": 39415,
+      "slug": "broken-blade-the-land-of-calamity-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 55435,
+      "imdb": "tt1753855",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Cencoroll Connect",
+      "id": 9488
+    },
+    "trakt": {
+      "title": "Cencoroll Connect",
+      "id": 390592,
+      "slug": "cencoroll-connect-2019",
+      "type": "movies"
+    },
+    "release_year": 2019,
+    "externals": {
+      "tmdb": 539140,
+      "imdb": "tt3741646",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Highschool of the Dead: Drifters of the Dead",
+      "id": 9515
+    },
+    "trakt": {
+      "title": "High School of the Dead: Drifters of the Dead",
+      "id": 126548,
+      "slug": "high-school-of-the-dead-drifters-of-the-dead-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 203101,
+      "imdb": "tt5799076",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Minori Scramble!",
       "id": 9523
     },
@@ -3655,6 +8695,24 @@
   },
   {
     "myanimelist": {
+      "title": "Yuri Seijin Naoko-san",
+      "id": 9608
+    },
+    "trakt": {
+      "title": "Lesbian Citizen Naoko-san",
+      "id": 222679,
+      "slug": "lesbian-citizen-naoko-san-2010",
+      "type": "movies"
+    },
+    "release_year": 2010,
+    "externals": {
+      "tmdb": 358689,
+      "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "K-On! Movie",
       "id": 9617
     },
@@ -3668,6 +8726,96 @@
     "externals": {
       "tmdb": 120811,
       "imdb": "tt1909796",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Break Blade Movie 5: Shisen no Hate",
+      "id": 9724
+    },
+    "trakt": {
+      "title": "Broken Blade: The Gap Between Life and Death",
+      "id": 39417,
+      "slug": "broken-blade-the-gap-between-life-and-death-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 55437,
+      "imdb": "tt1809274",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sengoku Basara Movie: The Last Party",
+      "id": 9745
+    },
+    "trakt": {
+      "title": "Sengoku Basara: The Last Party",
+      "id": 60879,
+      "slug": "sengoku-basara-the-last-party-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 81531,
+      "imdb": "tt1948563",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Strike Witches Movie",
+      "id": 9751
+    },
+    "trakt": {
+      "title": "Strike Witches the Movie",
+      "id": 30346,
+      "slug": "strike-witches-the-movie-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 44667,
+      "imdb": "tt2322603",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hoshi wo Ou Kodomo",
+      "id": 9760
+    },
+    "trakt": {
+      "title": "Children Who Chase Lost Voices",
+      "id": 59248,
+      "slug": "children-who-chase-lost-voices-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 79707,
+      "imdb": "tt1839494",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sora no Otoshimono: Tokeijikake no Angeloid",
+      "id": 9790
+    },
+    "trakt": {
+      "title": "Heaven's Lost Property the Movie: The Angeloid of Clockwork",
+      "id": 69629,
+      "slug": "heaven-s-lost-property-the-movie-the-angeloid-of-clockwork-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 95170,
+      "imdb": "tt1974262",
       "letterboxd": null
     }
   },
@@ -3704,6 +8852,24 @@
     "externals": {
       "tmdb": 88557,
       "imdb": "tt1739212",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hayate no Gotoku! Heaven Is a Place on Earth",
+      "id": 9958
+    },
+    "trakt": {
+      "title": "Hayate the Combat Butler! Heaven is a Place on Earth",
+      "id": 60857,
+      "slug": "hayate-the-combat-butler-heaven-is-a-place-on-earth-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 81505,
+      "imdb": "tt3818654",
       "letterboxd": null
     }
   },
@@ -3781,6 +8947,78 @@
   },
   {
     "myanimelist": {
+      "title": "Dragon Ball: Super Saiya-jin Zetsumetsu Keikaku",
+      "id": 10017
+    },
+    "trakt": {
+      "title": "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
+      "id": 487813,
+      "slug": "dragon-ball-z-side-story-plan-to-eradicate-the-saiyans-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 652754,
+      "imdb": "tt1286785",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Coquelicot-zaka kara",
+      "id": 10029
+    },
+    "trakt": {
+      "title": "From Up on Poppy Hill",
+      "id": 62438,
+      "slug": "from-up-on-poppy-hill-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 83389,
+      "imdb": "tt1798188",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Break Blade Movie 6: Doukoku no Toride",
+      "id": 10092
+    },
+    "trakt": {
+      "title": "Broken Blade: Fortress of Lamentation",
+      "id": 39418,
+      "slug": "broken-blade-fortress-of-lamentation-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 55438,
+      "imdb": "tt1865375",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 19: Arashi wo Yobu Ougon no Spy Daisakusen",
+      "id": 10116
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Fierceness That Invites Storm! Operation Golden Spy",
+      "id": 105419,
+      "slug": "crayon-shin-chan-fierceness-that-invites-storm-operation-golden-spy-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 163754,
+      "imdb": "tt1887784",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Mahou Shoujo Lyrical Nanoha: The Movie 2nd A's",
       "id": 10153
     },
@@ -3799,6 +9037,78 @@
   },
   {
     "myanimelist": {
+      "title": "Baby Princess 3D Paradise 0 [Love]",
+      "id": 10196
+    },
+    "trakt": {
+      "title": "Baby Princess 3D Paradise Love",
+      "id": 74246,
+      "slug": "baby-princess-3d-paradise-love-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 104125,
+      "imdb": "tt2923542",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Berserk: Ougon Jidai-hen I - Haou no Tamago",
+      "id": 10218
+    },
+    "trakt": {
+      "title": "Berserk: The Golden Age Arc I - The Egg of the King",
+      "id": 79366,
+      "slug": "berserk-the-golden-age-arc-i-the-egg-of-the-king-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 113082,
+      "imdb": "tt2210479",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Da Yu Hai Tang (Movie)",
+      "id": 10259
+    },
+    "trakt": {
+      "title": "Big Fish \u0026 Begonia",
+      "id": 169676,
+      "slug": "big-fish-begonia-2016",
+      "type": "movies"
+    },
+    "release_year": 2016,
+    "externals": {
+      "tmdb": 271706,
+      "imdb": "tt1920885",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Towa no Quon 1: Utakata no Kaben",
+      "id": 10294
+    },
+    "trakt": {
+      "title": "Towa no Quon 1: The Ephemeral Petals",
+      "id": 113481,
+      "slug": "towa-no-quon-1-the-ephemeral-petals-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 179923,
+      "imdb": "tt3565112",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Momo e no Tegami",
       "id": 10389
     },
@@ -3812,6 +9122,42 @@
     "externals": {
       "tmdb": 100271,
       "imdb": "tt1853614",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hotarubi no Mori e",
+      "id": 10408
+    },
+    "trakt": {
+      "title": "Hotarubi no Mori e",
+      "id": 68271,
+      "slug": "hotarubi-no-mori-e-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 92321,
+      "imdb": "tt2061702",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gyo",
+      "id": 10417
+    },
+    "trakt": {
+      "title": "Gyo: Tokyo Fish Attack",
+      "id": 69383,
+      "slug": "gyo-tokyo-fish-attack-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 94684,
+      "imdb": "tt1857718",
       "letterboxd": null
     }
   },
@@ -3853,6 +9199,42 @@
   },
   {
     "myanimelist": {
+      "title": "Tansu Warashi.",
+      "id": 10502
+    },
+    "trakt": {
+      "title": "Drawer Hobs",
+      "id": 158787,
+      "slug": "drawer-hobs-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 259488,
+      "imdb": "tt1965136",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 31: Shin Nobita to Tetsujin Heidan - Habatake Tenshi-tachi",
+      "id": 10534
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the New Steel Troops: Winged Angels",
+      "id": 92303,
+      "slug": "doraemon-nobita-and-the-new-steel-troops-winged-angels-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 137227,
+      "imdb": "tt1851909",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Naruto: Shippuuden Movie 5 - Blood Prison",
       "id": 10589
     },
@@ -3884,6 +9266,42 @@
     "externals": {
       "tmdb": 73530,
       "imdb": "tt2048804",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Deva Zan",
+      "id": 10639
+    },
+    "trakt": {
+      "title": "Deva Zan",
+      "id": 694295,
+      "slug": "deva-zan-2016",
+      "type": "movies"
+    },
+    "release_year": 2016,
+    "externals": {
+      "tmdb": 866576,
+      "imdb": "tt1636847",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Blood-C: The Last Dark",
+      "id": 10681
+    },
+    "trakt": {
+      "title": "Blood-C: The Last Dark",
+      "id": 109348,
+      "slug": "blood-c-the-last-dark-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 171823,
+      "imdb": "tt1941466",
       "letterboxd": null
     }
   },
@@ -3961,6 +9379,114 @@
   },
   {
     "myanimelist": {
+      "title": "Tekken: Blood Vengeance",
+      "id": 10702
+    },
+    "trakt": {
+      "title": "TEKKEN: Blood Vengeance",
+      "id": 59088,
+      "slug": "tekken-blood-vengeance-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 79516,
+      "imdb": "tt2005363",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Towa no Quon 2: Konton no Ranbu",
+      "id": 10713
+    },
+    "trakt": {
+      "title": "Towa no Quon 2: Dancing Orchid in Chaos",
+      "id": 113484,
+      "slug": "towa-no-quon-2-dancing-orchid-in-chaos-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 179930,
+      "imdb": "tt3565136",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Towa no Quon 3: Mugen no Renza",
+      "id": 10714
+    },
+    "trakt": {
+      "title": "Towa no Quon 3: The Complicity of Dreams",
+      "id": 113485,
+      "slug": "towa-no-quon-3-the-complicity-of-dreams-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 179931,
+      "imdb": "tt3565148",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Towa no Quon 4: Guren no Shoushin",
+      "id": 10715
+    },
+    "trakt": {
+      "title": "Towa no Quon 4: The Roaring Anxiety",
+      "id": 113486,
+      "slug": "towa-no-quon-4-the-roaring-anxiety-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 179932,
+      "imdb": "tt3565158",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Towa no Quon 5: Souzetsu no Raifuku",
+      "id": 10716
+    },
+    "trakt": {
+      "title": "Towa no Quon 5: The Return of the Invincible",
+      "id": 113487,
+      "slug": "towa-no-quon-5-the-return-of-the-invincible-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 179933,
+      "imdb": "tt3565160",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Towa no Quon 6: Towa no Quon",
+      "id": 10717
+    },
+    "trakt": {
+      "title": "Towa no Quon 6: Eternal Quon",
+      "id": 113488,
+      "slug": "towa-no-quon-6-eternal-quon-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 179934,
+      "imdb": "tt3565164",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pokemon Movie 14 Black: Victini to Shiroki Eiyuu Reshiram",
       "id": 10740
     },
@@ -4015,6 +9541,114 @@
   },
   {
     "myanimelist": {
+      "title": "Toshokan Sensou: Kakumei no Tsubasa",
+      "id": 11001
+    },
+    "trakt": {
+      "title": "Library War: The Wings of Revolution",
+      "id": 107561,
+      "slug": "library-war-the-wings-of-revolution-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 168273,
+      "imdb": "tt2220674",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Doraemon Movie 32: Nobita to Kiseki no Shima - Animal Adventure",
+      "id": 11053
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Island of Miracles – Animal Adventure",
+      "id": 103830,
+      "slug": "doraemon-nobita-and-the-island-of-miracles-animal-adventure-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 160642,
+      "imdb": "tt2271315",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": ".hack//The Movie: Sekai no Mukou ni",
+      "id": 11375
+    },
+    "trakt": {
+      "title": ".hack//The Movie",
+      "id": 87752,
+      "slug": "hack-the-movie-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 128253,
+      "imdb": "tt2064704",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hell Target",
+      "id": 11411
+    },
+    "trakt": {
+      "title": "Hell Target",
+      "id": 54181,
+      "slug": "hell-target-1987",
+      "type": "movies"
+    },
+    "release_year": 1987,
+    "externals": {
+      "tmdb": 73708,
+      "imdb": "tt8124060",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Un-Go: Inga-ron",
+      "id": 11531
+    },
+    "trakt": {
+      "title": "UN-GO episode:0 INGA-RON",
+      "id": 80528,
+      "slug": "un-go-episode-0-inga-ron-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 115264,
+      "imdb": "tt2118024",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Steins;Gate Movie: Fuka Ryouiki no Déjà vu",
+      "id": 11577
+    },
+    "trakt": {
+      "title": "Steins;Gate: The Movie - Load Region of Déjà Vu",
+      "id": 138219,
+      "slug": "steins-gate-the-movie-load-region-of-deja-vu-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 225745,
+      "imdb": "tt2967286",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Sacred Seven: Shirogane no Tsubasa",
       "id": 11635
     },
@@ -4028,6 +9662,78 @@
     "externals": {
       "tmdb": 411712,
       "imdb": "tt2141927",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Age: Blood Mage no Seisen",
+      "id": 11705
+    },
+    "trakt": {
+      "title": "Dragon Age: Dawn of the Seeker",
+      "id": 73734,
+      "slug": "dragon-age-dawn-of-the-seeker-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 103173,
+      "imdb": "tt1709652",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Coluboccoro",
+      "id": 11735
+    },
+    "trakt": {
+      "title": "Coluboccoro",
+      "id": 280474,
+      "slug": "coluboccoro-2007",
+      "type": "movies"
+    },
+    "release_year": 2007,
+    "externals": {
+      "tmdb": 416268,
+      "imdb": "tt10940888",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ao no Exorcist Movie",
+      "id": 11737
+    },
+    "trakt": {
+      "title": "Blue Exorcist: The Movie",
+      "id": 125497,
+      "slug": "blue-exorcist-the-movie-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 201223,
+      "imdb": "tt3028018",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Toaru Majutsu no Index Movie: Endymion no Kiseki",
+      "id": 11743
+    },
+    "trakt": {
+      "title": "A Certain Magical Index: The Miracle of Endymion",
+      "id": 135004,
+      "slug": "a-certain-magical-index-the-miracle-of-endymion-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 219250,
+      "imdb": "tt3163844",
       "letterboxd": null
     }
   },
@@ -4123,6 +9829,78 @@
   },
   {
     "myanimelist": {
+      "title": "Tiger \u0026 Bunny Movie 1: The Beginning",
+      "id": 12015
+    },
+    "trakt": {
+      "title": "TIGER \u0026 BUNNY: The Beginning",
+      "id": 112868,
+      "slug": "tiger-bunny-the-beginning-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 178592,
+      "imdb": "tt2507174",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tiger \u0026 Bunny Movie 2: The Rising",
+      "id": 12017
+    },
+    "trakt": {
+      "title": "TIGER \u0026 BUNNY: The Rising",
+      "id": 158265,
+      "slug": "tiger-bunny-the-rising-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 258807,
+      "imdb": "tt3204012",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dwaeji-ui Wang",
+      "id": 12035
+    },
+    "trakt": {
+      "title": "The King of Pigs",
+      "id": 67622,
+      "slug": "the-king-of-pigs-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 91088,
+      "imdb": "tt2086830",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fairy Tail Movie 1: Houou no Miko",
+      "id": 12049
+    },
+    "trakt": {
+      "title": "Fairy Tail: Phoenix Priestess",
+      "id": 91425,
+      "slug": "fairy-tail-phoenix-priestess-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 135531,
+      "imdb": "tt2085795",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Mardock Scramble: The Third Exhaust",
       "id": 12053
     },
@@ -4136,6 +9914,42 @@
     "externals": {
       "tmdb": 122662,
       "imdb": "tt2423504",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Berserk: Ougon Jidai-hen II - Doldrey Kouryaku",
+      "id": 12113
+    },
+    "trakt": {
+      "title": "Berserk: The Golden Age Arc II - The Battle for Doldrey",
+      "id": 82440,
+      "slug": "berserk-the-golden-age-arc-ii-the-battle-for-doldrey-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 118412,
+      "imdb": "tt2358911",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Berserk: Ougon Jidai-hen III - Kourin",
+      "id": 12115
+    },
+    "trakt": {
+      "title": "Berserk: The Golden Age Arc III - The Advent",
+      "id": 95797,
+      "slug": "berserk-the-golden-age-arc-iii-the-advent-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 144288,
+      "imdb": "tt2358913",
       "letterboxd": null
     }
   },
@@ -4213,6 +10027,96 @@
   },
   {
     "myanimelist": {
+      "title": "Yuri Seijin Naoko-san (2012)",
+      "id": 12437
+    },
+    "trakt": {
+      "title": "Lesbian Citizen Naoko-san",
+      "id": 222678,
+      "slug": "lesbian-citizen-naoko-san-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 358682,
+      "imdb": "tt6010420",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sakasama no Patema",
+      "id": 12477
+    },
+    "trakt": {
+      "title": "Patema Inverted",
+      "id": 131230,
+      "slug": "patema-inverted-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 212167,
+      "imdb": "tt2981768",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Crayon Shin-chan Movie 20: Arashi wo Yobu! Ora to Uchuu no Princess",
+      "id": 12499
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Invoke a Storm! Me and the Space Princess",
+      "id": 105427,
+      "slug": "crayon-shin-chan-invoke-a-storm-me-and-the-space-princess-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 163772,
+      "imdb": "tt2368717",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fate/Prototype",
+      "id": 12565
+    },
+    "trakt": {
+      "title": "Fate/Prototype",
+      "id": 260537,
+      "slug": "fate-prototype-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 415547,
+      "imdb": "tt8047180",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ijime: Ikenie no Kyoushitsu",
+      "id": 12599
+    },
+    "trakt": {
+      "title": "Ijime: Ikenie no Kyoushitsu",
+      "id": 581029,
+      "slug": "ijime-ikenie-no-kyoushitsu-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 740128,
+      "imdb": "tt7106942",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pokemon Movie 15: Kyurem vs. Seikenshi",
       "id": 12671
     },
@@ -4226,6 +10130,42 @@
     "externals": {
       "tmdb": 150213,
       "imdb": "tt2549540",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sora no Otoshimono Final: Eternal My Master",
+      "id": 12783
+    },
+    "trakt": {
+      "title": "Heaven's Lost Property Final – The Movie: Eternally My Master",
+      "id": 149906,
+      "slug": "heaven-s-lost-property-final-the-movie-eternally-my-master-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 246464,
+      "imdb": "tt3438514",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Star Driver the Movie",
+      "id": 12857
+    },
+    "trakt": {
+      "title": "STAR DRIVER: The Movie",
+      "id": 169897,
+      "slug": "star-driver-the-movie-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 271948,
+      "imdb": "tt3859712",
       "letterboxd": null
     }
   },
@@ -4267,6 +10207,42 @@
   },
   {
     "myanimelist": {
+      "title": "Buta",
+      "id": 13169
+    },
+    "trakt": {
+      "title": "BUTA",
+      "id": 158789,
+      "slug": "buta-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 259490,
+      "imdb": "tt7098070",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Wasurenagumo",
+      "id": 13171
+    },
+    "trakt": {
+      "title": "Li'l Spider Girl",
+      "id": 86965,
+      "slug": "li-l-spider-girl-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 126830,
+      "imdb": "tt2345761",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pukapuka Juju",
       "id": 13173
     },
@@ -4280,6 +10256,42 @@
     "externals": {
       "tmdb": 259494,
       "imdb": "tt2505452",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shiranpuri (Special)",
+      "id": 13175
+    },
+    "trakt": {
+      "title": "Pretending Not to See",
+      "id": 104389,
+      "slug": "pretending-not-to-see-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 161688,
+      "imdb": "tt3264582",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Guskou Budori no Denki (2012)",
+      "id": 13215
+    },
+    "trakt": {
+      "title": "The Life of Budori Gusuko",
+      "id": 82436,
+      "slug": "the-life-of-budori-gusuko-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 118408,
+      "imdb": "tt2391821",
       "letterboxd": null
     }
   },
@@ -4321,6 +10333,60 @@
   },
   {
     "myanimelist": {
+      "title": "Blossom",
+      "id": 13253
+    },
+    "trakt": {
+      "title": "Blossom",
+      "id": 112881,
+      "slug": "blossom-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 178618,
+      "imdb": "tt2918982",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hunter x Hunter Movie 1: Phantom Rouge",
+      "id": 13271
+    },
+    "trakt": {
+      "title": "Hunter x Hunter: Phantom Rouge",
+      "id": 131019,
+      "slug": "hunter-x-hunter-phantom-rouge-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 211755,
+      "imdb": "tt2918988",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fuse: Teppou Musume no Torimonochou",
+      "id": 13335
+    },
+    "trakt": {
+      "title": "Fusé: Memoirs of a Huntress",
+      "id": 127403,
+      "slug": "fuse-memoirs-of-a-huntress-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 204755,
+      "imdb": "tt2403867",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Rakuen Tsuihou",
       "id": 13391
     },
@@ -4334,6 +10400,24 @@
     "externals": {
       "tmdb": 304023,
       "imdb": "tt2859246",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hi no Youjin",
+      "id": 13639
+    },
+    "trakt": {
+      "title": "Combustible",
+      "id": 82740,
+      "slug": "combustible-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 118932,
+      "imdb": "tt2508466",
       "letterboxd": null
     }
   },
@@ -4370,6 +10454,42 @@
     "externals": {
       "tmdb": 188817,
       "imdb": "tt7114440",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fashion no Hajimari",
+      "id": 13793
+    },
+    "trakt": {
+      "title": "Beginning of Fashion",
+      "id": 320812,
+      "slug": "beginning-of-fashion-2005",
+      "type": "movies"
+    },
+    "release_year": 2005,
+    "externals": {
+      "tmdb": 442248,
+      "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Corpse Party: Missing Footage",
+      "id": 13807
+    },
+    "trakt": {
+      "title": "Corpse Party: Missing Footage",
+      "id": 261889,
+      "slug": "corpse-party-missing-footage-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 357804,
+      "imdb": "tt4127328",
       "letterboxd": null
     }
   },
@@ -4429,6 +10549,78 @@
   },
   {
     "myanimelist": {
+      "title": "Arve Rezzle: Kikaijikake no Yousei-tachi",
+      "id": 13863
+    },
+    "trakt": {
+      "title": "Arve Rezzle: Mechanized Fairies",
+      "id": 152452,
+      "slug": "arve-rezzle-mechanized-fairies-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 251385,
+      "imdb": "tt11807958",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Houkago Midnighters",
+      "id": 13935
+    },
+    "trakt": {
+      "title": "After School Midnighters",
+      "id": 82739,
+      "slug": "after-school-midnighters-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 118931,
+      "imdb": "tt2332523",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "663114",
+      "id": 13971
+    },
+    "trakt": {
+      "title": "663114",
+      "id": 112662,
+      "slug": "663114-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 178143,
+      "imdb": "tt1982597",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hanasaku Iroha Movie: Home Sweet Home",
+      "id": 14175
+    },
+    "trakt": {
+      "title": "Hanasaku Iroha the Movie: Home Sweet Home",
+      "id": 140271,
+      "slug": "hanasaku-iroha-the-movie-home-sweet-home-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 229756,
+      "imdb": "tt2404237",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Persona 4 the Animation: The Factor of Hope",
       "id": 14267
     },
@@ -4460,6 +10652,24 @@
     "externals": {
       "tmdb": 135915,
       "imdb": "tt2399537",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Computer Kakumei: Saikyou x Saisoku no Zunou Tanjou",
+      "id": 14317
+    },
+    "trakt": {
+      "title": "The Computer Revolution: The Birth of the Most Powerful and Fastest Brains",
+      "id": 98711,
+      "slug": "the-computer-revolution-the-birth-of-the-most-powerful-and-fastest-brains-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 149950,
+      "imdb": "tt7099612",
       "letterboxd": null
     }
   },
@@ -4501,6 +10711,24 @@
   },
   {
     "myanimelist": {
+      "title": "Death Billiards",
+      "id": 14353
+    },
+    "trakt": {
+      "title": "Death Billiards",
+      "id": 117079,
+      "slug": "death-billiards-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 186919,
+      "imdb": "tt2807626",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Persona 3 the Movie 1: Spring of Birth",
       "id": 14407
     },
@@ -4532,6 +10760,24 @@
     "externals": {
       "tmdb": 582751,
       "imdb": "tt3945398",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Aura: Maryuuin Kouga Saigo no Tatakai",
+      "id": 14669
+    },
+    "trakt": {
+      "title": "Aura: Koga Maryuin's Last War",
+      "id": 137923,
+      "slug": "aura-koga-maryuin-s-last-war-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 225086,
+      "imdb": "tt2487126",
       "letterboxd": null
     }
   },
@@ -4591,6 +10837,78 @@
   },
   {
     "myanimelist": {
+      "title": "Dragon Ball Z Movie 14: Kami to Kami",
+      "id": 14837
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Battle of Gods",
+      "id": 87037,
+      "slug": "dragon-ball-z-battle-of-gods-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 126963,
+      "imdb": "tt2263944",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tsukumo",
+      "id": 14853
+    },
+    "trakt": {
+      "title": "Possessions",
+      "id": 130795,
+      "slug": "possessions-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 211358,
+      "imdb": "tt3080074",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai. Movie",
+      "id": 15039
+    },
+    "trakt": {
+      "title": "anohana: The Flower We Saw That Day - The Movie",
+      "id": 155529,
+      "slug": "anohana-the-flower-we-saw-that-day-the-movie-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 255413,
+      "imdb": "tt2323836",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tabisuru Nuigurumi: Traveling Daru",
+      "id": 15077
+    },
+    "trakt": {
+      "title": "Traveling 'Daru'",
+      "id": 89727,
+      "slug": "traveling-daru-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 132037,
+      "imdb": "tt7116268",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Macross FB7: Ore no Uta wo Kike!",
       "id": 15177
     },
@@ -4604,6 +10922,78 @@
     "externals": {
       "tmdb": 258156,
       "imdb": "tt3709868",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Code Geass: Boukoku no Akito 2 - Hikisakareshi Yokuryuu",
+      "id": 15197
+    },
+    "trakt": {
+      "title": "Code Geass: Akito the Exiled 2: The Wyvern Divided",
+      "id": 131227,
+      "slug": "code-geass-akito-the-exiled-2-the-wyvern-divided-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 212161,
+      "imdb": "tt3354254",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Code Geass: Boukoku no Akito 3 - Kagayaku Mono Ten yori Otsu",
+      "id": 15199
+    },
+    "trakt": {
+      "title": "Code Geass: Akito the Exiled 3: The Brightness Falls",
+      "id": 221724,
+      "slug": "code-geass-akito-the-exiled-3-the-brightness-falls-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 347200,
+      "imdb": "tt3354302",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Code Geass: Boukoku no Akito 4 - Nikushimi no Kioku kara",
+      "id": 15201
+    },
+    "trakt": {
+      "title": "Code Geass: Akito the Exiled 4: Memories of Hatred",
+      "id": 221723,
+      "slug": "code-geass-akito-the-exiled-4-memories-of-hatred-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 347187,
+      "imdb": "tt3354306",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": ".hack//Versus: The Thanatos Report",
+      "id": 15219
+    },
+    "trakt": {
+      "title": ".hack//Versus: The Thanatos Report",
+      "id": 136806,
+      "slug": "hack-versus-the-thanatos-report-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 222766,
+      "imdb": "",
       "letterboxd": null
     }
   },
@@ -4645,6 +11035,24 @@
   },
   {
     "myanimelist": {
+      "title": "Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien Nare",
+      "id": 15335
+    },
+    "trakt": {
+      "title": "Gintama: The Final Chapter - Be Forever Yorozuya",
+      "id": 149651,
+      "slug": "gintama-the-final-chapter-be-forever-yorozuya-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 245917,
+      "imdb": "tt2374144",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kagaku na Yatsura",
       "id": 15391
     },
@@ -4658,6 +11066,24 @@
     "externals": {
       "tmdb": 403039,
       "imdb": "tt8819706",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Saint☆Oniisan (Movie)",
+      "id": 15771
+    },
+    "trakt": {
+      "title": "Saint☆Young Men",
+      "id": 115795,
+      "slug": "saint-young-men-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 184608,
+      "imdb": "tt2431934",
       "letterboxd": null
     }
   },
@@ -4717,6 +11143,24 @@
   },
   {
     "myanimelist": {
+      "title": "Doraemon Movie 33: Nobita no Himitsu Dougu Museum",
+      "id": 15925
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita's Secret Gadget Museum",
+      "id": 134728,
+      "slug": "doraemon-nobita-s-secret-gadget-museum-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 218726,
+      "imdb": "tt2768084",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kick-Heart",
       "id": 16149
     },
@@ -4753,6 +11197,42 @@
   },
   {
     "myanimelist": {
+      "title": "Tenshi no Drop",
+      "id": 16436
+    },
+    "trakt": {
+      "title": "Angel's Drop",
+      "id": 323584,
+      "slug": "angel-s-drop-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 476397,
+      "imdb": "tt14039150",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hal",
+      "id": 16528
+    },
+    "trakt": {
+      "title": "Hal",
+      "id": 122860,
+      "slug": "hal-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 196761,
+      "imdb": "tt2573198",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pinky",
       "id": 16604
     },
@@ -4766,6 +11246,42 @@
     "externals": {
       "tmdb": 515618,
       "imdb": "tt27819260",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "C.L.A.Y.",
+      "id": 16606
+    },
+    "trakt": {
+      "title": "C.L.A.Y.",
+      "id": 531950,
+      "slug": "c-l-a-y-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 515627,
+      "imdb": "tt27859711",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Busou Shinki: Install x Dream",
+      "id": 16614
+    },
+    "trakt": {
+      "title": "Busou Shinki Moon Angel",
+      "id": 310308,
+      "slug": "busou-shinki-moon-angel-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 396861,
+      "imdb": "tt2074341",
       "letterboxd": null
     }
   },
@@ -4825,6 +11341,24 @@
   },
   {
     "myanimelist": {
+      "title": "Higurashi no Naku Koro ni Kaku: Outbreak",
+      "id": 16700
+    },
+    "trakt": {
+      "title": "Higurashi: When They Cry - Outbreak",
+      "id": 216524,
+      "slug": "higurashi-when-they-cry-outbreak-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 300442,
+      "imdb": "tt6070340",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kotonoha no Niwa",
       "id": 16782
     },
@@ -4838,6 +11372,24 @@
     "externals": {
       "tmdb": 198375,
       "imdb": "tt2591814",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "The Last: Naruto the Movie",
+      "id": 16870
+    },
+    "trakt": {
+      "title": "The Last: Naruto the Movie",
+      "id": 198234,
+      "slug": "the-last-naruto-the-movie-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 317442,
+      "imdb": "tt3717532",
       "letterboxd": null
     }
   },
@@ -4861,6 +11413,42 @@
   },
   {
     "myanimelist": {
+      "title": "Crayon Shin-chan Movie 21: Bakauma! B-Kyuu Gourmet Survival Battle!!",
+      "id": 17113
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: Very Tasty! B-class Gourmet Survival!!",
+      "id": 105431,
+      "slug": "crayon-shin-chan-very-tasty-b-class-gourmet-survival-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 163786,
+      "imdb": "tt2876906",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dareka no Manazashi",
+      "id": 17121
+    },
+    "trakt": {
+      "title": "Someone's Gaze",
+      "id": 136784,
+      "slug": "someone-s-gaze-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 222715,
+      "imdb": "tt3300814",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Koukaku Kidoutai Arise: Ghost in the Shell - Border:1 Ghost Pain",
       "id": 17187
     },
@@ -4879,6 +11467,24 @@
   },
   {
     "myanimelist": {
+      "title": "Captain Herlock",
+      "id": 17269
+    },
+    "trakt": {
+      "title": "Space Pirate Captain Harlock",
+      "id": 120271,
+      "slug": "space-pirate-captain-harlock-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 192577,
+      "imdb": "tt2668134",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Love Like Aliens",
       "id": 17293
     },
@@ -4892,6 +11498,78 @@
     "externals": {
       "tmdb": 346330,
       "imdb": "tt2137091",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ark IX",
+      "id": 17395
+    },
+    "trakt": {
+      "title": "Ark IX",
+      "id": 287145,
+      "slug": "ark-ix-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 441482,
+      "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "The iDOLM@STER Movie: Kagayaki no Mukougawa e!",
+      "id": 17437
+    },
+    "trakt": {
+      "title": "THE iDOLM@STER MOVIE: Beyond the Brilliant Future!",
+      "id": 223589,
+      "slug": "the-idolm-ster-movie-beyond-the-brilliant-future-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 297188,
+      "imdb": "tt3306854",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Buki yo Saraba",
+      "id": 17677
+    },
+    "trakt": {
+      "title": "A Farewell to Weapons",
+      "id": 157233,
+      "slug": "a-farewell-to-weapons-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 257514,
+      "imdb": "tt15445964",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gambo",
+      "id": 17679
+    },
+    "trakt": {
+      "title": "GAMBO",
+      "id": 157198,
+      "slug": "gambo-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 257478,
+      "imdb": "tt15445952",
       "letterboxd": null
     }
   },
@@ -4928,6 +11606,60 @@
     "externals": {
       "tmdb": 239529,
       "imdb": "tt3335192",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Girls \u0026 Panzer Movie",
+      "id": 18617
+    },
+    "trakt": {
+      "title": "Girls und Panzer der Film",
+      "id": 222548,
+      "slug": "girls-und-panzer-der-film-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 357405,
+      "imdb": "tt5284414",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Takanashi Rikka Kai: Chuunibyou demo Koi ga Shitai! Movie",
+      "id": 19021
+    },
+    "trakt": {
+      "title": "Love, Chunibyo \u0026 Other Delusions! Rikka Version",
+      "id": 132560,
+      "slug": "love-chunibyo-other-delusions-rikka-version-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 214553,
+      "imdb": "tt3203996",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Giovanni no Shima",
+      "id": 19115
+    },
+    "trakt": {
+      "title": "Giovanni's Island",
+      "id": 146071,
+      "slug": "giovanni-s-island-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 239367,
+      "imdb": "tt3178174",
       "letterboxd": null
     }
   },
@@ -5041,6 +11773,24 @@
   },
   {
     "myanimelist": {
+      "title": "Doraemon Movie 34: Shin Nobita no Daimakyou - Peko to 5-nin no Tankentai",
+      "id": 19645
+    },
+    "trakt": {
+      "title": "Doraemon: New Nobita's Great Demon - Peko and the Exploration Party of Five",
+      "id": 182999,
+      "slug": "doraemon-new-nobita-s-great-demon-peko-and-the-exploration-party-of-five-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 285812,
+      "imdb": "tt3949650",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Neppuu Kairiku Bushi Road",
       "id": 19653
     },
@@ -5054,6 +11804,60 @@
     "externals": {
       "tmdb": 243914,
       "imdb": "tt3209190",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Ansatsu Kyoushitsu: Jump Festa 2013 Special",
+      "id": 19759
+    },
+    "trakt": {
+      "title": "Assassination Classroom: Jump Festa 2013 Special",
+      "id": 182025,
+      "slug": "assassination-classroom-jump-festa-2013-special-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 439191,
+      "imdb": "tt3428540",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hunter x Hunter Movie 2: The Last Mission",
+      "id": 19951
+    },
+    "trakt": {
+      "title": "Hunter x Hunter: The Last Mission",
+      "id": 146160,
+      "slug": "hunter-x-hunter-the-last-mission-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 239523,
+      "imdb": "tt3198698",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sword Art Online: Extra Edition",
+      "id": 20021
+    },
+    "trakt": {
+      "title": "Sword Art Online: Extra Edition",
+      "id": 813696,
+      "slug": "sword-art-online-extra-edition-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 1012404,
+      "imdb": "tt3241196",
       "letterboxd": null
     }
   },
@@ -5077,6 +11881,78 @@
   },
   {
     "myanimelist": {
+      "title": "Himeyuri",
+      "id": 20469
+    },
+    "trakt": {
+      "title": "Himeyuri",
+      "id": 164799,
+      "slug": "himeyuri-2012",
+      "type": "movies"
+    },
+    "release_year": 2012,
+    "externals": {
+      "tmdb": 266226,
+      "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bayonetta: Bloody Fate",
+      "id": 20543
+    },
+    "trakt": {
+      "title": "Bayonetta: Bloody Fate",
+      "id": 147720,
+      "slug": "bayonetta-bloody-fate-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 242546,
+      "imdb": "tt3306776",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shashinkan",
+      "id": 20671
+    },
+    "trakt": {
+      "title": "The Portrait Studio",
+      "id": 171342,
+      "slug": "the-portrait-studio-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 273452,
+      "imdb": "tt3253806",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hinata no Aoshigure",
+      "id": 20673
+    },
+    "trakt": {
+      "title": "Rain in the Sunshine",
+      "id": 171340,
+      "slug": "rain-in-the-sunshine-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 273450,
+      "imdb": "tt8454108",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Kuro no Su: Chronus",
       "id": 20889
     },
@@ -5090,6 +11966,24 @@
     "externals": {
       "tmdb": 256768,
       "imdb": "tt3669422",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Harmonie",
+      "id": 20903
+    },
+    "trakt": {
+      "title": "Harmonie",
+      "id": 156635,
+      "slug": "harmonie-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 256765,
+      "imdb": "tt3665930",
       "letterboxd": null
     }
   },
@@ -5113,6 +12007,24 @@
   },
   {
     "myanimelist": {
+      "title": "Galo Sengen",
+      "id": 20929
+    },
+    "trakt": {
+      "title": "Galo Sengen",
+      "id": 225909,
+      "slug": "galo-sengen-2011",
+      "type": "movies"
+    },
+    "release_year": 2011,
+    "externals": {
+      "tmdb": 383374,
+      "imdb": "tt8871280",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Parol no Miraijima",
       "id": 20961
     },
@@ -5126,6 +12038,42 @@
     "externals": {
       "tmdb": 257474,
       "imdb": "tt3669428",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tezuka Osamu no Buddha: Owarinaki Tabi",
+      "id": 20969
+    },
+    "trakt": {
+      "title": "Buddha 2: The Endless Journey",
+      "id": 146161,
+      "slug": "buddha-2-the-endless-journey-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 239526,
+      "imdb": "tt2936864",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Wake Up, Girls! Shichinin no Idol",
+      "id": 21189
+    },
+    "trakt": {
+      "title": "Wake Up, Girls! - Seven Idols",
+      "id": 151563,
+      "slug": "wake-up-girls-seven-idols-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 249766,
+      "imdb": "tt3465710",
       "letterboxd": null
     }
   },
@@ -5162,6 +12110,24 @@
     "externals": {
       "tmdb": 257512,
       "imdb": "tt3455204",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Stand By Me Doraemon",
+      "id": 21469
+    },
+    "trakt": {
+      "title": "Stand by Me Doraemon",
+      "id": 164333,
+      "slug": "stand-by-me-doraemon-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 265712,
+      "imdb": "tt3331846",
       "letterboxd": null
     }
   },
@@ -5221,6 +12187,42 @@
   },
   {
     "myanimelist": {
+      "title": "Wasure-boshi",
+      "id": 21591
+    },
+    "trakt": {
+      "title": "Wasure-Boshi",
+      "id": 276770,
+      "slug": "wasure-boshi-2013",
+      "type": "movies"
+    },
+    "release_year": 2013,
+    "externals": {
+      "tmdb": 363115,
+      "imdb": null,
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yabai! Fukushuu Yami Site",
+      "id": 21597
+    },
+    "trakt": {
+      "title": "Pokémon: Arceus and the Jewel of Life",
+      "id": 25329,
+      "slug": "pokemon-arceus-and-the-jewel-of-life-2009",
+      "type": "movies"
+    },
+    "release_year": 2009,
+    "externals": {
+      "tmdb": 39057,
+      "imdb": "tt1468843",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Picotopia",
       "id": 21607
     },
@@ -5234,6 +12236,96 @@
     "externals": {
       "tmdb": 383314,
       "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tamako Love Story",
+      "id": 21647
+    },
+    "trakt": {
+      "title": "Tamako Love Story",
+      "id": 157195,
+      "slug": "tamako-love-story-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 257475,
+      "imdb": "tt3413018",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Edogawa Conan Shissou Jiken: Shijou Saiaku no Futsukakan",
+      "id": 21867
+    },
+    "trakt": {
+      "title": "The Disappearance of Conan Edogawa: The Worst Two Days in History",
+      "id": 397225,
+      "slug": "the-disappearance-of-conan-edogawa-the-worst-two-days-in-history-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 546822,
+      "imdb": "tt4423846",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Uchuu Kyoudai: Number Zero",
+      "id": 22583
+    },
+    "trakt": {
+      "title": "Space Brothers: Number Zero",
+      "id": 169520,
+      "slug": "space-brothers-number-zero-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 271540,
+      "imdb": "tt3407024",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Appleseed Alpha",
+      "id": 22677
+    },
+    "trakt": {
+      "title": "Appleseed Alpha",
+      "id": 167830,
+      "slug": "appleseed-alpha-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 269650,
+      "imdb": "tt3638012",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z: Zenbu Misemasu Toshi Wasure Dragon Ball Z!",
+      "id": 22699
+    },
+    "trakt": {
+      "title": "Looking Back at it All: The Dragon Ball Z Year-End Show!",
+      "id": 224233,
+      "slug": "looking-back-at-it-all-the-dragon-ball-z-year-end-show-1993",
+      "type": "movies"
+    },
+    "release_year": 1993,
+    "externals": {
+      "tmdb": 371370,
+      "imdb": "tt3996490",
       "letterboxd": null
     }
   },
@@ -5257,6 +12349,60 @@
   },
   {
     "myanimelist": {
+      "title": "Cross Road",
+      "id": 22839
+    },
+    "trakt": {
+      "title": "Cross Road",
+      "id": 174783,
+      "slug": "cross-road-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 277095,
+      "imdb": "tt7386590",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Uchuu Senkan Yamato 2199: Hoshimeguru Hakobune",
+      "id": 23249
+    },
+    "trakt": {
+      "title": "Space Battleship Yamato 2199: Odyssey of the Celestial Ark",
+      "id": 166336,
+      "slug": "space-battleship-yamato-2199-odyssey-of-the-celestial-ark-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 267963,
+      "imdb": "tt3222236",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gyakusatsu Kikan",
+      "id": 23279
+    },
+    "trakt": {
+      "title": "Genocidal Organ",
+      "id": 222549,
+      "slug": "genocidal-organ-2017",
+      "type": "movies"
+    },
+    "release_year": 2017,
+    "externals": {
+      "tmdb": 357407,
+      "imdb": "tt3615160",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Lupin the IIIrd: Jigen Daisuke no Bohyou",
       "id": 23293
     },
@@ -5275,6 +12421,60 @@
   },
   {
     "myanimelist": {
+      "title": "Shingeki no Kyojin Movie 1: Guren no Yumiya",
+      "id": 23775
+    },
+    "trakt": {
+      "title": "Attack on Titan: Crimson Bow and Arrow",
+      "id": 189535,
+      "slug": "attack-on-titan-crimson-bow-and-arrow-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 379088,
+      "imdb": "tt3646944",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shingeki no Kyojin Movie 2: Jiyuu no Tsubasa",
+      "id": 23777
+    },
+    "trakt": {
+      "title": "Attack on Titan: Wings of Freedom",
+      "id": 210859,
+      "slug": "attack-on-titan-wings-of-freedom-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 330081,
+      "imdb": "tt3646946",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Sarusuberi: Miss Hokusai",
+      "id": 23987
+    },
+    "trakt": {
+      "title": "Miss Hokusai",
+      "id": 166341,
+      "slug": "miss-hokusai-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 267970,
+      "imdb": "tt3689910",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Persona 3 the Movie 3: Falling Down",
       "id": 24543
     },
@@ -5288,6 +12488,78 @@
     "externals": {
       "tmdb": 332169,
       "imdb": "tt4331400",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Youkai Watch Movie 1: Tanjou no Himitsu da Nyan!",
+      "id": 24591
+    },
+    "trakt": {
+      "title": "Yo-kai Watch: The Movie",
+      "id": 321221,
+      "slug": "yo-kai-watch-the-movie-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 358651,
+      "imdb": "tt4168022",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Date A Live Movie: Mayuri Judgment",
+      "id": 24655
+    },
+    "trakt": {
+      "title": "Date A Live: Mayuri Judgement",
+      "id": 211938,
+      "slug": "date-a-live-mayuri-judgement-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 331061,
+      "imdb": "tt5331768",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Aoki Hagane no Arpeggio: Ars Nova Movie 1 - DC",
+      "id": 24919
+    },
+    "trakt": {
+      "title": "Arpeggio of Blue Steel -Ars Nova DC-",
+      "id": 217499,
+      "slug": "arpeggio-of-blue-steel-ars-nova-dc-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 296918,
+      "imdb": "tt4219304",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Aoki Hagane no Arpeggio: Ars Nova Movie 2 - Cadenza",
+      "id": 24921
+    },
+    "trakt": {
+      "title": "Arpeggio of Blue Steel -Ars Nova Cadenza-",
+      "id": 222546,
+      "slug": "arpeggio-of-blue-steel-ars-nova-cadenza-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 357397,
+      "imdb": "tt5332274",
       "letterboxd": null
     }
   },
@@ -5329,6 +12601,114 @@
   },
   {
     "myanimelist": {
+      "title": "Doraemon Movie 35: Nobita no Space Heroes",
+      "id": 25383
+    },
+    "trakt": {
+      "title": "Doraemon: Nobita and the Space Heroes",
+      "id": 237981,
+      "slug": "doraemon-nobita-and-the-space-heroes-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 350650,
+      "imdb": "tt4788602",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dragon Ball Z Movie 15: Fukkatsu no \"F\"",
+      "id": 25389
+    },
+    "trakt": {
+      "title": "Dragon Ball Z: Resurrection 'F'",
+      "id": 194758,
+      "slug": "dragon-ball-z-resurrection-f-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 303857,
+      "imdb": "tt3819668",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fate/stay night Movie: Heaven's Feel - I. Presage Flower",
+      "id": 25537
+    },
+    "trakt": {
+      "title": "Fate/stay night: Heaven's Feel I. Presage Flower",
+      "id": 181245,
+      "slug": "fate-stay-night-heaven-s-feel-i-presage-flower-2017",
+      "type": "movies"
+    },
+    "release_year": 2017,
+    "externals": {
+      "tmdb": 283984,
+      "imdb": "tt4054952",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Digimon Adventure tri. 1: Saikai",
+      "id": 25687
+    },
+    "trakt": {
+      "title": "Digimon Adventure tri. Part 1: Reunion",
+      "id": 222547,
+      "slug": "digimon-adventure-tri-part-1-reunion-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 357400,
+      "imdb": "tt4307880",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tamayura: Sotsugyou Shashin Part 1 - Kizashi",
+      "id": 25729
+    },
+    "trakt": {
+      "title": "Tamayura: Graduation Photo Part 1 - Kizashi",
+      "id": 221718,
+      "slug": "tamayura-graduation-photo-part-1-kizashi-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 342126,
+      "imdb": "tt4691340",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yowamushi Pedal: Re:Ride",
+      "id": 25755
+    },
+    "trakt": {
+      "title": "Yowamushi Pedal Re:RIDE",
+      "id": 189536,
+      "slug": "yowamushi-pedal-re-ride-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 292740,
+      "imdb": "tt6448688",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Pokemon Movie 18: Ring no Choumajin Hoopa",
       "id": 25805
     },
@@ -5342,6 +12722,42 @@
     "externals": {
       "tmdb": 350499,
       "imdb": "tt4503906",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Glass no Hana to Kowasu Sekai",
+      "id": 25907
+    },
+    "trakt": {
+      "title": "Garakowa -Restore the World-",
+      "id": 224366,
+      "slug": "garakowa-restore-the-world-2016",
+      "type": "movies"
+    },
+    "release_year": 2016,
+    "externals": {
+      "tmdb": 372756,
+      "imdb": "tt5330596",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Under the Dog",
+      "id": 27387
+    },
+    "trakt": {
+      "title": "Under the Dog",
+      "id": 187889,
+      "slug": "under-the-dog-2016",
+      "type": "movies"
+    },
+    "release_year": 2016,
+    "externals": {
+      "tmdb": 291015,
+      "imdb": "tt4020248",
       "letterboxd": null
     }
   },
@@ -5365,6 +12781,78 @@
   },
   {
     "myanimelist": {
+      "title": "Crayon Shin-chan Movie 23: Ora no Hikkoshi Monogatari - Saboten Daishuugeki",
+      "id": 27653
+    },
+    "trakt": {
+      "title": "Crayon Shin-chan: My Moving Story! Cactus Large Attack!",
+      "id": 224223,
+      "slug": "crayon-shin-chan-my-moving-story-cactus-large-attack-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 371236,
+      "imdb": "tt4691348",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hana to Alice: Satsujin Jiken",
+      "id": 27969
+    },
+    "trakt": {
+      "title": "The Case of Hana \u0026 Alice",
+      "id": 222461,
+      "slug": "the-case-of-hana-alice-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 311054,
+      "imdb": "tt4125300",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hana wa Saku: Touhoku ni Saku",
+      "id": 28093
+    },
+    "trakt": {
+      "title": "Flowers Will Bloom In Tohoku",
+      "id": 223450,
+      "slug": "flowers-will-bloom-in-tohoku-2014",
+      "type": "movies"
+    },
+    "release_year": 2014,
+    "externals": {
+      "tmdb": 365334,
+      "imdb": "",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Harmony",
+      "id": 28211
+    },
+    "trakt": {
+      "title": "Harmony",
+      "id": 222553,
+      "slug": "harmony-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 357411,
+      "imdb": "tt3615204",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Meitantei Conan Movie 19: Gouka no Himawari",
       "id": 28479
     },
@@ -5378,6 +12866,42 @@
     "externals": {
       "tmdb": 316873,
       "imdb": "tt3737650",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Garo Movie: Divine Flame",
+      "id": 28539
+    },
+    "trakt": {
+      "title": "GARO: Divine Flame",
+      "id": 224552,
+      "slug": "garo-divine-flame-2016",
+      "type": "movies"
+    },
+    "release_year": 2016,
+    "externals": {
+      "tmdb": 374195,
+      "imdb": "tt5271582",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Shisha no Teikoku",
+      "id": 28625
+    },
+    "trakt": {
+      "title": "The Empire of Corpses",
+      "id": 222274,
+      "slug": "the-empire-of-corpses-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 342588,
+      "imdb": "tt4235644",
       "letterboxd": null
     }
   },
@@ -5414,6 +12938,42 @@
     "externals": {
       "tmdb": 364111,
       "imdb": "tt4489416",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Boruto: Naruto the Movie",
+      "id": 28755
+    },
+    "trakt": {
+      "title": "Boruto: Naruto the Movie",
+      "id": 221717,
+      "slug": "boruto-naruto-the-movie-2015",
+      "type": "movies"
+    },
+    "release_year": 2015,
+    "externals": {
+      "tmdb": 347201,
+      "imdb": "tt4618398",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Yu☆Gi☆Oh! The Dark Side of Dimensions",
+      "id": 28771
+    },
+    "trakt": {
+      "title": "Yu-Gi-Oh!: The Dark Side of Dimensions",
+      "id": 223544,
+      "slug": "yu-gi-oh-the-dark-side-of-dimensions-2016",
+      "type": "movies"
+    },
+    "release_year": 2016,
+    "externals": {
+      "tmdb": 366170,
+      "imdb": "tt4273562",
       "letterboxd": null
     }
   },
