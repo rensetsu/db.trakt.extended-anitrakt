@@ -181,24 +181,6 @@
   },
   {
     "myanimelist": {
-      "title": "Kidou Senshi Gundam F91",
-      "id": 88
-    },
-    "trakt": {
-      "title": "Mobile Suit Gundam F91",
-      "id": 10032,
-      "slug": "mobile-suit-gundam-f91-1991",
-      "type": "movies"
-    },
-    "release_year": 1991,
-    "externals": {
-      "tmdb": 16308,
-      "imdb": "tt0159568",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "X/1999",
       "id": 155
     },
@@ -1603,7 +1585,7 @@
   },
   {
     "myanimelist": {
-      "title": "Tsubasa Chronicle: Tori Kago no Kuni no Himegimi",
+      "title": "Tsubasa Chronicle: Torikago no Kuni no Himegimi",
       "id": 807
     },
     "trakt": {
@@ -4195,24 +4177,6 @@
   },
   {
     "myanimelist": {
-      "title": "Urusei Yatsura Movie 3: Remember My Love",
-      "id": 1922
-    },
-    "trakt": {
-      "title": "Urusei Yatsura: Remember My Love",
-      "id": 98748,
-      "slug": "urusei-yatsura-remember-my-love-1985",
-      "type": "movies"
-    },
-    "release_year": 1985,
-    "externals": {
-      "tmdb": 150024,
-      "imdb": "tt0090244",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Urusei Yatsura Movie 4: Lum The Forever",
       "id": 1923
     },
@@ -4865,15 +4829,15 @@
       "id": 2397
     },
     "trakt": {
-      "title": "Digimon: The Movie",
-      "id": 12563,
-      "slug": "digimon-the-movie-2000",
+      "title": "Our War Game",
+      "id": 55721,
+      "slug": "our-war-game-2000",
       "type": "movies"
     },
     "release_year": 2000,
     "externals": {
-      "tmdb": 20455,
-      "imdb": "tt0259974",
+      "tmdb": 75571,
+      "imdb": "tt0313441",
       "letterboxd": null
     }
   },
@@ -6053,15 +6017,15 @@
       "id": 3446
     },
     "trakt": {
-      "title": "Resident Evil: Damnation",
-      "id": 90277,
-      "slug": "resident-evil-damnation-2012",
+      "title": "Resident Evil: Degeneration",
+      "id": 8079,
+      "slug": "resident-evil-degeneration-2008",
       "type": "movies"
     },
-    "release_year": 2012,
+    "release_year": 2008,
     "externals": {
-      "tmdb": 133121,
-      "imdb": "tt1753496",
+      "tmdb": 13648,
+      "imdb": "tt1174954",
       "letterboxd": null
     }
   },
@@ -8951,15 +8915,15 @@
       "id": 10017
     },
     "trakt": {
-      "title": "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
-      "id": 487813,
-      "slug": "dragon-ball-z-side-story-plan-to-eradicate-the-saiyans-1993",
+      "title": "Dragon Ball Z: Plan to Eradicate the Super Saiyans",
+      "id": 66842,
+      "slug": "dragon-ball-z-plan-to-eradicate-the-super-saiyans-2010",
       "type": "movies"
     },
-    "release_year": 1993,
+    "release_year": 2010,
     "externals": {
-      "tmdb": 652754,
-      "imdb": "tt1286785",
+      "tmdb": 89636,
+      "imdb": "tt4008518",
       "letterboxd": null
     }
   },
@@ -12583,7 +12547,7 @@
   },
   {
     "myanimelist": {
-      "title": "One Piece 3D2Y: Ace no shi wo Koete! Luffy Nakama Tono Chikai",
+      "title": "One Piece 3D2Y: Ace no Shi wo Koete! Luffy Nakama to no Chikai",
       "id": 25161
     },
     "trakt": {
@@ -18031,7 +17995,7 @@
     "release_year": 2019,
     "externals": {
       "tmdb": 566451,
-      "imdb": "tt11285348",
+      "imdb": "tt10112232",
       "letterboxd": null
     }
   },
@@ -18600,14 +18564,14 @@
     },
     "trakt": {
       "title": "The Girl from the Other Side",
-      "id": 637537,
-      "slug": "the-girl-from-the-other-side-2023",
+      "id": 435186,
+      "slug": "the-girl-from-the-other-side-2019",
       "type": "movies"
     },
-    "release_year": 2023,
+    "release_year": 2019,
     "externals": {
-      "tmdb": 802699,
-      "imdb": "tt14228078",
+      "tmdb": 587873,
+      "imdb": "tt11057238",
       "letterboxd": null
     }
   },
@@ -20039,15 +20003,15 @@
       "id": 42916
     },
     "trakt": {
-      "title": "Sword Art Online the Movie - Progressive - Aria of a Starless Night",
-      "id": 600729,
-      "slug": "sword-art-online-the-movie-progressive-aria-of-a-starless-night-2021",
+      "title": "Sword Art Online the Movie – Progressive – Scherzo of Deep Night",
+      "id": 717059,
+      "slug": "sword-art-online-the-movie-progressive-scherzo-of-deep-night-2022",
       "type": "movies"
     },
-    "release_year": 2021,
+    "release_year": 2022,
     "externals": {
-      "tmdb": 761898,
-      "imdb": "tt13424422",
+      "tmdb": 893712,
+      "imdb": "tt15830702",
       "letterboxd": null
     }
   },
@@ -20671,10 +20635,10 @@
     "trakt": {
       "title": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
       "id": 655647,
-      "slug": "puella-magi-madoka-magica-the-movie-walpurgisnacht-rising",
+      "slug": "puella-magi-madoka-magica-the-movie-walpurgisnacht-rising-2026",
       "type": "movies"
     },
-    "release_year": 0,
+    "release_year": 2026,
     "externals": {
       "tmdb": 822653,
       "imdb": "tt14523706",
@@ -21605,15 +21569,15 @@
       "id": 51358
     },
     "trakt": {
-      "title": "Dead Dead Demon's Dededede Destruction Part 1",
-      "id": 944966,
-      "slug": "dead-dead-demon-s-dededede-destruction-part-1-2024",
+      "title": "Dead Dead Demon's Dededede Destruction Part 2",
+      "id": 944968,
+      "slug": "dead-dead-demon-s-dededede-destruction-part-2-2024",
       "type": "movies"
     },
     "release_year": 2024,
     "externals": {
-      "tmdb": 1172228,
-      "imdb": "tt28813376",
+      "tmdb": 1172229,
+      "imdb": "tt28813303",
       "letterboxd": null
     }
   },
@@ -21695,15 +21659,15 @@
       "id": 51716
     },
     "trakt": {
-      "title": "Pretty Guardian Sailor Moon Cosmos the Movie Part 1",
-      "id": 778707,
-      "slug": "pretty-guardian-sailor-moon-cosmos-the-movie-part-1-2023",
+      "title": "Pretty Guardian Sailor Moon Cosmos the Movie Part 2",
+      "id": 778727,
+      "slug": "pretty-guardian-sailor-moon-cosmos-the-movie-part-2-2023",
       "type": "movies"
     },
     "release_year": 2023,
     "externals": {
-      "tmdb": 968868,
-      "imdb": "tt19861160",
+      "tmdb": 968870,
+      "imdb": "tt28284638",
       "letterboxd": null
     }
   },
@@ -21713,15 +21677,15 @@
       "id": 51805
     },
     "trakt": {
-      "title": "Legend of the Galactic Heroes: Die Neue These - Intrigue 1",
-      "id": 828517,
-      "slug": "legend-of-the-galactic-heroes-die-neue-these-intrigue-1-2022",
+      "title": "Legend of the Galactic Heroes: Die Neue These - Intrigue 3",
+      "id": 828516,
+      "slug": "legend-of-the-galactic-heroes-die-neue-these-intrigue-3-2022",
       "type": "movies"
     },
     "release_year": 2022,
     "externals": {
-      "tmdb": 1030419,
-      "imdb": "tt32909363",
+      "tmdb": 1030422,
+      "imdb": "tt32909366",
       "letterboxd": null
     }
   },
@@ -22415,15 +22379,15 @@
       "id": 55357
     },
     "trakt": {
-      "title": "BOCCHI THE ROCK! Recap Part 1",
-      "id": 909154,
-      "slug": "bocchi-the-rock-recap-part-1-2024",
+      "title": "BOCCHI THE ROCK! Recap Part 2",
+      "id": 972543,
+      "slug": "bocchi-the-rock-recap-part-2-2024",
       "type": "movies"
     },
     "release_year": 2024,
     "externals": {
-      "tmdb": 1129610,
-      "imdb": "tt32561659",
+      "tmdb": 1201387,
+      "imdb": "tt32576588",
       "letterboxd": null
     }
   },
@@ -22829,15 +22793,15 @@
       "id": 57754
     },
     "trakt": {
-      "title": "BanG Dream! It's MyGO!!!!! Movie",
-      "id": 996161,
-      "slug": "bang-dream-it-s-mygo-movie-2024",
+      "title": "BanG Dream! It's MyGO!!!!! Movie 2",
+      "id": 997382,
+      "slug": "bang-dream-it-s-mygo-movie-2-2024",
       "type": "movies"
     },
     "release_year": 2024,
     "externals": {
-      "tmdb": 1231799,
-      "imdb": "tt36808553",
+      "tmdb": 1233186,
+      "imdb": null,
       "letterboxd": null
     }
   },
@@ -22891,7 +22855,7 @@
     "release_year": 2022,
     "externals": {
       "tmdb": 946967,
-      "imdb": null,
+      "imdb": "tt37981999",
       "letterboxd": null
     }
   },
@@ -23621,7 +23585,7 @@
       "id": 61192
     },
     "trakt": {
-      "title": "ALL YOU NEED IS KILL",
+      "title": "All You Need is Kill",
       "id": 1171874,
       "slug": "all-you-need-is-kill-2026",
       "type": "movies"
@@ -23873,9 +23837,9 @@
       "id": 62277
     },
     "trakt": {
-      "title": "Shin-Gekijōban Gintama: Yoshiwara Daienjō",
+      "title": "Gintama: Yoshiwara in Flames",
       "id": 1256133,
-      "slug": "shin-gekijoban-gintama-yoshiwara-daienjo-2026",
+      "slug": "gintama-yoshiwara-in-flames-2026",
       "type": "movies"
     },
     "release_year": 2026,

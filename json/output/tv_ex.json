@@ -14262,26 +14262,26 @@
       "id": 1916
     },
     "trakt": {
-      "title": "Mobile Suit Gundam MS IGLOO",
-      "id": 61455,
-      "slug": "mobile-suit-gundam-ms-igloo",
+      "title": "Mobile Suit Gundam MS IGLOO: Apocalypse 0079",
+      "id": 274494,
+      "slug": "mobile-suit-gundam-ms-igloo-apocalypse-0079",
       "type": "shows",
       "season": {
-        "id": 63407,
-        "number": 2,
+        "id": 443901,
+        "number": 1,
         "externals": {
-          "tvdb": 113571,
-          "tmdb": 53663,
+          "tvdb": null,
+          "tmdb": 439399,
           "tvrage": null
         }
       },
       "is_split_cour": false
     },
-    "release_year": 2004,
+    "release_year": 2006,
     "externals": {
-      "tvdb": 81104,
-      "tmdb": 44919,
-      "imdb": "tt2328145",
+      "tvdb": null,
+      "tmdb": 282823,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -16274,7 +16274,7 @@
     "externals": {
       "tvdb": 80327,
       "tmdb": 42887,
-      "imdb": "tt1169193",
+      "imdb": "tt1161699",
       "tvrage": null
     }
   },
@@ -16599,8 +16599,16 @@
       "id": 44494,
       "slug": "remy-nobody-s-girl",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 54881,
+        "number": 1,
+        "externals": {
+          "tvdb": 498212,
+          "tmdb": 53611,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 1996,
     "externals": {
@@ -17534,7 +17542,7 @@
     "externals": {
       "tvdb": 80327,
       "tmdb": 42887,
-      "imdb": "tt1169193",
+      "imdb": "tt1161699",
       "tvrage": null
     }
   },
@@ -17664,8 +17672,16 @@
       "id": 64029,
       "slug": "hatenkou-yugi",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 67216,
+        "number": 1,
+        "externals": {
+          "tvdb": 42121,
+          "tmdb": 102696,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2008,
     "externals": {
@@ -22416,7 +22432,7 @@
     "externals": {
       "tvdb": 80327,
       "tmdb": 42887,
-      "imdb": "tt1169193",
+      "imdb": "tt1161699",
       "tvrage": null
     }
   },
@@ -31856,7 +31872,7 @@
       "id": 14829
     },
     "trakt": {
-      "title": "Fate/Kaleid Liner Prisma Illya",
+      "title": "Fate/kaleid liner Prisma Illya",
       "id": 70833,
       "slug": "fate-kaleid-liner-prisma-illya",
       "type": "shows",
@@ -32109,9 +32125,9 @@
       "id": 15051
     },
     "trakt": {
-      "title": "Love Live!",
+      "title": "Love Live! School Idol Project",
       "id": 68951,
-      "slug": "love-live",
+      "slug": "love-live-school-idol-project",
       "type": "shows",
       "season": {
         "id": 74150,
@@ -35744,9 +35760,9 @@
       "id": 19111
     },
     "trakt": {
-      "title": "Love Live!",
+      "title": "Love Live! School Idol Project",
       "id": 68951,
-      "slug": "love-live",
+      "slug": "love-live-school-idol-project",
       "type": "shows",
       "season": {
         "id": 74242,
@@ -36875,7 +36891,7 @@
       "id": 20509
     },
     "trakt": {
-      "title": "Fate/Kaleid Liner Prisma Illya",
+      "title": "Fate/kaleid liner Prisma Illya",
       "id": 70833,
       "slug": "fate-kaleid-liner-prisma-illya",
       "type": "shows",
@@ -37165,7 +37181,7 @@
       "id": 20853
     },
     "trakt": {
-      "title": "Chaika the Coffin Princess",
+      "title": "Chaika - The Coffin Princess",
       "id": 60382,
       "slug": "chaika-the-coffin-princess",
       "type": "shows",
@@ -37836,8 +37852,16 @@
       "id": 75829,
       "slug": "magica-wars",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 81919,
+        "number": 1,
+        "externals": {
+          "tvdb": 575673,
+          "tmdb": 81818,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2014,
     "externals": {
@@ -40903,7 +40927,7 @@
       "id": 24231
     },
     "trakt": {
-      "title": "Chaika the Coffin Princess",
+      "title": "Chaika - The Coffin Princess",
       "id": 60382,
       "slug": "chaika-the-coffin-princess",
       "type": "shows",
@@ -42374,7 +42398,7 @@
       "id": 27525
     },
     "trakt": {
-      "title": "Fate/Kaleid Liner Prisma Illya",
+      "title": "Fate/kaleid liner Prisma Illya",
       "id": 70833,
       "slug": "fate-kaleid-liner-prisma-illya",
       "type": "shows",
@@ -45242,18 +45266,26 @@
       "id": 30455
     },
     "trakt": {
-      "title": "KanColle: Kantai Collection",
-      "id": 76603,
-      "slug": "kancolle-kantai-collection",
+      "title": "KanColle: See You Again on Another Quiet Blue Sea",
+      "id": 198600,
+      "slug": "kancolle-see-you-again-on-another-quiet-blue-sea",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 304500,
+        "number": 1,
+        "externals": {
+          "tvdb": 279533,
+          "tmdb": 295736,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
-    "release_year": 2015,
+    "release_year": 2022,
     "externals": {
-      "tvdb": 279533,
-      "tmdb": 65711,
-      "imdb": "tt3639872",
+      "tvdb": null,
+      "tmdb": 203192,
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -47667,7 +47699,7 @@
       "id": 31629
     },
     "trakt": {
-      "title": "Granblue Fantasy The Animation",
+      "title": "Granblue Fantasy: The Animation",
       "id": 113248,
       "slug": "granblue-fantasy-the-animation",
       "type": "shows",
@@ -47920,7 +47952,7 @@
       "id": 31706
     },
     "trakt": {
-      "title": "Fate/Kaleid Liner Prisma Illya",
+      "title": "Fate/kaleid liner Prisma Illya",
       "id": 70833,
       "slug": "fate-kaleid-liner-prisma-illya",
       "type": "shows",
@@ -49613,7 +49645,7 @@
     "externals": {
       "tvdb": 329824,
       "tmdb": 72513,
-      "imdb": null,
+      "imdb": "tt37884323",
       "tvrage": null
     }
   },
@@ -55491,7 +55523,7 @@
       "id": 34403
     },
     "trakt": {
-      "title": "My First Girlfriend is a Gal",
+      "title": "My First Girlfriend Is a Gal",
       "id": 120491,
       "slug": "my-first-girlfriend-is-a-gal",
       "type": "shows",
@@ -56477,7 +56509,7 @@
       "id": 34618
     },
     "trakt": {
-      "title": "Blend · S",
+      "title": "BLEND-S",
       "id": 122166,
       "slug": "blend-s",
       "type": "shows",
@@ -58192,8 +58224,16 @@
       "id": 122776,
       "slug": "sengoku-night-blood",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 151039,
+        "number": 1,
+        "externals": {
+          "tvdb": 730004,
+          "tmdb": 93353,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2017,
     "externals": {
@@ -60293,8 +60333,16 @@
       "id": 123876,
       "slug": "junji-ito-collection",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 155411,
+        "number": 1,
+        "externals": {
+          "tvdb": 741889,
+          "tmdb": 96702,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2018,
     "externals": {
@@ -61338,7 +61386,7 @@
       "id": 36587
     },
     "trakt": {
-      "title": "Granblue Fantasy The Animation",
+      "title": "Granblue Fantasy: The Animation",
       "id": 113248,
       "slug": "granblue-fantasy-the-animation",
       "type": "shows",
@@ -65375,8 +65423,16 @@
       "id": 113267,
       "slug": "bang-dream",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 164683,
+        "number": 2,
+        "externals": {
+          "tvdb": 765530,
+          "tmdb": 110809,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2017,
     "externals": {
@@ -75201,7 +75257,7 @@
     "externals": {
       "tvdb": 379920,
       "tmdb": 97941,
-      "imdb": "",
+      "imdb": "tt37815628",
       "tvrage": null
     }
   },
@@ -85216,8 +85272,16 @@
       "id": 190176,
       "slug": "i-m-quitting-heroing",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 277617,
+        "number": 1,
+        "externals": {
+          "tvdb": 1963568,
+          "tmdb": 216336,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2022,
     "externals": {
@@ -89163,7 +89227,7 @@
       "id": 51761
     },
     "trakt": {
-      "title": "Umamusume: Pretty Derby – Road to the Top",
+      "title": "Umamusume: Pretty Derby - Road to the Top",
       "id": 204286,
       "slug": "umamusume-pretty-derby-road-to-the-top",
       "type": "shows",
@@ -90307,26 +90371,26 @@
       "id": 52347
     },
     "trakt": {
-      "title": "Shangri-La",
-      "id": 61917,
-      "slug": "shangri-la",
+      "title": "Shangri-La Frontier",
+      "id": 196794,
+      "slug": "shangri-la-frontier",
       "type": "shows",
       "season": {
-        "id": 63992,
+        "id": 299012,
         "number": 1,
         "externals": {
-          "tvdb": 48251,
-          "tmdb": 37718,
+          "tvdb": 2007795,
+          "tmdb": 299096,
           "tvrage": null
         }
       },
       "is_split_cour": false
     },
-    "release_year": 2009,
+    "release_year": 2023,
     "externals": {
-      "tvdb": 87871,
-      "tmdb": 27008,
-      "imdb": "tt2051683",
+      "tvdb": 421855,
+      "tmdb": 205050,
+      "imdb": "tt28776190",
       "tvrage": null
     }
   },
@@ -95935,7 +95999,7 @@
     },
     "release_year": 2023,
     "externals": {
-      "tvdb": null,
+      "tvdb": 437802,
       "tmdb": 229607,
       "imdb": null,
       "tvrage": null
@@ -98900,8 +98964,16 @@
       "id": 94090,
       "slug": "is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 515138,
+        "number": 6,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 499698,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2015,
     "externals": {
@@ -100457,8 +100529,16 @@
       "id": 224865,
       "slug": "sorairo-utility",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 362461,
+        "number": 1,
+        "externals": {
+          "tvdb": 2110326,
+          "tmdb": 378145,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2025,
     "externals": {
@@ -106884,7 +106964,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 459743,
       "tmdb": 297743,
       "imdb": null,
       "tvrage": null
@@ -107777,7 +107857,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 471395,
       "tmdb": 296933,
       "imdb": null,
       "tvrage": null
@@ -108038,7 +108118,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 468366,
       "tmdb": 301124,
       "imdb": null,
       "tvrage": null
@@ -108125,7 +108205,7 @@
     },
     "release_year": 2026,
     "externals": {
-      "tvdb": null,
+      "tvdb": 474202,
       "tmdb": 304126,
       "imdb": null,
       "tvrage": null
