@@ -181,6 +181,24 @@
   },
   {
     "myanimelist": {
+      "title": "Kidou Senshi Gundam F91",
+      "id": 88
+    },
+    "trakt": {
+      "title": "Mobile Suit Gundam F91",
+      "id": 10032,
+      "slug": "mobile-suit-gundam-f91-1991",
+      "type": "movies"
+    },
+    "release_year": 1991,
+    "externals": {
+      "tmdb": 16308,
+      "imdb": "tt0159568",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "X/1999",
       "id": 155
     },
@@ -4172,6 +4190,24 @@
     "externals": {
       "tmdb": 43967,
       "imdb": "tt0088334",
+      "letterboxd": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Urusei Yatsura Movie 3: Remember My Love",
+      "id": 1922
+    },
+    "trakt": {
+      "title": "Urusei Yatsura: Remember My Love",
+      "id": 98748,
+      "slug": "urusei-yatsura-remember-my-love-1985",
+      "type": "movies"
+    },
+    "release_year": 1985,
+    "externals": {
+      "tmdb": 150024,
+      "imdb": "tt0090244",
       "letterboxd": null
     }
   },
