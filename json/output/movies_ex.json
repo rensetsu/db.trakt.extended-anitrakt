@@ -2077,10 +2077,10 @@
     "trakt": {
       "title": "Street Fighter Alpha: The Movie",
       "id": 10657,
-      "slug": "street-fighter-alpha-the-movie-2001",
+      "slug": "street-fighter-alpha-the-movie-1999",
       "type": "movies"
     },
-    "release_year": 2001,
+    "release_year": 1999,
     "externals": {
       "tmdb": 17433,
       "imdb": "tt0185708",
@@ -2120,24 +2120,6 @@
     "externals": {
       "tmdb": 18095,
       "imdb": "tt0142232",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Sin in the Rain",
-      "id": 994
-    },
-    "trakt": {
-      "title": "Sin in the Rain",
-      "id": 317976,
-      "slug": "sin-in-the-rain-2006",
-      "type": "movies"
-    },
-    "release_year": 2006,
-    "externals": {
-      "tmdb": 470693,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -5585,9 +5567,9 @@
       "id": 2884
     },
     "trakt": {
-      "title": "Aachi and Ssipak",
+      "title": "Aachi \u0026 Ssipak",
       "id": 13709,
-      "slug": "aachi-and-ssipak-2006",
+      "slug": "aachi-ssipak-2006",
       "type": "movies"
     },
     "release_year": 2006,
@@ -7327,24 +7309,6 @@
   },
   {
     "myanimelist": {
-      "title": "Life no Color",
-      "id": 6305
-    },
-    "trakt": {
-      "title": "Life no Color",
-      "id": 89419,
-      "slug": "life-no-color-2003",
-      "type": "movies"
-    },
-    "release_year": 2003,
-    "externals": {
-      "tmdb": 131294,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Naruto: Shippuuden Movie 3 - Hi no Ishi wo Tsugu Mono",
       "id": 6325
     },
@@ -7376,24 +7340,6 @@
     "externals": {
       "tmdb": 35435,
       "imdb": "tt1460738",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "ef: A Tale of Melodies. - Prologue",
-      "id": 6401
-    },
-    "trakt": {
-      "title": "ef - a tale of melodies. ~prologue~",
-      "id": 415610,
-      "slug": "ef-a-tale-of-melodies-prologue-2008",
-      "type": "movies"
-    },
-    "release_year": 2008,
-    "externals": {
-      "tmdb": 566046,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -7682,24 +7628,6 @@
     "externals": {
       "tmdb": 95935,
       "imdb": "tt1264885",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Mudazumo Naki Kaikaku: The Legend of Koizumi",
-      "id": 6946
-    },
-    "trakt": {
-      "title": "The Legend of Koizumi",
-      "id": 70853,
-      "slug": "the-legend-of-koizumi-2010",
-      "type": "movies"
-    },
-    "release_year": 2010,
-    "externals": {
-      "tmdb": 97570,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -8114,24 +8042,6 @@
     "externals": {
       "tmdb": 73245,
       "imdb": "tt1785394",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Shoka",
-      "id": 8337
-    },
-    "trakt": {
-      "title": "Shoka",
-      "id": 22476,
-      "slug": "shoka-2010",
-      "type": "movies"
-    },
-    "release_year": 2010,
-    "externals": {
-      "tmdb": 35267,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -8690,24 +8600,6 @@
     "externals": {
       "tmdb": 409382,
       "imdb": "tt3651524",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Yuri Seijin Naoko-san",
-      "id": 9608
-    },
-    "trakt": {
-      "title": "Lesbian Citizen Naoko-san",
-      "id": 222679,
-      "slug": "lesbian-citizen-naoko-san-2010",
-      "type": "movies"
-    },
-    "release_year": 2010,
-    "externals": {
-      "tmdb": 358689,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -10621,24 +10513,6 @@
   },
   {
     "myanimelist": {
-      "title": "Persona 4 the Animation: The Factor of Hope",
-      "id": 14267
-    },
-    "trakt": {
-      "title": "Persona4 the ANIMATION -The Factor of Hope-",
-      "id": 362907,
-      "slug": "persona4-the-animation-the-factor-of-hope-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 402075,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Nerawareta Gakuen",
       "id": 14293
     },
@@ -10976,24 +10850,6 @@
     "externals": {
       "tmdb": 347187,
       "imdb": "tt3354306",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": ".hack//Versus: The Thanatos Report",
-      "id": 15219
-    },
-    "trakt": {
-      "title": ".hack//Versus: The Thanatos Report",
-      "id": 136806,
-      "slug": "hack-versus-the-thanatos-report-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 222766,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -11503,24 +11359,6 @@
   },
   {
     "myanimelist": {
-      "title": "Ark IX",
-      "id": 17395
-    },
-    "trakt": {
-      "title": "Ark IX",
-      "id": 287145,
-      "slug": "ark-ix-2013",
-      "type": "movies"
-    },
-    "release_year": 2013,
-    "externals": {
-      "tmdb": 441482,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "The iDOLM@STER Movie: Kagayaki no Mukougawa e!",
       "id": 17437
     },
@@ -11881,24 +11719,6 @@
   },
   {
     "myanimelist": {
-      "title": "Himeyuri",
-      "id": 20469
-    },
-    "trakt": {
-      "title": "Himeyuri",
-      "id": 164799,
-      "slug": "himeyuri-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 266226,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Bayonetta: Bloody Fate",
       "id": 20543
     },
@@ -12187,24 +12007,6 @@
   },
   {
     "myanimelist": {
-      "title": "Wasure-boshi",
-      "id": 21591
-    },
-    "trakt": {
-      "title": "Wasure-Boshi",
-      "id": 276770,
-      "slug": "wasure-boshi-2013",
-      "type": "movies"
-    },
-    "release_year": 2013,
-    "externals": {
-      "tmdb": 363115,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Yabai! Fukushuu Yami Site",
       "id": 21597
     },
@@ -12218,24 +12020,6 @@
     "externals": {
       "tmdb": 39057,
       "imdb": "tt1468843",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Picotopia",
-      "id": 21607
-    },
-    "trakt": {
-      "title": "Picotopia",
-      "id": 225914,
-      "slug": "picotopia-2013",
-      "type": "movies"
-    },
-    "release_year": 2013,
-    "externals": {
-      "tmdb": 383314,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -12817,24 +12601,6 @@
   },
   {
     "myanimelist": {
-      "title": "Hana wa Saku: Touhoku ni Saku",
-      "id": 28093
-    },
-    "trakt": {
-      "title": "Flowers Will Bloom In Tohoku",
-      "id": 223450,
-      "slug": "flowers-will-bloom-in-tohoku-2014",
-      "type": "movies"
-    },
-    "release_year": 2014,
-    "externals": {
-      "tmdb": 365334,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Harmony",
       "id": 28211
     },
@@ -13213,24 +12979,6 @@
   },
   {
     "myanimelist": {
-      "title": "Baka Baka Baka na Sekai",
-      "id": 29777
-    },
-    "trakt": {
-      "title": "Crazy World",
-      "id": 225818,
-      "slug": "crazy-world-1968",
-      "type": "movies"
-    },
-    "release_year": 1968,
-    "externals": {
-      "tmdb": 383047,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Tamayura: Sotsugyou Shashin Part 2 - Hibiki",
       "id": 29829
     },
@@ -13285,24 +13033,6 @@
   },
   {
     "myanimelist": {
-      "title": "Yume",
-      "id": 29932
-    },
-    "trakt": {
-      "title": "Yume",
-      "id": 548143,
-      "slug": "yume-2006",
-      "type": "movies"
-    },
-    "release_year": 2006,
-    "externals": {
-      "tmdb": 704912,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Nami",
       "id": 29949
     },
@@ -13316,24 +13046,6 @@
     "externals": {
       "tmdb": 390214,
       "imdb": "tt9127092",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Count Down",
-      "id": 29957
-    },
-    "trakt": {
-      "title": "~Count Down~",
-      "id": 281954,
-      "slug": "count-down-2011",
-      "type": "movies"
-    },
-    "release_year": 2011,
-    "externals": {
-      "tmdb": 435157,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -13357,42 +13069,6 @@
   },
   {
     "myanimelist": {
-      "title": "Adventures in Beauty Wonderland",
-      "id": 29980
-    },
-    "trakt": {
-      "title": "Adventures in Beauty Wonderland",
-      "id": 287712,
-      "slug": "adventures-in-beauty-wonderland-2013",
-      "type": "movies"
-    },
-    "release_year": 2013,
-    "externals": {
-      "tmdb": 442240,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Fukashigi no Kazoekata",
-      "id": 30105
-    },
-    "trakt": {
-      "title": "The Art of 10^64 -Understanding Vastness-",
-      "id": 225906,
-      "slug": "the-art-of-10-64-understanding-vastness-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 383330,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Eun-sil-i",
       "id": 30193
     },
@@ -13406,24 +13082,6 @@
     "externals": {
       "tmdb": 133993,
       "imdb": "tt3079670",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Obake no Dokurou",
-      "id": 30324
-    },
-    "trakt": {
-      "title": "Dokuro the Ghost",
-      "id": 223447,
-      "slug": "dokuro-the-ghost-2015",
-      "type": "movies"
-    },
-    "release_year": 2015,
-    "externals": {
-      "tmdb": 351508,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -13969,24 +13627,6 @@
   },
   {
     "myanimelist": {
-      "title": "Aoki Seimei Hoken",
-      "id": 31513
-    },
-    "trakt": {
-      "title": "Aoki Seimei Hoken",
-      "id": 226074,
-      "slug": "aoki-seimei-hoken-2006",
-      "type": "movies"
-    },
-    "release_year": 2006,
-    "externals": {
-      "tmdb": 384268,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Luger Code 1951",
       "id": 31598
     },
@@ -14036,24 +13676,6 @@
     "externals": {
       "tmdb": 428707,
       "imdb": "tt6728390",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "◯",
-      "id": 31687
-    },
-    "trakt": {
-      "title": "Circle",
-      "id": 292947,
-      "slug": "circle-2010-12-31",
-      "type": "movies"
-    },
-    "release_year": 2010,
-    "externals": {
-      "tmdb": 442279,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -14162,24 +13784,6 @@
     "externals": {
       "tmdb": 413594,
       "imdb": "tt5544384",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Sinbad: Mahou no Lamp to Ugoku Shima",
-      "id": 31829
-    },
-    "trakt": {
-      "title": "Sinbad - The Magical Lamp and the Moving Island",
-      "id": 224365,
-      "slug": "sinbad-the-magical-lamp-and-the-moving-island-2016",
-      "type": "movies"
-    },
-    "release_year": 2016,
-    "externals": {
-      "tmdb": 372767,
-      "imdb": "tt4641286",
       "letterboxd": null
     }
   },
@@ -15121,60 +14725,6 @@
   },
   {
     "myanimelist": {
-      "title": "Chain Chronicle: Haecceitas no Hikari Part 1",
-      "id": 33728
-    },
-    "trakt": {
-      "title": "Chain Chronicle: The Light of Haecceitas Movie 1",
-      "id": 260280,
-      "slug": "chain-chronicle-the-light-of-haecceitas-movie-1-2016",
-      "type": "movies"
-    },
-    "release_year": 2016,
-    "externals": {
-      "tmdb": 415282,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Chain Chronicle: Haecceitas no Hikari Part 2",
-      "id": 33729
-    },
-    "trakt": {
-      "title": "Chain Chronicle: The Light of Haecceitas Movie 2",
-      "id": 272352,
-      "slug": "chain-chronicle-the-light-of-haecceitas-movie-2-2017",
-      "type": "movies"
-    },
-    "release_year": 2017,
-    "externals": {
-      "tmdb": 428294,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Chain Chronicle: Haecceitas no Hikari Part 3",
-      "id": 33730
-    },
-    "trakt": {
-      "title": "Chain Chronicle: The Light of Haecceitas Movie 3",
-      "id": 272353,
-      "slug": "chain-chronicle-the-light-of-haecceitas-movie-3-2017",
-      "type": "movies"
-    },
-    "release_year": 2017,
-    "externals": {
-      "tmdb": 428297,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Kidou Keisatsu Patlabor: Reboot",
       "id": 33741
     },
@@ -15314,24 +14864,6 @@
     "externals": {
       "tmdb": 419094,
       "imdb": "tt6096128",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Landreaall",
-      "id": 34151
-    },
-    "trakt": {
-      "title": "Landreaall",
-      "id": 272351,
-      "slug": "landreaall-2017",
-      "type": "movies"
-    },
-    "release_year": 2017,
-    "externals": {
-      "tmdb": 428286,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -16687,24 +16219,6 @@
   },
   {
     "myanimelist": {
-      "title": "Peace Maker Kurogane Movie 2: Yuumei",
-      "id": 36556
-    },
-    "trakt": {
-      "title": "Peacemaker Kurogane: Friend",
-      "id": 399807,
-      "slug": "peacemaker-kurogane-friend-2018",
-      "type": "movies"
-    },
-    "release_year": 2018,
-    "externals": {
-      "tmdb": 550082,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Crayon Shin-chan Movie 26: Bakumori! Kung Fu Boys - Ramen Tairan",
       "id": 36566
     },
@@ -17029,24 +16543,6 @@
   },
   {
     "myanimelist": {
-      "title": "It's My Life",
-      "id": 37286
-    },
-    "trakt": {
-      "title": "It's My Life",
-      "id": 421636,
-      "slug": "it-s-my-life-2019",
-      "type": "movies"
-    },
-    "release_year": 2019,
-    "externals": {
-      "tmdb": 570575,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "K: Seven Stories Movie 2 - Side:Blue - Tenrou no Gotoku",
       "id": 37303
     },
@@ -17150,24 +16646,6 @@
     "externals": {
       "tmdb": 553835,
       "imdb": "tt9526152",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Oshie to Tabi Suru Otoko",
-      "id": 37365
-    },
-    "trakt": {
-      "title": "The Traveler with the Pasted Rag Picture",
-      "id": 383872,
-      "slug": "the-traveler-with-the-pasted-rag-picture-2018",
-      "type": "movies"
-    },
-    "release_year": 2018,
-    "externals": {
-      "tmdb": 532009,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -17303,9 +16781,9 @@
       "id": 37501
     },
     "trakt": {
-      "title": "HUGtto! Pretty Cure♡Futari wa Pretty Cure: All Stars Memories",
+      "title": "HUG! PreCure Futari wa Pretty Cure: All Star Memories",
       "id": 401171,
-      "slug": "hugtto-pretty-cure-futari-wa-pretty-cure-all-stars-memories-2018",
+      "slug": "hug-precure-futari-wa-pretty-cure-all-star-memories-2018",
       "type": "movies"
     },
     "release_year": 2018,
@@ -17557,10 +17035,10 @@
     "trakt": {
       "title": "One Piece: Episode of Skypiea",
       "id": 396202,
-      "slug": "one-piece-episode-of-skypiea-2019",
+      "slug": "one-piece-episode-of-skypiea-2018",
       "type": "movies"
     },
-    "release_year": 2019,
+    "release_year": 2018,
     "externals": {
       "tmdb": 545742,
       "imdb": "tt11744496",
@@ -18451,24 +17929,6 @@
   },
   {
     "myanimelist": {
-      "title": "100% Renewable Energy",
-      "id": 39208
-    },
-    "trakt": {
-      "title": "100% Renewable Energy",
-      "id": 569820,
-      "slug": "100-renewable-energy-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 727433,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Ni no Kuni",
       "id": 39235
     },
@@ -18500,24 +17960,6 @@
     "externals": {
       "tmdb": 636959,
       "imdb": "tt11311968",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Channeler",
-      "id": 39273
-    },
-    "trakt": {
-      "title": "Channeler",
-      "id": 228211,
-      "slug": "channeler-2012",
-      "type": "movies"
-    },
-    "release_year": 2012,
-    "externals": {
-      "tmdb": 386571,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -18811,24 +18253,6 @@
   },
   {
     "myanimelist": {
-      "title": "Collar x Malice Movie: Deep Cover",
-      "id": 39905
-    },
-    "trakt": {
-      "title": "Collar×Malice: deep cover part1",
-      "id": 820549,
-      "slug": "collarxmalice-deep-cover-part1-2023",
-      "type": "movies"
-    },
-    "release_year": 2023,
-    "externals": {
-      "tmdb": 1020496,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Inu-Ou",
       "id": 39938
     },
@@ -18932,24 +18356,6 @@
     "externals": {
       "tmdb": 614587,
       "imdb": "tt10621032",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Digimon Survive: Prologue Movie",
-      "id": 40156
-    },
-    "trakt": {
-      "title": "Digimon Survive: Prologue Movie",
-      "id": 461242,
-      "slug": "digimon-survive-prologue-movie-2019",
-      "type": "movies"
-    },
-    "release_year": 2019,
-    "externals": {
-      "tmdb": 618325,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -19135,24 +18541,6 @@
   },
   {
     "myanimelist": {
-      "title": "King of Prism All Stars: Prism Show Best Ten",
-      "id": 40543
-    },
-    "trakt": {
-      "title": "King of Prism All Stars: Prism Show Best Ten",
-      "id": 493848,
-      "slug": "king-of-prism-all-stars-prism-show-best-ten-2020",
-      "type": "movies"
-    },
-    "release_year": 2020,
-    "externals": {
-      "tmdb": 659894,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "\"Uchuu Senkan Yamato\" to Iu Jidai: Seireki 2202-nen no Sentaku",
       "id": 40554
     },
@@ -19292,24 +18680,6 @@
     "externals": {
       "tmdb": 645439,
       "imdb": "tt12699782",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Kaiju Decode",
-      "id": 40717
-    },
-    "trakt": {
-      "title": "Kaiju Decode",
-      "id": 719319,
-      "slug": "kaiju-decode-2021",
-      "type": "movies"
-    },
-    "release_year": 2021,
-    "externals": {
-      "tmdb": 896630,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -19553,7 +18923,7 @@
       "id": 41141
     },
     "trakt": {
-      "title": "Princess Principal: Crown Handler - Chapter 3",
+      "title": "Princess Principal Crown Handler: Chapter 3",
       "id": 716606,
       "slug": "princess-principal-crown-handler-chapter-3-2023",
       "type": "movies"
@@ -19963,24 +19333,6 @@
   },
   {
     "myanimelist": {
-      "title": "This Is Not Blue",
-      "id": 42836
-    },
-    "trakt": {
-      "title": "This is not BLUE",
-      "id": 603901,
-      "slug": "this-is-not-blue-2020",
-      "type": "movies"
-    },
-    "release_year": 2020,
-    "externals": {
-      "tmdb": 765510,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Ai no Utagoe wo Kikasete",
       "id": 42847
     },
@@ -20341,24 +19693,6 @@
   },
   {
     "myanimelist": {
-      "title": "Argonavis Movie: Axia",
-      "id": 45731
-    },
-    "trakt": {
-      "title": "Gekijouban Argonavis: Axia",
-      "id": 784152,
-      "slug": "gekijouban-argonavis-axia-2023",
-      "type": "movies"
-    },
-    "release_year": 2023,
-    "externals": {
-      "tmdb": 975637,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Nanatsu no Taizai Movie 2: Hikari ni Norowareshi Mono-tachi",
       "id": 46420
     },
@@ -20521,24 +19855,6 @@
   },
   {
     "myanimelist": {
-      "title": "Uta no☆Prince-sama♪ Movie: Maji Love ST☆RISH Tours",
-      "id": 48573
-    },
-    "trakt": {
-      "title": "Uta no Prince-sama Maji LOVE Starish Tours",
-      "id": 798926,
-      "slug": "uta-no-prince-sama-maji-love-starish-tours-2022",
-      "type": "movies"
-    },
-    "release_year": 2022,
-    "externals": {
-      "tmdb": 994315,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Black Clover: Mahou Tei no Ken",
       "id": 48585
     },
@@ -20611,24 +19927,6 @@
   },
   {
     "myanimelist": {
-      "title": "Riku wa Yowakunai",
-      "id": 48703
-    },
-    "trakt": {
-      "title": "Riku wa Yowakunai",
-      "id": 702499,
-      "slug": "riku-wa-yowakunai-2021",
-      "type": "movies"
-    },
-    "release_year": 2021,
-    "externals": {
-      "tmdb": 877843,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Dakaretai Otoko 1-i ni Odosarete Imasu. Movie: Spain-hen",
       "id": 48780
     },
@@ -20642,24 +19940,6 @@
     "externals": {
       "tmdb": 820530,
       "imdb": "tt14489118",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Oshiri Tantei Movie 3: Sufure-tou no Himitsu",
-      "id": 48784
-    },
-    "trakt": {
-      "title": "Butt Detective the Movie: The Secret of Souffulé Island",
-      "id": 673344,
-      "slug": "butt-detective-the-movie-the-secret-of-souffule-island-2021",
-      "type": "movies"
-    },
-    "release_year": 2021,
-    "externals": {
-      "tmdb": 843247,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -20732,24 +20012,6 @@
     "externals": {
       "tmdb": 829241,
       "imdb": "tt14648676",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Given: Uragawa no Sonzai",
-      "id": 49053
-    },
-    "trakt": {
-      "title": "Given: On The Other Hand",
-      "id": 1236396,
-      "slug": "given-on-the-other-hand-2021",
-      "type": "movies"
-    },
-    "release_year": 2021,
-    "externals": {
-      "tmdb": 1507294,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -20912,24 +20174,6 @@
     "externals": {
       "tmdb": 846993,
       "imdb": "tt14967958",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Shinkai no Survival!",
-      "id": 49369
-    },
-    "trakt": {
-      "title": "Survive! In the Deep Sea",
-      "id": 673345,
-      "slug": "survive-in-the-deep-sea-2021",
-      "type": "movies"
-    },
-    "release_year": 2021,
-    "externals": {
-      "tmdb": 843245,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -21128,24 +20372,6 @@
     "externals": {
       "tmdb": 997086,
       "imdb": "tt15447084",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Zannen na Ikimono Jiten the Movie",
-      "id": 49843
-    },
-    "trakt": {
-      "title": "Zannen na Ikimono Jiten the Movie",
-      "id": 798925,
-      "slug": "zannen-na-ikimono-jiten-the-movie-2022",
-      "type": "movies"
-    },
-    "release_year": 2022,
-    "externals": {
-      "tmdb": 994313,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -21511,42 +20737,6 @@
   },
   {
     "myanimelist": {
-      "title": "Shiyakusho",
-      "id": 50993
-    },
-    "trakt": {
-      "title": "Death Hall",
-      "id": 1061312,
-      "slug": "death-hall-2022",
-      "type": "movies"
-    },
-    "release_year": 2022,
-    "externals": {
-      "tmdb": 1301590,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Kawaru Machi, Kawareru Machi, Ishinomaki feat. Jun",
-      "id": 51008
-    },
-    "trakt": {
-      "title": "Jun:  A City That Changes",
-      "id": 755539,
-      "slug": "jun-a-city-that-changes-2022",
-      "type": "movies"
-    },
-    "release_year": 2022,
-    "externals": {
-      "tmdb": 941063,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Kagami no Kojou",
       "id": 51116
     },
@@ -21560,24 +20750,6 @@
     "externals": {
       "tmdb": 942881,
       "imdb": "tt22868842",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Idol Bu Show Movie",
-      "id": 51147
-    },
-    "trakt": {
-      "title": "IDOL bu SHOW Movie",
-      "id": 758747,
-      "slug": "idol-bu-show-movie-2022",
-      "type": "movies"
-    },
-    "release_year": 2022,
-    "externals": {
-      "tmdb": 944703,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -21650,24 +20822,6 @@
     "externals": {
       "tmdb": 998731,
       "imdb": "tt29092780",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Rabbits Kingdom the Movie",
-      "id": 51539
-    },
-    "trakt": {
-      "title": "Rabbits Kingdom the Movie",
-      "id": 777371,
-      "slug": "rabbits-kingdom-the-movie-2024",
-      "type": "movies"
-    },
-    "release_year": 2024,
-    "externals": {
-      "tmdb": 967265,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -21961,24 +21115,6 @@
   },
   {
     "myanimelist": {
-      "title": "Youkai Watch ♪ Movie 8: Jibanyan vs. Komasan - Monge Daikessen da Nyan",
-      "id": 53634
-    },
-    "trakt": {
-      "title": "Yo-kai Watch♪ Movie 8: Jibanyan vs. Komasan - The Big Amazing Battle, Nyan",
-      "id": 859252,
-      "slug": "yo-kai-watch-movie-8-jibanyan-vs-komasan-the-big-amazing-battle-nyan-2023",
-      "type": "movies"
-    },
-    "release_year": 2023,
-    "externals": {
-      "tmdb": 1068525,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Next Sky",
       "id": 53671
     },
@@ -22244,24 +21380,6 @@
     "externals": {
       "tmdb": 1106904,
       "imdb": "tt28347814",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Mask Danshi wa Koishitakunai noni",
-      "id": 54792
-    },
-    "trakt": {
-      "title": "Mask Danshi wa Koishitakunai noni",
-      "id": 988407,
-      "slug": "mask-danshi-wa-koishitakunai-noni-2023",
-      "type": "movies"
-    },
-    "release_year": 2023,
-    "externals": {
-      "tmdb": 1223906,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -22829,15 +21947,15 @@
       "id": 57754
     },
     "trakt": {
-      "title": "BanG Dream! It's MyGO!!!!! Movie 2",
-      "id": 997382,
-      "slug": "bang-dream-it-s-mygo-movie-2-2024",
+      "title": "BanG Dream! It's MyGO!!!!! Movie",
+      "id": 996161,
+      "slug": "bang-dream-it-s-mygo-movie-2024",
       "type": "movies"
     },
     "release_year": 2024,
     "externals": {
-      "tmdb": 1233186,
-      "imdb": null,
+      "tmdb": 1231799,
+      "imdb": "tt36808553",
       "letterboxd": null
     }
   },
@@ -23059,24 +22177,6 @@
   },
   {
     "myanimelist": {
-      "title": "30-sai made Doutei dato Mahoutsukai ni Nareru Rashii Movie",
-      "id": 58549
-    },
-    "trakt": {
-      "title": "Cherry Magic! Thirty Years of Virginity Can Make You a Wizard?! Movie",
-      "id": 1113114,
-      "slug": "cherry-magic-thirty-years-of-virginity-can-make-you-a-wizard-movie-2024",
-      "type": "movies"
-    },
-    "release_year": 2024,
-    "externals": {
-      "tmdb": 1363560,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Hanarokushou ga Akeru Hi ni",
       "id": 58735
     },
@@ -23185,24 +22285,6 @@
   },
   {
     "myanimelist": {
-      "title": "Binan Koukou Chikyuu Bouei-bu Eternal Love!",
-      "id": 59406
-    },
-    "trakt": {
-      "title": "Cute High Earth Defense Club ETERNAL LOVE!",
-      "id": 1150430,
-      "slug": "cute-high-earth-defense-club-eternal-love-2025",
-      "type": "movies"
-    },
-    "release_year": 2025,
-    "externals": {
-      "tmdb": 1406243,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Mononoke Movie 2: Hinezumi",
       "id": 59408
     },
@@ -23293,31 +22375,13 @@
   },
   {
     "myanimelist": {
-      "title": "Inazuma Eleven: Aratanaru Eiyuu-tachi no Joshou",
-      "id": 59710
-    },
-    "trakt": {
-      "title": "Inazuma Eleven the Movie: Prologue of New Heroes",
-      "id": 1102482,
-      "slug": "inazuma-eleven-the-movie-prologue-of-new-heroes-2024",
-      "type": "movies"
-    },
-    "release_year": 2024,
-    "externals": {
-      "tmdb": 1346726,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Girls Band Cry Movie",
       "id": 59817
     },
     "trakt": {
-      "title": "Girls Band Cry The Movie Part 1: Youth Rhapsody",
+      "title": "GIRLS BAND CRY The Movie: Youth Rhapsody",
       "id": 1170700,
-      "slug": "girls-band-cry-the-movie-part-1-youth-rhapsody-2025",
+      "slug": "girls-band-cry-the-movie-youth-rhapsody-2025",
       "type": "movies"
     },
     "release_year": 2025,
@@ -23563,24 +22627,6 @@
   },
   {
     "myanimelist": {
-      "title": "Sore Ike! Anpanman: Chapon no Hero!",
-      "id": 60962
-    },
-    "trakt": {
-      "title": "Sore Ike! Anpanman: Chapon no Hero!",
-      "id": 1234079,
-      "slug": "sore-ike-anpanman-chapon-no-hero-2025",
-      "type": "movies"
-    },
-    "release_year": 2025,
-    "externals": {
-      "tmdb": 1504914,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "King of Prism: Your Endless Call - Mi~nna Kirameki! Prism☆Tours",
       "id": 61120
     },
@@ -23666,24 +22712,6 @@
     "externals": {
       "tmdb": 1322562,
       "imdb": "tt36282134",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Sumikko Gurashi Movie 4: Sora no Oukoku to Futari no Ko",
-      "id": 61278
-    },
-    "trakt": {
-      "title": "Sumikko Gurashi: The Sky Kingdom and Two Children",
-      "id": 1233722,
-      "slug": "sumikko-gurashi-the-sky-kingdom-and-two-children-2025",
-      "type": "movies"
-    },
-    "release_year": 2025,
-    "externals": {
-      "tmdb": 1504111,
-      "imdb": null,
       "letterboxd": null
     }
   },
@@ -23797,24 +22825,6 @@
   },
   {
     "myanimelist": {
-      "title": "Golden Kamuy: Inazuma Goutou to Mamushi no Ogin/Shimaenaga",
-      "id": 61834
-    },
-    "trakt": {
-      "title": "Golden Kamuy: The Lightning Bandit and O-Gin the Viper / Shimaenaga",
-      "id": 1236777,
-      "slug": "golden-kamuy-the-lightning-bandit-and-o-gin-the-viper-shimaenaga-2025",
-      "type": "movies"
-    },
-    "release_year": 2025,
-    "externals": {
-      "tmdb": 1507729,
-      "imdb": null,
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Meikyuu no Shiori",
       "id": 61964
     },
@@ -23837,33 +22847,15 @@
       "id": 62193
     },
     "trakt": {
-      "title": "Paris ni Saku Étoile",
+      "title": "Samurai Ballerina -L'étoile de Paris en fleur-",
       "id": 1252258,
-      "slug": "paris-ni-saku-etoile-2026",
+      "slug": "samurai-ballerina-l-etoile-de-paris-en-fleur-2026",
       "type": "movies"
     },
     "release_year": 2026,
     "externals": {
       "tmdb": 1526874,
       "imdb": "tt37874634",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Kinuginu no Hanayuki",
-      "id": 62269
-    },
-    "trakt": {
-      "title": "Kinuginu no Hanayuki",
-      "id": 1260537,
-      "slug": "kinuginu-no-hanayuki-2025",
-      "type": "movies"
-    },
-    "release_year": 2025,
-    "externals": {
-      "tmdb": 1536040,
-      "imdb": null,
       "letterboxd": null
     }
   },

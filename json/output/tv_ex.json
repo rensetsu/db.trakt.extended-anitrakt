@@ -2391,7 +2391,7 @@
         "id": 30804,
         "number": 1,
         "externals": {
-          "tvdb": 78960,
+          "tvdb": 15907,
           "tmdb": 30089,
           "tvrage": null
         }
@@ -4165,7 +4165,7 @@
       "id": 252
     },
     "trakt": {
-      "title": "Madlax",
+      "title": "MADLAX",
       "id": 11232,
       "slug": "madlax",
       "type": "shows",
@@ -9008,7 +9008,7 @@
       "id": 855
     },
     "trakt": {
-      "title": "Strawberry Panic!",
+      "title": "Strawberry Panic",
       "id": 36001,
       "slug": "strawberry-panic",
       "type": "shows",
@@ -10433,16 +10433,8 @@
       "id": 33934,
       "slug": "daphne-in-the-brilliant-blue",
       "type": "shows",
-      "season": {
-        "id": 45691,
-        "number": 1,
-        "externals": {
-          "tvdb": 37789,
-          "tmdb": 44873,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2004,
     "externals": {
@@ -16023,9 +16015,9 @@
       "id": 2559
     },
     "trakt": {
-      "title": "Romeo and the Black Brothers",
+      "title": "Romeo's Blue Skies",
       "id": 43962,
-      "slug": "romeo-and-the-black-brothers",
+      "slug": "romeo-s-blue-skies",
       "type": "shows",
       "season": {
         "id": 101253,
@@ -25127,35 +25119,6 @@
   },
   {
     "myanimelist": {
-      "title": "Hakuouki: Hekketsuroku",
-      "id": 9065
-    },
-    "trakt": {
-      "title": "Hakuoki",
-      "id": 44073,
-      "slug": "hakuoki-2010",
-      "type": "shows",
-      "season": {
-        "id": 54646,
-        "number": 2,
-        "externals": {
-          "tvdb": 335311,
-          "tmdb": 53386,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2010,
-    "externals": {
-      "tvdb": 151281,
-      "tmdb": 44318,
-      "imdb": "tt1658978",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Arakawa Under the Bridge x Bridge",
       "id": 9074
     },
@@ -26552,7 +26515,7 @@
       "id": 10165
     },
     "trakt": {
-      "title": "Nichijou - My Ordinary Life",
+      "title": "Nichijou: My Ordinary Life",
       "id": 62400,
       "slug": "nichijou-my-ordinary-life",
       "type": "shows",
@@ -32580,35 +32543,6 @@
       "tvdb": 252474,
       "tmdb": 60732,
       "imdb": "tt3692198",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Date A Live",
-      "id": 15583
-    },
-    "trakt": {
-      "title": "Date A Live",
-      "id": 70005,
-      "slug": "date-a-live",
-      "type": "shows",
-      "season": {
-        "id": 75458,
-        "number": 1,
-        "externals": {
-          "tvdb": 506746,
-          "tmdb": 60758,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2013,
-    "externals": {
-      "tvdb": 264663,
-      "tmdb": 46004,
-      "imdb": "tt2575684",
       "tvrage": null
     }
   },
@@ -39937,35 +39871,6 @@
   },
   {
     "myanimelist": {
-      "title": "Gundam: G no Reconguista",
-      "id": 23259
-    },
-    "trakt": {
-      "title": "Gundam Reconguista in G",
-      "id": 60892,
-      "slug": "gundam-reconguista-in-g",
-      "type": "shows",
-      "season": {
-        "id": 62349,
-        "number": 1,
-        "externals": {
-          "tvdb": 591494,
-          "tmdb": 62871,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2014,
-    "externals": {
-      "tvdb": 283929,
-      "tmdb": 61414,
-      "imdb": "tt3996158",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Hello!! Kiniro Mosaic",
       "id": 23269
     },
@@ -47110,64 +47015,6 @@
       "tvdb": 343237,
       "tmdb": 74018,
       "imdb": "tt7407236",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Wagamama High Spec",
-      "id": 31439
-    },
-    "trakt": {
-      "title": "Wagamama High Spec",
-      "id": 104804,
-      "slug": "wagamama-high-spec",
-      "type": "shows",
-      "season": {
-        "id": 121741,
-        "number": 1,
-        "externals": {
-          "tvdb": 652755,
-          "tmdb": 76487,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2016,
-    "externals": {
-      "tvdb": 306151,
-      "tmdb": 66298,
-      "imdb": "tt5826266",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Teekyuu 6",
-      "id": 31440
-    },
-    "trakt": {
-      "title": "Teekyu",
-      "id": 67893,
-      "slug": "teekyu",
-      "type": "shows",
-      "season": {
-        "id": 115682,
-        "number": 6,
-        "externals": {
-          "tvdb": 636750,
-          "tmdb": 90332,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2012,
-    "externals": {
-      "tvdb": 262856,
-      "tmdb": 53020,
-      "imdb": "tt2390066",
       "tvrage": null
     }
   },
@@ -61415,9 +61262,9 @@
       "id": 36593
     },
     "trakt": {
-      "title": "HUGtto! PreCure",
+      "title": "HUG! Pretty Cure",
       "id": 126555,
-      "slug": "hugtto-precure",
+      "slug": "hug-pretty-cure",
       "type": "shows",
       "season": {
         "id": 156440,
@@ -61767,16 +61614,8 @@
       "id": 126696,
       "slug": "working-buddies",
       "type": "shows",
-      "season": {
-        "id": 156747,
-        "number": 1,
-        "externals": {
-          "tvdb": 745316,
-          "tmdb": 97530,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2018,
     "externals": {
@@ -62537,7 +62376,7 @@
       },
       "is_split_cour": false
     },
-    "release_year": 2017,
+    "release_year": 2018,
     "externals": {
       "tvdb": 340138,
       "tmdb": 76047,
@@ -68966,16 +68805,8 @@
       "id": 60417,
       "slug": "haikyu",
       "type": "shows",
-      "season": {
-        "id": 178362,
-        "number": 4,
-        "externals": {
-          "tvdb": 790433,
-          "tmdb": 120031,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2014,
     "externals": {
@@ -77185,16 +77016,8 @@
       "id": 178188,
       "slug": "yuuki-yuuna-is-a-hero-churutto",
       "type": "shows",
-      "season": {
-        "id": 253174,
-        "number": 1,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 178959,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2021,
     "externals": {
@@ -83324,16 +83147,8 @@
       "id": 182215,
       "slug": "gundam-breaker-battlogue",
       "type": "shows",
-      "season": {
-        "id": 277566,
-        "number": 1,
-        "externals": {
-          "tvdb": 1934812,
-          "tmdb": 212867,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2021,
     "externals": {
@@ -88377,16 +88192,8 @@
       "id": 45537,
       "slug": "jojo-s-bizarre-adventure",
       "type": "shows",
-      "season": {
-        "id": 471409,
-        "number": 7,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 462771,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2012,
     "externals": {
@@ -90491,16 +90298,8 @@
       "id": 200968,
       "slug": "highspeed-etoile",
       "type": "shows",
-      "season": {
-        "id": 311346,
-        "number": 1,
-        "externals": {
-          "tvdb": 2010143,
-          "tmdb": 300825,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2024,
     "externals": {
@@ -92175,16 +91974,8 @@
       "id": 45537,
       "slug": "jojo-s-bizarre-adventure",
       "type": "shows",
-      "season": {
-        "id": 471411,
-        "number": 8,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 462772,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2012,
     "externals": {
@@ -96778,7 +96569,7 @@
       "id": 55774
     },
     "trakt": {
-      "title": "'Tis Time for \"Torture,\" Princess",
+      "title": "Tis Time for \"Torture,\" Princess",
       "id": 206949,
       "slug": "tis-time-for-torture-princess",
       "type": "shows",
@@ -101224,7 +101015,7 @@
     "externals": {
       "tvdb": null,
       "tmdb": 242747,
-      "imdb": null,
+      "imdb": "tt38799508",
       "tvrage": null
     }
   },
@@ -101471,20 +101262,12 @@
       "id": 58524
     },
     "trakt": {
-      "title": "'Tis Time for \"Torture,\" Princess",
+      "title": "Tis Time for \"Torture,\" Princess",
       "id": 206949,
       "slug": "tis-time-for-torture-princess",
       "type": "shows",
-      "season": {
-        "id": 375965,
-        "number": 2,
-        "externals": {
-          "tvdb": 2119739,
-          "tmdb": 385823,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
+      "season": null,
+      "is_split_cour": true
     },
     "release_year": 2024,
     "externals": {
@@ -102610,7 +102393,7 @@
     "externals": {
       "tvdb": null,
       "tmdb": 242747,
-      "imdb": null,
+      "imdb": "tt38799508",
       "tvrage": null
     }
   },
@@ -104729,64 +104512,6 @@
   },
   {
     "myanimelist": {
-      "title": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
-      "id": 60146
-    },
-    "trakt": {
-      "title": "The Beginning After the End",
-      "id": 260369,
-      "slug": "the-beginning-after-the-end",
-      "type": "shows",
-      "season": {
-        "id": 422248,
-        "number": 1,
-        "externals": {
-          "tvdb": 2151719,
-          "tmdb": 424305,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2025,
-    "externals": {
-      "tvdb": 455684,
-      "tmdb": 274671,
-      "imdb": "tt34119820",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "Eris no Seihai",
-      "id": 60151
-    },
-    "trakt": {
-      "title": "The Holy Grail of Eris",
-      "id": 276052,
-      "slug": "the-holy-grail-of-eris",
-      "type": "shows",
-      "season": {
-        "id": 447099,
-        "number": 1,
-        "externals": {
-          "tvdb": 2151826,
-          "tmdb": 441812,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2026,
-    "externals": {
-      "tvdb": 455709,
-      "tmdb": 283891,
-      "imdb": "tt38647635",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Ore wa Seikan Kokka no Akutoku Ryoushu!",
       "id": 60154
     },
@@ -105815,7 +105540,7 @@
     },
     "release_year": 2025,
     "externals": {
-      "tvdb": null,
+      "tvdb": 457929,
       "tmdb": 285797,
       "imdb": "tt36270045",
       "tvrage": null
@@ -108188,9 +107913,9 @@
       "id": 62864
     },
     "trakt": {
-      "title": "You Don't Know Gunma Yet: Reiwa Edition",
+      "title": "You Don't Know Gunma Yet: Reiwa Version",
       "id": 305029,
-      "slug": "you-don-t-know-gunma-yet-reiwa-edition",
+      "slug": "you-don-t-know-gunma-yet-reiwa-version",
       "type": "shows",
       "season": {
         "id": 496309,
