@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"compress/gzip"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -254,6 +255,9 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 	})
 
 	if err != nil {
+		if config.Verbose {
+			fmt.Printf("\n    - error fetching Letterboxd redirect: %v", err)
+		}
 		return nil, err
 	}
 	defer resp.Body.Close()
@@ -283,10 +287,16 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		pathParts := strings.Split(strings.Trim(location.Path, "/"), "/")
 		if len(pathParts) >= 2 && pathParts[0] == "film" {
 			slug = pathParts[1]
+			if config.Verbose {
+				fmt.Printf("\n    - successfully extracted slug from redirect: %s", slug)
+			}
 		} else {
 			return nil, fmt.Errorf("\n    - could not parse slug from redirect location: %s", location.Path)
 		}
 	} else {
+		if config.Verbose {
+			fmt.Printf("\n    - Letterboxd redirect failed with status %d (expected 300-399)", resp.StatusCode)
+		}
 		return nil, fmt.Errorf("\n    - expected redirect, but got status %d", resp.StatusCode)
 	}
 
@@ -309,6 +319,9 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 	})
 
 	if err != nil {
+		if config.Verbose {
+			fmt.Printf("\n    - error fetching Letterboxd JSON: %v", err)
+		}
 		return nil, err
 	}
 	defer resp.Body.Close()
@@ -333,6 +346,19 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, err
+	}
+
+	// Handle gzip-compressed responses
+	if resp.Header.Get("Content-Encoding") == "gzip" {
+		gzipReader, err := gzip.NewReader(strings.NewReader(string(body)))
+		if err != nil {
+			return nil, err
+		}
+		defer gzipReader.Close()
+		body, err = io.ReadAll(gzipReader)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	var lbResponse LetterboxdResponse
