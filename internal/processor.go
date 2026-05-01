@@ -215,7 +215,12 @@ func ProcessMovies(config Config) {
 			})
 		}
 
-		updateLetterboxdInfo(client, config, outputMovie)
+		// Pass existing movie data to preserve Letterboxd info if fetch fails
+		var existingMovie *OutputMovie
+		if existing, exists := existingMap[movie.MalID]; exists {
+			existingMovie = &existing
+		}
+		updateLetterboxdInfo(client, config, outputMovie, existingMovie)
 
 		if override, exists := overridesMap[movie.MalID]; exists && !override.Ignore {
 			oldMovie := *outputMovie
@@ -357,22 +362,28 @@ func updateSeasonInfo(client *http.Client, config Config, outputShow *OutputShow
 	}
 }
 
-// updateLetterboxdInfo updates Letterboxd information
-func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *OutputMovie) {
+// updateLetterboxdInfo updates Letterboxd information, preserving existing data if fetch fails
+func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *OutputMovie, existingMovie *OutputMovie) {
 	if outputMovie.Externals != nil && (outputMovie.Externals.Letterboxd == nil || outputMovie.Externals.Letterboxd.Slug == nil) {
 		if config.Verbose {
 			fmt.Printf("\n    - checking for Letterboxd info...")
 		}
 
 		if tmdbID := outputMovie.Externals.TMDB; tmdbID != nil {
-			letterboxdInfo, err := FetchLetterboxdInfo(client, config, *tmdbID)
+			// Get existing Letterboxd data as fallback if it exists
+			var existingLetterboxdData *Letterboxd
+			if existingMovie != nil && existingMovie.Externals != nil && existingMovie.Externals.Letterboxd != nil {
+				existingLetterboxdData = existingMovie.Externals.Letterboxd
+			}
+
+			letterboxdInfo, err := FetchLetterboxdInfo(client, config, *tmdbID, existingLetterboxdData)
 			if err != nil {
 				if config.Verbose {
 					fmt.Printf("\n    - Could not fetch Letterboxd info for TMDB ID %d: %v", *tmdbID, err)
 				}
 			} else {
 				outputMovie.Externals.Letterboxd = letterboxdInfo
-				if config.Verbose {
+				if config.Verbose && letterboxdInfo != nil {
 					fmt.Printf("\n    - success!")
 				}
 			}

@@ -206,7 +206,8 @@ func FetchTraktSeason(client *http.Client, config Config, showID, seasonNum int)
 }
 
 // FetchLetterboxdInfo fetches Letterboxd info from the Letterboxd API
-func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Letterboxd, error) {
+// If fetchAttempted is true and returns an error, it will preserve existingData if provided
+func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existingData *Letterboxd) (*Letterboxd, error) {
 	cacheFile := filepath.Join(config.TempDir, "letterboxd", fmt.Sprintf("%d.json", tmdbID))
 	if data, err := os.ReadFile(cacheFile); err == nil && !config.Force {
 		var lb Letterboxd
@@ -215,6 +216,18 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 				fmt.Printf("\n    - using cached Letterboxd data")
 			}
 			return &lb, nil
+		}
+	}
+	
+	// If we already have existing data, try to use it as fallback before fetching fresh
+	if existingData != nil && !config.Force {
+		if (existingData.Slug != nil && *existingData.Slug != "") ||
+			(existingData.UID != nil && *existingData.UID != 0) ||
+			(existingData.LID != nil && *existingData.LID != "") {
+			if config.Verbose {
+				fmt.Printf("\n    - using existing Letterboxd data (fallback)")
+			}
+			return existingData, nil
 		}
 	}
 
@@ -245,10 +258,19 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 	}
 	defer resp.Body.Close()
 
-	// Handle 403 gracefully
+	// Handle 403 gracefully - preserve existing data if available
 	if resp.StatusCode == 403 {
 		if config.Verbose {
-			fmt.Printf("\n    - Letterboxd returned 403 (access denied), skipping")
+			fmt.Printf("\n    - Letterboxd returned 403 (access denied)")
+		}
+		if existingData != nil {
+			if config.Verbose {
+				fmt.Printf(", using existing data as fallback")
+			}
+			return existingData, nil
+		}
+		if config.Verbose {
+			fmt.Printf(", skipping")
 		}
 		return nil, nil
 	}
@@ -291,16 +313,21 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int) (*Lette
 	}
 	defer resp.Body.Close()
 
-	// Handle 403 gracefully
+	// Handle 403 gracefully - preserve existing data if available
 	if resp.StatusCode == 403 {
 		if config.Verbose {
-			fmt.Printf("\n    - Letterboxd returned 403 (access denied), skipping")
+			fmt.Printf("\n    - Letterboxd returned 403 (access denied)")
+		}
+		if existingData != nil {
+			if config.Verbose {
+				fmt.Printf(", using existing data as fallback")
+			}
+			return existingData, nil
+		}
+		if config.Verbose {
+			fmt.Printf(", skipping")
 		}
 		return nil, nil
-	}
-
-	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("\n    - failed to fetch letterboxd json, status: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
