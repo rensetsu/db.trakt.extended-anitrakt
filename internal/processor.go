@@ -215,13 +215,14 @@ func ProcessMovies(config Config) {
 	successfulTraktIDs := make(map[int]int) // MAL ID -> Trakt ID that succeeded
 
 	stats := ProcessingStats{
-		MediaType:        "movies",
-		TotalBefore:      len(existingOutput),
-		CreatedDetails:   []ChangeDetail{},
-		UpdatedDetails:   []ChangeDetail{},
-		ModifiedDetails:  []ChangeDetail{},
-		NotFoundDetails:  []ChangeDetail{},
-		DuplicateDetails: []ChangeDetail{},
+		MediaType:                 "movies",
+		TotalBefore:               len(existingOutput),
+		CreatedDetails:            []ChangeDetail{},
+		UpdatedDetails:            []ChangeDetail{},
+		ModifiedDetails:           []ChangeDetail{},
+		NotFoundDetails:           []ChangeDetail{},
+		DuplicateDetails:          []ChangeDetail{},
+		LetterboxdNotFoundDetails: []ChangeDetail{},
 	}
 
 	var newNotExist []NotFoundEntry
@@ -281,7 +282,10 @@ func ProcessMovies(config Config) {
 		if existing, exists := existingMap[movie.MalID]; exists {
 			existingMovie = &existing
 		}
-		updateLetterboxdInfo(client, config, outputMovie, existingMovie)
+		letterboxdNotFound := updateLetterboxdInfo(client, config, outputMovie, existingMovie)
+		if letterboxdNotFound != nil {
+			stats.LetterboxdNotFoundDetails = append(stats.LetterboxdNotFoundDetails, *letterboxdNotFound)
+		}
 
 		if override, exists := overridesMap[movie.MalID]; exists && !override.Ignore {
 			oldMovie := *outputMovie
@@ -465,7 +469,7 @@ func updateSeasonInfo(client *http.Client, config Config, outputShow *OutputShow
 }
 
 // updateLetterboxdInfo updates Letterboxd information, preserving existing data if fetch fails
-func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *OutputMovie, existingMovie *OutputMovie) {
+func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *OutputMovie, existingMovie *OutputMovie) *ChangeDetail {
 	if outputMovie.Externals != nil && (outputMovie.Externals.Letterboxd == nil || outputMovie.Externals.Letterboxd.Slug == nil) {
 		if config.Verbose {
 			fmt.Printf("\n    - checking for Letterboxd info...")
@@ -480,6 +484,15 @@ func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *Outpu
 
 			letterboxdInfo, err := FetchLetterboxdInfo(client, config, *tmdbID, existingLetterboxdData)
 			if err != nil {
+				errStr := err.Error()
+				if strings.Contains(errStr, "Film not found on Letterboxd") {
+					// Return a ChangeDetail for tracking in summary
+					return &ChangeDetail{
+						MalID:  outputMovie.MyAnimeList.ID,
+						Title:  outputMovie.MyAnimeList.Title,
+						Reason: "Film not found on Letterboxd",
+					}
+				}
 				if config.Verbose {
 					fmt.Printf("\n    - Could not fetch Letterboxd info for TMDB ID %d: %v", *tmdbID, err)
 				}
@@ -495,6 +508,7 @@ func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *Outpu
 	} else if config.Verbose {
 		fmt.Printf("\n    - Letterboxd info already present.")
 	}
+	return nil
 }
 
 // shouldSkipShow checks if a show should be skipped

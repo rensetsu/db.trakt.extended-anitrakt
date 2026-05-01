@@ -298,12 +298,20 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		// Check if response body contains Cloudflare challenge
 		bodyBytes, _ := io.ReadAll(resp.Body)
 		resp.Body = io.NopCloser(strings.NewReader(string(bodyBytes)))
+		bodyStr := string(bodyBytes)
 
-		if strings.Contains(string(bodyBytes), "Just a moment...") || strings.Contains(string(bodyBytes), "challenge-platform") {
+		if strings.Contains(bodyStr, "Just a moment...") || strings.Contains(bodyStr, "challenge-platform") {
 			if config.Verbose {
 				fmt.Printf("\n    - Letterboxd blocked by Cloudflare challenge (unable to bypass via HTTP)")
 			}
 			return nil, fmt.Errorf("\n    - Letterboxd blocked by Cloudflare - cannot fetch via HTTP")
+		}
+
+		if strings.Contains(bodyStr, "Film not found") {
+			if config.Verbose {
+				fmt.Printf("\n    - Film not found on Letterboxd")
+			}
+			return nil, fmt.Errorf("\n    - Film not found on Letterboxd for TMDB ID %d", tmdbID)
 		}
 
 		if config.Verbose {

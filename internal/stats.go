@@ -58,6 +58,15 @@ func OutputStats(mediaType string, stats ProcessingStats) {
 		}
 	}
 
+	if len(stats.LetterboxdNotFoundDetails) > 0 {
+		output += fmt.Sprintf("\n### 📽️ Letterboxd Not Found (%d)\n\n", len(stats.LetterboxdNotFoundDetails))
+		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
+		for _, detail := range stats.LetterboxdNotFoundDetails {
+			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
+		}
+		output += "\n**Note:** These films exist on Trakt but not on Letterboxd.\n"
+	}
+
 	if len(stats.DuplicateDetails) > 0 {
 		output += fmt.Sprintf("\n### ⚠️ Duplicates - Invalid Trakt IDs (%d)\n\n", len(stats.DuplicateDetails))
 		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
