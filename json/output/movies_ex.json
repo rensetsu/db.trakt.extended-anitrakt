@@ -77,9 +77,9 @@
       "id": 46
     },
     "trakt": {
-      "title": "Rurouni Kenshin: Requiem for the Ishin Patriots",
+      "title": "Samurai X: The Motion Picture",
       "id": 26128,
-      "slug": "rurouni-kenshin-requiem-for-the-ishin-patriots-1997",
+      "slug": "samurai-x-the-motion-picture-1997",
       "type": "movies"
     },
     "release_year": 1997,
@@ -2759,7 +2759,7 @@
       "id": 1290
     },
     "trakt": {
-      "title": "Patlabor WXIII The Movie",
+      "title": "Patlabor WXIII the Movie",
       "id": 10105,
       "slug": "patlabor-wxiii-the-movie-2002",
       "type": "movies"
@@ -4397,9 +4397,9 @@
       "id": 2132
     },
     "trakt": {
-      "title": "Inukami! The Movie: Tokumei Reiteki Sousakan Karina Shirou!",
+      "title": "Inukami! The Movie",
       "id": 50443,
-      "slug": "inukami-the-movie-tokumei-reiteki-sousakan-karina-shirou-2007",
+      "slug": "inukami-the-movie-2007",
       "type": "movies"
     },
     "release_year": 2007,
@@ -7115,9 +7115,9 @@
       "id": 5936
     },
     "trakt": {
-      "title": "White Wolf",
+      "title": "White Fang",
       "id": 89904,
-      "slug": "white-wolf-1990",
+      "slug": "white-fang-1990",
       "type": "movies"
     },
     "release_year": 1990,
@@ -10351,24 +10351,6 @@
   },
   {
     "myanimelist": {
-      "title": "Fashion no Hajimari",
-      "id": 13793
-    },
-    "trakt": {
-      "title": "Beginning of Fashion",
-      "id": 320812,
-      "slug": "beginning-of-fashion-2005",
-      "type": "movies"
-    },
-    "release_year": 2005,
-    "externals": {
-      "tmdb": 442248,
-      "imdb": "",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Corpse Party: Missing Footage",
       "id": 13807
     },
@@ -12047,12 +12029,12 @@
       "id": 21867
     },
     "trakt": {
-      "title": "The Disappearance of Conan Edogawa: The Worst Two Days in History",
+      "title": "Detective Conan: The Disappearance of Conan Edogawa - The Worst Two Days in History",
       "id": 397225,
-      "slug": "the-disappearance-of-conan-edogawa-the-worst-two-days-in-history-2014",
+      "slug": "detective-conan-the-disappearance-of-conan-edogawa-the-worst-two-days-in-history-2015",
       "type": "movies"
     },
-    "release_year": 2014,
+    "release_year": 2015,
     "externals": {
       "tmdb": 546822,
       "imdb": "tt4423846",
@@ -13046,24 +13028,6 @@
     "externals": {
       "tmdb": 390214,
       "imdb": "tt9127092",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
-      "title": "001",
-      "id": 29978
-    },
-    "trakt": {
-      "title": "001",
-      "id": 281208,
-      "slug": "001-2013",
-      "type": "movies"
-    },
-    "release_year": 2013,
-    "externals": {
-      "tmdb": 434326,
-      "imdb": "",
       "letterboxd": null
     }
   },
@@ -14639,7 +14603,7 @@
       "id": 33674
     },
     "trakt": {
-      "title": "No Game, No Life: Zero",
+      "title": "No Game No Life: Zero",
       "id": 291831,
       "slug": "no-game-no-life-zero-2017",
       "type": "movies"
@@ -18871,7 +18835,7 @@
     "trakt": {
       "title": "Go! Anpanman: Fluffy Flurry and the Land of Clouds",
       "id": 535569,
-      "slug": "go-anpanman-fluffy-flurry-and-the-land-of-clouds-2021-06-25",
+      "slug": "go-anpanman-fluffy-flurry-and-the-land-of-clouds-2021",
       "type": "movies"
     },
     "release_year": 2021,
@@ -21943,24 +21907,6 @@
   },
   {
     "myanimelist": {
-      "title": "BanG Dream! It's MyGO!!!!! Movie",
-      "id": 57754
-    },
-    "trakt": {
-      "title": "BanG Dream! It's MyGO!!!!! Movie",
-      "id": 996161,
-      "slug": "bang-dream-it-s-mygo-movie-2024",
-      "type": "movies"
-    },
-    "release_year": 2024,
-    "externals": {
-      "tmdb": 1231799,
-      "imdb": "tt36808553",
-      "letterboxd": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Pui Pui Molcar the Movie: MOLMAX",
       "id": 57910
     },
@@ -22667,7 +22613,7 @@
       "id": 61192
     },
     "trakt": {
-      "title": "All You Need is Kill",
+      "title": "ALL YOU NEED IS KILL",
       "id": 1171874,
       "slug": "all-you-need-is-kill-2026",
       "type": "movies"
@@ -22883,9 +22829,9 @@
       "id": 62421
     },
     "trakt": {
-      "title": "Assassination Classroom the Movie: Everyone's Time",
+      "title": "Assassination Classroom the Movie: Our Time",
       "id": 1266022,
-      "slug": "assassination-classroom-the-movie-everyone-s-time-2026",
+      "slug": "assassination-classroom-the-movie-our-time-2026",
       "type": "movies"
     },
     "release_year": 2026,

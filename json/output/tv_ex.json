@@ -2615,9 +2615,9 @@
       "id": 161
     },
     "trakt": {
-      "title": "Peacemaker",
+      "title": "Peacemaker Kurogane",
       "id": 21687,
-      "slug": "peacemaker",
+      "slug": "peacemaker-kurogane",
       "type": "shows",
       "season": {
         "id": 32305,
@@ -10433,8 +10433,16 @@
       "id": 33934,
       "slug": "daphne-in-the-brilliant-blue",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 45691,
+        "number": 1,
+        "externals": {
+          "tvdb": 37789,
+          "tmdb": 44873,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2004,
     "externals": {
@@ -11648,7 +11656,7 @@
     },
     "release_year": 1991,
     "externals": {
-      "tvdb": 350702,
+      "tvdb": 42882,
       "tmdb": 44546,
       "imdb": "tt0101514",
       "tvrage": null
@@ -12425,7 +12433,7 @@
     "externals": {
       "tvdb": 85192,
       "tmdb": 68203,
-      "imdb": "tt0884847",
+      "imdb": "tt8390536",
       "tvrage": null
     }
   },
@@ -23267,9 +23275,9 @@
       "id": 6974
     },
     "trakt": {
-      "title": "Seikimatsu Occult Academy",
+      "title": "Occult Academy",
       "id": 37417,
-      "slug": "seikimatsu-occult-academy",
+      "slug": "occult-academy",
       "type": "shows",
       "season": {
         "id": 49817,
@@ -61658,7 +61666,7 @@
     "externals": {
       "tvdb": 85192,
       "tmdb": 68203,
-      "imdb": "tt0884847",
+      "imdb": "tt8390536",
       "tvrage": null
     }
   },
@@ -61759,8 +61767,16 @@
       "id": 126696,
       "slug": "working-buddies",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 156747,
+        "number": 1,
+        "externals": {
+          "tvdb": 745316,
+          "tmdb": 97530,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2018,
     "externals": {
@@ -63632,7 +63648,7 @@
     "externals": {
       "tvdb": 85192,
       "tmdb": 68203,
-      "imdb": "tt0884847",
+      "imdb": "tt8390536",
       "tvrage": null
     }
   },
@@ -68950,8 +68966,16 @@
       "id": 60417,
       "slug": "haikyu",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 178362,
+        "number": 4,
+        "externals": {
+          "tvdb": 790433,
+          "tmdb": 120031,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2014,
     "externals": {
@@ -72080,7 +72104,7 @@
       "id": 40148
     },
     "trakt": {
-      "title": "22/7 (nanabun no nijyuuni)",
+      "title": "22/7 (Nanabun no Nijyuuni)",
       "id": 155137,
       "slug": "22-7-nanabun-no-nijyuuni",
       "type": "shows",
@@ -74343,8 +74367,16 @@
       "id": 149865,
       "slug": "ascendance-of-a-bookworm",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 518842,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 508944,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2019,
     "externals": {
@@ -77161,8 +77193,16 @@
       "id": 178188,
       "slug": "yuuki-yuuna-is-a-hero-churutto",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 253174,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 178959,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2021,
     "externals": {
@@ -83292,8 +83332,16 @@
       "id": 182215,
       "slug": "gundam-breaker-battlogue",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 277566,
+        "number": 1,
+        "externals": {
+          "tvdb": 1934812,
+          "tmdb": 212867,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2021,
     "externals": {
@@ -87140,7 +87188,7 @@
     },
     "release_year": 2024,
     "externals": {
-      "tvdb": 452593,
+      "tvdb": 469941,
       "tmdb": 223705,
       "imdb": "tt30414322",
       "tvrage": null
@@ -90443,8 +90491,16 @@
       "id": 200968,
       "slug": "highspeed-etoile",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 311346,
+        "number": 1,
+        "externals": {
+          "tvdb": 2010143,
+          "tmdb": 300825,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2024,
     "externals": {
