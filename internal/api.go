@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"bytes"
 	"compress/gzip"
 	"encoding/json"
 	"fmt"
@@ -14,15 +15,17 @@ import (
 
 // decompressGzipIfNeeded decompresses gzip-compressed body if Content-Encoding header indicates gzip
 func decompressGzipIfNeeded(body []byte, resp *http.Response) []byte {
-	if resp.Header.Get("Content-Encoding") == "gzip" {
-		gzipReader, err := gzip.NewReader(strings.NewReader(string(body)))
-		if err == nil {
-			decompressed, err := io.ReadAll(gzipReader)
-			gzipReader.Close()
-			if err == nil {
-				return decompressed
-			}
+	if strings.ToLower(resp.Header.Get("Content-Encoding")) == "gzip" {
+		gzipReader, err := gzip.NewReader(bytes.NewReader(body))
+		if err != nil {
+			return body
 		}
+		defer gzipReader.Close()
+		decompressed, err := io.ReadAll(gzipReader)
+		if err != nil {
+			return body
+		}
+		return decompressed
 	}
 	return body
 }
@@ -324,17 +327,23 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 			return nil, fmt.Errorf("\n    - Letterboxd blocked by Cloudflare - cannot fetch via HTTP")
 		}
 
-		if strings.Contains(bodyStr, "Film not found") || strings.Contains(bodyStr, "film-not-found") || strings.Contains(bodyStr, "not-found") {
+		if strings.Contains(bodyStr, "Film not found") || strings.Contains(bodyStr, "film-not-found") || strings.Contains(bodyStr, "not-found") || strings.Contains(bodyStr, "TMDB Import Result") {
 			if config.Verbose {
 				fmt.Printf("\n    - Film not found on Letterboxd")
 			}
 			return nil, fmt.Errorf("\n    - Film not found on Letterboxd for TMDB ID %d", tmdbID)
 		}
 
-		if config.Verbose {
-			fmt.Printf("\n    - Letterboxd returned 200 OK instead of redirect (body length: %d bytes)", len(bodyStr))
+		// Create a preview of the response for debugging
+		preview := bodyStr
+		if len(preview) > 200 {
+			preview = preview[:200]
 		}
-		return nil, fmt.Errorf("\n    - expected redirect, but got 200 OK")
+		if config.Verbose {
+			fmt.Printf("\n    - Letterboxd returned 200 OK instead of redirect")
+			fmt.Printf("\n      Body preview: %s...", preview)
+		}
+		return nil, fmt.Errorf("\n    - expected redirect, but got 200 OK: %s...", preview)
 	} else {
 		if config.Verbose {
 			fmt.Printf("\n    - Letterboxd redirect failed with status %d (expected 300-399)", resp.StatusCode)
@@ -417,7 +426,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 func setLetterboxdHeaders(req *http.Request) {
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8")
-	req.Header.Set("Accept-Encoding", "gzip, deflate, br")
+	req.Header.Set("Accept-Encoding", "gzip")
 	req.Header.Set("Accept-Language", "en-US,en;q=0.9")
 	req.Header.Set("Cache-Control", "max-age=0")
 	req.Header.Set("Connection", "keep-alive")
