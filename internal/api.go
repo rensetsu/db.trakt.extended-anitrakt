@@ -12,6 +12,21 @@ import (
 	"time"
 )
 
+// decompressGzipIfNeeded decompresses gzip-compressed body if Content-Encoding header indicates gzip
+func decompressGzipIfNeeded(body []byte, resp *http.Response) []byte {
+	if resp.Header.Get("Content-Encoding") == "gzip" {
+		gzipReader, err := gzip.NewReader(strings.NewReader(string(body)))
+		if err == nil {
+			decompressed, err := io.ReadAll(gzipReader)
+			gzipReader.Close()
+			if err == nil {
+				return decompressed
+			}
+		}
+	}
+	return body
+}
+
 // FetchTraktShow fetches show data from Trakt API
 func FetchTraktShow(client *http.Client, config Config, showID int) (*TraktShow, error) {
 	cacheFile := filepath.Join(config.TempDir, "shows", fmt.Sprintf("%d.json", showID))
@@ -297,6 +312,8 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		// 200 OK might indicate Cloudflare challenge page or we've been served the page directly
 		// Check if response body contains Cloudflare challenge
 		bodyBytes, _ := io.ReadAll(resp.Body)
+		bodyBytes = decompressGzipIfNeeded(bodyBytes, resp)
+
 		resp.Body = io.NopCloser(strings.NewReader(string(bodyBytes)))
 		bodyStr := string(bodyBytes)
 
@@ -307,7 +324,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 			return nil, fmt.Errorf("\n    - Letterboxd blocked by Cloudflare - cannot fetch via HTTP")
 		}
 
-		if strings.Contains(bodyStr, "Film not found") {
+		if strings.Contains(bodyStr, "Film not found") || strings.Contains(bodyStr, "film-not-found") || strings.Contains(bodyStr, "not-found") {
 			if config.Verbose {
 				fmt.Printf("\n    - Film not found on Letterboxd")
 			}
@@ -315,7 +332,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		}
 
 		if config.Verbose {
-			fmt.Printf("\n    - Letterboxd returned 200 OK instead of redirect")
+			fmt.Printf("\n    - Letterboxd returned 200 OK instead of redirect (body length: %d bytes)", len(bodyStr))
 		}
 		return nil, fmt.Errorf("\n    - expected redirect, but got 200 OK")
 	} else {
@@ -373,18 +390,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		return nil, err
 	}
 
-	// Handle gzip-compressed responses
-	if resp.Header.Get("Content-Encoding") == "gzip" {
-		gzipReader, err := gzip.NewReader(strings.NewReader(string(body)))
-		if err != nil {
-			return nil, err
-		}
-		defer gzipReader.Close()
-		body, err = io.ReadAll(gzipReader)
-		if err != nil {
-			return nil, err
-		}
-	}
+	body = decompressGzipIfNeeded(body, resp)
 
 	var lbResponse LetterboxdResponse
 	if err := json.Unmarshal(body, &lbResponse); err != nil {
