@@ -131,11 +131,11 @@ func ProcessShows(config Config) {
 			// Find which Trakt ID succeeded
 			successfulID := successfulTraktIDs[malID]
 
-			// Find the show title
+			// Find the title (from any entry with this MAL ID)
 			var title string
-			for _, show := range shows {
-				if show.MalID == malID && show.TraktID == successfulID {
-					title = show.Title
+			for _, item := range shows {
+				if item.MalID == malID {
+					title = item.Title
 					break
 				}
 			}
@@ -157,10 +157,16 @@ func ProcessShows(config Config) {
 				invalidStr += fmt.Sprintf("%d", id)
 			}
 
+			// Format the reason message
+			reason := fmt.Sprintf("Duplicate: valid Trakt ID %d, invalid [%s]", successfulID, invalidStr)
+			if successfulID == 0 {
+				reason = fmt.Sprintf("Duplicate: no valid Trakt ID, invalid [%s]", invalidStr)
+			}
+
 			stats.DuplicateDetails = append(stats.DuplicateDetails, ChangeDetail{
 				MalID:  malID,
 				Title:  title,
-				Reason: fmt.Sprintf("Duplicate: valid Trakt ID %d, invalid [%s]", successfulID, invalidStr),
+				Reason: reason,
 			})
 		}
 	}
@@ -311,11 +317,11 @@ func ProcessMovies(config Config) {
 			// Find which Trakt ID succeeded
 			successfulID := successfulTraktIDs[malID]
 
-			// Find the movie title
+			// Find the title (from any entry with this MAL ID)
 			var title string
-			for _, movie := range movies {
-				if movie.MalID == malID && movie.TraktID == successfulID {
-					title = movie.Title
+			for _, item := range movies {
+				if item.MalID == malID {
+					title = item.Title
 					break
 				}
 			}
@@ -337,10 +343,16 @@ func ProcessMovies(config Config) {
 				invalidStr += fmt.Sprintf("%d", id)
 			}
 
+			// Format the reason message
+			reason := fmt.Sprintf("Duplicate: valid Trakt ID %d, invalid [%s]", successfulID, invalidStr)
+			if successfulID == 0 {
+				reason = fmt.Sprintf("Duplicate: no valid Trakt ID, invalid [%s]", invalidStr)
+			}
+
 			stats.DuplicateDetails = append(stats.DuplicateDetails, ChangeDetail{
 				MalID:  malID,
 				Title:  title,
-				Reason: fmt.Sprintf("Duplicate: valid Trakt ID %d, invalid [%s]", successfulID, invalidStr),
+				Reason: reason,
 			})
 		}
 	}
