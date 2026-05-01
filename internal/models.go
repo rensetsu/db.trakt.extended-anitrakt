@@ -162,17 +162,18 @@ type ChangeDetail struct {
 
 // ProcessingStats structure for tracking statistics
 type ProcessingStats struct {
-	MediaType       string         `json:"media_type"`
-	TotalBefore     int            `json:"total_before"`
-	TotalAfter      int            `json:"total_after"`
-	Created         int            `json:"created"`
-	Updated         int            `json:"updated"`
-	Modified        int            `json:"modified"`
-	NotFound        int            `json:"not_found"`
-	CreatedDetails  []ChangeDetail `json:"created_details"`
-	UpdatedDetails  []ChangeDetail `json:"updated_details"`
-	ModifiedDetails []ChangeDetail `json:"modified_details"`
-	NotFoundDetails []ChangeDetail `json:"not_found_details"`
+	MediaType        string         `json:"media_type"`
+	TotalBefore      int            `json:"total_before"`
+	TotalAfter       int            `json:"total_after"`
+	Created          int            `json:"created"`
+	Updated          int            `json:"updated"`
+	Modified         int            `json:"modified"`
+	NotFound         int            `json:"not_found"`
+	CreatedDetails   []ChangeDetail `json:"created_details"`
+	UpdatedDetails   []ChangeDetail `json:"updated_details"`
+	ModifiedDetails  []ChangeDetail `json:"modified_details"`
+	NotFoundDetails  []ChangeDetail `json:"not_found_details"`
+	DuplicateDetails []ChangeDetail `json:"duplicate_details"`
 }
 
 // Override structure

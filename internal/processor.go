@@ -16,6 +16,12 @@ func ProcessShows(config Config) {
 	var shows []InputShow
 	LoadJSON(config.TvFile, &shows)
 
+	// Track duplicates - detect shows with same MAL ID but different Trakt IDs
+	malIDTraktMap := make(map[int][]int) // MAL ID -> list of Trakt IDs
+	for _, show := range shows {
+		malIDTraktMap[show.MalID] = append(malIDTraktMap[show.MalID], show.TraktID)
+	}
+
 	outputFile := config.OutputFile
 	if outputFile == "" {
 		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.TvFile, ".json"))+"_ex.json")
@@ -36,13 +42,17 @@ func ProcessShows(config Config) {
 		}
 	}
 
+	// Track which Trakt IDs succeeded for each MAL ID
+	successfulTraktIDs := make(map[int]int) // MAL ID -> Trakt ID that succeeded
+
 	stats := ProcessingStats{
-		MediaType:       "tv",
-		TotalBefore:     len(existingOutput),
-		CreatedDetails:  []ChangeDetail{},
-		UpdatedDetails:  []ChangeDetail{},
-		ModifiedDetails: []ChangeDetail{},
-		NotFoundDetails: []ChangeDetail{},
+		MediaType:        "tv",
+		TotalBefore:      len(existingOutput),
+		CreatedDetails:   []ChangeDetail{},
+		UpdatedDetails:   []ChangeDetail{},
+		ModifiedDetails:  []ChangeDetail{},
+		NotFoundDetails:  []ChangeDetail{},
+		DuplicateDetails: []ChangeDetail{},
 	}
 
 	var newNotExist []NotFoundEntry
@@ -112,6 +122,47 @@ func ProcessShows(config Config) {
 		}
 
 		resultsMap[show.MalID] = *outputShow
+		successfulTraktIDs[show.MalID] = show.TraktID
+	}
+
+	// Build duplicate report: for each MAL ID with multiple Trakt IDs, report the failed ones
+	for malID, traktIDs := range malIDTraktMap {
+		if len(traktIDs) > 1 {
+			// Find which Trakt ID succeeded
+			successfulID := successfulTraktIDs[malID]
+
+			// Find the show title
+			var title string
+			for _, show := range shows {
+				if show.MalID == malID && show.TraktID == successfulID {
+					title = show.Title
+					break
+				}
+			}
+
+			// Collect invalid Trakt IDs
+			var invalidIDs []int
+			for _, traktID := range traktIDs {
+				if traktID != successfulID {
+					invalidIDs = append(invalidIDs, traktID)
+				}
+			}
+
+			// Format invalid IDs as [id1, id2, ...]
+			invalidStr := ""
+			for i, id := range invalidIDs {
+				if i > 0 {
+					invalidStr += ", "
+				}
+				invalidStr += fmt.Sprintf("%d", id)
+			}
+
+			stats.DuplicateDetails = append(stats.DuplicateDetails, ChangeDetail{
+				MalID:  malID,
+				Title:  title,
+				Reason: fmt.Sprintf("Duplicate: valid Trakt ID %d, invalid [%s]", successfulID, invalidStr),
+			})
+		}
 	}
 
 	stats.TotalAfter = len(resultsMap)
@@ -134,6 +185,12 @@ func ProcessMovies(config Config) {
 	var movies []InputMovie
 	LoadJSON(config.MovieFile, &movies)
 
+	// Track duplicates - detect movies with same MAL ID but different Trakt IDs
+	malIDTraktMap := make(map[int][]int) // MAL ID -> list of Trakt IDs
+	for _, movie := range movies {
+		malIDTraktMap[movie.MalID] = append(malIDTraktMap[movie.MalID], movie.TraktID)
+	}
+
 	outputFile := config.OutputFile
 	if outputFile == "" {
 		outputFile = filepath.Join("json/output", filepath.Base(strings.TrimSuffix(config.MovieFile, ".json"))+"_ex.json")
@@ -154,13 +211,17 @@ func ProcessMovies(config Config) {
 		}
 	}
 
+	// Track which Trakt IDs succeeded for each MAL ID
+	successfulTraktIDs := make(map[int]int) // MAL ID -> Trakt ID that succeeded
+
 	stats := ProcessingStats{
-		MediaType:       "movies",
-		TotalBefore:     len(existingOutput),
-		CreatedDetails:  []ChangeDetail{},
-		UpdatedDetails:  []ChangeDetail{},
-		ModifiedDetails: []ChangeDetail{},
-		NotFoundDetails: []ChangeDetail{},
+		MediaType:        "movies",
+		TotalBefore:      len(existingOutput),
+		CreatedDetails:   []ChangeDetail{},
+		UpdatedDetails:   []ChangeDetail{},
+		ModifiedDetails:  []ChangeDetail{},
+		NotFoundDetails:  []ChangeDetail{},
+		DuplicateDetails: []ChangeDetail{},
 	}
 
 	var newNotExist []NotFoundEntry
@@ -237,6 +298,47 @@ func ProcessMovies(config Config) {
 		}
 
 		resultsMap[movie.MalID] = *outputMovie
+		successfulTraktIDs[movie.MalID] = movie.TraktID
+	}
+
+	// Build duplicate report: for each MAL ID with multiple Trakt IDs, report the failed ones
+	for malID, traktIDs := range malIDTraktMap {
+		if len(traktIDs) > 1 {
+			// Find which Trakt ID succeeded
+			successfulID := successfulTraktIDs[malID]
+
+			// Find the movie title
+			var title string
+			for _, movie := range movies {
+				if movie.MalID == malID && movie.TraktID == successfulID {
+					title = movie.Title
+					break
+				}
+			}
+
+			// Collect invalid Trakt IDs
+			var invalidIDs []int
+			for _, traktID := range traktIDs {
+				if traktID != successfulID {
+					invalidIDs = append(invalidIDs, traktID)
+				}
+			}
+
+			// Format invalid IDs as [id1, id2, ...]
+			invalidStr := ""
+			for i, id := range invalidIDs {
+				if i > 0 {
+					invalidStr += ", "
+				}
+				invalidStr += fmt.Sprintf("%d", id)
+			}
+
+			stats.DuplicateDetails = append(stats.DuplicateDetails, ChangeDetail{
+				MalID:  malID,
+				Title:  title,
+				Reason: fmt.Sprintf("Duplicate: valid Trakt ID %d, invalid [%s]", successfulID, invalidStr),
+			})
+		}
 	}
 
 	stats.TotalAfter = len(resultsMap)

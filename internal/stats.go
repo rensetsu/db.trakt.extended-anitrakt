@@ -58,6 +58,15 @@ func OutputStats(mediaType string, stats ProcessingStats) {
 		}
 	}
 
+	if len(stats.DuplicateDetails) > 0 {
+		output += fmt.Sprintf("\n### ⚠️ Duplicates - Invalid Trakt IDs (%d)\n\n", len(stats.DuplicateDetails))
+		output += "| Title | MAL ID | Reason |\n|-------|--------|--------|\n"
+		for _, detail := range stats.DuplicateDetails {
+			output += fmt.Sprintf("| %s | %d | %s |\n", detail.Title, detail.MalID, detail.Reason)
+		}
+		output += "\n**Note:** These indicate duplicate MAL IDs in the input with multiple Trakt IDs. Consider removing the invalid Trakt IDs from the upstream project.\n"
+	}
+
 	if summaryFile != "" {
 		f, err := os.OpenFile(summaryFile, os.O_APPEND|os.O_WRONLY, 0644)
 		if err != nil {
