@@ -293,6 +293,23 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		} else {
 			return nil, fmt.Errorf("\n    - could not parse slug from redirect location: %s", location.Path)
 		}
+	} else if resp.StatusCode == 200 {
+		// 200 OK might indicate Cloudflare challenge page or we've been served the page directly
+		// Check if response body contains Cloudflare challenge
+		bodyBytes, _ := io.ReadAll(resp.Body)
+		resp.Body = io.NopCloser(strings.NewReader(string(bodyBytes)))
+
+		if strings.Contains(string(bodyBytes), "Just a moment...") || strings.Contains(string(bodyBytes), "challenge-platform") {
+			if config.Verbose {
+				fmt.Printf("\n    - Letterboxd blocked by Cloudflare challenge (unable to bypass via HTTP)")
+			}
+			return nil, fmt.Errorf("\n    - Letterboxd blocked by Cloudflare - cannot fetch via HTTP")
+		}
+
+		if config.Verbose {
+			fmt.Printf("\n    - Letterboxd returned 200 OK instead of redirect")
+		}
+		return nil, fmt.Errorf("\n    - expected redirect, but got 200 OK")
 	} else {
 		if config.Verbose {
 			fmt.Printf("\n    - Letterboxd redirect failed with status %d (expected 300-399)", resp.StatusCode)
