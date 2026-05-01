@@ -219,7 +219,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 			return &lb, nil
 		}
 	}
-	
+
 	// If we already have existing data, try to use it as fallback before fetching fresh
 	if existingData != nil && !config.Force {
 		if (existingData.Slug != nil && *existingData.Slug != "") ||
