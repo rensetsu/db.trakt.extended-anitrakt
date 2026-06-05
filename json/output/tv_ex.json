@@ -25777,7 +25777,7 @@
         "id": 55084,
         "number": 1,
         "externals": {
-          "tvdb": 468823,
+          "tvdb": 249874,
           "tmdb": 53808,
           "tvrage": null
         }
@@ -30045,9 +30045,9 @@
       "id": 12815
     },
     "trakt": {
-      "title": "Polar Bear Cafe",
+      "title": "Polar Bear's Café",
       "id": 45603,
-      "slug": "polar-bear-cafe",
+      "slug": "polar-bear-s-cafe",
       "type": "shows",
       "season": {
         "id": 55575,
@@ -30074,9 +30074,9 @@
       "id": 12875
     },
     "trakt": {
-      "title": "Ginga e Kickoff!!",
+      "title": "Galaxy Kickoff!!",
       "id": 43796,
-      "slug": "ginga-e-kickoff",
+      "slug": "galaxy-kickoff",
       "type": "shows",
       "season": {
         "id": 54469,
@@ -32270,9 +32270,9 @@
       "id": 15119
     },
     "trakt": {
-      "title": "Senran Kagura: Ninja Flash",
+      "title": "Senran Kagura",
       "id": 68744,
-      "slug": "senran-kagura-ninja-flash",
+      "slug": "senran-kagura",
       "type": "shows",
       "season": {
         "id": 73870,
@@ -32568,7 +32568,7 @@
         "id": 61427,
         "number": 2,
         "externals": {
-          "tvdb": 565576,
+          "tvdb": 252474,
           "tmdb": 60519,
           "tvrage": null
         }
@@ -60126,9 +60126,9 @@
       "id": 36037
     },
     "trakt": {
-      "title": "Senran Kagura: Ninja Flash",
+      "title": "Senran Kagura",
       "id": 68744,
-      "slug": "senran-kagura-ninja-flash",
+      "slug": "senran-kagura",
       "type": "shows",
       "season": {
         "id": 171319,
@@ -73480,7 +73480,7 @@
       "id": 40550
     },
     "trakt": {
-      "title": "Assault Lily: BOUQUET",
+      "title": "Assault Lily BOUQUET",
       "id": 154224,
       "slug": "assault-lily-bouquet",
       "type": "shows",
@@ -82368,7 +82368,7 @@
     "release_year": 2021,
     "externals": {
       "tvdb": 403850,
-      "tmdb": 123902,
+      "tmdb": null,
       "imdb": "tt14443540",
       "tvrage": null
     }
@@ -99974,7 +99974,7 @@
       "id": 57798
     },
     "trakt": {
-      "title": "Shinkalion Change the World",
+      "title": "Shinkalion: Change the World",
       "id": 224939,
       "slug": "shinkalion-change-the-world",
       "type": "shows",
@@ -107529,7 +107529,7 @@
         "id": 467315,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2089164,
           "tmdb": 459296,
           "tvrage": null
         }
