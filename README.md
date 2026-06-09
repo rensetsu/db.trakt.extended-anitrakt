@@ -214,7 +214,28 @@ go build
   -animeapi ""
 ```
 
+### Fetching Missing Letterboxd Data (Local Workaround)
+
+If Letterboxd requests are blocked on GitHub Actions (e.g., due to Cloudflare challenge screens or rate limiting), you can run the helper script locally to fetch any missing Letterboxd metadata. Since this runs on your local machine, it generally bypasses the Cloudflare restrictions faced by GitHub runner IP addresses.
+
+Run the script with:
+
+```bash
+go run scripts/fetch_letterboxd/main.go
+```
+
+#### Flags
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-movies` | `json/output/movies_ex.json` | Path to the movies output file to scan/update |
+| `-verbose` | `true` | Enable verbose output logging |
+| `-force` | `false` | Force re-fetch Letterboxd data even if already cached |
+
+Once run, the script will write/merge the fetched Letterboxd data directly into your movies output file (e.g., `json/output/movies_ex.json`). You can then commit the updated file.
+
 ### Flags
+
 
 | Flag | Default | Description |
 |------|---------|-------------|
