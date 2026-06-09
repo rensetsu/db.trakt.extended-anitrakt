@@ -496,6 +496,9 @@ func updateLetterboxdInfo(client *http.Client, config Config, outputMovie *Outpu
 
 			letterboxdInfo, err := FetchLetterboxdInfo(client, config, *tmdbID, existingLetterboxdData)
 			if err != nil {
+				if existingLetterboxdData != nil {
+					outputMovie.Externals.Letterboxd = existingLetterboxdData
+				}
 				errStr := err.Error()
 				if strings.Contains(errStr, "Film not found on Letterboxd") {
 					// Return a ChangeDetail for tracking in summary
