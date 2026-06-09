@@ -16,6 +16,13 @@ func ProcessShows(config Config) {
 	var shows []InputShow
 	LoadJSON(config.TvFile, &shows)
 
+	// Validate input file type
+	for _, show := range shows {
+		if show.Type == "movies" {
+			log.Fatalf("Error: Input file %s contains movie entries, but is being processed as TV shows (-tv). Did you mean to use -movies?", config.TvFile)
+		}
+	}
+
 	// Track duplicates - detect shows with same MAL ID but different Trakt IDs
 	malIDTraktMap := make(map[int][]int) // MAL ID -> list of Trakt IDs
 	for _, show := range shows {
@@ -190,6 +197,13 @@ func ProcessShows(config Config) {
 func ProcessMovies(config Config) {
 	var movies []InputMovie
 	LoadJSON(config.MovieFile, &movies)
+
+	// Validate input file type
+	for _, movie := range movies {
+		if movie.Type == "shows" {
+			log.Fatalf("Error: Input file %s contains show entries, but is being processed as movies (-movies). Did you mean to use -tv?", config.MovieFile)
+		}
+	}
 
 	// Track duplicates - detect movies with same MAL ID but different Trakt IDs
 	malIDTraktMap := make(map[int][]int) // MAL ID -> list of Trakt IDs
