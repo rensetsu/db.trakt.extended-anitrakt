@@ -19,7 +19,22 @@ func ParseFlags() Config {
 	flag.BoolVar(&config.Verbose, "verbose", false, "Verbose output")
 	flag.BoolVar(&config.NoProgress, "no-progress", false, "Disable progress bar")
 	flag.BoolVar(&config.Force, "force", false, "Force update all entries, ignoring cache")
+	// Fribb-based ingestion (optional; pass empty string to fetch from internet)
+	flag.StringVar(&config.FribbFile, "fribb", "",
+		"Enable Fribb ingestion: path to anime-lists-reduced.json (omit value to fetch from GitHub)")
+	flag.StringVar(&config.AnimeAPIFile, "animeapi", "",
+		"Path to animeapi.tsv for Fribb ingestion (omit value to fetch from animeapi.my.id)")
 	flag.Parse()
+
+	// Detect whether -fribb or -animeapi was explicitly provided on the command
+	// line, even as an empty string.  flag.Visit only walks flags that were
+	// actually set by the caller, so "-fribb ''" counts as set.
+	flag.Visit(func(f *flag.Flag) {
+		if f.Name == "fribb" || f.Name == "animeapi" {
+			config.UseFribb = true
+		}
+	})
+
 	return config
 }
 

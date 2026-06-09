@@ -441,3 +441,82 @@ func setLetterboxdHeaders(req *http.Request) {
 	req.Header.Set("Sec-Fetch-User", "?1")
 	req.Header.Set("Upgrade-Insecure-Requests", "1")
 }
+
+// FetchTraktByExternalID searches Trakt using any supported external ID type.
+//
+//   - idType  : "tmdb", "imdb", or "tvdb"
+//   - id      : the ID as a string ("tt1234567" for IMDB, "12345" for TMDB/TVDB)
+//   - mediaType: "show" or "movie"
+//
+// Results are cached under config.TempDir/search/<idType>_<mediaType>_<id>.json.
+func FetchTraktByExternalID(client *http.Client, config Config, idType, id, mediaType string) ([]TraktSearchResult, error) {
+	cacheFile := filepath.Join(config.TempDir, "search",
+		fmt.Sprintf("%s_%s_%s.json", idType, mediaType, id))
+
+	if data, err := os.ReadFile(cacheFile); err == nil && !config.Force {
+		var results []TraktSearchResult
+		if json.Unmarshal(data, &results) == nil {
+			if config.Verbose {
+				fmt.Printf("\n    - using cached Trakt search (%s %s ID %s)", idType, mediaType, id)
+			}
+			return results, nil
+		}
+	}
+
+	if config.Verbose {
+		fmt.Printf("\n    - searching Trakt by %s %s ID %s", idType, mediaType, id)
+	}
+
+	config.RateLimiter.Wait()
+	time.Sleep(300 * time.Millisecond)
+
+	retryConfig := DefaultRetryConfig()
+	resp, err := RetryWithBackoff(retryConfig, func() (*http.Response, error) {
+		url := fmt.Sprintf("https://api.trakt.tv/search/%s/%s?type=%s", idType, id, mediaType)
+		req, err := http.NewRequest("GET", url, nil)
+		if err != nil {
+			return nil, err
+		}
+		req.Header.Set("Content-Type", "application/json")
+		req.Header.Set("trakt-api-version", "2")
+		req.Header.Set("trakt-api-key", config.APIKey)
+		return client.Do(req)
+	})
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == 404 {
+		return nil, fmt.Errorf("%s %s %s not found on Trakt: 404", idType, mediaType, id)
+	}
+	if resp.StatusCode != 200 {
+		return nil, fmt.Errorf("%s search API error: %d", idType, resp.StatusCode)
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	var results []TraktSearchResult
+	if err := json.Unmarshal(body, &results); err != nil {
+		return nil, err
+	}
+
+	if len(results) == 0 {
+		return nil, fmt.Errorf("%s %s %s: no results on Trakt", idType, mediaType, id)
+	}
+
+	// Cache the result
+	os.MkdirAll(filepath.Dir(cacheFile), 0755)
+	os.WriteFile(cacheFile, body, 0644)
+
+	return results, nil
+}
+
+// FetchTraktByTMDB is a convenience wrapper around FetchTraktByExternalID for
+// TMDB IDs.  Existing call-sites continue to work without modification.
+func FetchTraktByTMDB(client *http.Client, config Config, tmdbID int, mediaType string) ([]TraktSearchResult, error) {
+	return FetchTraktByExternalID(client, config, "tmdb", fmt.Sprintf("%d", tmdbID), mediaType)
+}

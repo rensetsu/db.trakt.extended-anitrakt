@@ -30,6 +30,7 @@ func main() {
 	os.MkdirAll(filepath.Join(config.TempDir, "movies"), 0755)
 	os.MkdirAll(filepath.Join(config.TempDir, "seasons"), 0755)
 	os.MkdirAll(filepath.Join(config.TempDir, "letterboxd"), 0755)
+	os.MkdirAll(filepath.Join(config.TempDir, "search"), 0755) // Fribb TMDB search cache
 
 	// Initialize rate limiters
 	config.RateLimiter = internal.NewRateLimiter()
@@ -44,6 +45,7 @@ func main() {
 		os.RemoveAll(filepath.Join(config.TempDir, "shows"))
 		os.RemoveAll(filepath.Join(config.TempDir, "movies"))
 		os.RemoveAll(filepath.Join(config.TempDir, "seasons"))
+		os.RemoveAll(filepath.Join(config.TempDir, "search"))
 		os.Remove(progressFile)
 	}()
 
@@ -52,5 +54,12 @@ func main() {
 	}
 	if config.MovieFile != "" {
 		internal.ProcessMovies(config)
+	}
+	// Fribb-based ingestion: triggered when -fribb or -animeapi was explicitly
+	// passed on the command line, even as an empty string (empty = fetch from
+	// the internet).  We use config.UseFribb (set via flag.Visit) instead of
+	// checking FribbFile != "" so that `-fribb ""` is handled correctly.
+	if config.UseFribb {
+		internal.ProcessFribb(config)
 	}
 }

@@ -80,10 +80,10 @@ jobs:
           fi
 
           echo "Processing TV shows..."
-          go run main.go -tv json/input/tv.json -output json/output/tv_ex.json $ARGS
+          go run main.go -tv json/input/tv.json -output json/output/tv_ex.json -fribb "" $ARGS
 
           echo "Processing movies..."
-          go run main.go -movies json/input/movies.json -output json/output/movies_ex.json $ARGS
+          go run main.go -movies json/input/movies.json -output json/output/movies_ex.json -fribb "" $ARGS
 
       - name: Generate update timestamp
         run: echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt

@@ -1,15 +1,17 @@
 # Extended Trakt Database for db.trakt.anitrakt
 
-An extended metadata of [db.trakt.anitrakt](https://github.com/rensetsu/db.trakt.anitrakt)
-by iterating and calling Trakt.tv for extended metadata with some nice
-enhancements implemented.
+An extended metadata layer on top of
+[db.trakt.anitrakt](https://github.com/rensetsu/db.trakt.anitrakt) that calls
+Trakt.tv for richer metadata and exposes it as structured JSON files.
 
 ## Overview
 
-The application takes JSON files containing anime titles with MAL IDs and Trakt
-IDs, then fetches additional metadata from Trakt.tv to create extended database
-files. This is particularly useful for applications that need both MAL and
-Trakt data for anime shows and movies.
+The tool takes JSON files containing anime titles with MAL IDs and Trakt IDs,
+fetches additional metadata from Trakt.tv (seasons, external IDs, Letterboxd
+links), and writes extended database files. A supplementary **Fribb-based
+ingestion pipeline** can discover entries not present in the primary input by
+cross-referencing [Fribb/anime-lists](https://github.com/Fribb/anime-lists)
+with [AnimeAPI](https://animeapi.my.id).
 
 ## Output File Schemas
 
@@ -28,20 +30,20 @@ interface OutputShow {
     type: string;              // "shows"
     is_split_cour: boolean;    // Whether anime spans multiple seasons
     release_year: number;      // Year of release
-    season: {                  // Season information (if not split cour, which will be nulled)
+    season: {                  // Season info (null when is_split_cour = true)
       id: number;              // Season ID on Trakt
       number: number;          // Season number
       externals: {
-        tvdb: number | null;   // TVDB ID for the season
-        tmdb: number | null;   // TMDB ID for the season
-        tvrage: number | null; // TVRage ID for the season (deprecated)
+        tvdb: number | null;   // TVDB season ID
+        tmdb: number | null;   // TMDB season ID
+        tvrage: number | null; // TVRage season ID (deprecated)
       };
     } | null;
     externals: {
-      tvdb: number | null;     // TVDB ID for the show
-      tmdb: number | null;     // TMDB ID for the show
-      imdb: string | null;     // IMDB ID for the show
-      tvrage: number | null;   // TVRage ID for the show (deprecated)
+      tvdb: number | null;     // TVDB show ID
+      tmdb: number | null;     // TMDB show ID
+      imdb: string | null;     // IMDB show ID
+      tvrage: number | null;   // TVRage show ID (deprecated)
     };
   };
 }
@@ -64,13 +66,13 @@ interface OutputMovie {
     type: string;            // "movies"
     release_year: number;    // Year of release
     externals: {
-      tmdb: number | null;   // TMDB ID
-      imdb: string | null;   // IMDB ID
+      tmdb: number | null;   // TMDB movie ID
+      imdb: string | null;   // IMDB movie ID
       letterboxd: {
-        slug: string | null; // Slug ID, used for hyperlink
-        lid: string | null;  // Letterboxd's ID, used for interacting with documented API 
-        uid: number | null;  // Internal int ID.
-      }
+        slug: string | null; // Letterboxd slug (used in URLs)
+        lid: string | null;  // Letterboxd LID (documented API)
+        uid: number | null;  // Letterboxd internal integer ID
+      };
     };
   };
 }
@@ -80,15 +82,14 @@ type OutputMovieList = OutputMovie[];
 
 ## Not Found Files Schema
 
-When anime entries cannot be found on Trakt.tv, they are logged in separate
-files for easy identification:
+Entries that cannot be found on Trakt.tv are logged separately:
 
-### Not Found Entries (`not_exist_tv_ex.json`, `not_exist_movies_ex.json`)
+### `not_exist_tv_ex.json` / `not_exist_movies_ex.json`
 
 ```typescript
 interface NotFoundEntry {
-  mal_id: number;       // MyAnimeList ID of the missing entry
-  title: string;        // Title of the anime that wasn't found
+  mal_id: number;   // MyAnimeList ID
+  title: string;    // Anime title
 }
 
 type NotFoundList = NotFoundEntry[];
@@ -97,72 +98,54 @@ type NotFoundList = NotFoundEntry[];
 **Example:**
 ```json
 [
-  {
-    "mal_id": 50762,
-    "title": "Example Anime Title"
-  },
-  {
-    "mal_id": 51234,
-    "title": "Another Missing Anime"
-  }
+  { "mal_id": 50762, "title": "Example Anime Title" },
+  { "mal_id": 51234, "title": "Another Missing Anime" }
 ]
 ```
 
-## Overrides - Simple & Minimal
+## Overrides
 
-Instead of manually specifying entire entries, the override system lets you
-patch only the fields you want to change. The application intelligently merges
-your overrides with existing data.
+The override system lets you patch specific fields without touching the rest of
+an entry. The application deep-merges overrides into existing data.
 
 ### Override Files
 
-Create override files for entries that need manual correction:
-
-- `json/overrides/tv_overrides.json` - Overrides for TV shows
-- `json/overrides/movies_overrides.json` - Overrides for movies
+- `json/overrides/tv_overrides.json` — TV show corrections
+- `json/overrides/movies_overrides.json` — Movie corrections
 
 ### Override Structure
 
-Each override entry requires:
-- **`mal_id`** (required): MAL ID of the entry to modify
-- **`description`** (required): Human-readable reason for the change
-- **Fields to override** (optional): Only specify fields you're changing
-  - For TV: `trakt` (title, id, slug), `externals` (tvdb, tmdb, imdb, tvrage)
-  - For Movies: `trakt` (title, id, slug), `externals` (tmdb, imdb, letterboxd)
-- **`ignore`** (optional): Set to `true` to skip processing this entry entirely
+| Field | Required | Description |
+|-------|----------|-------------|
+| `mal_id` | ✅ | MAL ID of the entry to modify |
+| `description` | ✅ | Human-readable reason for the change |
+| `trakt` | optional | Override Trakt title, id, or slug |
+| `externals` | optional | Override external IDs (tvdb, tmdb, imdb, letterboxd…) |
+| `ignore` | optional | Set `true` to skip this entry entirely |
 
-### Use Cases
+### When to Use Overrides
 
-**✅ Submit corrections to upstream repo** (`rensetsu/db.trakt.anitrakt`):
+**Submit upstream** (`rensetsu/db.trakt.anitrakt`):
+- Incorrect Trakt ID mappings in input data
+- Actual bugs affecting multiple users
 
-- Fixing incorrect Trakt ID mappings in the input data
-- Correcting MAL titles
-- Actual bugs that affect multiple users
+**Use locally** (this repo):
+- Mapping to external databases not in upstream
+- Application-specific or site-specific tweaks
 
-**✅ Use local overrides in this repo** (extend-anitrakt):
-
-- Adding mappings to external databases (custom IDs, slugs)
-- Site-specific or application-specific tweaks
-- Local data that shouldn't be upstreamed
-
-### Example - TV Overrides
+### Example — TV Overrides
 
 ```json
 [
   {
     "mal_id": 5114,
     "description": "Custom Trakt mapping for this instance",
-    "trakt": {
-      "id": 3572,
-      "slug": "bleach"
-    }
+    "trakt": { "id": 3572, "slug": "bleach" }
   },
   {
     "mal_id": 11061,
     "description": "Local TVDB mapping override",
-    "externals": {
-      "tvdb": 395128
-    }
+    "externals": { "tvdb": 395128 }
   },
   {
     "mal_id": 51234,
@@ -172,35 +155,26 @@ Each override entry requires:
 ]
 ```
 
-### Example - Movie Overrides
+### Example — Movie Overrides
 
 ```json
 [
   {
     "mal_id": 1234,
     "description": "Custom TMDB mapping",
-    "externals": {
-      "tmdb": 12345
-    }
+    "externals": { "tmdb": 12345 }
   }
 ]
 ```
-
-### How It Works
-
-1. User specifies **only the fields they want to change**
-2. Script loads existing entry from output
-3. Script **deep merges** override with existing data (override wins)
-4. Changes are tracked and reported in stats as "Modified via Override"
-5. Description is automatically included in reports
 
 ## Usage
 
 ### Building
 
-1. Make sure Go is installed
-2. `go mod tidy`
-3. `go build`
+```bash
+go mod tidy
+go build
+```
 
 ### Command Line Options
 
@@ -208,31 +182,57 @@ Each override entry requires:
 # Process TV shows
 ./db.trakt.extended-anitrakt -tv json/input/tv.json -api-key YOUR_TRAKT_API_KEY
 
-# Process movies  
+# Process movies
 ./db.trakt.extended-anitrakt -movies json/input/movies.json -api-key YOUR_TRAKT_API_KEY
 
-# Process both with custom output
-./db.trakt.extended-anitrakt -tv json/input/tv.json -movies json/input/movies.json -output json/output/custom_output.json
+# Process both with a custom output path
+./db.trakt.extended-anitrakt \
+  -tv json/input/tv.json \
+  -movies json/input/movies.json \
+  -output json/output/custom_output.json
 
 # Verbose mode
 ./db.trakt.extended-anitrakt -tv json/input/tv.json -verbose
 
-# Disable progress bar
-./db.trakt.extended-anitrakt -tv json/input/tv.json -no-progress
+# Force re-fetch everything, ignoring cache
+./db.trakt.extended-anitrakt -tv json/input/tv.json -force
+
+# Fribb ingestion — fetch source files from the internet automatically
+./db.trakt.extended-anitrakt -fribb "" -api-key YOUR_TRAKT_API_KEY
+
+# Fribb ingestion — use local copies of source files
+./db.trakt.extended-anitrakt \
+  -fribb /path/to/anime-lists-reduced.json \
+  -animeapi /path/to/animeapi.tsv \
+  -api-key YOUR_TRAKT_API_KEY
+
+# Combine normal processing + Fribb supplementary ingestion
+./db.trakt.extended-anitrakt \
+  -tv json/input/tv.json \
+  -movies json/input/movies.json \
+  -fribb "" \
+  -animeapi ""
 ```
 
 ### Flags
 
-- `-tv`: Input TV shows JSON file
-- `-movies`: Input movies JSON file  
-- `-output`: Custom output file name (optional)
-- `-api-key`: Trakt.tv API key (Client ID)
-- `-verbose`: Enable verbose logging
-- `-no-progress`: Disable progress bar
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-tv` | — | Input TV shows JSON file |
+| `-movies` | — | Input movies JSON file |
+| `-output` | auto | Custom output file path |
+| `-api-key` | — | Trakt.tv Client ID |
+| `-verbose` | false | Enable verbose logging |
+| `-no-progress` | false | Disable progress bar |
+| `-force` | false | Ignore cache; re-fetch everything |
+| `-fribb` | — | **Enable Fribb ingestion.** Path to `anime-lists-reduced.json`. Pass `""` to fetch from GitHub automatically. |
+| `-animeapi` | — | Path to `animeapi.tsv` for Fribb ingestion. Pass `""` to fetch from `animeapi.my.id` automatically. |
+
+> **Note:** `-fribb` and `-animeapi` must be **explicitly provided** (even as
+> empty strings) to trigger Fribb ingestion. Simply omitting the flags will not
+> run the Fribb pipeline.
 
 ### Environment Variables
-
-You can set the Trakt API key via environment variable:
 
 ```bash
 export TRAKT_API_KEY="your_api_key_here"
@@ -246,112 +246,184 @@ TRAKT_API_KEY=your_api_key_here
 
 ## Processing Logic
 
-1. **Load Input**: Reads MAL anime data from JSON files
-2. **Load Existing**: Checks for existing output to resume processing
-3. **Load Not Found**: Loads previously identified missing entries to skip them
-4. **Load Overrides**: Applies manual corrections from override files
-5. **Fetch from Trakt**: Retrieves metadata from Trakt.tv API
-6. **Enrich Data**: Combines MAL and Trakt information
-7. **Save Results**: Outputs enriched data and updates not found lists
+### Primary Pipeline (`-tv` / `-movies`)
 
-## Split Cour Detection Logic
+1. **Load Input** — Read MAL anime data from the specified JSON file
+2. **Load Existing** — Read current output to resume interrupted runs
+3. **Load Not Found** — Skip entries previously confirmed missing on Trakt
+4. **Load Overrides** — Apply manual corrections from override files
+5. **Fetch from Trakt** — Retrieve metadata via Trakt.tv API
+6. **Enrich Data** — Combine MAL and Trakt data; resolve Letterboxd for movies
+7. **Save Results** — Write enriched output and update not-found lists
 
-The `is_split_cour` flag helps resolve discrepancies between how MyAnimeList
-(MAL) and Trakt.tv handle anime seasons that have a broadcast break.
+> The Fribb pipeline always runs **after** `-tv` and `-movies`, so any entries
+> added by the primary pipeline are already in the "existing" set and will be
+> correctly skipped by Fribb.
 
-* `is_split_cour: false`: The season was found on Trakt.tv.
-* `is_split_cour: true`: The season was not found on Trakt.tv, likely because
-  it is considered a "split cour." `season` will be nulled.
+## Fribb-based Ingestion Pipeline
 
-This occurs because MAL may list a series with a mid-season break as two
-separate seasons, while TMDB/Trakt will list it as a single, continuous season
-if the episode numbering doesn't reset.
+A supplementary ingestion mode that discovers anime entries not present in the
+primary `db.trakt.anitrakt` input by cross-referencing two community databases.
 
-When you encounter `is_split_cour: true`, it means the episodes for that
-"season" are likely included in the previous season's data on Trakt.tv. You
-should treat the show as a single, continuous season to maintain data
-consistency.
+> [!IMPORTANT]
+> **Why this is required:** The upstream project, anitrakt.huere.net, has been
+> inactive since around Spring 2026 following the project maintainer's decision
+> to discontinue operations. As a result, the primary input files are no longer
+> updated, making this Fribb-based supplementary ingestion pipeline necessary
+> to keep the database current with new anime releases, while it might be more
+> inaccurate due to TVDB and aniDB dependency.
 
-### A Note on Episode Counts
+Triggered by passing `-fribb` (or `-animeapi`) on the command line.
 
-This mechanism only detects split cours, not discrepancies in episode counts.
-For example, some series may have a different number of episodes on MAL versus
-TMDB due to how minisodes are grouped and aired.
+### How It Works
 
-* Uchitama?! Have you seen my Tama?: [11 episodes](https://myanimelist.net/anime/39942)
-  on MAL, [28](https://www.themoviedb.org/tv/96660/season/1) on TMDB.
-* The Disastrous Life of Saiki K. S1: [120 (minisodes)](https://myanimelist.net/anime/33255)
-  on MAL, [24](https://www.themoviedb.org/tv/67676/season/1) on TMDB.
+1. **Load Fribb data** (`anime-lists-reduced.json`) — AniDB IDs mapped to TMDB
+   TV/movie IDs, TVDB IDs, IMDB IDs, and season numbers.
+2. **Load AnimeAPI TSV** (`animeapi.tsv`) — Maps AniDB IDs to MyAnimeList IDs.
+3. **Cross-reference** — For each Fribb entry, resolve MAL ID via AnimeAPI.
+4. **Filter existing** — Drop MAL IDs already in `tv_ex.json` /
+   `movies_ex.json` or the not-found lists.
+5. **Lookup on Trakt** — Search by the best available external ID:
 
-TMDB often splits a single broadcast episode into multiple "minisodes" if the
-original airdate contained multiple indexed segments. In contrast, MAL's
-episode count is generally lists episodes based on their initial broadcast
-date, meaning a single aired episode containing multiple "minisodes" is often
-counted as one episode.
+   | Media | Primary | Fallback |
+   |-------|---------|----------|
+   | TV shows | TMDB TV ID (`/search/tmdb/:id?type=show`) | TVDB ID (`/search/tvdb/:id?type=show`) |
+   | Movies | TMDB movie ID (`/search/tmdb/:id?type=movie`) | IMDB ID (`/search/imdb/:id?type=movie`) |
 
-## Error Handling
+6. **Season enrichment** — For TV entries, fetch the Trakt season and run
+   split-cour detection.
+7. **Letterboxd enrichment** — For movies, resolve Letterboxd slug/LID/UID.
+8. **Merge and save** — New entries are merged into the existing output files
+   and sorted by MAL ID.
 
-- **404 Errors**: Entries not found on Trakt are added to not found files
-- **Network Errors**: Logged and processing continues
-- **Rate Limiting**: Built-in request delays to respect Trakt API limits
+### Data Sources
 
-## Change Tracking
+| Source | Endpoint | Purpose |
+|--------|----------|---------|
+| [Fribb/anime-lists](https://github.com/Fribb/anime-lists) | `raw.githubusercontent.com/…/anime-lists-reduced.json` | AniDB → TMDB / TVDB / IMDB mapping |
+| [AnimeAPI](https://animeapi.my.id) | `animeapi.my.id/animeapi.tsv` | AniDB → MAL ID mapping |
 
-The application automatically tracks and reports CRUD operations (Create,
-Update, Unrecognized) during processing:
+### Coverage (approximate, based on local data)
 
-- **Created**: New entries added to the database
-- **Updated**: Existing entries with modified Trakt metadata
-- **Not Found**: Entries that could not be found on Trakt.tv
+| Lookup type | Count |
+|-------------|-------|
+| TV via TMDB (primary) | ~6,830 |
+| TV via TVDB (fallback) | ~166 |
+| Movie via TMDB (primary) | ~618 |
+| Movie via IMDB (fallback) | ~729 |
 
-When running in GitHub Actions, detailed change summaries with reasons are
-automatically appended to the workflow job summary using the `GITHUB_STEP_SUMMARY`
-file. This includes:
+### Quirks and Caveats
 
-- Summary table showing before/after counts and diffs
-- Detailed change tables with entry titles and reasons for modifications
+- **Multiple IMDB IDs** — Fribb's `imdb_id` is sometimes a comma-separated
+  list (e.g. one ID per OVA episode). Only the **first** value is used.
+- **TMDB media type** — Determined by Fribb's `themoviedb_id.tv` vs
+  `themoviedb_id.movie` sub-key. Entries with an empty `{}` object fall
+  through to the TVDB/IMDB fallback.
+- **Season 0 (specials)** — Entries where `season.tmdb = 0` are treated as
+  specials. Split-cour detection still applies if Trakt has no matching season.
+- **TVDB season numbers** — When looking up via TVDB, the TVDB season number
+  from Fribb is used as a best-effort approximation of the Trakt season number.
+  They usually match but may diverge for older titles.
+- **No-MAL entries** — AniDB IDs absent from AnimeAPI TSV are silently skipped.
+
+## Split Cour Detection
+
+The `is_split_cour` flag resolves discrepancies between how MAL and Trakt
+number anime seasons that have a mid-season broadcast break.
+
+| Value | Meaning |
+|-------|---------|
+| `false` | Season found on Trakt; `season` object is populated |
+| `true` | Season not found — likely a split cour. `season` is `null` |
+
+MAL often lists both halves of a split-cour series as separate seasons, while
+TMDB/Trakt treat them as one continuous season when episode numbering doesn't
+reset. When `is_split_cour: true`, the episodes for that "season" are likely
+included under the **previous** season on Trakt.
+
+### Note on Episode Counts
+
+This flag only detects split cours, not episode-count mismatches. Some series
+have different counts on MAL vs TMDB due to minisode grouping:
+
+- *Uchitama?!*: [11 episodes](https://myanimelist.net/anime/39942) on MAL vs
+  [28](https://www.themoviedb.org/tv/96660/season/1) on TMDB
+- *Saiki K. S1*: [120 (minisodes)](https://myanimelist.net/anime/33255) on MAL
+  vs [24](https://www.themoviedb.org/tv/67676/season/1) on TMDB
 
 ## Caching
 
-The application uses temporary file caching to avoid redundant API calls:
+| Cache location | Scope | Notes |
+|----------------|-------|-------|
+| `/tmp/trakt_data/shows/` | Ephemeral | Cleared after each run |
+| `/tmp/trakt_data/movies/` | Ephemeral | Cleared after each run |
+| `/tmp/trakt_data/seasons/` | Ephemeral | Cleared after each run |
+| `/tmp/trakt_data/search/` | Ephemeral | Fribb external-ID search results |
+| `/tmp/trakt_data/letterboxd/` | **Persistent** | Saved across GitHub Actions runs via cache |
 
-- **Letterboxd API** (`/tmp/trakt_data/letterboxd/`): Persisted across workflow
-  runs via GitHub Actions cache. Letterboxd data changes infrequently, so this
-  cache significantly speeds up movie processing.
-- **Show metadata** (`/tmp/trakt_data/shows/`): Ephemeral, cleared after each
-  run. Avoids redundant API calls within a single execution.
-- **Movie metadata** (`/tmp/trakt_data/movies/`): Ephemeral, cleared after each run.
-- **Season metadata** (`/tmp/trakt_data/seasons/`): Ephemeral, cleared after each run.
+Use `-force` to bypass all caches and re-fetch everything from the APIs.
 
-When running locally, all caches are cleared on exit. In GitHub Actions, the
-Letterboxd cache is automatically restored and saved between workflow runs.
+## Error Handling
+
+- **404 / no results** — Entry is added to the not-found file and skipped in
+  future runs
+- **Network errors** — Logged; processing continues with the next entry
+- **Rate limiting** — Built-in request delays and exponential back-off respect
+  Trakt API limits
+
+## Change Tracking
+
+Each run reports CRUD operations in a summary table:
+
+| Metric | Description |
+|--------|-------------|
+| Created | New entries added |
+| Updated | Existing entries with changed Trakt metadata |
+| Modified (Overridden) | Entries patched by an override file |
+| Not Found | Entries not found on Trakt.tv |
+
+In GitHub Actions the summary is automatically written to
+`$GITHUB_STEP_SUMMARY` as a markdown table with per-entry detail rows.
 
 ## File Structure
 
 ```
 .
-├── main.go                                    # Application source code
+├── main.go
+├── internal/
+│   ├── api.go          # Trakt / Letterboxd API calls
+│   ├── config.go       # CLI flag parsing
+│   ├── file.go         # JSON load/save helpers
+│   ├── fribb.go        # Fribb-based ingestion pipeline
+│   ├── models.go       # Shared structs and Config
+│   ├── processor.go    # Primary TV/movie processing
+│   ├── ratelimit.go    # Token-bucket rate limiter
+│   └── stats.go        # Progress and summary output
 ├── json/
 │   ├── input/
-│   │   ├── tv.json                           # Input TV shows list
-│   │   └── movies.json                       # Input movies list
+│   │   ├── tv.json
+│   │   └── movies.json
 │   ├── output/
-│   │   ├── tv_ex.json                        # Extended TV shows data
-│   │   └── movies_ex.json                    # Extended movies data
+│   │   ├── tv_ex.json
+│   │   └── movies_ex.json
+│   ├── overrides/
+│   │   ├── tv_overrides.json
+│   │   └── movies_overrides.json
 │   └── not_found/
-│       ├── not_exist_tv_ex.json              # TV shows not found on Trakt
-│       └── not_exist_movies_ex.json          # Movies not found on Trakt
-├── README.md                                  # Documentation
-└── last_updated.txt                          # Timestamp of last update
+│       ├── not_exist_tv_ex.json
+│       └── not_exist_movies_ex.json
+└── README.md
 ```
 
 ## Build Requirements
 
-- Go 1.21 or higher
-- Internet connection for Trakt.tv API access
+- Go 1.21+
+- Internet connection for Trakt.tv (and optionally AnimeAPI / GitHub) access
 
 ## Dependencies
 
-- `github.com/joho/godotenv` - Environment variable loading
-- `github.com/schollz/progressbar/v3` - Progress indication
-- `golang.org/x/term` - Terminal input handling
+| Package | Purpose |
+|---------|---------|
+| `github.com/joho/godotenv` | `.env` file loading |
+| `github.com/schollz/progressbar/v3` | Progress bars |
+| `golang.org/x/term` | Secure API key prompt |

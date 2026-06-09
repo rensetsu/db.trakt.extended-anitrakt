@@ -1,6 +1,10 @@
 package internal
 
-import "encoding/json"
+import (
+	"encoding/json"
+	"strconv"
+	"strings"
+)
 
 // InputShow structure for input shows
 type InputShow struct {
@@ -151,6 +155,10 @@ type Config struct {
 	Force                 bool
 	RateLimiter           *RateLimiter
 	LetterboxdRateLimiter *RateLimiter
+	// Fribb-based ingestion
+	FribbFile    string // path to anime-lists-reduced.json (empty = fetch from GitHub)
+	AnimeAPIFile string // path to animeapi.tsv (empty = fetch from animeapi.my.id)
+	UseFribb     bool   // true when -fribb or -animeapi was explicitly passed
 }
 
 // ChangeDetail structure for tracking changes
@@ -185,4 +193,134 @@ type Override struct {
 	TraktMovie  *json.RawMessage `json:"trakt,omitempty"`
 	Externals   *json.RawMessage `json:"externals,omitempty"`
 	Ignore      bool             `json:"ignore,omitempty"`
+}
+
+// ---------------------------------------------------------------------------
+// Fribb anime-lists models
+// ---------------------------------------------------------------------------
+
+// FribbThemoviedbID holds the TMDB ID under either a "tv" or "movie" key.
+// Only one of them will be populated per entry.
+type FribbThemoviedbID struct {
+	TV    *int `json:"tv,omitempty"`
+	Movie *int `json:"movie,omitempty"`
+}
+
+// FribbSeason holds the TVDB / TMDB season numbers used by Fribb.
+type FribbSeason struct {
+	TVDB *int `json:"tvdb,omitempty"`
+	TMDB *int `json:"tmdb,omitempty"`
+}
+
+// FribbEntry is one record from anime-lists-reduced.json.
+// imdb_id may be a comma-separated list; we take only the first value.
+type FribbEntry struct {
+	AnidbID      int                `json:"anidb_id"`
+	IMDbID       string             `json:"imdb_id,omitempty"`
+	ThemoviedbID *FribbThemoviedbID `json:"themoviedb_id,omitempty"`
+	TVDbID       int                `json:"tvdb_id,omitempty"`
+	Season       *FribbSeason       `json:"season,omitempty"`
+}
+
+// FirstIMDb returns the first IMDb ID from a potentially comma-separated list.
+func (f *FribbEntry) FirstIMDb() string {
+	if f.IMDbID == "" {
+		return ""
+	}
+	parts := strings.SplitN(f.IMDbID, ",", 2)
+	return strings.TrimSpace(parts[0])
+}
+
+// ---------------------------------------------------------------------------
+// AnimeAPI TSV row model
+// ---------------------------------------------------------------------------
+
+// AnimeAPIRow represents one row of animeapi.tsv.
+// Only the fields we need are parsed; the rest are ignored.
+type AnimeAPIRow struct {
+	Title        string
+	AniDB        int
+	MyAnimeList  int
+	TraktID      int
+	TraktType    string // "shows" or "movies"
+	TraktSeason  int    // trakt_season
+	TMDB         int    // themoviedb
+	TMDBType     string // themoviedb_type: "tv" or "movie"
+	TMDBSeasonID int    // themoviedb_season_id
+}
+
+// animeAPIColumns is a helper to map header names to column indices.
+type animeAPIColumns struct {
+	title              int
+	anidb              int
+	myanimelist        int
+	themoviedb         int
+	themoviedbType     int
+	themoviedbSeasonID int
+	trakt              int
+	traktType          int
+	traktSeason        int
+}
+
+// parseAnimeAPIColumns maps a header row to column indices.
+func parseAnimeAPIColumns(headers []string) animeAPIColumns {
+	cols := animeAPIColumns{
+		title:              -1,
+		anidb:              -1,
+		myanimelist:        -1,
+		themoviedb:         -1,
+		themoviedbType:     -1,
+		themoviedbSeasonID: -1,
+		trakt:              -1,
+		traktType:          -1,
+		traktSeason:        -1,
+	}
+	for i, h := range headers {
+		switch strings.TrimSpace(h) {
+		case "title":
+			cols.title = i
+		case "anidb":
+			cols.anidb = i
+		case "myanimelist":
+			cols.myanimelist = i
+		case "themoviedb":
+			cols.themoviedb = i
+		case "themoviedb_type":
+			cols.themoviedbType = i
+		case "themoviedb_season_id":
+			cols.themoviedbSeasonID = i
+		case "trakt":
+			cols.trakt = i
+		case "trakt_type":
+			cols.traktType = i
+		case "trakt_season":
+			cols.traktSeason = i
+		}
+	}
+	return cols
+}
+
+// parseInt parses a TSV cell as int, returning 0 on blank/error.
+func parseInt(s string) int {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return 0
+	}
+	v, err := strconv.Atoi(s)
+	if err != nil {
+		return 0
+	}
+	return v
+}
+
+// ---------------------------------------------------------------------------
+// Trakt /search/:id_type/:id response models
+// ---------------------------------------------------------------------------
+
+// TraktSearchResult is one element of the search-by-ID array response.
+type TraktSearchResult struct {
+	Type  string      `json:"type"`
+	Score float64     `json:"score"`
+	Show  *TraktShow  `json:"show,omitempty"`
+	Movie *TraktMovie `json:"movie,omitempty"`
 }
