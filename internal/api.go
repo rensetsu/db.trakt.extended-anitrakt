@@ -320,7 +320,7 @@ func FetchLetterboxdInfo(client *http.Client, config Config, tmdbID int, existin
 		resp.Body = io.NopCloser(strings.NewReader(string(bodyBytes)))
 		bodyStr := string(bodyBytes)
 
-		if strings.Contains(bodyStr, "Just a moment...") || strings.Contains(bodyStr, "challenge-platform") {
+		if strings.Contains(bodyStr, "Just a moment...") || strings.Contains(bodyStr, "Attention Required!") {
 			if config.Verbose {
 				fmt.Printf("\n    - Letterboxd blocked by Cloudflare challenge (unable to bypass via HTTP)")
 			}

@@ -14,7 +14,11 @@
     "externals": {
       "tmdb": 11299,
       "imdb": "tt0275277",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "cowboy-bebop-the-movie",
+        "uid": 45434,
+        "lid": "1Uc4"
+      }
     }
   },
   {
@@ -32,7 +36,11 @@
     "externals": {
       "tmdb": 21832,
       "imdb": "tt0169880",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "neon-genesis-evangelion-death-and-rebirth",
+        "uid": 55963,
+        "lid": "2lAi"
+      }
     }
   },
   {
@@ -50,7 +58,11 @@
     "externals": {
       "tmdb": 18491,
       "imdb": "tt0169858",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "neon-genesis-evangelion-the-end-of-evangelion",
+        "uid": 40311,
+        "lid": "1GRM"
+      }
     }
   },
   {
@@ -68,7 +80,11 @@
     "externals": {
       "tmdb": 9323,
       "imdb": "tt0113568",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ghost-in-the-shell",
+        "uid": 47270,
+        "lid": "1YYc"
+      }
     }
   },
   {
@@ -86,7 +102,11 @@
     "externals": {
       "tmdb": 39977,
       "imdb": "tt0184872",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "samurai-x-the-motion-picture",
+        "uid": 24903,
+        "lid": "12MC"
+      }
     }
   },
   {
@@ -104,7 +124,11 @@
     "externals": {
       "tmdb": 149,
       "imdb": "tt0094625",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "akira",
+        "uid": 51902,
+        "lid": "2b1i"
+      }
     }
   },
   {
@@ -140,7 +164,11 @@
     "externals": {
       "tmdb": 11633,
       "imdb": "tt0401233",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "appleseed-2004",
+        "uid": 45118,
+        "lid": "1Tn6"
+      }
     }
   },
   {
@@ -158,7 +186,11 @@
     "externals": {
       "tmdb": 464038,
       "imdb": "tt0945355",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "mobile-suit-gundam-the-08th-ms-team-millers-report",
+        "uid": 395806,
+        "lid": "gBFG"
+      }
     }
   },
   {
@@ -176,7 +208,11 @@
     "externals": {
       "tmdb": 16157,
       "imdb": "tt0095262",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "mobile-suit-gundam-chars-counterattack",
+        "uid": 41785,
+        "lid": "1KHw"
+      }
     }
   },
   {
@@ -194,7 +230,11 @@
     "externals": {
       "tmdb": 16308,
       "imdb": "tt0159568",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "mobile-suit-gundam-f91",
+        "uid": 41661,
+        "lid": "1Knw"
+      }
     }
   },
   {
@@ -212,7 +252,11 @@
     "externals": {
       "tmdb": 44587,
       "imdb": "tt0118200",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "x-the-movie",
+        "uid": 20599,
+        "lid": "RAq"
+      }
     }
   },
   {
@@ -230,7 +274,11 @@
     "externals": {
       "tmdb": 128,
       "imdb": "tt0119698",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "princess-mononoke",
+        "uid": 51922,
+        "lid": "2b4w"
+      }
     }
   },
   {
@@ -248,7 +296,11 @@
     "externals": {
       "tmdb": 80741,
       "imdb": "tt0388130",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "initial-d-third-stage",
+        "uid": 67172,
+        "lid": "2OKc"
+      }
     }
   },
   {
@@ -266,7 +318,11 @@
     "externals": {
       "tmdb": 37047,
       "imdb": "tt0414243",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "love-hina-christmas-special-silent-eve",
+        "uid": 27368,
+        "lid": "19cc"
+      }
     }
   },
   {
@@ -284,7 +340,11 @@
     "externals": {
       "tmdb": 44685,
       "imdb": "tt0416938",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "love-hina-spring-special-i-wish-your-dream",
+        "uid": 20507,
+        "lid": "RlA"
+      }
     }
   },
   {
@@ -302,7 +362,11 @@
     "externals": {
       "tmdb": 129,
       "imdb": "tt0245429",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "spirited-away",
+        "uid": 51921,
+        "lid": "2b4m"
+      }
     }
   },
   {
@@ -338,7 +402,11 @@
     "externals": {
       "tmdb": 37910,
       "imdb": "tt0370754",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "voices-of-a-distant-star",
+        "uid": 26609,
+        "lid": "17dM"
+      }
     }
   },
   {
@@ -356,7 +424,11 @@
     "externals": {
       "tmdb": 45288,
       "imdb": "tt3354378",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "fighting-spirit-mashiba-vs-kimura",
+        "uid": 19950,
+        "lid": "PTK"
+      }
     }
   },
   {
@@ -374,7 +446,11 @@
     "externals": {
       "tmdb": 21174,
       "imdb": "tt0265018",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ah-my-goddess-the-movie",
+        "uid": 38567,
+        "lid": "1Cku"
+      }
     }
   },
   {
@@ -392,7 +468,11 @@
     "externals": {
       "tmdb": 647,
       "imdb": "tt0385700",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "final-fantasy-vii-advent-children",
+        "uid": 51477,
+        "lid": "29UK"
+      }
     }
   },
   {
@@ -410,7 +490,11 @@
     "externals": {
       "tmdb": 18881,
       "imdb": "tt0246734",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "kite",
+        "uid": 40032,
+        "lid": "1G8M"
+      }
     }
   },
   {
@@ -428,7 +512,11 @@
     "externals": {
       "tmdb": 26945,
       "imdb": "tt0301082",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "cardcaptor-sakura-the-movie",
+        "uid": 34915,
+        "lid": "1sPs"
+      }
     }
   },
   {
@@ -446,7 +534,11 @@
     "externals": {
       "tmdb": 31347,
       "imdb": "tt0301083",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "cardcaptor-sakura-the-sealed-card",
+        "uid": 31253,
+        "lid": "1jiO"
+      }
     }
   },
   {
@@ -464,7 +556,11 @@
     "externals": {
       "tmdb": 16990,
       "imdb": "tt0270933",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "escaflowne-the-movie",
+        "uid": 41282,
+        "lid": "1Joo"
+      }
     }
   },
   {
@@ -482,7 +578,11 @@
     "externals": {
       "tmdb": 919,
       "imdb": "tt0275230",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "blood-the-last-vampire",
+        "uid": 51234,
+        "lid": "29hy"
+      }
     }
   },
   {
@@ -500,7 +600,11 @@
     "externals": {
       "tmdb": 13274,
       "imdb": "tt0489134",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "final-fantasy-vii-last-order",
+        "uid": 44018,
+        "lid": "1QvG"
+      }
     }
   },
   {
@@ -518,7 +622,11 @@
     "externals": {
       "tmdb": 155661,
       "imdb": "tt2137684",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "mars-of-destruction",
+        "uid": 116579,
+        "lid": "4Th4"
+      }
     }
   },
   {
@@ -536,7 +644,11 @@
     "externals": {
       "tmdb": 16198,
       "imdb": "tt0206013",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "my-neighbors-the-yamadas",
+        "uid": 41751,
+        "lid": "1KC2"
+      }
     }
   },
   {
@@ -554,7 +666,11 @@
     "externals": {
       "tmdb": 11621,
       "imdb": "tt0104652",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "porco-rosso",
+        "uid": 45130,
+        "lid": "1Tp2"
+      }
     }
   },
   {
@@ -572,7 +688,11 @@
     "externals": {
       "tmdb": 37024,
       "imdb": "tt0101583",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ranma-1-2-the-movie-big-trouble-in-nekonron",
+        "uid": 27384,
+        "lid": "19eM"
+      }
     }
   },
   {
@@ -590,7 +710,11 @@
     "externals": {
       "tmdb": 16767,
       "imdb": "tt0164917",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "spriggan",
+        "uid": 41403,
+        "lid": "1JHU"
+      }
     }
   },
   {
@@ -608,7 +732,11 @@
     "externals": {
       "tmdb": 14003,
       "imdb": "tt0485323",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "fullmetal-alchemist-the-movie-conqueror-of",
+        "uid": 43415,
+        "lid": "1OWq"
+      }
     }
   },
   {
@@ -626,7 +754,11 @@
     "externals": {
       "tmdb": 4935,
       "imdb": "tt0347149",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "howls-moving-castle",
+        "uid": 49062,
+        "lid": "23De"
+      }
     }
   },
   {
@@ -644,7 +776,11 @@
     "externals": {
       "tmdb": 12924,
       "imdb": "tt0381348",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-place-promised-in-our-early-days",
+        "uid": 44229,
+        "lid": "1R3I"
+      }
     }
   },
   {
@@ -662,7 +798,11 @@
     "externals": {
       "tmdb": 10494,
       "imdb": "tt0156887",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "perfect-blue",
+        "uid": 46175,
+        "lid": "1W7A"
+      }
     }
   },
   {
@@ -680,7 +820,11 @@
     "externals": {
       "tmdb": 19738,
       "imdb": "tt0243558",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "revolutionary-girl-utena-the-movie",
+        "uid": 39443,
+        "lid": "1EBM"
+      }
     }
   },
   {
@@ -698,7 +842,11 @@
     "externals": {
       "tmdb": 16907,
       "imdb": "tt0476680",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "naruto-the-movie-ninja-clash-in-the-land-of-snow",
+        "uid": 41327,
+        "lid": "1JvE"
+      }
     }
   },
   {
@@ -716,7 +864,11 @@
     "externals": {
       "tmdb": 34297,
       "imdb": "tt0473658",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "inuyasha-the-movie-4-fire-on-the-mystic-island",
+        "uid": 29237,
+        "lid": "1e3E"
+      }
     }
   },
   {
@@ -734,7 +886,11 @@
     "externals": {
       "tmdb": 22537,
       "imdb": "tt0366621",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "inuyasha-the-movie-2-the-castle-beyond-the-looking-glass",
+        "uid": 37834,
+        "lid": "1Aqg"
+      }
     }
   },
   {
@@ -752,7 +908,11 @@
     "externals": {
       "tmdb": 34295,
       "imdb": "tt0396659",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "inuyasha-the-movie-3-swords-of-an-honorable-ruler",
+        "uid": 29238,
+        "lid": "1e3O"
+      }
     }
   },
   {
@@ -770,7 +930,11 @@
     "externals": {
       "tmdb": 42360,
       "imdb": "tt0322645",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "inuyasha-the-movie-affections-touching-across-time",
+        "uid": 22715,
+        "lid": "X5I"
+      }
     }
   },
   {
@@ -788,7 +952,11 @@
     "externals": {
       "tmdb": 19576,
       "imdb": "tt0814243",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-the-movie",
+        "uid": 39557,
+        "lid": "1EUa"
+      }
     }
   },
   {
@@ -806,7 +974,11 @@
     "externals": {
       "tmdb": 23446,
       "imdb": "tt0832449",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-clockwork-island-adventure",
+        "uid": 37366,
+        "lid": "1zcM"
+      }
     }
   },
   {
@@ -824,7 +996,11 @@
     "externals": {
       "tmdb": 44725,
       "imdb": "tt0997084",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-choppers-kingdom-on-the-island-of-strange-animals",
+        "uid": 20467,
+        "lid": "Rf8"
+      }
     }
   },
   {
@@ -842,7 +1018,11 @@
     "externals": {
       "tmdb": 44727,
       "imdb": "tt1006926",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-dead-end-adventure",
+        "uid": 20465,
+        "lid": "ReO"
+      }
     }
   },
   {
@@ -860,7 +1040,11 @@
     "externals": {
       "tmdb": 44728,
       "imdb": "tt1010435",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-curse-of-the-sacred-sword",
+        "uid": 20464,
+        "lid": "ReE"
+      }
     }
   },
   {
@@ -878,7 +1062,11 @@
     "externals": {
       "tmdb": 44729,
       "imdb": "tt1018764",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-baron-omatsuri-and-the-secret-island",
+        "uid": 20463,
+        "lid": "Reu"
+      }
     }
   },
   {
@@ -896,7 +1084,11 @@
     "externals": {
       "tmdb": 44730,
       "imdb": "tt1059950",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-giant-mecha-soldier-of-karakuri-castle",
+        "uid": 20462,
+        "lid": "Rek"
+      }
     }
   },
   {
@@ -914,7 +1106,11 @@
     "externals": {
       "tmdb": 116315,
       "imdb": "tt1012788",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-defeat-the-pirate-ganzack",
+        "uid": 92282,
+        "lid": "3S4c"
+      }
     }
   },
   {
@@ -932,7 +1128,11 @@
     "externals": {
       "tmdb": 12140,
       "imdb": "tt0347246",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ghost-in-the-shell-2-innocence",
+        "uid": 44762,
+        "lid": "1SrG"
+      }
     }
   },
   {
@@ -950,7 +1150,11 @@
     "externals": {
       "tmdb": 48215,
       "imdb": "tt0088983",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-dagger-of-kamui",
+        "uid": 17303,
+        "lid": "J0O"
+      }
     }
   },
   {
@@ -968,7 +1172,11 @@
     "externals": {
       "tmdb": 44179,
       "imdb": "tt0094995",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "demon-city-shinjuku",
+        "uid": 20989,
+        "lid": "SBk"
+      }
     }
   },
   {
@@ -986,7 +1194,11 @@
     "externals": {
       "tmdb": 39144,
       "imdb": "tt0142251",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-curse-of-the-blood-rubies",
+        "uid": 25511,
+        "lid": "14mG"
+      }
     }
   },
   {
@@ -1004,7 +1216,11 @@
     "externals": {
       "tmdb": 28697,
       "imdb": "tt0109872",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "fatal-fury-the-motion-picture",
+        "uid": 33446,
+        "lid": "1p0w"
+      }
     }
   },
   {
@@ -1022,7 +1238,11 @@
     "externals": {
       "tmdb": 16859,
       "imdb": "tt0097814",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "kikis-delivery-service",
+        "uid": 41360,
+        "lid": "1JAY"
+      }
     }
   },
   {
@@ -1040,7 +1260,11 @@
     "externals": {
       "tmdb": 10515,
       "imdb": "tt0092067",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "castle-in-the-sky",
+        "uid": 46157,
+        "lid": "1W4G"
+      }
     }
   },
   {
@@ -1058,7 +1282,11 @@
     "externals": {
       "tmdb": 9606,
       "imdb": "tt0293416",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "metropolis-2001",
+        "uid": 46995,
+        "lid": "1YfQ"
+      }
     }
   },
   {
@@ -1076,7 +1304,11 @@
     "externals": {
       "tmdb": 8392,
       "imdb": "tt0096283",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "my-neighbor-totoro",
+        "uid": 47756,
+        "lid": "20eA"
+      }
     }
   },
   {
@@ -1094,7 +1326,11 @@
     "externals": {
       "tmdb": 10228,
       "imdb": "tt0190641",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-the-first-movie",
+        "uid": 46423,
+        "lid": "1WLA"
+      }
     }
   },
   {
@@ -1112,7 +1348,11 @@
     "externals": {
       "tmdb": 37100,
       "imdb": "tt0106417",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "sailor-moon-r-the-movie-the-promise-of-the",
+        "uid": 27317,
+        "lid": "193Y"
+      }
     }
   },
   {
@@ -1130,7 +1370,11 @@
     "externals": {
       "tmdb": 35105,
       "imdb": "tt0161981",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "slayers-the-motion-picture",
+        "uid": 28756,
+        "lid": "1cO4"
+      }
     }
   },
   {
@@ -1148,7 +1392,11 @@
     "externals": {
       "tmdb": 17830,
       "imdb": "tt0272880",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tekken-the-motion-picture",
+        "uid": 40752,
+        "lid": "1I0U"
+      }
     }
   },
   {
@@ -1166,7 +1414,11 @@
     "externals": {
       "tmdb": 15999,
       "imdb": "tt0216651",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "vampire-hunter-d-bloodlust",
+        "uid": 41920,
+        "lid": "1L3i"
+      }
     }
   },
   {
@@ -1184,7 +1436,11 @@
     "externals": {
       "tmdb": 31769,
       "imdb": "tt0135037",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "venus-wars",
+        "uid": 30897,
+        "lid": "1ino"
+      }
     }
   },
   {
@@ -1202,7 +1458,11 @@
     "externals": {
       "tmdb": 8953,
       "imdb": "tt0348121",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "steamboy",
+        "uid": 47477,
+        "lid": "1ZvA"
+      }
     }
   },
   {
@@ -1220,7 +1480,11 @@
     "externals": {
       "tmdb": 823,
       "imdb": "tt0193253",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "jin-roh-the-wolf-brigade",
+        "uid": 51329,
+        "lid": "29wS"
+      }
     }
   },
   {
@@ -1238,7 +1502,11 @@
     "externals": {
       "tmdb": 81,
       "imdb": "tt0087544",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "nausicaa-of-the-valley-of-the-wind",
+        "uid": 51969,
+        "lid": "2bc6"
+      }
     }
   },
   {
@@ -1256,7 +1524,11 @@
     "externals": {
       "tmdb": 12477,
       "imdb": "tt0095327",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "grave-of-the-fireflies",
+        "uid": 44558,
+        "lid": "1RUM"
+      }
     }
   },
   {
@@ -1274,7 +1546,11 @@
     "externals": {
       "tmdb": 37797,
       "imdb": "tt0113824",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "whisper-of-the-heart",
+        "uid": 26713,
+        "lid": "17uy"
+      }
     }
   },
   {
@@ -1292,7 +1568,11 @@
     "externals": {
       "tmdb": 410685,
       "imdb": "tt3634858",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "naruto-the-lost-story-mission-protect-the",
+        "uid": 344897,
+        "lid": "etey"
+      }
     }
   },
   {
@@ -1310,7 +1590,11 @@
     "externals": {
       "tmdb": 15370,
       "imdb": "tt0347618",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-cat-returns",
+        "uid": 42428,
+        "lid": "1Mne"
+      }
     }
   },
   {
@@ -1328,7 +1612,11 @@
     "externals": {
       "tmdb": 25078,
       "imdb": "tt0385586",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "cat-soup",
+        "uid": 36303,
+        "lid": "1wrk"
+      }
     }
   },
   {
@@ -1346,7 +1634,11 @@
     "externals": {
       "tmdb": 27867,
       "imdb": "tt0237687",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "sakura-wars-the-movie",
+        "uid": 34129,
+        "lid": "1qMG"
+      }
     }
   },
   {
@@ -1364,7 +1656,11 @@
     "externals": {
       "tmdb": 14282,
       "imdb": "tt0107692",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ninja-scroll",
+        "uid": 43203,
+        "lid": "1Ooe"
+      }
     }
   },
   {
@@ -1382,7 +1678,11 @@
     "externals": {
       "tmdb": 87785,
       "imdb": "tt0381895",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "azumanga-daioh-the-very-short-movie",
+        "uid": 74385,
+        "lid": "37vA"
+      }
     }
   },
   {
@@ -1400,7 +1700,11 @@
     "externals": {
       "tmdb": 40728,
       "imdb": "tt0807703",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "air-the-motion-picture",
+        "uid": 24249,
+        "lid": "1158"
+      }
     }
   },
   {
@@ -1418,7 +1722,11 @@
     "externals": {
       "tmdb": 11049,
       "imdb": "tt0368667",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "interstella-5555-the-5tory-of-the-5ecret-5tar-5ystem",
+        "uid": 45654,
+        "lid": "1ULy"
+      }
     }
   },
   {
@@ -1436,7 +1744,11 @@
     "externals": {
       "tmdb": 9463,
       "imdb": "tt0090248",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "vampire-hunter-d",
+        "uid": 47134,
+        "lid": "1YCg"
+      }
     }
   },
   {
@@ -1454,7 +1766,11 @@
     "externals": {
       "tmdb": 21057,
       "imdb": "tt0108432",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ocean-waves",
+        "uid": 38625,
+        "lid": "1CtQ"
+      }
     }
   },
   {
@@ -1472,7 +1788,11 @@
     "externals": {
       "tmdb": 16860,
       "imdb": "tt1047518",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "rahxephon-pluralitas-concentio",
+        "uid": 41359,
+        "lid": "1JAO"
+      }
     }
   },
   {
@@ -1490,7 +1810,11 @@
     "externals": {
       "tmdb": 13398,
       "imdb": "tt0388473",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tokyo-godfathers",
+        "uid": 43921,
+        "lid": "1Qg2"
+      }
     }
   },
   {
@@ -1508,7 +1832,11 @@
     "externals": {
       "tmdb": 20683,
       "imdb": "tt1506448",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pale-cocoon",
+        "uid": 38850,
+        "lid": "1D48"
+      }
     }
   },
   {
@@ -1526,7 +1854,11 @@
     "externals": {
       "tmdb": 21422,
       "imdb": "tt0131479",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-the-time-bombed-skyscraper",
+        "uid": 38420,
+        "lid": "1BWM"
+      }
     }
   },
   {
@@ -1544,7 +1876,11 @@
     "externals": {
       "tmdb": 21452,
       "imdb": "tt0965649",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "case-closed-the-fourteenth-target",
+        "uid": 38395,
+        "lid": "1BSK"
+      }
     }
   },
   {
@@ -1562,7 +1898,11 @@
     "externals": {
       "tmdb": 28808,
       "imdb": "tt1067920",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-the-last-wizard-of-the-century",
+        "uid": 33351,
+        "lid": "1oLc"
+      }
     }
   },
   {
@@ -1580,7 +1920,11 @@
     "externals": {
       "tmdb": 37021,
       "imdb": "tt0104604",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ranma-1-2-the-movie-2-nihao-my-concubine",
+        "uid": 27387,
+        "lid": "19fg"
+      }
     }
   },
   {
@@ -1598,7 +1942,11 @@
     "externals": {
       "tmdb": 38567,
       "imdb": "tt0466405",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "xxxholic-the-movie-a-midsummer-nights-dream",
+        "uid": 26029,
+        "lid": "15Ie"
+      }
     }
   },
   {
@@ -1616,7 +1964,11 @@
     "externals": {
       "tmdb": 42180,
       "imdb": "tt0466551",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tsubasa-chronicle-the-movie-the-princess-in-the-birdcage-kingdom",
+        "uid": 22886,
+        "lid": "Xxi"
+      }
     }
   },
   {
@@ -1670,7 +2022,11 @@
     "externals": {
       "tmdb": 21712,
       "imdb": "tt0452039",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "mind-game",
+        "uid": 38248,
+        "lid": "1Bv2"
+      }
     }
   },
   {
@@ -1688,7 +2044,11 @@
     "externals": {
       "tmdb": 45278,
       "imdb": "tt1119171",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "yu-yu-hakusho-the-movie-the-golden-seal",
+        "uid": 19958,
+        "lid": "PV2"
+      }
     }
   },
   {
@@ -1706,7 +2066,11 @@
     "externals": {
       "tmdb": 15916,
       "imdb": "tt0208502",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "angels-egg",
+        "uid": 41990,
+        "lid": "1LeA"
+      }
     }
   },
   {
@@ -1724,7 +2088,11 @@
     "externals": {
       "tmdb": 39145,
       "imdb": "tt0142249",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-sleeping-princess-in-devils-castle",
+        "uid": 25510,
+        "lid": "14mw"
+      }
     }
   },
   {
@@ -1742,7 +2110,11 @@
     "externals": {
       "tmdb": 116776,
       "imdb": "tt0142248",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-mystical-adventure",
+        "uid": 92599,
+        "lid": "3STk"
+      }
     }
   },
   {
@@ -1760,7 +2132,11 @@
     "externals": {
       "tmdb": 39148,
       "imdb": "tt0142250",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-the-path-to-power",
+        "uid": 25507,
+        "lid": "14m2"
+      }
     }
   },
   {
@@ -1778,7 +2154,11 @@
     "externals": {
       "tmdb": 28609,
       "imdb": "tt0142235",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-dead-zone",
+        "uid": 33519,
+        "lid": "1pci"
+      }
     }
   },
   {
@@ -1796,7 +2176,11 @@
     "externals": {
       "tmdb": 39100,
       "imdb": "tt0142240",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-the-worlds-strongest",
+        "uid": 25552,
+        "lid": "14ti"
+      }
     }
   },
   {
@@ -1814,7 +2198,11 @@
     "externals": {
       "tmdb": 39101,
       "imdb": "tt0142233",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-the-tree-of-might",
+        "uid": 25551,
+        "lid": "14t8"
+      }
     }
   },
   {
@@ -1832,7 +2220,11 @@
     "externals": {
       "tmdb": 39102,
       "imdb": "tt0142244",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-lord-slug",
+        "uid": 25550,
+        "lid": "14sY"
+      }
     }
   },
   {
@@ -1850,7 +2242,11 @@
     "externals": {
       "tmdb": 24752,
       "imdb": "tt1125254",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-coolers-revenge",
+        "uid": 36544,
+        "lid": "1x4c"
+      }
     }
   },
   {
@@ -1868,7 +2264,11 @@
     "externals": {
       "tmdb": 39103,
       "imdb": "tt0142237",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-the-return-of-cooler",
+        "uid": 25549,
+        "lid": "14sO"
+      }
     }
   },
   {
@@ -1886,7 +2286,11 @@
     "externals": {
       "tmdb": 39104,
       "imdb": "tt0142241",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-super-android-13",
+        "uid": 25548,
+        "lid": "14sE"
+      }
     }
   },
   {
@@ -1904,7 +2308,11 @@
     "externals": {
       "tmdb": 34433,
       "imdb": "tt0142242",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-broly-the-legendary-super-saiyan",
+        "uid": 29174,
+        "lid": "1dTu"
+      }
     }
   },
   {
@@ -1922,7 +2330,11 @@
     "externals": {
       "tmdb": 39105,
       "imdb": "tt0142238",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-bojack-unbound",
+        "uid": 25547,
+        "lid": "14su"
+      }
     }
   },
   {
@@ -1940,7 +2352,11 @@
     "externals": {
       "tmdb": 44251,
       "imdb": "tt0142239",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-broly-second-coming",
+        "uid": 20921,
+        "lid": "Sqm"
+      }
     }
   },
   {
@@ -1958,7 +2374,11 @@
     "externals": {
       "tmdb": 39106,
       "imdb": "tt0142234",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-bio-broly",
+        "uid": 25546,
+        "lid": "14sk"
+      }
     }
   },
   {
@@ -1976,7 +2396,11 @@
     "externals": {
       "tmdb": 39107,
       "imdb": "tt0142236",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-fusion-reborn",
+        "uid": 25545,
+        "lid": "14sa"
+      }
     }
   },
   {
@@ -1994,7 +2418,11 @@
     "externals": {
       "tmdb": 39108,
       "imdb": "tt0142243",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-wrath-of-the-dragon",
+        "uid": 25544,
+        "lid": "14s0"
+      }
     }
   },
   {
@@ -2012,7 +2440,11 @@
     "externals": {
       "tmdb": 55374,
       "imdb": "tt0098202",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "riding-bean",
+        "uid": 10755,
+        "lid": "rYG"
+      }
     }
   },
   {
@@ -2030,7 +2462,11 @@
     "externals": {
       "tmdb": 16910,
       "imdb": "tt0791188",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "naruto-the-movie-legend-of-the-stone-of-gelel",
+        "uid": 41325,
+        "lid": "1Jvk"
+      }
     }
   },
   {
@@ -2048,7 +2484,11 @@
     "externals": {
       "tmdb": 16228,
       "imdb": "tt0495900",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "street-fighter-alpha-generations",
+        "uid": 41725,
+        "lid": "1KxQ"
+      }
     }
   },
   {
@@ -2066,7 +2506,11 @@
     "externals": {
       "tmdb": 15981,
       "imdb": "tt0439533",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dead-leaves",
+        "uid": 41931,
+        "lid": "1L54"
+      }
     }
   },
   {
@@ -2084,7 +2528,11 @@
     "externals": {
       "tmdb": 17433,
       "imdb": "tt0185708",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "street-fighter-alpha-the-movie",
+        "uid": 41010,
+        "lid": "1IGw"
+      }
     }
   },
   {
@@ -2102,7 +2550,11 @@
     "externals": {
       "tmdb": 39324,
       "imdb": "tt0142247",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-z-the-history-of-trunks",
+        "uid": 25350,
+        "lid": "13WI"
+      }
     }
   },
   {
@@ -2120,7 +2572,11 @@
     "externals": {
       "tmdb": 18095,
       "imdb": "tt0142232",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dragon-ball-gt-a-heros-legacy",
+        "uid": 40583,
+        "lid": "1HzE"
+      }
     }
   },
   {
@@ -2138,7 +2594,11 @@
     "externals": {
       "tmdb": 30575,
       "imdb": "tt0109277",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "sailor-moon-s-the-movie-hearts-in-ice",
+        "uid": 31919,
+        "lid": "1l2e"
+      }
     }
   },
   {
@@ -2156,7 +2616,11 @@
     "externals": {
       "tmdb": 18143,
       "imdb": "tt0373960",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "she-and-her-cat",
+        "uid": 40558,
+        "lid": "1HvC"
+      }
     }
   },
   {
@@ -2174,7 +2638,11 @@
     "externals": {
       "tmdb": 34935,
       "imdb": "tt0117876",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tenchi-muyo-in-love",
+        "uid": 28853,
+        "lid": "1d3I"
+      }
     }
   },
   {
@@ -2192,7 +2660,11 @@
     "externals": {
       "tmdb": 82386,
       "imdb": "tt0109422",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ranma-1-2-team-ranma-vs-the-legendary-phoenix",
+        "uid": 68863,
+        "lid": "2T8W"
+      }
     }
   },
   {
@@ -2210,7 +2682,11 @@
     "externals": {
       "tmdb": 15080,
       "imdb": "tt0102587",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "only-yesterday",
+        "uid": 42613,
+        "lid": "1MR4"
+      }
     }
   },
   {
@@ -2228,7 +2704,11 @@
     "externals": {
       "tmdb": 15283,
       "imdb": "tt0110008",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pom-poko",
+        "uid": 42478,
+        "lid": "1Mvi"
+      }
     }
   },
   {
@@ -2246,7 +2726,11 @@
     "externals": {
       "tmdb": 35589,
       "imdb": "tt0185429",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "like-the-clouds-like-the-wind",
+        "uid": 28547,
+        "lid": "1cgm"
+      }
     }
   },
   {
@@ -2264,7 +2748,11 @@
     "externals": {
       "tmdb": 33320,
       "imdb": "tt0291350",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "millennium-actress",
+        "uid": 29884,
+        "lid": "1fK0"
+      }
     }
   },
   {
@@ -2282,7 +2770,11 @@
     "externals": {
       "tmdb": 20043,
       "imdb": "tt0093207",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "royal-space-force-the-wings-of-honneamise",
+        "uid": 39270,
+        "lid": "1E9S"
+      }
     }
   },
   {
@@ -2300,7 +2792,11 @@
     "externals": {
       "tmdb": 41017,
       "imdb": "tt0083053",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "gauche-the-cellist",
+        "uid": 23979,
+        "lid": "10nA"
+      }
     }
   },
   {
@@ -2318,7 +2814,11 @@
     "externals": {
       "tmdb": 14132,
       "imdb": "tt0087660",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "macross-do-you-remember-love",
+        "uid": 43324,
+        "lid": "1OHK"
+      }
     }
   },
   {
@@ -2336,7 +2836,11 @@
     "externals": {
       "tmdb": 14571,
       "imdb": "tt0100339",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "patlabor-the-movie",
+        "uid": 42986,
+        "lid": "1NPe"
+      }
     }
   },
   {
@@ -2354,7 +2858,11 @@
     "externals": {
       "tmdb": 14572,
       "imdb": "tt0124770",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "patlabor-2-the-movie",
+        "uid": 42985,
+        "lid": "1NP4"
+      }
     }
   },
   {
@@ -2372,7 +2880,11 @@
     "externals": {
       "tmdb": 34194,
       "imdb": "tt0152979",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tenchi-the-movie-2-the-daughter-of-darkness",
+        "uid": 29277,
+        "lid": "1ea6"
+      }
     }
   },
   {
@@ -2390,7 +2902,11 @@
     "externals": {
       "tmdb": 73713,
       "imdb": "tt0380887",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "eternal-family",
+        "uid": 59948,
+        "lid": "2vX2"
+      }
     }
   },
   {
@@ -2408,7 +2924,11 @@
     "externals": {
       "tmdb": 21453,
       "imdb": "tt0098692",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "wicked-city",
+        "uid": 38394,
+        "lid": "1BSA"
+      }
     }
   },
   {
@@ -2426,7 +2946,11 @@
     "externals": {
       "tmdb": 12599,
       "imdb": "tt0210234",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-the-movie-2000",
+        "uid": 44441,
+        "lid": "1RBU"
+      }
     }
   },
   {
@@ -2444,7 +2968,11 @@
     "externals": {
       "tmdb": 10991,
       "imdb": "tt0235679",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-3-the-movie",
+        "uid": 45710,
+        "lid": "1UUA"
+      }
     }
   },
   {
@@ -2462,7 +2990,11 @@
     "externals": {
       "tmdb": 12600,
       "imdb": "tt0287635",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-4ever",
+        "uid": 44440,
+        "lid": "1RBK"
+      }
     }
   },
   {
@@ -2480,7 +3012,11 @@
     "externals": {
       "tmdb": 33875,
       "imdb": "tt0347791",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-heroes",
+        "uid": 29485,
+        "lid": "1eHE"
+      }
     }
   },
   {
@@ -2498,7 +3034,11 @@
     "externals": {
       "tmdb": 36218,
       "imdb": "tt0420076",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-jirachi-wish-maker",
+        "uid": 28085,
+        "lid": "1b3Q"
+      }
     }
   },
   {
@@ -2516,7 +3056,11 @@
     "externals": {
       "tmdb": 34065,
       "imdb": "tt0435286",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-destiny-deoxys",
+        "uid": 29373,
+        "lid": "1epA"
+      }
     }
   },
   {
@@ -2534,7 +3078,11 @@
     "externals": {
       "tmdb": 14945,
       "imdb": "tt0493247",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "origin-spirits-of-the-past",
+        "uid": 42694,
+        "lid": "1N48"
+      }
     }
   },
   {
@@ -2552,7 +3100,11 @@
     "externals": {
       "tmdb": 14829,
       "imdb": "tt0205451",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tenchi-forever",
+        "uid": 42786,
+        "lid": "1NiY"
+      }
     }
   },
   {
@@ -2570,7 +3122,11 @@
     "externals": {
       "tmdb": 60843,
       "imdb": "tt0382868",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "nasu-summer-in-andalusia",
+        "uid": 5783,
+        "lid": "f2K"
+      }
     }
   },
   {
@@ -2588,7 +3144,11 @@
     "externals": {
       "tmdb": 18837,
       "imdb": "tt2330912",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "macross-plus-the-movie",
+        "uid": 40069,
+        "lid": "1GeK"
+      }
     }
   },
   {
@@ -2606,7 +3166,11 @@
     "externals": {
       "tmdb": 28460,
       "imdb": "tt0112513",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "sailor-moon-supers-the-movie-black-dream",
+        "uid": 33652,
+        "lid": "1pxK"
+      }
     }
   },
   {
@@ -2624,7 +3188,11 @@
     "externals": {
       "tmdb": 20089,
       "imdb": "tt0279487",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "twilight-of-the-dark-master",
+        "uid": 39238,
+        "lid": "1E4I"
+      }
     }
   },
   {
@@ -2642,7 +3210,11 @@
     "externals": {
       "tmdb": 83090,
       "imdb": "tt0323869",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "saint-seiya-evil-goddess-eris",
+        "uid": 69559,
+        "lid": "2UXc"
+      }
     }
   },
   {
@@ -2660,7 +3232,11 @@
     "externals": {
       "tmdb": 83091,
       "imdb": "tt0322918",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "saint-seiya-the-heated-battle-of-the-gods",
+        "uid": 69558,
+        "lid": "2UX2"
+      }
     }
   },
   {
@@ -2678,7 +3254,11 @@
     "externals": {
       "tmdb": 50253,
       "imdb": "tt0805605",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "saint-seiya-heaven-chapter-overture",
+        "uid": 15399,
+        "lid": "E3I"
+      }
     }
   },
   {
@@ -2696,7 +3276,11 @@
     "externals": {
       "tmdb": 83088,
       "imdb": "tt0326101",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "saint-seiya-warriors-of-the-final-holy-battle",
+        "uid": 69561,
+        "lid": "2UXw"
+      }
     }
   },
   {
@@ -2714,7 +3298,11 @@
     "externals": {
       "tmdb": 57224,
       "imdb": "tt0220333",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "bio-hunter",
+        "uid": 8923,
+        "lid": "ndc"
+      }
     }
   },
   {
@@ -2732,7 +3320,11 @@
     "externals": {
       "tmdb": 66045,
       "imdb": "tt0092664",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "black-magic-m-66",
+        "uid": 801,
+        "lid": "25c"
+      }
     }
   },
   {
@@ -2750,7 +3342,11 @@
     "externals": {
       "tmdb": 16402,
       "imdb": "tt0318819",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "patlabor-wxiii-the-movie",
+        "uid": 41585,
+        "lid": "1Kbg"
+      }
     }
   },
   {
@@ -2768,7 +3364,11 @@
     "externals": {
       "tmdb": 15227,
       "imdb": "tt0080772",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "galaxy-express-999-the-movie",
+        "uid": 42515,
+        "lid": "1MBg"
+      }
     }
   },
   {
@@ -2786,7 +3386,11 @@
     "externals": {
       "tmdb": 59717,
       "imdb": "tt0184881",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "adieu-galaxy-express-999",
+        "uid": 6776,
+        "lid": "hCU"
+      }
     }
   },
   {
@@ -2804,7 +3408,11 @@
     "externals": {
       "tmdb": 55931,
       "imdb": "tt0328832",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-animatrix",
+        "uid": 10261,
+        "lid": "qH0"
+      }
     }
   },
   {
@@ -2822,7 +3430,11 @@
     "externals": {
       "tmdb": 51096,
       "imdb": "tt0264739",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "judge",
+        "uid": 14669,
+        "lid": "C9Y"
+      }
     }
   },
   {
@@ -2840,7 +3452,11 @@
     "externals": {
       "tmdb": 59332,
       "imdb": "tt0265996",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "violence-jack-harem-bomber",
+        "uid": 7042,
+        "lid": "ijO"
+      }
     }
   },
   {
@@ -2858,7 +3474,11 @@
     "externals": {
       "tmdb": 96650,
       "imdb": "tt0265997",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "violence-jack-evil-town",
+        "uid": 79718,
+        "lid": "3lnK"
+      }
     }
   },
   {
@@ -2876,7 +3496,11 @@
     "externals": {
       "tmdb": 96654,
       "imdb": "tt0265998",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "violence-jack-hells-wind",
+        "uid": 79716,
+        "lid": "3lnq"
+      }
     }
   },
   {
@@ -2894,7 +3518,11 @@
     "externals": {
       "tmdb": 2114,
       "imdb": "tt0173840",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "final-fantasy-the-spirits-within",
+        "uid": 50513,
+        "lid": "27pg"
+      }
     }
   },
   {
@@ -2912,7 +3540,11 @@
     "externals": {
       "tmdb": 12613,
       "imdb": "tt0114563",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "street-fighter-ii-the-animated-movie",
+        "uid": 44428,
+        "lid": "1RzO"
+      }
     }
   },
   {
@@ -2930,7 +3562,11 @@
     "externals": {
       "tmdb": 20677,
       "imdb": "tt1068773",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-captured-in-her-eyes",
+        "uid": 38856,
+        "lid": "1D56"
+      }
     }
   },
   {
@@ -2948,7 +3584,11 @@
     "externals": {
       "tmdb": 32022,
       "imdb": "tt1073223",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "case-closed-countdown-to-heaven",
+        "uid": 30716,
+        "lid": "1hUc"
+      }
     }
   },
   {
@@ -2966,7 +3606,11 @@
     "externals": {
       "tmdb": 26662,
       "imdb": "tt0990372",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-the-phantom-of-baker-street",
+        "uid": 35144,
+        "lid": "1tqo"
+      }
     }
   },
   {
@@ -2984,7 +3628,11 @@
     "externals": {
       "tmdb": 39202,
       "imdb": "tt1133935",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-crossroad-in-the-ancient-capital",
+        "uid": 25462,
+        "lid": "14eM"
+      }
     }
   },
   {
@@ -3002,7 +3650,11 @@
     "externals": {
       "tmdb": 39203,
       "imdb": "tt1133559",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-magician-of-the-silver-sky",
+        "uid": 25461,
+        "lid": "14eC"
+      }
     }
   },
   {
@@ -3020,7 +3672,11 @@
     "externals": {
       "tmdb": 1173976,
       "imdb": "tt0471767",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "kinos-journey-life-goes-on",
+        "uid": 1061176,
+        "lid": "IwBq"
+      }
     }
   },
   {
@@ -3038,7 +3694,11 @@
     "externals": {
       "tmdb": 37326,
       "imdb": "tt1345450",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "blue-gender-the-warrior",
+        "uid": 27113,
+        "lid": "18x4"
+      }
     }
   },
   {
@@ -3056,7 +3716,11 @@
     "externals": {
       "tmdb": 45932,
       "imdb": "tt0160500",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "macross-7-the-galaxy-is-calling-me",
+        "uid": 19361,
+        "lid": "OmK"
+      }
     }
   },
   {
@@ -3074,7 +3738,11 @@
     "externals": {
       "tmdb": 78139,
       "imdb": "tt0326092",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-alcatraz-connection",
+        "uid": 64589,
+        "lid": "2I1A"
+      }
     }
   },
   {
@@ -3092,7 +3760,11 @@
     "externals": {
       "tmdb": 39954,
       "imdb": "tt0834586",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-angel-tactics",
+        "uid": 24918,
+        "lid": "12P2"
+      }
     }
   },
   {
@@ -3110,7 +3782,11 @@
     "externals": {
       "tmdb": 31051,
       "imdb": "tt0834581",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-bye-bye-lady-liberty",
+        "uid": 31511,
+        "lid": "1jYq"
+      }
     }
   },
   {
@@ -3128,7 +3804,11 @@
     "externals": {
       "tmdb": 31050,
       "imdb": "tt0170180",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-dead-or-alive",
+        "uid": 31512,
+        "lid": "1jYA"
+      }
     }
   },
   {
@@ -3146,7 +3826,11 @@
     "externals": {
       "tmdb": 51943,
       "imdb": "tt0450493",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-dragon-of-doom",
+        "uid": 13916,
+        "lid": "Acw"
+      }
     }
   },
   {
@@ -3164,7 +3848,11 @@
     "externals": {
       "tmdb": 109572,
       "imdb": "tt0827737",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-episode-0-first-contact",
+        "uid": 87968,
+        "lid": "3GQo"
+      }
     }
   },
   {
@@ -3182,7 +3870,11 @@
     "externals": {
       "tmdb": 31049,
       "imdb": "tt0170181",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-farewell-to-nostradamus",
+        "uid": 31513,
+        "lid": "1jYK"
+      }
     }
   },
   {
@@ -3200,7 +3892,11 @@
     "externals": {
       "tmdb": 80857,
       "imdb": "tt0479746",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-from-siberia-with-love",
+        "uid": 67318,
+        "lid": "2P7K"
+      }
     }
   },
   {
@@ -3218,7 +3914,11 @@
     "externals": {
       "tmdb": 80861,
       "imdb": "tt0834582",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-hemingway-papers",
+        "uid": 67314,
+        "lid": "2P76"
+      }
     }
   },
   {
@@ -3236,7 +3936,11 @@
     "externals": {
       "tmdb": 31053,
       "imdb": "tt0461570",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-missed-by-a-dollar",
+        "uid": 31509,
+        "lid": "1jY6"
+      }
     }
   },
   {
@@ -3254,7 +3958,11 @@
     "externals": {
       "tmdb": 80865,
       "imdb": "tt0834583",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-napoleons-dictionary",
+        "uid": 67310,
+        "lid": "2P6s"
+      }
     }
   },
   {
@@ -3272,7 +3980,11 @@
     "externals": {
       "tmdb": 80868,
       "imdb": "tt0834585",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-operation-return-the-treasure",
+        "uid": 67307,
+        "lid": "2P5Y"
+      }
     }
   },
   {
@@ -3290,7 +4002,11 @@
     "externals": {
       "tmdb": 33176,
       "imdb": "tt0420138",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-return-of-pycal",
+        "uid": 29968,
+        "lid": "1fXy"
+      }
     }
   },
   {
@@ -3308,7 +4024,11 @@
     "externals": {
       "tmdb": 80866,
       "imdb": "tt0834584",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-swallowtail-tattoo",
+        "uid": 67309,
+        "lid": "2P6i"
+      }
     }
   },
   {
@@ -3326,7 +4046,11 @@
     "externals": {
       "tmdb": 15371,
       "imdb": "tt0079833",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-castle-of-cagliostro",
+        "uid": 42427,
+        "lid": "1Mn4"
+      }
     }
   },
   {
@@ -3344,7 +4068,11 @@
     "externals": {
       "tmdb": 31594,
       "imdb": "tt0461571",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-columbus-files",
+        "uid": 31042,
+        "lid": "1iKM"
+      }
     }
   },
   {
@@ -3362,7 +4090,11 @@
     "externals": {
       "tmdb": 50482,
       "imdb": "tt0093896",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-fuma-conspiracy",
+        "uid": 15203,
+        "lid": "Dy6"
+      }
     }
   },
   {
@@ -3380,7 +4112,11 @@
     "externals": {
       "tmdb": 32873,
       "imdb": "tt0089943",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-legend-of-the-gold-of-babylon",
+        "uid": 30157,
+        "lid": "1gs2"
+      }
     }
   },
   {
@@ -3398,7 +4134,11 @@
     "externals": {
       "tmdb": 45378,
       "imdb": "tt0449641",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-pursuit-of-harimaos-treasure",
+        "uid": 19869,
+        "lid": "PGG"
+      }
     }
   },
   {
@@ -3416,7 +4156,11 @@
     "externals": {
       "tmdb": 30143,
       "imdb": "tt0078187",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-mystery-of-mamo",
+        "uid": 32242,
+        "lid": "1lSk"
+      }
     }
   },
   {
@@ -3434,7 +4178,11 @@
     "externals": {
       "tmdb": 53894,
       "imdb": "tt0363140",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-the-secret-of-twilight-gemini",
+        "uid": 12105,
+        "lid": "vuq"
+      }
     }
   },
   {
@@ -3452,7 +4200,11 @@
     "externals": {
       "tmdb": 31595,
       "imdb": "tt0189973",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-tokyo-crisis",
+        "uid": 31041,
+        "lid": "1iKC"
+      }
     }
   },
   {
@@ -3470,7 +4222,11 @@
     "externals": {
       "tmdb": 76190,
       "imdb": "tt0186506",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-voyage-to-danger",
+        "uid": 62618,
+        "lid": "2CTG"
+      }
     }
   },
   {
@@ -3488,7 +4244,11 @@
     "externals": {
       "tmdb": 31599,
       "imdb": "tt0189974",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "lupin-the-third-island-of-assassins",
+        "uid": 31037,
+        "lid": "1iJY"
+      }
     }
   },
   {
@@ -3506,7 +4266,11 @@
     "externals": {
       "tmdb": 37585,
       "imdb": "tt0089206",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "night-on-the-galactic-railroad",
+        "uid": 26908,
+        "lid": "1800"
+      }
     }
   },
   {
@@ -3524,7 +4288,11 @@
     "externals": {
       "tmdb": 42994,
       "imdb": "tt0113799",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "memories",
+        "uid": 22128,
+        "lid": "Vz2"
+      }
     }
   },
   {
@@ -3542,7 +4310,11 @@
     "externals": {
       "tmdb": 62736,
       "imdb": "tt0096891",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "baoh-the-visitor",
+        "uid": 4073,
+        "lid": "aAW"
+      }
     }
   },
   {
@@ -3560,7 +4332,11 @@
     "externals": {
       "tmdb": 21770,
       "imdb": "tt0159361",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "city-hunter-special-goodbye-my-sweetheart",
+        "uid": 38210,
+        "lid": "1BoU"
+      }
     }
   },
   {
@@ -3578,7 +4354,11 @@
     "externals": {
       "tmdb": 56127,
       "imdb": "tt0159356",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-super-dimension-fortress-macross-flash-back-2012",
+        "uid": 9947,
+        "lid": "pSm"
+      }
     }
   },
   {
@@ -3596,7 +4376,11 @@
     "externals": {
       "tmdb": 39204,
       "imdb": "tt1133936",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-strategy-above-the-depths",
+        "uid": 25460,
+        "lid": "14es"
+      }
     }
   },
   {
@@ -3614,7 +4398,11 @@
     "externals": {
       "tmdb": 39205,
       "imdb": "tt0498536",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-the-private-eyes-requiem",
+        "uid": 25459,
+        "lid": "14ei"
+      }
     }
   },
   {
@@ -3632,7 +4420,11 @@
     "externals": {
       "tmdb": 34067,
       "imdb": "tt0875609",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-lucario-and-the-mystery-of-mew",
+        "uid": 29371,
+        "lid": "1epg"
+      }
     }
   },
   {
@@ -3650,7 +4442,11 @@
     "externals": {
       "tmdb": 137773,
       "imdb": "tt1371721",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-the-mastermind-of-mirage-pokemon",
+        "uid": 105602,
+        "lid": "4qIA"
+      }
     }
   },
   {
@@ -3668,7 +4464,11 @@
     "externals": {
       "tmdb": 18874,
       "imdb": "tt0856797",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ghost-in-the-shell-stand-alone-complex-solid-state-society",
+        "uid": 40038,
+        "lid": "1G9K"
+      }
     }
   },
   {
@@ -3686,7 +4486,11 @@
     "externals": {
       "tmdb": 626218,
       "imdb": "tt31885394",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "azumanga-web-daioh",
+        "uid": 552616,
+        "lid": "nbBC"
+      }
     }
   },
   {
@@ -3704,7 +4508,11 @@
     "externals": {
       "tmdb": 166823,
       "imdb": "tt0459080",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "beyblade-the-movie-fierce-battle",
+        "uid": 123289,
+        "lid": "5aJk"
+      }
     }
   },
   {
@@ -3722,7 +4530,11 @@
     "externals": {
       "tmdb": 17566,
       "imdb": "tt0778631",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "brave-story",
+        "uid": 40919,
+        "lid": "1IrQ"
+      }
     }
   },
   {
@@ -3740,7 +4552,11 @@
     "externals": {
       "tmdb": 15575,
       "imdb": "tt1105263",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "bleach-the-movie-memories-of-nobody",
+        "uid": 42268,
+        "lid": "1LXq"
+      }
     }
   },
   {
@@ -3758,7 +4574,11 @@
     "externals": {
       "tmdb": 38142,
       "imdb": "tt0983213",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "5-centimeters-per-second",
+        "uid": 26400,
+        "lid": "16G4"
+      }
     }
   },
   {
@@ -3776,7 +4596,11 @@
     "externals": {
       "tmdb": 36897,
       "imdb": "tt0304564",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-mewtwo-returns",
+        "uid": 27505,
+        "lid": "19yi"
+      }
     }
   },
   {
@@ -3794,7 +4618,11 @@
     "externals": {
       "tmdb": 16516,
       "imdb": "tt0997274",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "clannad-the-motion-picture",
+        "uid": 41522,
+        "lid": "1K16"
+      }
     }
   },
   {
@@ -3812,7 +4640,11 @@
     "externals": {
       "tmdb": 17922,
       "imdb": "tt0086148",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "golgo-13-the-professional",
+        "uid": 40685,
+        "lid": "1HQ6"
+      }
     }
   },
   {
@@ -3830,7 +4662,11 @@
     "externals": {
       "tmdb": 47567,
       "imdb": "tt0189559",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "golgo-13-queen-bee",
+        "uid": 17842,
+        "lid": "KpK"
+      }
     }
   },
   {
@@ -3848,7 +4684,11 @@
     "externals": {
       "tmdb": 338379,
       "imdb": "tt4086026",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "slam-dunk-the-movie",
+        "uid": 267854,
+        "lid": "beOg"
+      }
     }
   },
   {
@@ -3866,7 +4706,11 @@
     "externals": {
       "tmdb": 42070,
       "imdb": "tt0108570",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "a-wind-named-amnesia",
+        "uid": 22994,
+        "lid": "XOI"
+      }
     }
   },
   {
@@ -3884,7 +4728,11 @@
     "externals": {
       "tmdb": 68364,
       "imdb": "tt0434908",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dirty-pair-affair-on-nolandia",
+        "uid": 52849,
+        "lid": "2du2"
+      }
     }
   },
   {
@@ -3902,7 +4750,11 @@
     "externals": {
       "tmdb": 68367,
       "imdb": "tt0099435",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dirty-pair-flight-005-conspiracy",
+        "uid": 52846,
+        "lid": "2dty"
+      }
     }
   },
   {
@@ -3920,7 +4772,11 @@
     "externals": {
       "tmdb": 68368,
       "imdb": "tt0385668",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dirty-pair-project-eden",
+        "uid": 52845,
+        "lid": "2dto"
+      }
     }
   },
   {
@@ -3938,7 +4794,11 @@
     "externals": {
       "tmdb": 72015,
       "imdb": "tt0221169",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "fatal-fury-legend-of-the-hungry-wolf",
+        "uid": 57466,
+        "lid": "2puI"
+      }
     }
   },
   {
@@ -3956,7 +4816,11 @@
     "externals": {
       "tmdb": 334921,
       "imdb": "tt5179136",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "dirty-pair-from-lovely-angels-with-love",
+        "uid": 263521,
+        "lid": "b3xo"
+      }
     }
   },
   {
@@ -3974,7 +4838,11 @@
     "externals": {
       "tmdb": 68263,
       "imdb": "tt0994794",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "shakugan-no-shana-the-movie",
+        "uid": 52950,
+        "lid": "2dKk"
+      }
     }
   },
   {
@@ -3992,7 +4860,11 @@
     "externals": {
       "tmdb": 14087,
       "imdb": "tt0085218",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "barefoot-gen",
+        "uid": 43355,
+        "lid": "1OMK"
+      }
     }
   },
   {
@@ -4010,7 +4882,11 @@
     "externals": {
       "tmdb": 14088,
       "imdb": "tt0171357",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "barefoot-gen-2",
+        "uid": 43354,
+        "lid": "1OMA"
+      }
     }
   },
   {
@@ -4028,7 +4904,11 @@
     "externals": {
       "tmdb": 37933,
       "imdb": "tt0495596",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tales-from-earthsea",
+        "uid": 26587,
+        "lid": "17ae"
+      }
     }
   },
   {
@@ -4046,7 +4926,11 @@
     "externals": {
       "tmdb": 68449,
       "imdb": "tt1467266",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "grappler-baki-the-ultimate-fighter",
+        "uid": 52768,
+        "lid": "2dgY"
+      }
     }
   },
   {
@@ -4064,7 +4948,11 @@
     "externals": {
       "tmdb": 338380,
       "imdb": "tt4086028",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "slam-dunk-2-national-tournement",
+        "uid": 267855,
+        "lid": "beOq"
+      }
     }
   },
   {
@@ -4100,7 +4988,11 @@
     "externals": {
       "tmdb": 11052,
       "imdb": "tt0403703",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "yu-gi-oh-the-movie",
+        "uid": 45651,
+        "lid": "1UL4"
+      }
     }
   },
   {
@@ -4118,7 +5010,11 @@
     "externals": {
       "tmdb": 28214,
       "imdb": "tt0091309",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "they-were-eleven",
+        "uid": 33820,
+        "lid": "1pYQ"
+      }
     }
   },
   {
@@ -4136,7 +5032,11 @@
     "externals": {
       "tmdb": 150023,
       "imdb": "tt0086520",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urusei-yatsura-only-you",
+        "uid": 113058,
+        "lid": "4K7a"
+      }
     }
   },
   {
@@ -4154,7 +5054,11 @@
     "externals": {
       "tmdb": 43967,
       "imdb": "tt0088334",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urusei-yatsura-beautiful-dreamer",
+        "uid": 21194,
+        "lid": "T8o"
+      }
     }
   },
   {
@@ -4172,7 +5076,11 @@
     "externals": {
       "tmdb": 150024,
       "imdb": "tt0090244",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urusei-yatsura-remember-my-love",
+        "uid": 113057,
+        "lid": "4K70"
+      }
     }
   },
   {
@@ -4190,7 +5098,11 @@
     "externals": {
       "tmdb": 150026,
       "imdb": "tt0092141",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urusei-yatsura-lum-the-forever",
+        "uid": 113055,
+        "lid": "4K6G"
+      }
     }
   },
   {
@@ -4208,7 +5120,11 @@
     "externals": {
       "tmdb": 150027,
       "imdb": "tt0096353",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urusei-yatsura-the-final-chapter",
+        "uid": 113054,
+        "lid": "4K6w"
+      }
     }
   },
   {
@@ -4226,7 +5142,11 @@
     "externals": {
       "tmdb": 150028,
       "imdb": "tt0103178",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urusei-yatsura-always-my-darling",
+        "uid": 113053,
+        "lid": "4K6m"
+      }
     }
   },
   {
@@ -4244,7 +5164,11 @@
     "externals": {
       "tmdb": 4977,
       "imdb": "tt0851578",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "paprika-2006",
+        "uid": 49023,
+        "lid": "23wW"
+      }
     }
   },
   {
@@ -4262,7 +5186,11 @@
     "externals": {
       "tmdb": 19961,
       "imdb": "tt0498465",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "stormy-night",
+        "uid": 39325,
+        "lid": "1EiK"
+      }
     }
   },
   {
@@ -4280,7 +5208,11 @@
     "externals": {
       "tmdb": 35648,
       "imdb": "tt0102812",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "roujin-z",
+        "uid": 28513,
+        "lid": "1caS"
+      }
     }
   },
   {
@@ -4298,7 +5230,11 @@
     "externals": {
       "tmdb": 378240,
       "imdb": "tt2488310",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "yugioh",
+        "uid": 313495,
+        "lid": "d9xI"
+      }
     }
   },
   {
@@ -4316,7 +5252,11 @@
     "externals": {
       "tmdb": 70337,
       "imdb": "tt0107557",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "mermaids-scar",
+        "uid": 59113,
+        "lid": "2tMm"
+      }
     }
   },
   {
@@ -4334,7 +5274,11 @@
     "externals": {
       "tmdb": 34375,
       "imdb": "tt0159443",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-five-star-stories",
+        "uid": 29196,
+        "lid": "1dX2"
+      }
     }
   },
   {
@@ -4352,7 +5296,11 @@
     "externals": {
       "tmdb": 132318,
       "imdb": "tt0160865",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "new-kimagure-orange-road-summers-beginning",
+        "uid": 102363,
+        "lid": "4iia"
+      }
     }
   },
   {
@@ -4370,7 +5318,11 @@
     "externals": {
       "tmdb": 25278,
       "imdb": "tt1037116",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "one-piece-the-desert-princess-and-the-pirates-adventure-in-alabasta",
+        "uid": 36165,
+        "lid": "1w54"
+      }
     }
   },
   {
@@ -4388,7 +5340,11 @@
     "externals": {
       "tmdb": 69093,
       "imdb": "tt0984049",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "inukami-the-movie",
+        "uid": 52163,
+        "lid": "2bHo"
+      }
     }
   },
   {
@@ -4406,7 +5362,11 @@
     "externals": {
       "tmdb": 18861,
       "imdb": "tt1071815",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "naruto-the-movie-guardians-of-the-crescent-moon-kingdom",
+        "uid": 40049,
+        "lid": "1Gbw"
+      }
     }
   },
   {
@@ -4424,7 +5384,11 @@
     "externals": {
       "tmdb": 13754,
       "imdb": "tt0831888",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "tekkonkinkreet",
+        "uid": 43625,
+        "lid": "1Pui"
+      }
     }
   },
   {
@@ -4442,7 +5406,11 @@
     "externals": {
       "tmdb": 39206,
       "imdb": "tt1146290",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "detective-conan-jolly-roger-in-the-deep-azure",
+        "uid": 25458,
+        "lid": "14e8"
+      }
     }
   },
   {
@@ -4460,7 +5428,11 @@
     "externals": {
       "tmdb": 128884,
       "imdb": "tt2643866",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "crayon-shin-chan-invoke-a-storm-the-singing-buttocks-bomb",
+        "uid": 100386,
+        "lid": "4d9i"
+      }
     }
   },
   {
@@ -4478,7 +5450,11 @@
     "externals": {
       "tmdb": 114372,
       "imdb": "tt1135522",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "fist-of-the-north-star-legend-of-raoh-chapter",
+        "uid": 91022,
+        "lid": "3OMY"
+      }
     }
   },
   {
@@ -4496,7 +5472,11 @@
     "externals": {
       "tmdb": 833013,
       "imdb": "tt0994793",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "kinos-journey-country-of-illness-for-you",
+        "uid": 748797,
+        "lid": "vpXI"
+      }
     }
   },
   {
@@ -4514,7 +5494,11 @@
     "externals": {
       "tmdb": 13194,
       "imdb": "tt0465657",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "highlander-the-search-for-vengeance",
+        "uid": 44061,
+        "lid": "1QCC"
+      }
     }
   },
   {
@@ -4532,7 +5516,11 @@
     "externals": {
       "tmdb": 77859,
       "imdb": "tt0306646",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ringing-bell",
+        "uid": 64306,
+        "lid": "2HhW"
+      }
     }
   },
   {
@@ -4550,7 +5538,11 @@
     "externals": {
       "tmdb": 16808,
       "imdb": "tt1000095",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "pokemon-ranger-and-the-temple-of-the-sea",
+        "uid": 41384,
+        "lid": "1JEQ"
+      }
     }
   },
   {
@@ -4568,7 +5560,11 @@
     "externals": {
       "tmdb": 73799,
       "imdb": "tt3651062",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "other-worlds",
+        "uid": 60110,
+        "lid": "2wna"
+      }
     }
   },
   {
@@ -4586,7 +5582,11 @@
     "externals": {
       "tmdb": 62447,
       "imdb": "tt1935737",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "aquatic-language",
+        "uid": 4328,
+        "lid": "bg4"
+      }
     }
   },
   {
@@ -4604,7 +5604,11 @@
     "externals": {
       "tmdb": 14069,
       "imdb": "tt0808506",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "the-girl-who-leapt-through-time",
+        "uid": 43370,
+        "lid": "1OPa"
+      }
     }
   },
   {
@@ -4622,7 +5626,11 @@
     "externals": {
       "tmdb": 166706,
       "imdb": "tt0160784",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "roots-search",
+        "uid": 123217,
+        "lid": "5axI"
+      }
     }
   },
   {
@@ -4640,7 +5648,11 @@
     "externals": {
       "tmdb": 22914,
       "imdb": "tt0260191",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "gundam-wing-the-endless-waltz",
+        "uid": 37628,
+        "lid": "1zT2"
+      }
     }
   },
   {
@@ -4658,7 +5670,11 @@
     "externals": {
       "tmdb": 22611,
       "imdb": "tt0104740",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "little-nemo-adventures-in-slumberland",
+        "uid": 37792,
+        "lid": "1Aju"
+      }
     }
   },
   {
@@ -4676,7 +5692,11 @@
     "externals": {
       "tmdb": 70089,
       "imdb": "tt0240425",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "comet-in-moominland",
+        "uid": 59338,
+        "lid": "2umE"
+      }
     }
   },
   {
@@ -4694,7 +5714,11 @@
     "externals": {
       "tmdb": 16224,
       "imdb": "tt0110845",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "plastic-little-the-adventures-of-captain-tita",
+        "uid": 41729,
+        "lid": "1Kyu"
+      }
     }
   },
   {
@@ -4712,7 +5736,11 @@
     "externals": {
       "tmdb": 87069,
       "imdb": "tt0362808",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "ichi-the-killer-episode-zero",
+        "uid": 73967,
+        "lid": "36qa"
+      }
     }
   },
   {
@@ -4730,7 +5758,11 @@
     "externals": {
       "tmdb": 48624,
       "imdb": "tt0108461",
-      "letterboxd": null
+      "letterboxd": {
+        "slug": "urotsukidoji-legend-of-the-overfiend",
+        "uid": 16921,
+        "lid": "I1c"
+      }
     }
   },
   {
@@ -5549,7 +6581,7 @@
       "id": 2884
     },
     "trakt": {
-      "title": "Aachi \u0026 Ssipak",
+      "title": "Aachi & Ssipak",
       "id": 13709,
       "slug": "aachi-ssipak-2006",
       "type": "movies"
@@ -5945,7 +6977,7 @@
       "id": 3247
     },
     "trakt": {
-      "title": "Love Hina FINAL SELECTION: Anime Digest \u0026 LOVE LIVE HINA in Tokyo BAY N.K. -",
+      "title": "Love Hina FINAL SELECTION: Anime Digest & LOVE LIVE HINA in Tokyo BAY N.K. -",
       "id": 106788,
       "slug": "love-hina-final-selection-anime-digest-love-live-hina-in-tokyo-bay-n-k-2001",
       "type": "movies"
@@ -6629,7 +7661,7 @@
       "id": 4793
     },
     "trakt": {
-      "title": "Pikachu \u0026 Pichu",
+      "title": "Pikachu & Pichu",
       "id": 23379,
       "slug": "pikachu-pichu-2000",
       "type": "movies"
@@ -8299,7 +9331,7 @@
   },
   {
     "myanimelist": {
-      "title": "Dr. Slump Movie 11: Dr. Mashirito \u0026 Abale-chan",
+      "title": "Dr. Slump Movie 11: Dr. Mashirito & Abale-chan",
       "id": 8551
     },
     "trakt": {
@@ -8933,7 +9965,7 @@
       "id": 10259
     },
     "trakt": {
-      "title": "Big Fish \u0026 Begonia",
+      "title": "Big Fish & Begonia",
       "id": 169676,
       "slug": "big-fish-begonia-2016",
       "type": "movies"
@@ -9685,11 +10717,11 @@
   },
   {
     "myanimelist": {
-      "title": "Tiger \u0026 Bunny Movie 1: The Beginning",
+      "title": "Tiger & Bunny Movie 1: The Beginning",
       "id": 12015
     },
     "trakt": {
-      "title": "TIGER \u0026 BUNNY: The Beginning",
+      "title": "TIGER & BUNNY: The Beginning",
       "id": 112868,
       "slug": "tiger-bunny-the-beginning-2012",
       "type": "movies"
@@ -9703,11 +10735,11 @@
   },
   {
     "myanimelist": {
-      "title": "Tiger \u0026 Bunny Movie 2: The Rising",
+      "title": "Tiger & Bunny Movie 2: The Rising",
       "id": 12017
     },
     "trakt": {
-      "title": "TIGER \u0026 BUNNY: The Rising",
+      "title": "TIGER & BUNNY: The Rising",
       "id": 158265,
       "slug": "tiger-bunny-the-rising-2014",
       "type": "movies"
@@ -10913,7 +11945,7 @@
       "id": 15813
     },
     "trakt": {
-      "title": "Magical Sisters Yoyo \u0026 Nene",
+      "title": "Magical Sisters Yoyo & Nene",
       "id": 146164,
       "slug": "magical-sisters-yoyo-nene-2013",
       "type": "movies"
@@ -11395,7 +12427,7 @@
   },
   {
     "myanimelist": {
-      "title": "Girls \u0026 Panzer Movie",
+      "title": "Girls & Panzer Movie",
       "id": 18617
     },
     "trakt": {
@@ -11417,7 +12449,7 @@
       "id": 19021
     },
     "trakt": {
-      "title": "Love, Chunibyo \u0026 Other Delusions! Rikka Version",
+      "title": "Love, Chunibyo & Other Delusions! Rikka Version",
       "id": 132560,
       "slug": "love-chunibyo-other-delusions-rikka-version-2013",
       "type": "movies"
@@ -12533,7 +13565,7 @@
       "id": 27969
     },
     "trakt": {
-      "title": "The Case of Hana \u0026 Alice",
+      "title": "The Case of Hana & Alice",
       "id": 222461,
       "slug": "the-case-of-hana-alice-2015",
       "type": "movies"
@@ -14531,7 +15563,7 @@
       "id": 33581
     },
     "trakt": {
-      "title": "Trinity Seven: Eternity Library \u0026 Alchemic Girl",
+      "title": "Trinity Seven: Eternity Library & Alchemic Girl",
       "id": 272349,
       "slug": "trinity-seven-eternity-library-alchemic-girl-2017",
       "type": "movies"
@@ -14707,7 +15739,7 @@
   },
   {
     "myanimelist": {
-      "title": "Girls \u0026 Panzer: Saishuushou Part 1",
+      "title": "Girls & Panzer: Saishuushou Part 1",
       "id": 33970
     },
     "trakt": {
@@ -15593,7 +16625,7 @@
       "id": 35608
     },
     "trakt": {
-      "title": "Love, Chunibyo \u0026 Other Delusions! Take On Me",
+      "title": "Love, Chunibyo & Other Delusions! Take On Me",
       "id": 307555,
       "slug": "love-chunibyo-other-delusions-take-on-me-2018",
       "type": "movies"
@@ -17087,7 +18119,7 @@
       "id": 37986
     },
     "trakt": {
-      "title": "Trinity Seven: Heaven's Library \u0026 Crimson Lord",
+      "title": "Trinity Seven: Heaven's Library & Crimson Lord",
       "id": 421426,
       "slug": "trinity-seven-heaven-s-library-crimson-lord-2019",
       "type": "movies"
@@ -17245,7 +18277,7 @@
   },
   {
     "myanimelist": {
-      "title": "Girls \u0026 Panzer: Saishuushou Part 2",
+      "title": "Girls & Panzer: Saishuushou Part 2",
       "id": 38081
     },
     "trakt": {
@@ -17803,7 +18835,7 @@
   },
   {
     "myanimelist": {
-      "title": "Girls \u0026 Panzer: Saishuushou Part 3",
+      "title": "Girls & Panzer: Saishuushou Part 3",
       "id": 39166
     },
     "trakt": {
@@ -17821,7 +18853,7 @@
   },
   {
     "myanimelist": {
-      "title": "Girls \u0026 Panzer: Saishuushou Part 4",
+      "title": "Girls & Panzer: Saishuushou Part 4",
       "id": 39167
     },
     "trakt": {
@@ -21461,7 +22493,7 @@
       "id": 55709
     },
     "trakt": {
-      "title": "Me \u0026 Roboco: The Movie",
+      "title": "Me & Roboco: The Movie",
       "id": 970307,
       "slug": "me-roboco-the-movie-2025",
       "type": "movies"
