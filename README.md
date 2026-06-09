@@ -319,8 +319,13 @@ Triggered by passing `-fribb` (or `-animeapi`) on the command line.
 - **TMDB media type** — Determined by Fribb's `themoviedb_id.tv` vs
   `themoviedb_id.movie` sub-key. Entries with an empty `{}` object fall
   through to the TVDB/IMDB fallback.
-- **Season 0 (specials)** — Entries where `season.tmdb = 0` are treated as
-  specials. Split-cour detection still applies if Trakt has no matching season.
+- **Season 0 filtering** — Entries with `season.tmdb = 0` or `season.tvdb = 0`
+  are automatically filtered out during processing to avoid unnecessary lookup
+  errors, since season 0 (specials) often don't map cleanly to Trakt's data.
+- **Movie-type sanity check** — When Fribb indicates a TV show (via TMDB TV ID or TVDB ID),
+  the AnimeAPI title is checked for movie-related keywords in both English and Japanese
+  (`movie`, `film`, `eiga`, `gekijouban`, `eigakan`, etc.). If found, the entry is skipped
+  to prevent false TV mappings for actual theatrical releases.
 - **TVDB season numbers** — When looking up via TVDB, the TVDB season number
   from Fribb is used as a best-effort approximation of the Trakt season number.
   They usually match but may diverge for older titles.

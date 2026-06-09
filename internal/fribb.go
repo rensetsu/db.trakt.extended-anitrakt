@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 )
@@ -156,6 +157,15 @@ func LoadFribbJSON(path string) ([]FribbEntry, error) {
 // Main Fribb processor
 // ---------------------------------------------------------------------------
 
+// isMovieTitle checks if a title contains movie-related keywords in English or Japanese.
+// Matches: movie, film, theatrical, cinema, feature, eiga (映画), gekijouban (劇場版),
+// eigakan (映画館 - cinema/movie theater), etc.
+func isMovieTitle(title string) bool {
+	// Pattern matches word boundaries followed by movie-related terms
+	moviePattern := regexp.MustCompile(`(?i)\b(movie|film|theatrical|cinema|feature|eiga|eigakan|gekijouban|geki.*ban|shinema)\b`)
+	return moviePattern.MatchString(title)
+}
+
 // ProcessFribb is the top-level entry point for the Fribb-based ingestion
 // pipeline. It:
 //
@@ -225,8 +235,16 @@ func ProcessFribb(config Config) {
 	skippedExisting := 0
 	skippedNoMAL := 0
 	skippedNoID := 0 // no usable external ID at all
+	skippedSeason0 := 0
+	skippedTypeMismatch := 0
 
 	for _, entry := range fribbEntries {
+		// Skip entries with season 0
+		if entry.Season != nil && ((entry.Season.TMDB != nil && *entry.Season.TMDB == 0) || (entry.Season.TVDB != nil && *entry.Season.TVDB == 0)) {
+			skippedSeason0++
+			continue
+		}
+
 		malID, ok := anidbToMAL[entry.AnidbID]
 		if !ok || malID == 0 {
 			skippedNoMAL++
@@ -237,6 +255,15 @@ func ProcessFribb(config Config) {
 		title := row.Title
 		if title == "" {
 			title = fmt.Sprintf("AniDB:%d / MAL:%d", entry.AnidbID, malID)
+		}
+
+		// Sanity check: if this will be processed as TV, verify AnimeAPI title doesn't contain movie-related terms
+		isTVFromFribb := (entry.ThemoviedbID != nil && entry.ThemoviedbID.TV != nil && *entry.ThemoviedbID.TV > 0) ||
+			(entry.ThemoviedbID == nil && entry.TVDbID > 0)
+
+		if isTVFromFribb && isMovieTitle(row.Title) {
+			skippedTypeMismatch++
+			continue
 		}
 
 		// Helper: check if a MAL ID should be skipped for TV
@@ -347,8 +374,8 @@ func ProcessFribb(config Config) {
 		skippedNoID++
 	}
 
-	fmt.Printf("Work list: %d TV shows, %d movies  (skipped: %d existing, %d no-MAL, %d no-ID)\n",
-		len(tvWork), len(movieWork), skippedExisting, skippedNoMAL, skippedNoID)
+	fmt.Printf("Work list: %d TV shows, %d movies  (skipped: %d existing, %d no-MAL, %d no-ID, %d season-0, %d type-mismatch)\n",
+		len(tvWork), len(movieWork), skippedExisting, skippedNoMAL, skippedNoID, skippedSeason0, skippedTypeMismatch)
 
 	// Ensure the search cache dir exists
 	os.MkdirAll(filepath.Join(config.TempDir, "search"), 0755)
