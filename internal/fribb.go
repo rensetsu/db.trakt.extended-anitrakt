@@ -581,7 +581,11 @@ func ProcessFribb(config Config) {
 		}
 
 		// Try to enrich with Letterboxd data
-		letterboxdNotFound := updateLetterboxdInfo(client, config, outputMovie, nil)
+		var existingMovie *OutputMovie
+		if existing, exists := existingMovieMAL[item.malID]; exists {
+			existingMovie = &existing
+		}
+		letterboxdNotFound := updateLetterboxdInfo(client, config, outputMovie, existingMovie)
 		if letterboxdNotFound != nil {
 			movieStats.LetterboxdNotFoundDetails = append(movieStats.LetterboxdNotFoundDetails, *letterboxdNotFound)
 		}
