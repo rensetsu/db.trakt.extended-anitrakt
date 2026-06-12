@@ -153704,6 +153704,35 @@
   },
   {
     "myanimelist": {
+      "title": "KAGURABACHI",
+      "id": 64058
+    },
+    "trakt": {
+      "title": "KAGURABACHI",
+      "id": 318762,
+      "slug": "kagurabachi",
+      "type": "shows",
+      "season": {
+        "id": 520371,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 513294,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 457476,
+      "tmdb": 320905,
+      "imdb": "tt42171190",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Inazuma Eleven: Ares",
       "id": 104077
     },
