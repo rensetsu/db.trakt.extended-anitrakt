@@ -206,6 +206,121 @@ type FribbThemoviedbID struct {
 	Movie *int `json:"movie,omitempty"`
 }
 
+// parseSingleOrListInt is a helper to parse single int, list of ints, string, or list of strings.
+func parseSingleOrListInt(d []byte) (*int, error) {
+	if len(d) == 0 || string(d) == "null" {
+		return nil, nil
+	}
+	// Array
+	if d[0] == '[' {
+		var rawList []json.RawMessage
+		if err := json.Unmarshal(d, &rawList); err != nil {
+			return nil, err
+		}
+		if len(rawList) == 0 {
+			return nil, nil
+		}
+		// Check recursively on the first element of the list
+		var val *int
+		var recursiveErr error
+		if len(rawList) > 0 {
+			val, recursiveErr = parseSingleOrListInt(rawList[0])
+		}
+		return val, recursiveErr
+	}
+	// String
+	if d[0] == '"' {
+		var s string
+		if err := json.Unmarshal(d, &s); err != nil {
+			return nil, err
+		}
+		s = strings.TrimSpace(s)
+		if s == "" {
+			return nil, nil
+		}
+		parts := strings.Split(s, ",")
+		first := strings.TrimSpace(parts[0])
+		val, err := strconv.Atoi(first)
+		if err != nil {
+			return nil, err
+		}
+		return &val, nil
+	}
+	// Integer/Number
+	var val int
+	if err := json.Unmarshal(d, &val); err != nil {
+		return nil, err
+	}
+	return &val, nil
+}
+
+// UnmarshalJSON custom unmarshaler for FribbThemoviedbID to handle dictionaries,
+// lists, nested types, and flat values.
+func (ft *FribbThemoviedbID) UnmarshalJSON(data []byte) error {
+	if len(data) == 0 || string(data) == "null" {
+		return nil
+	}
+
+	// 1. If it's a JSON object/dictionary: {"movie": [434326]} or {"tv": 12345}
+	if data[0] == '{' {
+		var rawMap map[string]json.RawMessage
+		if err := json.Unmarshal(data, &rawMap); err != nil {
+			return err
+		}
+		if movieData, exists := rawMap["movie"]; exists {
+			val, err := parseSingleOrListInt(movieData)
+			if err != nil {
+				return err
+			}
+			ft.Movie = val
+		}
+		if tvData, exists := rawMap["tv"]; exists {
+			val, err := parseSingleOrListInt(tvData)
+			if err != nil {
+				return err
+			}
+			ft.TV = val
+		}
+		return nil
+	}
+
+	// 2. If it's a flat value (int, string, or list), populate both TV and Movie to be safe
+	val, err := parseSingleOrListInt(data)
+	if err != nil {
+		return err
+	}
+	ft.TV = val
+	ft.Movie = val
+	return nil
+}
+
+// FribbIMDbID is a custom type to handle IMDb ID values which can be strings or arrays of strings.
+type FribbIMDbID string
+
+// UnmarshalJSON custom unmarshaler for FribbIMDbID.
+func (f *FribbIMDbID) UnmarshalJSON(data []byte) error {
+	if len(data) == 0 || string(data) == "null" {
+		return nil
+	}
+	if data[0] == '"' {
+		var s string
+		if err := json.Unmarshal(data, &s); err != nil {
+			return err
+		}
+		*f = FribbIMDbID(s)
+		return nil
+	}
+	if data[0] == '[' {
+		var l []string
+		if err := json.Unmarshal(data, &l); err != nil {
+			return err
+		}
+		*f = FribbIMDbID(strings.Join(l, ","))
+		return nil
+	}
+	return nil
+}
+
 // FribbSeason holds the TVDB / TMDB season numbers used by Fribb.
 type FribbSeason struct {
 	TVDB *int `json:"tvdb,omitempty"`
@@ -213,10 +328,10 @@ type FribbSeason struct {
 }
 
 // FribbEntry is one record from anime-lists-reduced.json.
-// imdb_id may be a comma-separated list; we take only the first value.
+// imdb_id may be a comma-separated list or array of strings; we take only the first value.
 type FribbEntry struct {
 	AnidbID      int                `json:"anidb_id"`
-	IMDbID       string             `json:"imdb_id,omitempty"`
+	IMDbID       FribbIMDbID        `json:"imdb_id,omitempty"`
 	ThemoviedbID *FribbThemoviedbID `json:"themoviedb_id,omitempty"`
 	TVDbID       int                `json:"tvdb_id,omitempty"`
 	Season       *FribbSeason       `json:"season,omitempty"`
@@ -227,7 +342,7 @@ func (f *FribbEntry) FirstIMDb() string {
 	if f.IMDbID == "" {
 		return ""
 	}
-	parts := strings.SplitN(f.IMDbID, ",", 2)
+	parts := strings.SplitN(string(f.IMDbID), ",", 2)
 	return strings.TrimSpace(parts[0])
 }
 

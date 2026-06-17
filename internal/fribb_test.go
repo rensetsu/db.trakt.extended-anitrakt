@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"testing"
@@ -101,7 +102,7 @@ func TestFirstIMDb(t *testing.T) {
 		{"tt1234567, tt9999999", "tt1234567"},
 	}
 	for _, c := range cases {
-		e := &FribbEntry{IMDbID: c.raw}
+		e := &FribbEntry{IMDbID: FribbIMDbID(c.raw)}
 		got := e.FirstIMDb()
 		if got != c.want {
 			t.Errorf("FirstIMDb(%q) = %q, want %q", c.raw, got, c.want)
@@ -160,4 +161,135 @@ func TestCrossReference(t *testing.T) {
 		"  No MAL mapping: %d\n"+
 		"  No ID at all:   %d\n",
 		tvTMDB, tvTVDB, movieTMDB, movieIMDB, noMAL, noID)
+}
+
+func TestFribbCustomUnmarshal(t *testing.T) {
+	tests := []struct {
+		name       string
+		jsonInput  string
+		wantAnidb  int
+		wantImdb   string
+		wantTvdb   int
+		wantTmdbTV *int
+		wantTmdbMV *int
+	}{
+		{
+			name: "Nested TMDB movie list and single IMDB",
+			jsonInput: `{
+				"anidb_id": 123,
+				"imdb_id": "tt15052770",
+				"themoviedb_id": {"movie": [434326]},
+				"tvdb_id": 0
+			}`,
+			wantAnidb:  123,
+			wantImdb:   "tt15052770",
+			wantTvdb:   0,
+			wantTmdbTV: nil,
+			wantTmdbMV: intPtr(434326),
+		},
+		{
+			name: "Nested TMDB movie and list IMDB",
+			jsonInput: `{
+				"anidb_id": 456,
+				"imdb_id": ["tt17677744", "tt25010142"],
+				"themoviedb_id": {"movie": 434326},
+				"tvdb_id": 0
+			}`,
+			wantAnidb:  456,
+			wantImdb:   "tt17677744", // First IMDB ID
+			wantTvdb:   0,
+			wantTmdbTV: nil,
+			wantTmdbMV: intPtr(434326),
+		},
+		{
+			name: "Nested TMDB TV single value and empty IMDB",
+			jsonInput: `{
+				"anidb_id": 789,
+				"imdb_id": null,
+				"themoviedb_id": {"tv": 12345},
+				"tvdb_id": 54321
+			}`,
+			wantAnidb:  789,
+			wantImdb:   "",
+			wantTvdb:   54321,
+			wantTmdbTV: intPtr(12345),
+			wantTmdbMV: nil,
+		},
+		{
+			name: "Flat TMDB and string-list IMDB",
+			jsonInput: `{
+				"anidb_id": 111,
+				"imdb_id": ["tt123"],
+				"themoviedb_id": 99999,
+				"tvdb_id": 0
+			}`,
+			wantAnidb:  111,
+			wantImdb:   "tt123",
+			wantTvdb:   0,
+			wantTmdbTV: intPtr(99999), // both should be populated for safety
+			wantTmdbMV: intPtr(99999),
+		},
+		{
+			name: "String representation in TMDB list",
+			jsonInput: `{
+				"anidb_id": 222,
+				"themoviedb_id": {"movie": ["88888,77777"]}
+			}`,
+			wantAnidb:  222,
+			wantImdb:   "",
+			wantTvdb:   0,
+			wantTmdbTV: nil,
+			wantTmdbMV: intPtr(88888),
+		},
+	}
+
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			var entry FribbEntry
+			if err := json.Unmarshal([]byte(tc.jsonInput), &entry); err != nil {
+				t.Fatalf("Failed to unmarshal: %v", err)
+			}
+
+			if entry.AnidbID != tc.wantAnidb {
+				t.Errorf("AnidbID = %d, want %d", entry.AnidbID, tc.wantAnidb)
+			}
+
+			imdb := entry.FirstIMDb()
+			if imdb != tc.wantImdb {
+				t.Errorf("FirstIMDb() = %q, want %q", imdb, tc.wantImdb)
+			}
+
+			if entry.TVDbID != tc.wantTvdb {
+				t.Errorf("TVDbID = %d, want %d", entry.TVDbID, tc.wantTvdb)
+			}
+
+			if tc.wantTmdbTV == nil {
+				if entry.ThemoviedbID != nil && entry.ThemoviedbID.TV != nil {
+					t.Errorf("ThemoviedbID.TV = %d, want nil", *entry.ThemoviedbID.TV)
+				}
+			} else {
+				if entry.ThemoviedbID == nil || entry.ThemoviedbID.TV == nil {
+					t.Errorf("ThemoviedbID.TV is nil, want %d", *tc.wantTmdbTV)
+				} else if *entry.ThemoviedbID.TV != *tc.wantTmdbTV {
+					t.Errorf("ThemoviedbID.TV = %d, want %d", *entry.ThemoviedbID.TV, *tc.wantTmdbTV)
+				}
+			}
+
+			if tc.wantTmdbMV == nil {
+				if entry.ThemoviedbID != nil && entry.ThemoviedbID.Movie != nil {
+					t.Errorf("ThemoviedbID.Movie = %d, want nil", *entry.ThemoviedbID.Movie)
+				}
+			} else {
+				if entry.ThemoviedbID == nil || entry.ThemoviedbID.Movie == nil {
+					t.Errorf("ThemoviedbID.Movie is nil, want %d", *tc.wantTmdbMV)
+				} else if *entry.ThemoviedbID.Movie != *tc.wantTmdbMV {
+					t.Errorf("ThemoviedbID.Movie = %d, want %d", *entry.ThemoviedbID.Movie, *tc.wantTmdbMV)
+				}
+			}
+		})
+	}
+}
+
+func intPtr(i int) *int {
+	return &i
 }
