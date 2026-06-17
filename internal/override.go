@@ -20,14 +20,14 @@ func LoadOverrides(mediaType string) map[int]*Override {
 
 // ApplyShowOverride applies override data to a show
 func ApplyShowOverride(show *OutputShow, override *Override) {
-	if override.TraktShow != nil {
+	if override.Trakt != nil {
 		var traktOverride struct {
 			Title *string `json:"title"`
 			ID    *int    `json:"id"`
 			Slug  *string `json:"slug"`
 			Type  *string `json:"type"`
 		}
-		if err := json.Unmarshal(*override.TraktShow, &traktOverride); err == nil {
+		if err := json.Unmarshal(*override.Trakt, &traktOverride); err == nil {
 			if traktOverride.Title != nil {
 				show.Trakt.Title = *traktOverride.Title
 			}
@@ -64,14 +64,14 @@ func ApplyShowOverride(show *OutputShow, override *Override) {
 
 // ApplyMovieOverride applies override data to a movie
 func ApplyMovieOverride(movie *OutputMovie, override *Override) {
-	if override.TraktMovie != nil {
+	if override.Trakt != nil {
 		var traktOverride struct {
 			Title *string `json:"title"`
 			ID    *int    `json:"id"`
 			Slug  *string `json:"slug"`
 			Type  *string `json:"type"`
 		}
-		if err := json.Unmarshal(*override.TraktMovie, &traktOverride); err == nil {
+		if err := json.Unmarshal(*override.Trakt, &traktOverride); err == nil {
 			if traktOverride.Title != nil {
 				movie.Trakt.Title = *traktOverride.Title
 			}

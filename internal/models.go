@@ -189,8 +189,7 @@ type ProcessingStats struct {
 type Override struct {
 	MalID       int              `json:"mal_id"`
 	Description string           `json:"description"`
-	TraktShow   *json.RawMessage `json:"trakt,omitempty"`
-	TraktMovie  *json.RawMessage `json:"trakt,omitempty"`
+	Trakt       *json.RawMessage `json:"trakt,omitempty"`
 	Externals   *json.RawMessage `json:"externals,omitempty"`
 	Ignore      bool             `json:"ignore,omitempty"`
 }
