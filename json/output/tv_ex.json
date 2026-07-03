@@ -2566,7 +2566,7 @@
         "number": 2,
         "externals": {
           "tvdb": 15850,
-          "tmdb": 32319,
+          "tmdb": null,
           "tvrage": null
         }
       },
@@ -6051,35 +6051,6 @@
   },
   {
     "myanimelist": {
-      "title": "Animal Yokochou",
-      "id": 280
-    },
-    "trakt": {
-      "title": "Animal Lane",
-      "id": 105666,
-      "slug": "animal-lane",
-      "type": "shows",
-      "season": {
-        "id": 123185,
-        "number": 1,
-        "externals": {
-          "tvdb": 656823,
-          "tmdb": 207408,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2005,
-    "externals": {
-      "tvdb": 307695,
-      "tmdb": 131924,
-      "imdb": "tt0988811",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Angel Heart",
       "id": 282
     },
@@ -8389,14 +8360,14 @@
     },
     "trakt": {
       "title": "Step Up Love Story",
-      "id": 26446,
+      "id": 199233,
       "slug": "step-up-love-story",
       "type": "shows",
       "season": {
-        "id": 37859,
+        "id": 306173,
         "number": 1,
         "externals": {
-          "tvdb": 40723,
+          "tvdb": null,
           "tmdb": 37118,
           "tvrage": null
         }
@@ -24180,35 +24151,6 @@
   },
   {
     "myanimelist": {
-      "title": "Black Jack OVA",
-      "id": 1520
-    },
-    "trakt": {
-      "title": "Black Jack",
-      "id": 191462,
-      "slug": "black-jack-1993",
-      "type": "shows",
-      "season": {
-        "id": 280602,
-        "number": 1,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 41532,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 1993,
-    "externals": {
-      "tvdb": 72281,
-      "tmdb": 30083,
-      "imdb": "tt5778326",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Fuujin Monogatari",
       "id": 1524
     },
@@ -28405,7 +28347,7 @@
     "externals": {
       "tvdb": 149421,
       "tmdb": 37532,
-      "imdb": "tt2668162",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -28618,9 +28560,9 @@
       "id": 1822
     },
     "trakt": {
-      "title": "Hakkenden: Legend of the Dog Warriors",
+      "title": "The Hakkenden: Legend of the Dog Warriors",
       "id": 43280,
-      "slug": "hakkenden-legend-of-the-dog-warriors",
+      "slug": "the-hakkenden-legend-of-the-dog-warriors",
       "type": "shows",
       "season": {
         "id": 100061,
@@ -28869,7 +28811,7 @@
     "externals": {
       "tvdb": 79193,
       "tmdb": 34202,
-      "imdb": "tt2238049",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -30904,7 +30846,7 @@
     "externals": {
       "tvdb": 255275,
       "tmdb": 20997,
-      "imdb": "tt1179249",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -41657,7 +41599,7 @@
     "externals": {
       "tvdb": 282607,
       "tmdb": 102754,
-      "imdb": "tt0288961",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -43294,7 +43236,7 @@
     "externals": {
       "tvdb": 85227,
       "tmdb": 31728,
-      "imdb": "tt0848960",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -43721,7 +43663,7 @@
     "externals": {
       "tvdb": 83414,
       "tmdb": 95477,
-      "imdb": "tt0137288",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -45126,7 +45068,7 @@
     "externals": {
       "tvdb": 282607,
       "tmdb": 102754,
-      "imdb": "tt0288961",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -51580,35 +51522,6 @@
   },
   {
     "myanimelist": {
-      "title": "Uchuu Kuubo Blue Noah",
-      "id": 5763
-    },
-    "trakt": {
-      "title": "Thundersub",
-      "id": 61943,
-      "slug": "thundersub",
-      "type": "shows",
-      "season": {
-        "id": 64014,
-        "number": 1,
-        "externals": {
-          "tvdb": 59511,
-          "tmdb": 81424,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 1979,
-    "externals": {
-      "tvdb": 92171,
-      "tmdb": 8980,
-      "imdb": "tt0997137",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Seitokaichou ni Chuukoku",
       "id": 5774
     },
@@ -53530,7 +53443,7 @@
     "externals": {
       "tvdb": 262543,
       "tmdb": 32260,
-      "imdb": "tt5974630",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -54674,7 +54587,7 @@
     "externals": {
       "tvdb": 202751,
       "tmdb": null,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -60434,7 +60347,7 @@
     "externals": {
       "tvdb": 248980,
       "tmdb": 57127,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -61860,7 +61773,7 @@
     "externals": {
       "tvdb": 256182,
       "tmdb": 79033,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -64314,7 +64227,7 @@
     "externals": {
       "tvdb": 258010,
       "tmdb": 201394,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -64353,9 +64266,9 @@
       "id": 12715
     },
     "trakt": {
-      "title": "Hakkenden: Legend of the Dog Warriors",
+      "title": "The Hakkenden: Legend of the Dog Warriors",
       "id": 43280,
-      "slug": "hakkenden-legend-of-the-dog-warriors",
+      "slug": "the-hakkenden-legend-of-the-dog-warriors",
       "type": "shows",
       "season": null,
       "is_split_cour": true
@@ -64538,7 +64451,7 @@
     "externals": {
       "tvdb": 269157,
       "tmdb": 108874,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -64550,7 +64463,7 @@
     "trakt": {
       "title": "Saint Seiya Omega",
       "id": 174943,
-      "slug": "saint-seiya-omega-2012",
+      "slug": "saint-seiya-omega",
       "type": "shows",
       "season": {
         "id": 247232,
@@ -65263,7 +65176,7 @@
     "externals": {
       "tvdb": 266404,
       "tmdb": 53093,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -65350,7 +65263,7 @@
     "externals": {
       "tvdb": 77524,
       "tmdb": 132756,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -66792,7 +66705,7 @@
     "externals": {
       "tvdb": 262110,
       "tmdb": 79030,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -69637,35 +69550,6 @@
   },
   {
     "myanimelist": {
-      "title": "SHORT PEACE",
-      "id": 17677
-    },
-    "trakt": {
-      "title": "SHORT PEACE",
-      "id": 220572,
-      "slug": "short-peace",
-      "type": "shows",
-      "season": {
-        "id": 354445,
-        "number": 1,
-        "externals": {
-          "tvdb": null,
-          "tmdb": 368060,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2013,
-    "externals": {
-      "tvdb": null,
-      "tmdb": 240745,
-      "imdb": "tt3392330",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Zettai Bouei Leviathan",
       "id": 17681
     },
@@ -69768,7 +69652,7 @@
     "externals": {
       "tvdb": 262110,
       "tmdb": 79030,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -70564,7 +70448,7 @@
     "externals": {
       "tvdb": 283243,
       "tmdb": 77239,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -73311,7 +73195,7 @@
     "externals": {
       "tvdb": 276346,
       "tmdb": 132168,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -74832,7 +74716,7 @@
     "externals": {
       "tvdb": 279224,
       "tmdb": 73492,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -80684,7 +80568,7 @@
     "externals": {
       "tvdb": 294336,
       "tmdb": 122518,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -80839,9 +80723,9 @@
       "id": 30016
     },
     "trakt": {
-      "title": "The Numbers",
+      "title": "NANBAKA",
       "id": 110252,
-      "slug": "the-numbers",
+      "slug": "nanbaka",
       "type": "shows",
       "season": {
         "id": 130322,
@@ -82176,7 +82060,7 @@
     "externals": {
       "tvdb": 297313,
       "tmdb": 200948,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -86109,7 +85993,7 @@
     "externals": {
       "tvdb": 309823,
       "tmdb": 66751,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -86225,7 +86109,7 @@
     "externals": {
       "tvdb": 305123,
       "tmdb": 113064,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -86573,7 +86457,7 @@
     "externals": {
       "tvdb": 309148,
       "tmdb": 128862,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -87066,7 +86950,7 @@
     "externals": {
       "tvdb": 313675,
       "tmdb": 67019,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -89636,7 +89520,7 @@
     "externals": {
       "tvdb": 317830,
       "tmdb": 68088,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -90759,7 +90643,7 @@
     "externals": {
       "tvdb": 317829,
       "tmdb": 69140,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -92317,7 +92201,7 @@
     "externals": {
       "tvdb": 330087,
       "tmdb": 72524,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -92667,9 +92551,9 @@
       "id": 34414
     },
     "trakt": {
-      "title": "The Numbers",
+      "title": "NANBAKA",
       "id": 110252,
-      "slug": "the-numbers",
+      "slug": "nanbaka",
       "type": "shows",
       "season": {
         "id": 137641,
@@ -93034,7 +92918,7 @@
     "externals": {
       "tvdb": 305123,
       "tmdb": 113064,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -95657,7 +95541,7 @@
     "externals": {
       "tvdb": 283243,
       "tmdb": 77239,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -95918,7 +95802,7 @@
     "externals": {
       "tvdb": 329831,
       "tmdb": 80870,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -97407,9 +97291,9 @@
       "id": 36027
     },
     "trakt": {
-      "title": "Ousama Game The Animation",
+      "title": "King's Game: The Animation",
       "id": 122648,
-      "slug": "ousama-game-the-animation",
+      "slug": "king-s-game-the-animation",
       "type": "shows",
       "season": {
         "id": 148685,
@@ -98035,7 +97919,7 @@
     "externals": {
       "tvdb": 335315,
       "tmdb": 90579,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -98783,7 +98667,7 @@
       "id": 36548
     },
     "trakt": {
-      "title": "Kokkoku, Moment by Moment",
+      "title": "Kokkoku: Moment by Moment",
       "id": 124485,
       "slug": "kokkoku-moment-by-moment",
       "type": "shows",
@@ -100257,7 +100141,7 @@
     "externals": {
       "tvdb": 345377,
       "tmdb": 80559,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -100344,7 +100228,7 @@
     "externals": {
       "tvdb": 353605,
       "tmdb": 83610,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -101841,7 +101725,7 @@
     "externals": {
       "tvdb": 345144,
       "tmdb": 78499,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -103890,35 +103774,6 @@
   },
   {
     "myanimelist": {
-      "title": "Youkoso Japari Park",
-      "id": 37980
-    },
-    "trakt": {
-      "title": "Welcome to the JAPARI PARK",
-      "id": 137083,
-      "slug": "welcome-to-the-japari-park",
-      "type": "shows",
-      "season": {
-        "id": 173203,
-        "number": 1,
-        "externals": {
-          "tvdb": 781040,
-          "tmdb": 122246,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2018,
-    "externals": {
-      "tvdb": 353624,
-      "tmdb": 88459,
-      "imdb": "tt17507922",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Domestic na Kanojo",
       "id": 37982
     },
@@ -104991,7 +104846,7 @@
     "externals": {
       "tvdb": 352327,
       "tmdb": 89576,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -105650,7 +105505,7 @@
     "externals": {
       "tvdb": 356310,
       "tmdb": 84662,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -110147,7 +110002,7 @@
     "externals": {
       "tvdb": 366359,
       "tmdb": 90848,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -113639,9 +113494,9 @@
       "id": 40930
     },
     "trakt": {
-      "title": "Azur Lane: Slow Ahead!",
+      "title": "Anime AzurLane: Slow Ahead!",
       "id": 169991,
-      "slug": "azur-lane-slow-ahead",
+      "slug": "anime-azurlane-slow-ahead",
       "type": "shows",
       "season": {
         "id": 234947,
@@ -114230,7 +114085,7 @@
     "externals": {
       "tvdb": 379912,
       "tmdb": 233646,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -114375,7 +114230,7 @@
     "externals": {
       "tvdb": 380103,
       "tmdb": 99042,
-      "imdb": "",
+      "imdb": null,
       "tvrage": null
     }
   },
@@ -134964,6 +134819,35 @@
   },
   {
     "myanimelist": {
+      "title": "Otome Game Sekai wa Mob ni Kibishii Sekai desu 2",
+      "id": 54000
+    },
+    "trakt": {
+      "title": "Trapped in a Dating Sim: The World of Otome Games Is Tough for Mobs",
+      "id": 191517,
+      "slug": "trapped-in-a-dating-sim-the-world-of-otome-games-is-tough-for-mobs",
+      "type": "shows",
+      "season": {
+        "id": 366971,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 513736,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2022,
+    "externals": {
+      "tvdb": 412826,
+      "tmdb": 139512,
+      "imdb": "tt16255458",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Tenchi Muyou! GXP: Paradise Shidou-hen",
       "id": 54013
     },
@@ -137656,7 +137540,7 @@
         "id": 114770,
         "number": 1,
         "externals": {
-          "tvdb": 595151,
+          "tvdb": 285209,
           "tmdb": 112473,
           "tvrage": null
         }
@@ -140087,8 +139971,16 @@
       "id": 30850,
       "slug": "bleach",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 43308,
+        "number": 2,
+        "externals": {
+          "tvdb": 2008655,
+          "tmdb": 295738,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2004,
     "externals": {
@@ -144311,6 +144203,27 @@
   },
   {
     "myanimelist": {
+      "title": "Mashle: Sanma Taisou Shinkakusha Saishuu Shiken-hen",
+      "id": 58934
+    },
+    "trakt": {
+      "title": "MASHLE: MAGIC AND MUSCLES",
+      "id": 198111,
+      "slug": "mashle-magic-and-muscles",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 421737,
+      "tmdb": 204832,
+      "imdb": "tt21209804",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Sakamoto Days",
       "id": 58939
     },
@@ -145191,6 +145104,35 @@
       "tvdb": 428030,
       "tmdb": 215799,
       "imdb": "tt28082379",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+      "id": 59193
+    },
+    "trakt": {
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "id": 156460,
+      "slug": "mushoku-tensei-jobless-reincarnation",
+      "type": "shows",
+      "season": {
+        "id": 400262,
+        "number": 3,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 400493,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 371310,
+      "tmdb": 94664,
+      "imdb": "tt13293588",
       "tvrage": null
     }
   },
@@ -148625,6 +148567,35 @@
   },
   {
     "myanimelist": {
+      "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+      "id": 60522
+    },
+    "trakt": {
+      "title": "Skeleton Knight in Another World",
+      "id": 179386,
+      "slug": "skeleton-knight-in-another-world",
+      "type": "shows",
+      "season": {
+        "id": 520518,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 513734,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2022,
+    "externals": {
+      "tvdb": 401279,
+      "tmdb": 123528,
+      "imdb": "tt14476236",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Tsuihousha Shokudou e Youkoso!",
       "id": 60523
     },
@@ -148915,6 +148886,35 @@
       "tvdb": 446389,
       "tmdb": 258579,
       "imdb": "tt32508529",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bleach: Sennen Kessen-hen - Kashin-tan",
+      "id": 60636
+    },
+    "trakt": {
+      "title": "Bleach",
+      "id": 30850,
+      "slug": "bleach",
+      "type": "shows",
+      "season": {
+        "id": 43308,
+        "number": 2,
+        "externals": {
+          "tvdb": 2008655,
+          "tmdb": 295738,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2004,
+    "externals": {
+      "tvdb": 74796,
+      "tmdb": 30984,
+      "imdb": "tt0434665",
       "tvrage": null
     }
   },
@@ -149743,7 +149743,7 @@
       },
       "is_split_cour": false
     },
-    "release_year": 0,
+    "release_year": 2026,
     "externals": {
       "tvdb": 460899,
       "tmdb": 285574,
@@ -150387,9 +150387,9 @@
       "id": 61280
     },
     "trakt": {
-      "title": "Kore Kaite Shine",
+      "title": "Draw This, Then Die!",
       "id": 279864,
-      "slug": "kore-kaite-shine",
+      "slug": "draw-this-then-die",
       "type": "shows",
       "season": {
         "id": 453603,
@@ -151379,6 +151379,35 @@
   },
   {
     "myanimelist": {
+      "title": "Katainaka no Ossan, Kensei ni Naru II",
+      "id": 61897
+    },
+    "trakt": {
+      "title": "From Old Country Bumpkin to Master Swordsman",
+      "id": 250954,
+      "slug": "from-old-country-bumpkin-to-master-swordsman",
+      "type": "shows",
+      "season": {
+        "id": 476425,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 513664,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 452710,
+      "tmdb": 260823,
+      "imdb": "tt35346717",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Towa no Yuugure",
       "id": 61917
     },
@@ -151723,7 +151752,7 @@
         "id": 476865,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2196231,
           "tmdb": 467098,
           "tvrage": null
         }
@@ -151759,7 +151788,7 @@
       },
       "is_split_cour": false
     },
-    "release_year": 0,
+    "release_year": 2026,
     "externals": {
       "tvdb": 465802,
       "tmdb": 296101,
@@ -151846,7 +151875,7 @@
       },
       "is_split_cour": false
     },
-    "release_year": 0,
+    "release_year": 2026,
     "externals": {
       "tvdb": 465973,
       "tmdb": 296286,
@@ -151933,7 +151962,7 @@
       },
       "is_split_cour": false
     },
-    "release_year": 0,
+    "release_year": 2026,
     "externals": {
       "tvdb": 466092,
       "tmdb": 298103,
@@ -152216,7 +152245,7 @@
         "id": 481858,
         "number": 1,
         "externals": {
-          "tvdb": null,
+          "tvdb": 2201778,
           "tmdb": 471250,
           "tvrage": null
         }
@@ -152469,9 +152498,9 @@
       "id": 62435
     },
     "trakt": {
-      "title": "The World's Strongest Rearguard: Labyrinth Country's Novice Seeker",
+      "title": "The World's Strongest Rearguard",
       "id": 298339,
-      "slug": "the-world-s-strongest-rearguard-labyrinth-country-s-novice-seeker",
+      "slug": "the-world-s-strongest-rearguard",
       "type": "shows",
       "season": {
         "id": 486214,
@@ -152531,8 +152560,16 @@
       "id": 160825,
       "slug": "rent-a-girlfriend",
       "type": "shows",
-      "season": null,
-      "is_split_cour": true
+      "season": {
+        "id": 216460,
+        "number": 1,
+        "externals": {
+          "tvdb": 1836065,
+          "tmdb": 137788,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
     },
     "release_year": 2020,
     "externals": {
@@ -152834,35 +152871,6 @@
   },
   {
     "myanimelist": {
-      "title": "Sparks of Tomorrow",
-      "id": 62856
-    },
-    "trakt": {
-      "title": "Sparks of Tomorrow",
-      "id": 184947,
-      "slug": "sparks-of-tomorrow",
-      "type": "shows",
-      "season": {
-        "id": 265872,
-        "number": 1,
-        "externals": {
-          "tvdb": 1946164,
-          "tmdb": 235373,
-          "tvrage": null
-        }
-      },
-      "is_split_cour": false
-    },
-    "release_year": 2026,
-    "externals": {
-      "tvdb": 407704,
-      "tmdb": 153217,
-      "imdb": "tt38939446",
-      "tvrage": null
-    }
-  },
-  {
-    "myanimelist": {
       "title": "Omae wa Mada Gunma wo Shiranai: Reiwa-ban",
       "id": 62864
     },
@@ -153157,9 +153165,9 @@
       "id": 63061
     },
     "trakt": {
-      "title": "Uchino Utouto Domo ga Sumimasen",
+      "title": "Sorry About My Little Brothers",
       "id": 310231,
-      "slug": "uchino-utouto-domo-ga-sumimasen",
+      "slug": "sorry-about-my-little-brothers",
       "type": "shows",
       "season": {
         "id": 503084,
@@ -153356,6 +153364,35 @@
   },
   {
     "myanimelist": {
+      "title": "Mamonogurai no Boukensha: Ore dake Mamono wo Kuratte Tsuyoku Naru",
+      "id": 63304
+    },
+    "trakt": {
+      "title": "Monster Eater",
+      "id": 314072,
+      "slug": "monster-eater",
+      "type": "shows",
+      "season": {
+        "id": 510219,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 494555,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 472764,
+      "tmdb": 310921,
+      "imdb": "tt39673631",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Ingoku Danchi",
       "id": 63310
     },
@@ -153389,9 +153426,9 @@
       "id": 63324
     },
     "trakt": {
-      "title": "Recommendation from Mr. Iwamoto",
+      "title": "Recommendations from Mr. Iwamoto",
       "id": 319881,
-      "slug": "recommendation-from-mr-iwamoto",
+      "slug": "recommendations-from-mr-iwamoto",
       "type": "shows",
       "season": {
         "id": 523113,
@@ -153592,9 +153629,9 @@
       "id": 63508
     },
     "trakt": {
-      "title": "The Failed Sage's Academy Domination",
+      "title": "From Overshadowed to Overpowered: Second Reincarnation of a Talentless Sage",
       "id": 316861,
-      "slug": "the-failed-sage-s-academy-domination",
+      "slug": "from-overshadowed-to-overpowered-second-reincarnation-of-a-talentless-sage",
       "type": "shows",
       "season": {
         "id": 515928,
@@ -153728,6 +153765,35 @@
       "tvdb": 457476,
       "tmdb": 320905,
       "imdb": "tt42171190",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Kanojo, Okarishimasu 6th Season",
+      "id": 64484
+    },
+    "trakt": {
+      "title": "Rent-a-Girlfriend",
+      "id": 160825,
+      "slug": "rent-a-girlfriend",
+      "type": "shows",
+      "season": {
+        "id": 216460,
+        "number": 1,
+        "externals": {
+          "tvdb": 1836065,
+          "tmdb": 137788,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2020,
+    "externals": {
+      "tvdb": 380654,
+      "tmdb": 96316,
+      "imdb": "tt11448214",
       "tvrage": null
     }
   },
