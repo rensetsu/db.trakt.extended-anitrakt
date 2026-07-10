@@ -21199,6 +21199,35 @@
   },
   {
     "myanimelist": {
+      "title": "SF Saiyuuki Starzinger",
+      "id": 1236
+    },
+    "trakt": {
+      "title": "Starzinger",
+      "id": 44529,
+      "slug": "starzinger",
+      "type": "shows",
+      "season": {
+        "id": 54887,
+        "number": 1,
+        "externals": {
+          "tvdb": 32280,
+          "tmdb": 53617,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 1978,
+    "externals": {
+      "tvdb": 81953,
+      "tmdb": 44777,
+      "imdb": "tt0185655",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Bishoujo Senshi Sailor Moon SuperS",
       "id": 1239
     },
@@ -52843,6 +52872,27 @@
       "tvdb": 84553,
       "tmdb": 28502,
       "imdb": "tt1356884",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Saint Seiya: The Lost Canvas - Meiou Shinwa",
+      "id": 6171
+    },
+    "trakt": {
+      "title": "Saint Seiya",
+      "id": 42220,
+      "slug": "saint-seiya",
+      "type": "shows",
+      "season": null,
+      "is_split_cour": true
+    },
+    "release_year": 1986,
+    "externals": {
+      "tvdb": 72775,
+      "tmdb": 42444,
+      "imdb": "tt0161952",
       "tvrage": null
     }
   },
@@ -152059,6 +152109,35 @@
   },
   {
     "myanimelist": {
+      "title": "Iya na Kao sare nagara Opantsu Misete Moraitai Returns",
+      "id": 62155
+    },
+    "trakt": {
+      "title": "I Want You To Make a Disgusted Face and Show Me Your Underwear",
+      "id": 134140,
+      "slug": "i-want-you-to-make-a-disgusted-face-and-show-me-your-underwear",
+      "type": "shows",
+      "season": {
+        "id": 518153,
+        "number": 3,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 506949,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 350301,
+      "tmdb": 80867,
+      "imdb": "tt13077966",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Akane-banashi",
       "id": 62164
     },
@@ -152692,6 +152771,35 @@
       "tvdb": 468399,
       "tmdb": 312266,
       "imdb": "tt41276828",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Grand Blue Season 3",
+      "id": 62542
+    },
+    "trakt": {
+      "title": "Grand Blue",
+      "id": 128635,
+      "slug": "grand-blue",
+      "type": "shows",
+      "season": {
+        "id": 488745,
+        "number": 3,
+        "externals": {
+          "tvdb": 2207833,
+          "tmdb": 476480,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2018,
+    "externals": {
+      "tvdb": 343913,
+      "tmdb": 79166,
+      "imdb": "tt8086718",
       "tvrage": null
     }
   },
@@ -153712,6 +153820,35 @@
   },
   {
     "myanimelist": {
+      "title": "Vertex Force",
+      "id": 63764
+    },
+    "trakt": {
+      "title": "VERTEX FORCE",
+      "id": 317718,
+      "slug": "vertex-force",
+      "type": "shows",
+      "season": {
+        "id": 517990,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 506505,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 475739,
+      "tmdb": 317259,
+      "imdb": "tt42487863",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "[Oshi no Ko] 4th Season",
       "id": 63794
     },
@@ -153765,6 +153902,180 @@
       "tvdb": 457476,
       "tmdb": 320905,
       "imdb": "tt42171190",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Dengeki Daisy",
+      "id": 64374
+    },
+    "trakt": {
+      "title": "Dengeki Daisy",
+      "id": 320243,
+      "slug": "dengeki-daisy",
+      "type": "shows",
+      "season": {
+        "id": 523843,
+        "number": 1,
+        "externals": {
+          "tvdb": 2254411,
+          "tmdb": 521670,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 479020,
+      "tmdb": 325101,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Koi Seyo Mayakashi Tenshi-domo",
+      "id": 64380
+    },
+    "trakt": {
+      "title": "Fall in Love, You False Angels",
+      "id": 276643,
+      "slug": "fall-in-love-you-false-angels",
+      "type": "shows",
+      "season": {
+        "id": 448024,
+        "number": 1,
+        "externals": {
+          "tvdb": 2254832,
+          "tmdb": 442583,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 479132,
+      "tmdb": 284391,
+      "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Jimoto Saikou!",
+      "id": 64428
+    },
+    "trakt": {
+      "title": "Jimoto Saiko!",
+      "id": 320592,
+      "slug": "jimoto-saiko",
+      "type": "shows",
+      "season": {
+        "id": 524615,
+        "number": 1,
+        "externals": {
+          "tvdb": 2255956,
+          "tmdb": 523360,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 479426,
+      "tmdb": 325949,
+      "imdb": "tt43608469",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Akane-banashi 2nd Season",
+      "id": 64439
+    },
+    "trakt": {
+      "title": "Akane-banashi",
+      "id": 293706,
+      "slug": "akane-banashi",
+      "type": "shows",
+      "season": {
+        "id": 524735,
+        "number": 2,
+        "externals": {
+          "tvdb": 2256070,
+          "tmdb": 523595,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 466488,
+      "tmdb": 297438,
+      "imdb": "tt38797595",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Fool Night",
+      "id": 64459
+    },
+    "trakt": {
+      "title": "Fool Night",
+      "id": 321007,
+      "slug": "fool-night",
+      "type": "shows",
+      "season": {
+        "id": 524987,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 524075,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 479566,
+      "tmdb": 326247,
+      "imdb": "tt43613803",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Gokigen You, Ikkyoku Ikaga?",
+      "id": 64468
+    },
+    "trakt": {
+      "title": "Good Day to You, How About a Game?",
+      "id": 321149,
+      "slug": "good-day-to-you-how-about-a-game",
+      "type": "shows",
+      "season": {
+        "id": 525153,
+        "number": 1,
+        "externals": {
+          "tvdb": 2256878,
+          "tmdb": 524508,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 0,
+    "externals": {
+      "tvdb": 479657,
+      "tmdb": 326471,
+      "imdb": null,
       "tvrage": null
     }
   },
