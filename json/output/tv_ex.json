@@ -139602,6 +139602,35 @@
   },
   {
     "myanimelist": {
+      "title": "Azur Lane: Bisoku Zenshin! Ni!!",
+      "id": 56613
+    },
+    "trakt": {
+      "title": "Anime AzurLane: Slow Ahead!",
+      "id": 169991,
+      "slug": "anime-azurlane-slow-ahead",
+      "type": "shows",
+      "season": {
+        "id": 338693,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 356374,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 392491,
+      "tmdb": 109805,
+      "imdb": "tt13084120",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Hokuto no Ken: Fist of the North Star",
       "id": 56646
     },
@@ -139929,6 +139958,64 @@
       "tvdb": 440057,
       "tmdb": 290019,
       "imdb": "tt37532971",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Tenkou-saki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi Datta Ken",
+      "id": 56735
+    },
+    "trakt": {
+      "title": "Oh Boy, Was I Wrong About Her",
+      "id": 232385,
+      "slug": "oh-boy-was-i-wrong-about-her",
+      "type": "shows",
+      "season": {
+        "id": 375034,
+        "number": 1,
+        "externals": {
+          "tvdb": 2202990,
+          "tmdb": 385126,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 467401,
+      "tmdb": 250008,
+      "imdb": "tt41278615",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Saikyou Degarashi Ouji no Anyaku Teii Arasoi",
+      "id": 56736
+    },
+    "trakt": {
+      "title": "The Insipid Prince's Furtive Grab for the Throne",
+      "id": 276920,
+      "slug": "the-insipid-prince-s-furtive-grab-for-the-throne",
+      "type": "shows",
+      "season": {
+        "id": 448455,
+        "number": 1,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 442941,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 476185,
+      "tmdb": 284581,
+      "imdb": "tt32862795",
       "tvrage": null
     }
   },
@@ -147204,6 +147291,35 @@
   },
   {
     "myanimelist": {
+      "title": "Nige Jouzu no Wakagimi 2nd Season",
+      "id": 60059
+    },
+    "trakt": {
+      "title": "The Elusive Samurai",
+      "id": 203330,
+      "slug": "the-elusive-samurai",
+      "type": "shows",
+      "season": {
+        "id": 431066,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 431076,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2024,
+    "externals": {
+      "tvdb": 432455,
+      "tmdb": 222623,
+      "imdb": "tt27187054",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Odayaka Kizoku no Kyuuka no Susume.",
       "id": 60071
     },
@@ -148778,6 +148894,35 @@
       "tvdb": 432832,
       "tmdb": 240411,
       "imdb": "tt30217403",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Kabushikigaisha Magi-Lumière 2nd Season",
+      "id": 60552
+    },
+    "trakt": {
+      "title": "Magilumiere Magical Girls Inc.",
+      "id": 223579,
+      "slug": "magilumiere-magical-girls-inc",
+      "type": "shows",
+      "season": {
+        "id": 436738,
+        "number": 2,
+        "externals": {
+          "tvdb": 2161311,
+          "tmdb": 433999,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2024,
+    "externals": {
+      "tvdb": 442767,
+      "tmdb": 240576,
+      "imdb": "tt30476504",
       "tvrage": null
     }
   },
@@ -152718,6 +152863,35 @@
   },
   {
     "myanimelist": {
+      "title": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
+      "id": 62513
+    },
+    "trakt": {
+      "title": "Clevatess",
+      "id": 247331,
+      "slug": "clevatess",
+      "type": "shows",
+      "season": {
+        "id": 493418,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 479362,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2025,
+    "externals": {
+      "tvdb": 451793,
+      "tmdb": 258348,
+      "imdb": "tt32991344",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "#Kanagawa ni Sunderu Elf",
       "id": 62521
     },
@@ -153003,6 +153177,35 @@
       "tvdb": 474202,
       "tmdb": 304126,
       "imdb": null,
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Bungou Stray Dogs Wan! 2",
+      "id": 62883
+    },
+    "trakt": {
+      "title": "Bungo Stray Dogs Wan!",
+      "id": 169728,
+      "slug": "bungo-stray-dogs-wan",
+      "type": "shows",
+      "season": {
+        "id": 525510,
+        "number": 2,
+        "externals": {
+          "tvdb": null,
+          "tmdb": 525778,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2021,
+    "externals": {
+      "tvdb": 392195,
+      "tmdb": 110837,
+      "imdb": "tt13192574",
       "tvrage": null
     }
   },
@@ -153844,6 +154047,35 @@
       "tvdb": 475739,
       "tmdb": 317259,
       "imdb": "tt42487863",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Hanazakari no Kimitachi e 2nd Season",
+      "id": 63780
+    },
+    "trakt": {
+      "title": "Hana-Kimi",
+      "id": 240014,
+      "slug": "hana-kimi-2026",
+      "type": "shows",
+      "season": {
+        "id": 523212,
+        "number": 2,
+        "externals": {
+          "tvdb": 11367694,
+          "tmdb": 520342,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2026,
+    "externals": {
+      "tvdb": 450072,
+      "tmdb": 254492,
+      "imdb": "tt38646611",
       "tvrage": null
     }
   },
