@@ -151761,6 +151761,35 @@
   },
   {
     "myanimelist": {
+      "title": "Kusuriya no Hitorigoto 3rd Season",
+      "id": 61987
+    },
+    "trakt": {
+      "title": "The Apothecary Diaries",
+      "id": 202569,
+      "slug": "the-apothecary-diaries",
+      "type": "shows",
+      "season": {
+        "id": 316992,
+        "number": 1,
+        "externals": {
+          "tvdb": 2047810,
+          "tmdb": 329141,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2023,
+    "externals": {
+      "tvdb": 431162,
+      "tmdb": 220542,
+      "imdb": "tt26743760",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
       "title": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai sareru",
       "id": 62000
     },
@@ -154105,6 +154134,35 @@
       "tvdb": 421069,
       "tmdb": 203737,
       "imdb": "tt21030032",
+      "tvrage": null
+    }
+  },
+  {
+    "myanimelist": {
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Kouhen",
+      "id": 63824
+    },
+    "trakt": {
+      "title": "Jujutsu Kaisen",
+      "id": 158594,
+      "slug": "jujutsu-kaisen",
+      "type": "shows",
+      "season": {
+        "id": 219262,
+        "number": 1,
+        "externals": {
+          "tvdb": 1823218,
+          "tmdb": 135856,
+          "tvrage": null
+        }
+      },
+      "is_split_cour": false
+    },
+    "release_year": 2020,
+    "externals": {
+      "tvdb": 377543,
+      "tmdb": 95479,
+      "imdb": "tt12343534",
       "tvrage": null
     }
   },
